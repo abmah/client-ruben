@@ -66,27 +66,44 @@
 
 
 .menu-item:hover {
-  background-color: #2D3748;
+  background-color: #161D28;
   cursor: pointer;
 
+
 }
+
+.menu-item-talent:hover {
+  background-color: #718096;
+}
+
+.menu-item-skills:hover {
+  background-color: #F9B934;
+
+}
+
+.menu-item-tech:hover {
+  background-color: #2D3748;
+
+}
+
 
 .menu-item:hover .sub-menu {
   opacity: 1;
   pointer-events: all;
+
 
 }
 
 
 
 .sub-menu {
+
   background-color: #222B38;
   position: absolute;
   top: 56px;
   width: 372px;
   left: 0;
-  width: 372px;
-  height: 336px;
+  padding-bottom: 7px;
   flex-shrink: 0;
   border-radius: 16px;
   display: flex;
@@ -95,8 +112,20 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
+
 }
 
+.sub-menu-talent {
+  left: -92px;
+}
+
+.sub-menu-skills {
+  left: -184px;
+}
+
+.sub-menu-tech {
+  left: -276px;
+}
 
 
 .sub-menu-first-item {
@@ -109,8 +138,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+.sub-menu-first-item-skills {
+  background-color: #F9B934;
+}
 
+.sub-menu-first-item-tech {
+  background-color: #2D3748;
 }
 
 .sub-menu-first-item-title {

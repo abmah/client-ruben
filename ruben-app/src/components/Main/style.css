@@ -7,3 +7,18 @@
   margin: 30px auto;
 
 }
+
+.second-contetnt-test {
+  background-color: rgb(0, 0, 0);
+
+}
+
+.second-contetnt-test-svg {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1)
+}
+
+
+.addheight {
+  height: 10vh;
+}
