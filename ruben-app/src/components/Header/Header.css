@@ -1,5 +1,5 @@
 .header-wrapper {
-  position: absolute;
+  position: fixed;
   top: 65px;
   left: 50%;
   transform: translateX(-50%);
@@ -28,6 +28,8 @@
   z-index: -1;
 
 }
+
+
 
 .digital-future-logo {
   position: absolute;
@@ -120,11 +122,11 @@
 }
 
 .sub-menu-skills {
-  left: -184px;
+  left: -185px;
 }
 
 .sub-menu-tech {
-  left: -276px;
+  left: -277px;
 }
 
 
@@ -155,7 +157,8 @@
 
 }
 
-.sub-menu-first-item-arrow {
+.sub-menu-first-item-arrow,
+.right-facing-arrow {
 
   width: 52px;
   height: 52px;
@@ -223,4 +226,142 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+
+
+
+/* mobile styles */
+
+.header-menu-mobile {
+  display: none;
+
+}
+
+.header-background-mobile {
+  display: none;
+}
+
+
+.header-menu-toggle-button {
+  display: none;
+  font-weight: 500;
+  z-index: 2;
+  position: absolute;
+  left: 250px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+
+
+
+.header-drop-down-menu-toggle-logo {
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-menu-mobile {
+  position: fixed;
+  border-radius: 16px;
+  background-color: #222B38;
+  height: 85vh;
+  width: 106%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(150vh);
+  min-height: 70vh;
+  opacity: 0;
+  transition: 0.3s ease;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.mobile-menu-content {
+  margin-top: 60px;
+  width: 95%;
+}
+
+
+.mobile-menu-main-item {
+  height: 84px;
+  border-radius: 10px;
+  background: #222B38;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+
+
+}
+
+.mobile-menu-main-item p {
+  margin-left: 31px;
+}
+
+.about-mobile-menu-arrow {
+  background-color: white;
+}
+
+.mobile-menu-main-item-second {
+
+  background-color: #718096;
+}
+
+.mobile-menu-main-item-third {
+  background-color: #F9B934;
+  color: #222B38;
+}
+
+.mobile-menu-main-item-last {
+  background-color: #2D3748;
+}
+
+/* mobile styles */
+
+@media screen and (max-width: 768px) {
+  .menu-open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(48vh);
+    pointer-events: all;
+  }
+
+  .header-menu-mobile {
+    /* display: flex; */
+  }
+
+  .header-menu-toggle-button {
+    display: flex;
+  }
+
+  .header-container {
+    justify-content: center;
+  }
+
+  .header-leftside {
+    width: 348px;
+  }
+
+  .header-rightside {
+    display: none;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+
+  .header-background {
+    display: none;
+  }
+
+  .header-background-mobile {
+    display: block;
+    position: absolute;
+
+  }
 }
