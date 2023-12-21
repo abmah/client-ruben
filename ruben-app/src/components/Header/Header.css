@@ -320,6 +320,35 @@
   background-color: #2D3748;
 }
 
+.left-facing-arrow {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 52px;
+  background-color: #222B38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 21px;
+}
+
+.mobile-menu-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.mobile-menu-bottom button {
+  background-color: #1A222C;
+}
+
+
+
 /* mobile styles */
 
 @media screen and (max-width: 768px) {
@@ -348,6 +377,7 @@
 
   .header-rightside {
     display: none;
+
   }
 
   .header-menu {
@@ -363,5 +393,20 @@
     display: block;
     position: absolute;
 
+  }
+
+  .sub-menu {
+    opacity: 1;
+    pointer-events: all;
+    left: 0 !important;
+    top: 100px;
+    width: 100%;
+    margin-top: 30px;
+
+  }
+
+  .sub-menu-item,
+  .sub-menu-first-item {
+    width: 95%;
   }
 }
