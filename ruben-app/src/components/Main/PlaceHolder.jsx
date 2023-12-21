@@ -11,10 +11,13 @@ const PlaceHolder = () => {
   const svgRef = useRef(null);
 
   // Set your initial scale and position values
-  const clipPathScale = 5;
-  const initialX = 0; // Set your initial x position
-  const initialY = 100; // Set your initial y position
+  let clipPathScale = 2;
+  const initialX = -50; // Set your initial x position
+  let initialY = 100; // Set your initial y position
 
+  setInterval(() => {
+    clipPathScale += 0.01;
+  }, 20);
   useLayoutEffect(() => {
     const tl = gsap.timeline();
 
@@ -61,16 +64,15 @@ const PlaceHolder = () => {
 
     const headerMenuMobile = document.querySelector(".place-holder");
     if (headerMenuMobile) {
-      // headerMenuMobile.style.clipPath = clipPathString;
+      headerMenuMobile.style.clipPath = clipPathString;
     }
   }, [clipPathScale, initialX, initialY]);
-
   return (
     <>
       <div className="place-holder"></div>
 
       <div className="second-contetnt-test" ref={placeHolderRef}>
-        {/* <svg
+        <svg
           ref={svgRef}
           className="second-contetnt-test-svg"
           width="1920"
@@ -85,7 +87,7 @@ const PlaceHolder = () => {
             d="M0 0H1920V1080H0V0ZM1065 386H1018.94V432.058H1065V386ZM1018.94 432.087H866.85C859.751 432.087 854 437.837 854 444.937V624.968C854 632.068 859.751 637.819 866.85 637.819H1018.94V591.725H1065V478.312H1018.94V432.087Z"
             fill="white"
           />
-        </svg> */}
+        </svg>
       </div>
       <div className="addheight"></div>
     </>

@@ -1,0 +1,9 @@
+.line1 {
+  position: absolute;
+  width: 1500px;
+  height: 2px;
+  background-color: pink;
+  top: 400px;
+  left: 100px;
+  z-index: 10000;
+}

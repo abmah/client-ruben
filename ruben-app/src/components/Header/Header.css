@@ -3,7 +3,8 @@
   top: 65px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 78%;
+  z-index: 10;
 }
 
 
@@ -352,6 +353,10 @@
 /* mobile styles */
 
 @media screen and (max-width: 768px) {
+  .header-wrapper {
+    width: 90%;
+  }
+
   .menu-open {
     display: flex;
     opacity: 1;

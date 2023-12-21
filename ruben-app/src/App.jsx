@@ -2,14 +2,15 @@ import "./App.css";
 
 import Header from "./components/Header/Header";
 import PlaceHolder from "./components/Main/PlaceHolder";
-import LandingPage from "./components/LandingPage/LandingPage";
+import AboveTheFold from "./components/AboveTheFold/AboveTheFold";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <AboveTheFold />
       <PlaceHolder />
       <Header />
+      {/* <div className="line1"></div> */}
     </>
   );
 }
