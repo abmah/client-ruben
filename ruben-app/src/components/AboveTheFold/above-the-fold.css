@@ -26,9 +26,12 @@
   position: relative;
   height: 780px;
   border-radius: 16px;
-
   padding-top: 10px;
   padding-bottom: 100px;
+}
+
+.above-the-fold-right-section {
+  margin-top: 150px;
 }
 
 
@@ -52,11 +55,13 @@
 .above-the-fold-section-one img,
 .above-the-fold-section-three img {
   margin-top: 150px;
+
 }
 
 .above-the-fold-section-three {
   background-color: #2D3748;
 }
+
 
 
 
@@ -171,6 +176,14 @@
 
 
 
+@media screen and (max-width: 1400px) {
+  /* .above-the-fold-section img {
+    width: 600px;
+    margin-left: -30px;
+  } */
+
+}
+
 @media screen and (max-width: 768px) {
 
   .above-the-fold-container {
@@ -178,11 +191,43 @@
 
   }
 
+  .above-the-fold-section {
+    margin-top: 0px;
+  }
+
   .above-the-fold-section img {
     display: none;
   }
 
   .above-the-fold-section-navigation {
+    position: absolute;
+
+    /* left: 50%;
+    transform: translateX(-50%); */
+  }
+
+  .above-the-fold-main-text {
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 336px;
+  }
+
+  .above-the-fold-sub-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 336px;
+  }
+
+
+  .lets-talk-button {
     display: none;
+  }
+
+  .above-the-fold-button {
+    width: 100%;
   }
 }

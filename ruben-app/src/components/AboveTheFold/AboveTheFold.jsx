@@ -19,12 +19,6 @@ function LandingPage() {
     document.documentElement.style.setProperty("--progress", `${percentage}%`);
   };
 
-  // const handleDoubleClick = () => {
-  //   // You can customize this logic based on your needs
-  //   const targetSlideIndex = 2; // Change this to the desired slide index
-  //   swiperRef.current.swiper.slideTo(targetSlideIndex);
-  // };
-
   return (
     <div className="above-the-fold-container">
       <Swiper

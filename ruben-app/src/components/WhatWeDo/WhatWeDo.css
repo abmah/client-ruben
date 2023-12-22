@@ -1,0 +1,98 @@
+.what-we-do-section {
+  margin-top: 300px;
+  margin-bottom: 200px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.what-we-do-text-container {
+  margin-bottom: 20px;
+}
+
+.what-we-do-cards-container {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+}
+
+
+.background-lines {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+.what-we-do-card-highlight {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px;
+  border-radius: 28px;
+  background: #718096;
+  flex-shrink: 0;
+  width: max-content;
+  padding: 0px 26px;
+  margin-bottom: 16px;
+}
+
+.what-we-do-card-sub {
+  margin-top: 0px;
+  color: #192430;
+  font-size: 20px;
+  width: 254px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.what-we-do-text {
+  color: #192430;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.what-we-do-text-highlight {
+  color: #718096;
+
+}
+
+.what-we-do-card {
+  position: absolute;
+}
+
+.what-we-do-gray-card {
+  top: 200px;
+  left: 20px;
+}
+
+.what-we-do-yellow-card {
+  bottom: 0px;
+  left: 50px;
+}
+
+.what-we-do-yellow-card h1 {
+  background: #F9B934;
+  color: #2D3748;
+}
+
+.what-we-do-blue-card {
+  top: 400px;
+  right: 0px;
+}
+
+.what-we-do-blue-card h1 {
+  background: #2D3748;
+
+}

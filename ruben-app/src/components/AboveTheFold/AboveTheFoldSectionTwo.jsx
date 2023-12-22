@@ -19,7 +19,9 @@ function AboveTheFoldSectionTwo() {
         </p>
         <div className="above-the-fold-buttons-container">
           <button className="above-the-fold-button">View Services</button>
-          <button className="above-the-fold-button">Let&apos;s Talk</button>
+          <button className="above-the-fold-button lets-talk-button">
+            Let&apos;s Talk
+          </button>
         </div>
         <div className="above-the-fold-section-navigation">
           <div className="above-the-fold-section-navigation-child">
