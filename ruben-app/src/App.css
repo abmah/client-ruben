@@ -1,9 +1,12 @@
 .line1 {
-  position: absolute;
-  width: 1500px;
-  height: 2px;
-  background-color: pink;
+  position: fixed;
+  width: 210px;
+  height: 200px;
+  border: 2px solid #000;
   top: 400px;
-  left: 100px;
+  left: 50%;
+  /* Set left to 50% to center horizontally */
+  transform: translateX(-50%);
+  /* Move the element back by half of its width */
   z-index: 10000;
 }

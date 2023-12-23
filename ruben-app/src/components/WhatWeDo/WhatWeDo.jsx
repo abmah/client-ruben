@@ -20,7 +20,7 @@ function WhatWeDo() {
           We offer 3 solutions to accelerate transformation.
         </h1>
       </div>
-      <img src={Flower} alt="flower" />
+      <img className="what-we-do-flower" src={Flower} alt="flower" />
       <div className="what-we-do-cards-container">
         <div className="what-we-do-card what-we-do-gray-card">
           <h1 className="what-we-do-card-highlight">Talent Augmentation</h1>

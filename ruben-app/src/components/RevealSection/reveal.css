@@ -1,0 +1,12 @@
+.reveal-section-wrapper {
+  width: 100%;
+  position: relative;
+
+}
+
+.reveal-section {
+  position: relative;
+  height: 1000px;
+  clip-path: url(#myClipPath);
+
+}

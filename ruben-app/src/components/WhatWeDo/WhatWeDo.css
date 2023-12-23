@@ -1,13 +1,16 @@
 .what-we-do-section {
-  margin-top: 300px;
+  /* margin-top: 300px; */
   margin-bottom: 200px;
-  height: 800px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
+
+
 
 .what-we-do-text-container {
   margin-bottom: 20px;
@@ -73,12 +76,12 @@
 }
 
 .what-we-do-gray-card {
-  top: 200px;
+  top: 350px;
   left: 20px;
 }
 
 .what-we-do-yellow-card {
-  bottom: 0px;
+  bottom: 100px;
   left: 50px;
 }
 
@@ -88,7 +91,7 @@
 }
 
 .what-we-do-blue-card {
-  top: 400px;
+  top: 500px;
   right: 0px;
 }
 
