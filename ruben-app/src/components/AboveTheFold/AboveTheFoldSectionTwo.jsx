@@ -15,7 +15,8 @@ function AboveTheFoldSectionTwo() {
           </strong>
         </h1>
         <p className="above-the-fold-sub-text">
-          Flexibly assign high caliber experts to strengthen your projects
+          Future-proof internal workforce with modern tech stack skillset
+          trainings
         </p>
         <div className="above-the-fold-buttons-container">
           <button className="above-the-fold-button">View Services</button>

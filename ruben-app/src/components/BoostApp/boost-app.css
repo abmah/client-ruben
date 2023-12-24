@@ -1,0 +1,54 @@
+.boost-app-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  align-items: center;
+  color: #192430;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.blue-lines-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.boost-app-left-section h1 {
+  width: 460px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+
+.boost-app-progress-section {
+  display: flex;
+  gap: 19px;
+
+}
+
+.boost-app-left-section-progress-lables {
+  margin-top: 24px;
+}
+
+.boost-app-left-section {
+  margin-left: 390px;
+}
+
+.gray-flower {
+  margin-right: 200px;
+}
+
+.boost-app-left-section-progress-lables p {
+  color: #192430;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 50px;
+}

@@ -14,7 +14,8 @@ function AboveTheFoldSectionThree() {
           <strong className="above-the-fold-main-text-bold">Tech</strong> Stack
         </h1>
         <p className="above-the-fold-sub-text">
-          Flexibly assign high caliber experts to strengthen your projects
+          Improve efficiency and reduce costs with cutting-edge tech
+          implementations
         </p>
         <div className="above-the-fold-buttons-container">
           <button className="above-the-fold-button">View Services</button>
@@ -23,16 +24,16 @@ function AboveTheFoldSectionThree() {
           </button>
         </div>
         <div className="above-the-fold-section-navigation">
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-three-talent">
             <div className="above-the-fold-section-navigation-child-line-disabled "></div>
             <p>Talent Augmentation</p>
           </div>
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-three-skills">
             <div className="above-the-fold-section-navigation-child-line-disabled"></div>
             <p>Skills Uplifting</p>
           </div>
           <div className="above-the-fold-section-navigation-child">
-            <div className="above-the-fold-section-navigation-child-line"></div>
+            <div className="above-the-fold-section-navigation-child-line section-three-tech"></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Tech Transformation
             </p>

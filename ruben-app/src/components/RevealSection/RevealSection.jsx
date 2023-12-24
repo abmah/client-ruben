@@ -1,12 +1,11 @@
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import WhatWeDo from "../WhatWeDo/WhatWeDo";
-
+import PropTypes from "prop-types";
 gsap.registerPlugin(ScrollTrigger);
 import "./reveal.css";
 
-function RevealSection() {
+function RevealSection(props) {
   const wrapper = useRef(null);
 
   let svgDimensions = { width: 211, height: 252 };
@@ -29,7 +28,8 @@ function RevealSection() {
 
   const handleResize = () => {
     const newWidth = window.innerWidth;
-    const newPosition = { x: newWidth / 2 - 114, y: 1000 / 2 - 100 };
+    const newHeight = window.innerHeight;
+    const newPosition = { x: newWidth / 2 - 114, y: newHeight / 2 - 100 };
     setPosition(newPosition);
   };
 
@@ -47,7 +47,7 @@ function RevealSection() {
   useLayoutEffect(() => {
     let revealAnimation = gsap.context(() => {
       // Use a timeline to control both the pinning and scaling animation
-      const tl = gsap.timeline({
+      gsap.timeline({
         scrollTrigger: {
           trigger: ".reveal-section",
           start: "top top",
@@ -58,7 +58,7 @@ function RevealSection() {
             let newScale = 1 + self.progress * 25;
             setPosition({
               x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
-              y: 1000 / 2 - (svgDimensions.height * newScale) / 2,
+              y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
             });
             console.log(newScale);
             setScale(newScale);
@@ -74,9 +74,7 @@ function RevealSection() {
 
   return (
     <div ref={wrapper} className="reveal-section-wrapper">
-      <div className="reveal-section">
-        <WhatWeDo />
-      </div>
+      <div className="reveal-section">{props.children}</div>
       <svg className="clip-path-svg">
         <defs>
           <clipPath id="myClipPath">
@@ -88,5 +86,7 @@ function RevealSection() {
     </div>
   );
 }
-
+RevealSection.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 export default RevealSection;

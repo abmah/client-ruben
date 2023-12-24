@@ -25,17 +25,17 @@ function AboveTheFoldSectionOne() {
           </button>
         </div>
         <div className="above-the-fold-section-navigation">
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-one-talent">
             <div className="above-the-fold-section-navigation-child-line "></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Talent Augmentation
             </p>
           </div>
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-one-skills">
             <div className="above-the-fold-section-navigation-child-line-disabled"></div>
             <p>Skills Uplifting</p>
           </div>
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-one-tech">
             <div className="above-the-fold-section-navigation-child-line-disabled"></div>
             <p>Tech Transformation</p>
           </div>

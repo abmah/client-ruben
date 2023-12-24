@@ -1,7 +1,7 @@
 .reveal-section-wrapper {
   width: 100%;
   position: relative;
-
+  height: 100vh;
 }
 
 .reveal-section {

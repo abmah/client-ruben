@@ -19,16 +19,12 @@ SubMenu.propTypes = {
 
 function SubMenu({ goBack, children }) {
   return (
-    <div className="mobile-menu-sub-item">
-      <div className="left-faceing-arrow" onClick={goBack}>
-        <img
-          className="left-facing-arrow"
-          src={LeftFacingArrow}
-          alt="left-facing-arrow"
-        />
+    <>
+      <div className="mobile-go-back-arrow" onClick={goBack}>
+        <img src={LeftFacingArrow} alt="left-facing-arrow" />
       </div>
       <div>{children}</div>
-    </div>
+    </>
   );
 }
 
@@ -104,7 +100,9 @@ export default function MobileMenu() {
         </>
       ) : (
         // Render sub-menu when a main item is clicked
-        <SubMenu goBack={handleGoBack}>{renderSubMenuContent()}</SubMenu>
+        <div className="mobile-menu-sub-item">
+          <SubMenu goBack={handleGoBack}>{renderSubMenuContent()}</SubMenu>
+        </div>
       )}
       <div className="mobile-menu-bottom">
         <div className="whatsapp-logo-button">

@@ -9,7 +9,9 @@ function Skills() {
   return (
     <div className="sub-menu sub-menu-skills">
       <div className="sub-menu-first-item sub-menu-first-item-skills">
-        <p className="sub-menu-first-item-title ">Skills Uplifting</p>
+        <p className="sub-menu-first-item-title sub-menu-first-item-title-skills">
+          Skills Uplifting
+        </p>
         <div className="sub-menu-first-item-arrow">
           <img src={TopLeftArrow} alt="arrow" />
         </div>

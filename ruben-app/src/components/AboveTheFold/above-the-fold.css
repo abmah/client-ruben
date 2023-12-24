@@ -1,6 +1,5 @@
 :root {
   --progress: 0;
-
 }
 
 .above-the-fold-container {
@@ -15,8 +14,6 @@
   position: relative;
   height: 890px;
   margin-top: 20px;
-
-
 }
 
 .above-the-fold-section {
@@ -28,20 +25,19 @@
   border-radius: 16px;
   padding-top: 10px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .above-the-fold-right-section {
   margin-top: 150px;
 }
 
-
 .above-the-fold-section-one {
   background-color: #718096;
-
 }
 
 .above-the-fold-section-two {
-  background-color: #F9B934;
+  background-color: #f9b934;
 }
 
 .above-the-fold-section-two * {
@@ -55,19 +51,14 @@
 .above-the-fold-section-one img,
 .above-the-fold-section-three img {
   margin-top: 150px;
-
 }
 
 .above-the-fold-section-three {
-  background-color: #2D3748;
+  background-color: #2d3748;
 }
 
-
-
-
-
 .above-the-fold-main-text {
-  color: #FFF;
+  color: #fff;
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
@@ -78,7 +69,7 @@
 
 .above-the-fold-sub-text {
   margin-top: 0;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -99,7 +90,7 @@
   background-color: white;
   border: none;
   border-radius: 28px;
-  color: #222B38;
+  color: #222b38;
   font-size: 18px;
   font-weight: 500;
 }
@@ -120,7 +111,6 @@
   font-weight: 600;
 }
 
-
 .above-the-fold-section-navigation-child {
   width: 192px;
 }
@@ -128,14 +118,14 @@
 .above-the-fold-section-navigation-child-line-disabled {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
 .above-the-fold-section-navigation-child-line {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.20);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 
   &:before {
@@ -148,11 +138,10 @@
     background-color: #fff;
     border-radius: 5px;
   }
-
 }
 
 .navigation-line-blue {
-  background-color: rgba(25, 36, 48, 0.20);
+  background-color: rgba(25, 36, 48, 0.2);
 
   &:before {
     background-color: #192430;
@@ -171,28 +160,109 @@
   background-color: #fff;
 
   border-radius: 5px;
-
 }
 
 
 
-@media screen and (max-width: 1400px) {
-  /* .above-the-fold-section img {
+@media screen and (max-width: 1750px) {
+
+
+
+  .above-the-fold-section img {
+    width: 700px;
+    margin-left: -30px;
+    margin-top: 20px;
+
+  }
+
+  .above-the-fold-section-two img {
+    margin-top: 300px;
+  }
+
+  .above-the-fold-right-section {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1450px) and (max-width: 1600px) {
+
+  .above-the-fold-container {
+
+    height: fit-content;
+    margin-top: 10px;
+  }
+
+  .above-the-fold-section {
+    gap: 160px;
+    padding-bottom: 0px;
+    height: 700px;
+    margin-top: 0px;
+  }
+
+  .above-the-fold-main-text {
+    font-size: 48px;
+    width: 640px;
+    margin-top: 80px;
+  }
+
+  .above-the-fold-sub-text {
+    font-size: 16px;
+  }
+
+  .above-the-fold-section img {
+    margin-top: 100px;
     width: 600px;
     margin-left: -30px;
-  } */
+  }
+
+  .above-the-fold-section-two img {
+    margin-top: 290px;
+  }
+
+
+
+
+}
+
+
+@media screen and (max-width: 1450px) {
+
+  .above-the-fold-section img {
+    width: 500px;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .above-the-fold-right-section {
+    margin-left: 60px;
+  }
+
+  .above-the-fold-section img {
+    display: none;
+  }
 
 }
 
 @media screen and (max-width: 768px) {
-
   .above-the-fold-container {
+    overflow: hidden;
     width: 94vw;
 
+    height: 500px;
+    padding-top: 160px;
+    position: relative;
   }
 
   .above-the-fold-section {
-    margin-top: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .above-the-fold-right-section {
+    margin-top: 133px;
+    margin-left: 4vw;
   }
 
   .above-the-fold-section img {
@@ -201,18 +271,48 @@
 
   .above-the-fold-section-navigation {
     position: absolute;
+    left: 50%;
+    width: 596px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 
-    /* left: 50%;
-    transform: translateX(-50%); */
+  .above-the-fold-section-navigation>div {
+    width: 192px;
   }
 
   .above-the-fold-main-text {
-    color: #FFF;
+    color: #fff;
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    width: 336px;
+    max-width: 336px;
+  }
+
+  .section-one-talent {
+    order: 1;
+  }
+
+  .section-one-skill {
+    order: 2;
+  }
+
+  .section-one-tech {
+    order: 3;
+  }
+
+  .section-three-talent {
+    order: 1;
+  }
+
+  .section-three-tech {
+    order: 2;
   }
 
   .above-the-fold-sub-text {
@@ -222,7 +322,6 @@
     width: 336px;
   }
 
-
   .lets-talk-button {
     display: none;
   }
@@ -230,4 +329,9 @@
   .above-the-fold-button {
     width: 100%;
   }
+
+
+
+
+
 }
