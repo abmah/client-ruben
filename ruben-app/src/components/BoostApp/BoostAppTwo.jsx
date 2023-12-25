@@ -26,7 +26,11 @@ function BoostApp() {
           </div>
         </div>
       </div>
-      <img className="gray-flower" src={YellowFlower} alt="gray-flower" />
+      <img
+        className="boost-app-flower"
+        src={YellowFlower}
+        alt="boost-app-flower"
+      />
     </div>
   );
 }

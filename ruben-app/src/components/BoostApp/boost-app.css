@@ -1,12 +1,13 @@
 .boost-app-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 100px;
   align-items: center;
   color: #192430;
-  height: 100vh;
+  height: 900px;
   position: relative;
   overflow: hidden;
+
 }
 
 
@@ -39,7 +40,7 @@
   margin-left: 390px;
 }
 
-.gray-flower {
+.boost-app-flower {
   margin-right: 200px;
 }
 
@@ -51,4 +52,87 @@
   font-weight: 500;
   line-height: 32px;
   margin-bottom: 50px;
+}
+
+
+.progress-white {
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+  .blue-lines-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width:970px) {
+
+  .progress-white {
+    display: block;
+  }
+
+  .boost-app-left-section-progress-lables-white p {
+    color: white;
+  }
+
+  .progress {
+    display: none;
+  }
+
+  .boost-app-section {
+    align-items: start;
+  }
+
+  .blue-lines-background {
+    display: none;
+  }
+
+  .boost-app-left-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
+
+  .boost-app-left-section h1 {
+    line-height: normal;
+    /* width: 336px; */
+    margin-top: 50px;
+    line-height: normal;
+    width: 336px;
+    font-size: 24px;
+    margin-left: 27px;
+
+  }
+
+
+
+  .boost-app-progress-section {
+    margin-top: 0px;
+    align-self: center;
+
+  }
+
+  .boost-app-left-section {
+    gap: 150px;
+  }
+
+  .boost-app-left-section {
+    margin: 0;
+  }
+
+  .boost-app-flower {
+    margin: 0;
+  }
+
+  .boost-app-flower {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: -1;
+  }
+
+
+
 }

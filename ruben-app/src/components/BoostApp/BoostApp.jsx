@@ -1,6 +1,7 @@
 import "./boost-app.css";
 import GrayFlower from "./gray-flower.svg";
 import Progress from "./progress.svg";
+import ProgressWhite from "./progress-white.svg";
 import LinesBlue from "./lines-blue.svg";
 
 function BoostApp() {
@@ -10,8 +11,9 @@ function BoostApp() {
       <div className="boost-app-left-section">
         <h1>Boost app performance, innovate at scale</h1>
         <div className="boost-app-progress-section">
-          <img src={Progress} alt="progress" />
-          <div className="boost-app-left-section-progress-lables">
+          <img className="progress" src={Progress} alt="progress" />
+          <img className="progress-white" src={ProgressWhite} alt="progress" />
+          <div className="boost-app-left-section-progress-lables boost-app-left-section-progress-lables-white">
             <p>Infrastructur Modernization</p>
             <p>Data Security</p>
             <p>Data Analytics</p>
@@ -19,7 +21,11 @@ function BoostApp() {
           </div>
         </div>
       </div>
-      <img className="gray-flower" src={GrayFlower} alt="gray-flower" />
+      <img
+        className="boost-app-flower"
+        src={GrayFlower}
+        alt="boost-app-flower"
+      />
     </div>
   );
 }

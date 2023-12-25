@@ -17,14 +17,10 @@ function App() {
       <AboveTheFold />
       <RevealSection>
         <WhatWeDo />
-        <BoostApp />
-        <BoostAppTwo />
-        <BoostAppThree />
       </RevealSection>
-
-      {/* <PlaceHolder /> */}
-      {/* <WhatWeDo /> */}
-      {/* <div className="line1"></div> */}
+      <BoostApp />
+      <BoostAppTwo />
+      <BoostAppThree />
     </>
   );
 }

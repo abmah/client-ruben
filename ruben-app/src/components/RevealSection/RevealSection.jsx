@@ -1,14 +1,15 @@
-import { useEffect, useState, useRef, useLayoutEffect } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PropTypes from "prop-types";
-gsap.registerPlugin(ScrollTrigger);
 import "./reveal.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function RevealSection(props) {
   const wrapper = useRef(null);
-
-  let svgDimensions = { width: 211, height: 252 };
+  const clipPathRef = useRef(null);
+  const svgDimensions = { width: 211, height: 252 };
 
   const [position, setPosition] = useState({
     x: window.innerWidth / 2 - svgDimensions.width / 2,
@@ -16,68 +17,71 @@ function RevealSection(props) {
   });
   const [scale, setScale] = useState(1);
 
-  const updateClipPath = () => {
-    const clipPath = document.getElementById("myClipPath");
-    if (clipPath) {
-      clipPath.setAttribute(
+  // Memoize functions and objects
+  const updateClipPath = useMemo(() => {
+    return () => {
+      clipPathRef.current.setAttribute(
         "transform",
         `translate(${position.x} ${position.y}) scale(${scale})`
       );
-    }
-  };
+    };
+  }, [position, scale]);
 
-  const handleResize = () => {
-    const newWidth = window.innerWidth;
-    const newHeight = window.innerHeight;
-    const newPosition = { x: newWidth / 2 - 114, y: newHeight / 2 - 100 };
-    setPosition(newPosition);
-  };
+  const handleResize = useMemo(() => {
+    const debounceResize = debounce(() => {
+      const newWidth = window.innerWidth;
+      const newHeight = window.innerHeight;
+      const newScale = 1 + (scale - 1) * (newWidth / window.innerWidth);
+      setPosition({
+        x: newWidth / 2 - (svgDimensions.width * newScale) / 2,
+        y: newHeight / 2 - (svgDimensions.height * newScale) / 2,
+      });
+      setScale(newScale);
+    }, 200); // Adjust the debounce time as needed
+
+    return debounceResize;
+  }, [scale, svgDimensions.width, svgDimensions.height]);
 
   useEffect(() => {
     updateClipPath();
-  }, [position, scale]);
+  }, [position, scale, updateClipPath]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [handleResize]); // Adjust the dependencies if needed
 
-  useLayoutEffect(() => {
-    let revealAnimation = gsap.context(() => {
-      // Use a timeline to control both the pinning and scaling animation
-      gsap.timeline({
-        scrollTrigger: {
-          trigger: ".reveal-section",
-          start: "top top",
-          end: "+=2000",
-          pin: true,
-          onUpdate: (self) => {
-            // Update the scale based on the scroll position
-            let newScale = 1 + self.progress * 25;
-            setPosition({
-              x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
-              y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
-            });
-            console.log(newScale);
-            setScale(newScale);
-          },
+  useEffect(() => {
+    const revealAnimation = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".reveal-section",
+        start: "top top",
+        end: "+=2000",
+        pin: true,
+        onUpdate: (self) => {
+          // Update the scale based on the scroll position
+          const newScale = 1 + self.progress * 25;
+          setPosition({
+            x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
+            y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
+          });
+          setScale(newScale);
         },
-      });
+      },
+    });
 
-      // Add any other animations you want here, for example:
-      // tl.to(".your-other-element", { opacity: 0, duration: 1 });
-    }, wrapper);
     return () => revealAnimation.revert();
-  }, [svgDimensions.width, svgDimensions.height]);
+  }, []);
 
   return (
     <div ref={wrapper} className="reveal-section-wrapper">
       <div className="reveal-section">{props.children}</div>
+
       <svg className="clip-path-svg">
         <defs>
-          <clipPath id="myClipPath">
+          <clipPath id="myClipPath" ref={clipPathRef}>
             <path d="M211 0H164.942V46.0575H211V0Z" />
             <path d="M12.8503 46.0866H164.942V92.3124H211V205.725H164.942V251.819H12.8503C5.7508 251.819 0 246.068 0 238.968V58.9369C0 51.8374 5.7508 46.0866 12.8503 46.0866Z" />
           </clipPath>
@@ -86,7 +90,22 @@ function RevealSection(props) {
     </div>
   );
 }
+
 RevealSection.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
 export default RevealSection;
+
+// Debounce function
+function debounce(func, delay) {
+  let timeout;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      func.apply(context, args);
+    }, delay);
+  };
+}

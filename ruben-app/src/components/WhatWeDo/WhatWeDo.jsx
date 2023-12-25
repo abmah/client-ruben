@@ -12,7 +12,7 @@ function WhatWeDo() {
         alt="background-lines"
       />
       <div className="what-we-do-text-container">
-        <h1 className="what-we-do-text">
+        <h1 className="what-we-do-text what-we-do-text-main">
           Wrong <span className="what-we-do-text-highlight"> talent</span> is
           the top showstopper of a Transformation Journey.
         </h1>
@@ -21,6 +21,7 @@ function WhatWeDo() {
         </h1>
       </div>
       <img className="what-we-do-flower" src={Flower} alt="flower" />
+
       <div className="what-we-do-cards-container">
         <div className="what-we-do-card what-we-do-gray-card">
           <h1 className="what-we-do-card-highlight">Talent Augmentation</h1>

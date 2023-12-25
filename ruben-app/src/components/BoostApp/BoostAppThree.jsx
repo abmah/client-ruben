@@ -1,5 +1,5 @@
 import "./boost-app.css";
-import GrayFlower from "./gray-flower.svg";
+import GrayFlower from "./blue-flower.svg";
 import Progress from "./progress.svg";
 import LinesGray from "./gray-lines.svg";
 
@@ -19,7 +19,11 @@ function BoostApp() {
           </div>
         </div>
       </div>
-      <img className="gray-flower" src={GrayFlower} alt="gray-flower" />
+      <img
+        className="boost-app-flower"
+        src={GrayFlower}
+        alt="boost-app-flower"
+      />
     </div>
   );
 }
