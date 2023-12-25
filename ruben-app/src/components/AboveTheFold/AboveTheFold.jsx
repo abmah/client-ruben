@@ -33,7 +33,7 @@ function LandingPage() {
         scrollbar={true}
         modules={[Autoplay]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+        className="above-the-fold-swiper"
       >
         <SwiperSlide>
           <AboveTheFoldSectionOne />

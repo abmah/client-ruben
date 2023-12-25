@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import "./reveal.css";
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.ticker.lagSmoothing(0);
 
 function RevealSection(props) {
   const wrapper = useRef(null);
