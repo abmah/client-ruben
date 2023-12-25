@@ -1,0 +1,156 @@
+.who-we-are-wrapper {
+  height: 800px;
+  overflow: hidden;
+}
+
+.who-we-are-container {
+  color: #192430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.who-we-are-button {
+  width: 240px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #eff2f5;
+  border: none;
+  color: #2d3748;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+}
+
+
+.who-we-are-title {
+  color: #718096;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+}
+
+.who-we-are-subtitle {
+  margin-top: 0px;
+  color: #192430;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  width: 696px;
+  margin-bottom: 42px;
+}
+
+.people-images-container {
+
+  height: 300px;
+  position: relative;
+  width: 60%;
+}
+
+.person-image {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* .person-image {} */
+
+.person-image-one {
+  left: 30%;
+  top: 30px;
+
+}
+
+.person-image-two {
+  right: 50px;
+
+}
+
+.person-image-three {
+  left: 0;
+  top: 30px;
+
+  flex-shrink: 0;
+}
+
+.person-image-four {
+  left: 14%;
+  top: -50px;
+}
+
+.person-image-five {
+  right: 30%;
+  top: 90px;
+}
+
+.person-image-six {
+  left: 19%;
+  top: 150px;
+}
+
+.person-image-seven {
+  right: 22%;
+  top: 210px;
+}
+
+
+@media screen and (max-width:800px) {
+
+  .people-images-container {
+
+    height: 500px;
+
+
+  }
+
+  .person-image {
+    transform: scale(0.8);
+  }
+
+
+  .person-image-one {
+    top: 190px;
+    left: 30%;
+  }
+
+  .person-image-two {
+    right: -150px;
+  }
+
+  .person-image-three {
+    left: -150px;
+    top: -29px;
+  }
+
+  .person-image-four {
+    left: 30%;
+    top: 50px;
+  }
+
+  .person-image-five {
+    right: -20%;
+    top: 140px;
+  }
+
+  .person-image-six {
+    left: -20%;
+  }
+
+  .person-image-seven {
+    right: -170%;
+    top: 250px;
+  }
+}
