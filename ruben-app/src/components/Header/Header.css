@@ -64,6 +64,8 @@
   height: 40px;
   flex-shrink: 0;
   position: relative;
+
+  z-index: 10;
 }
 
 
@@ -100,6 +102,7 @@
 
 
 .sub-menu {
+  z-index: 9;
 
   background-color: #222B38;
   position: absolute;
@@ -116,6 +119,22 @@
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
 
+}
+
+.menu-active-wrapper {
+
+  width: 500px;
+  display: flex;
+  height: 400px;
+  position: absolute;
+  top: 40px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-item:hover .menu-active-wrapper {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .sub-menu-talent {

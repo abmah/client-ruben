@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   color: #192430;
+  overflow: hidden;
 }
 
 .achievements-title {

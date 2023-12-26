@@ -7,25 +7,28 @@ import CustomizedPrograms from "../../assets/customized-programs.svg";
 
 function Skills() {
   return (
-    <div className="sub-menu sub-menu-skills">
-      <div className="sub-menu-first-item sub-menu-first-item-skills">
-        <p className="sub-menu-first-item-title sub-menu-first-item-title-skills">
-          Skills Uplifting
-        </p>
-        <div className="sub-menu-first-item-arrow">
-          <img src={TopLeftArrow} alt="arrow" />
+    <>
+      <div className="sub-menu sub-menu-skills">
+        <div className="sub-menu-first-item sub-menu-first-item-skills">
+          <p className="sub-menu-first-item-title sub-menu-first-item-title-skills">
+            Skills Uplifting
+          </p>
+          <div className="sub-menu-first-item-arrow">
+            <img src={TopLeftArrow} alt="arrow" />
+          </div>
+        </div>
+        <div className="sub-menu-item">
+          <img src={OpenAcademy} alt="digital-experts" />
+          <p>Open Academy</p>
+        </div>
+
+        <div className="sub-menu-item">
+          <img src={CustomizedPrograms} alt="strategy-consultants" />
+          <p>Customized Programs</p>
         </div>
       </div>
-      <div className="sub-menu-item">
-        <img src={OpenAcademy} alt="digital-experts" />
-        <p>Open Academy</p>
-      </div>
-
-      <div className="sub-menu-item">
-        <img src={CustomizedPrograms} alt="strategy-consultants" />
-        <p>Customized Programs</p>
-      </div>
-    </div>
+      <div className="menu-active-wrapper"> </div>
+    </>
   );
 }
 
