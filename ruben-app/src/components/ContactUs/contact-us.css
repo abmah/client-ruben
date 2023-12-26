@@ -2,20 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-
 
 .contact-us-container {
   border-radius: 40px;
-  background: #222B38;
+  background: #222b38;
 
   width: 98%;
   display: flex;
   justify-content: space-around;
   padding-bottom: 138px;
-
-
 }
 
 .contact-us-text-section {
@@ -31,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   width: 840px;
-
 }
 
 .contact-us-form-section input,
@@ -40,7 +35,7 @@
   border-radius: 28px;
   width: 400px;
   border: none;
-  background: #181F28;
+  background: #181f28;
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
@@ -64,7 +59,6 @@
 .contact-us-form-section textarea:focus,
 .contact-us-form-section input:focus {
   outline: none;
-
 }
 
 .contact-us-input-elements {
@@ -91,25 +85,22 @@
 }
 
 .contact-us-title {
-  color: #F9B934;
+  color: #f9b934;
   font-family: Outfit;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
-
 }
 
 .contact-us-sub-title {
-  color: #FFF;
+  color: #fff;
   font-family: Outfit;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 64px;
-
 }
-
 
 .contact-us-button {
   width: 240px;
@@ -127,7 +118,6 @@
   align-self: flex-end;
 }
 
-
 .contact-us-button-arrow {
   background-color: #222b38;
   width: 52px;
@@ -144,8 +134,7 @@
   margin-top: 16px;
 }
 
-@media screen and (max-width:1400px) {
-
+@media screen and (max-width: 1400px) {
   .contact-us-form-section {
     width: 60%;
   }
@@ -157,16 +146,12 @@
   .form-textarea {
     width: 100%;
   }
-
-
 }
 
-@media screen and (max-width:1280px) {
-
+@media screen and (max-width: 1280px) {
   .contact-us-container {
     flex-direction: column;
     align-items: flex-start;
-
   }
 
   .contact-us-text-section {
@@ -183,14 +168,11 @@
   .contact-us-form-section input {
     width: 450px;
   }
-
 }
 
-@media screen and (max-width:1080px) {
-
+@media screen and (max-width: 1080px) {
   .contact-us-form-section {
     width: 450px;
-
   }
 
   .contact-us-form-section textarea {
@@ -198,14 +180,12 @@
   }
 }
 
-@media screen and (max-width:800px) {
-
+@media screen and (max-width: 800px) {
   .contact-us-text-section {
     width: 336px;
   }
 
   .contact-us-title {
-
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -213,7 +193,6 @@
   }
 
   .contact-us-sub-title {
-
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -221,14 +200,11 @@
   }
 }
 
-@media screen and (max-width:600px) {
-
-
-
+@media screen and (max-width: 600px) {
 
   .contact-us-form-section textarea,
   .contact-us-form-section input {
-    width: 100%
+    width: 100%;
   }
 
   .contact-us-form-section {

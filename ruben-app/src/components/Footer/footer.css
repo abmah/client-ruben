@@ -29,8 +29,8 @@
   height: 1px;
   width: 100%;
   background-color: #B2B9C8;
-  margin-top: 30px;
-  ;
+  margin-top: 92px;
+
 }
 
 .footer-bottom-content {
@@ -79,7 +79,10 @@
 
   }
 
-  /* Stack items vertically */
+  .footer-line {
+    margin-top: 55px;
+  }
+
   .footer-container,
   .footer-content,
   .footer-bottom-content,
