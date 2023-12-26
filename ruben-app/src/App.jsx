@@ -11,6 +11,7 @@ import BoostAppTwo from "./components/BoostApp/BoostAppTwo";
 import BoostAppThree from "./components/BoostApp/BoostAppThree";
 import Achievements from "./components/Achievements/Achievements";
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
       <BoostAppThree />
       <Achievements />
       <WhoWeAre />
+      <ContactUs />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

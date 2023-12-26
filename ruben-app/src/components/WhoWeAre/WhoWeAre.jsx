@@ -18,7 +18,7 @@ function WhoWeAre() {
           Lorem Ipsum is simply dummy text of the printing{" "}
         </h1>
         <button className="who-we-are-button">
-          <p>BUTTON</p>
+          <p>LOREMIPS</p>
           <div className="achievement-button-arrow">
             <img src={TopRightArrow} alt="top-right-arrow" />
           </div>

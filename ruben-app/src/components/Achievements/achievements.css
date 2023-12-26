@@ -69,12 +69,16 @@
   background: #eff2f5;
   border: none;
   color: #2d3748;
-  font-size: 16px;
+
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
+}
+
+.achievement-slide button p {
+  font-size: 16px;
 }
 
 .achievement-button-arrow {
