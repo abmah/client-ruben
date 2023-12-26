@@ -109,10 +109,12 @@
 
 .above-the-fold-section-navigation-child-selected {
   font-weight: 600;
+  text-wrap: nowrap;
 }
 
 .above-the-fold-section-navigation-child {
   width: 192px;
+  text-wrap: nowrap;
 }
 
 .above-the-fold-section-navigation-child-line-disabled {

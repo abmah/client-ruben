@@ -198,7 +198,7 @@
   }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
 
   .contact-us-text-section {
     width: 336px;
@@ -219,6 +219,12 @@
     font-weight: 600;
     line-height: normal;
   }
+}
+
+@media screen and (max-width:600px) {
+
+
+
 
   .contact-us-form-section textarea,
   .contact-us-form-section input {
