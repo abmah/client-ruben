@@ -1,13 +1,13 @@
-import "./Header.css";
-import TopLeftArrow from "../../assets/top-right-arrow.svg";
+import "../Header.css";
+import TopLeftArrow from "../../../assets/top-right-arrow.svg";
 
-import DigitalExperts from "../../assets/digital-experts.svg";
+import DigitalExperts from "../../../assets/digital-experts.svg";
 
-import StrategyConsultants from "../../assets/strategy-consultants.svg";
+import StrategyConsultants from "../../../assets/strategy-consultants.svg";
 
-import OperationsConsultants from "../../assets/operations-consultants.svg";
+import OperationsConsultants from "../../../assets/operations-consultants.svg";
 
-import HourlyBasedExperts from "../../assets/hourly-based-experts.svg";
+import HourlyBasedExperts from "../../../assets/hourly-based-experts.svg";
 
 function Talent() {
   return (

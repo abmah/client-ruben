@@ -1,9 +1,9 @@
-import "./Header.css";
-import TopLeftArrow from "../../assets/top-right-arrow.svg";
+import "../Header.css";
+import TopLeftArrow from "../../../assets/top-right-arrow.svg";
 
-import OpenAcademy from "../../assets/open-academy.svg";
+import OpenAcademy from "../../../assets/open-academy.svg";
 
-import CustomizedPrograms from "../../assets/customized-programs.svg";
+import CustomizedPrograms from "../../../assets/customized-programs.svg";
 
 function Skills() {
   return (

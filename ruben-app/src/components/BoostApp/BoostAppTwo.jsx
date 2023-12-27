@@ -1,10 +1,10 @@
 import "./boost-app.css";
 
-import Progress from "./progress.svg";
+import Progress from "../../assets/progress.svg";
 
-import YellowLines from "./yellow-lines.svg";
+import YellowLines from "../../assets/yellow-lines.svg";
 
-import YellowFlower from "./yellow-flower.svg";
+import YellowFlower from "../../assets/yellow-flower.svg";
 
 function BoostApp() {
   return (

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import RightFacingArrow from "../../assets/right-facing-arrow.svg";
-import RightFacingArrowBlue from "../../assets/right-facing-arrow-blue.svg";
-import LeftFacingArrow from "../../assets/left-facing-arrow.svg";
-import WhatsappLogo from "../../assets/whatsapp.svg";
+import RightFacingArrow from "../../../assets/right-facing-arrow.svg";
+import RightFacingArrowBlue from "../../../assets/right-facing-arrow-blue.svg";
+import LeftFacingArrow from "../../../assets/left-facing-arrow.svg";
+import WhatsappLogo from "../../../assets/whatsapp.svg";
 
-import "./Header.css";
+import "../Header.css";
 import PropTypes from "prop-types";
 
 import About from "./About";
@@ -59,6 +59,10 @@ export default function MobileMenu() {
 
   return (
     <div className={`mobile-menu-content ${currentLevel}`}>
+      <select className="language-change-button">
+        <option value="EN">EN</option>
+        <option value="AR">AR</option>
+      </select>
       <div className="mobile-menu-header"></div>
 
       {currentLevel === "main" ? (

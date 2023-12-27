@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import AboveTheFoldSectionOne from "./AboveTheFoldSectionOne";
-import AboveTheFoldSectionTwo from "./AboveTheFoldSectionTwo";
-import AboveTheFoldSectionThree from "./AboveTheFoldSectionThree";
+import AboveTheFoldSectionOne from "./Items/AboveTheFoldSectionOne";
+import AboveTheFoldSectionTwo from "./Items/AboveTheFoldSectionTwo";
+import AboveTheFoldSectionThree from "./Items/AboveTheFoldSectionThree";
 
 import "swiper/css";
 import "swiper/css/pagination";

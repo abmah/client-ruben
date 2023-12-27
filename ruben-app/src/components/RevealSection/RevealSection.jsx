@@ -1,13 +1,58 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import PropTypes from "prop-types";
+
 import "./reveal.css";
+import Flower from "../../assets/flower.svg";
+import BackgroundLines from "../../assets/background-lines-lightgray.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
 
-function RevealSection(props) {
+function WhatWeDo() {
+  return (
+    <div className="what-we-do-section">
+      <img
+        className="background-lines"
+        src={BackgroundLines}
+        alt="background-lines"
+      />
+      <div className="what-we-do-text-container">
+        <h1 className="what-we-do-text what-we-do-text-main">
+          Wrong <span className="what-we-do-text-highlight"> talent</span> is
+          the top showstopper of a Transformation Journey.
+        </h1>
+        <h1 className="what-we-do-text">
+          We offer 3 solutions to accelerate transformation.
+        </h1>
+      </div>
+      <img className="what-we-do-flower" src={Flower} alt="flower" />
+
+      <div className="what-we-do-cards-container">
+        <div className="what-we-do-card what-we-do-gray-card">
+          <h1 className="what-we-do-card-highlight">Talent Augmentation</h1>
+          <p className="what-we-do-card-sub">
+            Access to high profile experts in start/stop model
+          </p>
+        </div>
+        <div className="what-we-do-card what-we-do-yellow-card">
+          <h1 className="what-we-do-card-highlight">Upskilling Programs</h1>
+          <p className="what-we-do-card-sub">
+            Access to high profile experts in start/stop model
+          </p>
+        </div>
+        <div className="what-we-do-card what-we-do-blue-card">
+          <h1 className="what-we-do-card-highlight">Cloud Tech</h1>
+          <p className="what-we-do-card-sub">
+            Access to high profile experts in start/stop model
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function RevealSection() {
   const wrapper = useRef(null);
   const clipPathRef = useRef(null);
   const svgDimensions = { width: 211, height: 252 };
@@ -78,7 +123,9 @@ function RevealSection(props) {
 
   return (
     <div ref={wrapper} className="reveal-section-wrapper">
-      <div className="reveal-section">{props.children}</div>
+      <div className="reveal-section">
+        <WhatWeDo />
+      </div>
 
       <svg className="clip-path-svg">
         <defs>
@@ -91,10 +138,6 @@ function RevealSection(props) {
     </div>
   );
 }
-
-RevealSection.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default RevealSection;
 

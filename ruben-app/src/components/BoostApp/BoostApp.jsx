@@ -1,8 +1,8 @@
 import "./boost-app.css";
-import GrayFlower from "./gray-flower.svg";
-import Progress from "./progress.svg";
-import ProgressWhite from "./progress-white.svg";
-import LinesBlue from "./lines-blue.svg";
+import GrayFlower from "../../assets/gray-flower.svg";
+import Progress from "../../assets/progress.svg";
+import ProgressWhite from "../../assets/progress-white.svg";
+import LinesBlue from "../../assets/lines-blue.svg";
 
 function BoostApp() {
   return (

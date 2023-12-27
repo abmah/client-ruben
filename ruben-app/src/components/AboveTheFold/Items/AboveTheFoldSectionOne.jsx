@@ -1,5 +1,5 @@
-import LandingGray from "../../assets/landing-gray.svg";
-
+import LandingGray from "../../../assets/landing-gray.svg";
+import "../above-the-fold.css";
 function AboveTheFoldSectionOne() {
   return (
     <div className="above-the-fold-section above-the-fold-section-one">

@@ -7,12 +7,12 @@ import MenuDropDown from "../../assets/menu-dropdown.svg";
 
 import WhatsappLogo from "../../assets/whatsapp.svg";
 
-import Talent from "./Talent";
+import Talent from "./Items/Talent";
 
-import Skills from "./Skills";
-import Tech from "./Tech";
+import Skills from "./Items/Skills";
+import Tech from "./Items/Tech";
 
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "./Items/MobileMenu";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,11 +73,15 @@ function Header() {
           </div>
         </div>
         <div className="header-rightside">
-          <div className="whatsapp-logo-button">
+          <button className="whatsapp-logo-button">
             <img src={WhatsappLogo} alt="whatsapp-logo" />
-          </div>
+          </button>
 
           <button className="contact-button">Contact</button>
+          <select className="language-change-button language-change-pc">
+            <option value="EN">EN</option>
+            <option value="AR">AR</option>
+          </select>
         </div>
       </div>
     </div>
@@ -85,4 +89,3 @@ function Header() {
 }
 
 export default Header;
-//https://unused-css.com/tools/clip-path-generator?p=22JwDgXMBsA0BMCMsB0kAM8I1pArEnA7LBAUuvHLkgMwAs4OISIws01q1St1wYaNAsHaduvTEngEQlSNwQTUqNtkiZKeaQTDxqXXBQ5cefXfpyHRJsLEY1aw1Tbt1HkNbCjRQNqAG4ABwAPPz8AYiVI1CA

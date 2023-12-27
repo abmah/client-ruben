@@ -1,13 +1,13 @@
-import "./Header.css";
-import TopLeftArrow from "../../assets/top-right-arrow.svg";
+import "../Header.css";
+import TopLeftArrow from "../../../assets/top-right-arrow.svg";
 
-import InfrastructureModernization from "../../assets/infrastructure-modernization.svg";
+import InfrastructureModernization from "../../../assets/infrastructure-modernization.svg";
 
-import DataAnalytics from "../../assets/data-analytics.svg";
+import DataAnalytics from "../../../assets/data-analytics.svg";
 
-import ProductivityandCollaboration from "../../assets/productivity-and-collaboration.svg";
+import ProductivityandCollaboration from "../../../assets/productivity-and-collaboration.svg";
 
-import SecurityandCompliance from "../../assets/SecurityandCompliance.svg";
+import SecurityandCompliance from "../../../assets/SecurityandCompliance.svg";
 function Tech() {
   return (
     <>
