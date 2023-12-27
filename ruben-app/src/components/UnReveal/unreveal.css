@@ -13,3 +13,33 @@
   top: 82%;
   transform: translate(-50%, -50%);
 }
+
+
+.unreveal-top-wrapper {
+  position: relative;
+}
+
+
+.unreveal-bottom-text-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 70%);
+  color: #2D3748;
+  text-align: center;
+  opacity: 0;
+}
+
+.unreveal-bottom-text-container h1 {
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+
+}
+
+.unreveal-text-gray {
+  margin-top: -75px;
+  opacity: .4;
+}

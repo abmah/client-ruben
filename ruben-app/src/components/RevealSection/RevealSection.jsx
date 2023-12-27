@@ -102,12 +102,12 @@ function RevealSection() {
   useEffect(() => {
     const revealAnimation = gsap.timeline({
       scrollTrigger: {
-        trigger: ".reveal-section",
+        trigger: ".reveal-section-top-wrapper",
         start: "top top",
         end: "+=2000",
         pin: true,
+        scrub: true,
         onUpdate: (self) => {
-          // Update the scale based on the scroll position
           const newScale = 1 + self.progress * 25;
           setPosition({
             x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
@@ -118,23 +118,37 @@ function RevealSection() {
       },
     });
 
+    revealAnimation.to(".what-we-do-main-text-container", {
+      opacity: -5,
+    });
+
     return () => revealAnimation.revert();
   }, [svgDimensions.width, svgDimensions.height]);
 
   return (
-    <div ref={wrapper} className="reveal-section-wrapper">
-      <div className="reveal-section">
-        <WhatWeDo />
+    <div className="reveal-section-top-wrapper">
+      <div className="what-we-do-main-text-container">
+        <h1>What We Do</h1>
+        <p>
+          DFME is a one-stop-shop for enterprise transformation needs. We
+          empower our clients to excel in 3 critical areas of transformation
+          projects: talent, technology, skills.
+        </p>
       </div>
+      <div ref={wrapper} className="reveal-section-wrapper">
+        <div className="reveal-section">
+          <WhatWeDo />
+        </div>
 
-      <svg className="clip-path-svg">
-        <defs>
-          <clipPath id="myClipPath" ref={clipPathRef}>
-            <path d="M211 0H164.942V46.0575H211V0Z" />
-            <path d="M12.8503 46.0866H164.942V92.3124H211V205.725H164.942V251.819H12.8503C5.7508 251.819 0 246.068 0 238.968V58.9369C0 51.8374 5.7508 46.0866 12.8503 46.0866Z" />
-          </clipPath>
-        </defs>
-      </svg>
+        <svg className="clip-path-svg">
+          <defs>
+            <clipPath id="myClipPath" ref={clipPathRef}>
+              <path d="M211 0H164.942V46.0575H211V0Z" />
+              <path d="M12.8503 46.0866H164.942V92.3124H211V205.725H164.942V251.819H12.8503C5.7508 251.819 0 246.068 0 238.968V58.9369C0 51.8374 5.7508 46.0866 12.8503 46.0866Z" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
     </div>
   );
 }

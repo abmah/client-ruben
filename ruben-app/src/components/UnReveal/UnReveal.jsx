@@ -58,12 +58,13 @@ function RevealSection() {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.timeline({
+      let unrevealAnim = gsap.timeline({
         scrollTrigger: {
-          trigger: ".unreveal-wrapper",
+          trigger: ".unreveal-top-wrapper",
           start: "top top",
           end: "+=2000",
           pin: true,
+          scrub: true,
           onUpdate: (self) => {
             // Update the scale based on the scroll position with reversed direction
             const newScale = 11 - self.progress * 11 + 1; // Adjusted the scale calculation
@@ -75,13 +76,22 @@ function RevealSection() {
           },
         },
       });
+      unrevealAnim.fromTo(
+        ".unreveal-bottom-text-container",
+        {
+          opacity: -20,
+        },
+        {
+          opacity: 1,
+        }
+      );
     });
 
     return () => ctx.revert();
   }, [svgDimensions.width, svgDimensions.height]);
 
   return (
-    <>
+    <div className="unreveal-top-wrapper">
       <div ref={wrapperRef} className="unreveal-wrapper">
         <div className="unreveal-container">
           <img src={Road} alt="road" />
@@ -95,7 +105,12 @@ function RevealSection() {
           </defs>
         </svg>
       </div>
-    </>
+
+      <div className="unreveal-bottom-text-container">
+        <h1>Reinvent What Your Business Could Be</h1>
+        <h1 className="unreveal-text-gray">Reinvent Talent / Tech / Skills</h1>
+      </div>
+    </div>
   );
 }
 
