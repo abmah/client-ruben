@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .unreveal-wrapper img {
@@ -16,6 +17,7 @@
 
 
 .unreveal-top-wrapper {
+  overflow: hidden;
   position: relative;
 }
 
@@ -24,7 +26,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 70%);
+  transform: translate(-50%, 100%);
   color: #2D3748;
   text-align: center;
   opacity: 0;
@@ -42,4 +44,27 @@
 .unreveal-text-gray {
   margin-top: -75px;
   opacity: .4;
+}
+
+
+@media screen and (max-width: 970px) {
+  .unreveal-bottom-text-container {
+    width: 336px;
+  }
+
+  .unreveal-bottom-text-container h1 {
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+  }
+
+  .unreveal-text-gray {
+    margin-top: -92px;
+  }
+
+
+
 }

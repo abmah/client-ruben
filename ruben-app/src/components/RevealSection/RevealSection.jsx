@@ -108,7 +108,7 @@ function RevealSection() {
         pin: true,
         scrub: true,
         onUpdate: (self) => {
-          const newScale = 1 + self.progress * 25;
+          const newScale = 1 + self.progress * 12;
           setPosition({
             x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
             y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,

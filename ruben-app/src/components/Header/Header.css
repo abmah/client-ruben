@@ -423,6 +423,32 @@
   padding-left: 8px;
 }
 
+.language-change-button option {
+  background-color: #EFF2F5;
+  color: #222B38;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  background-color: #EFF2F5;
+  width: 96px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../../assets/language-dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  position: absolute;
+  top: 17px;
+  right: 16px;
+
+}
+
 /* mobile styles */
 
 @media screen and (max-width: 1300px) {

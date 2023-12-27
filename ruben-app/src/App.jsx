@@ -14,14 +14,17 @@ import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 import UnReveal from "./components/UnReveal/UnReveal";
+import Cookies from "./components/Cookies/Cookies";
+import ScrollOverlay from "./components/ScrollOverlay/ScrollOverlay";
 
 function App() {
   return (
     <>
       <Header />
+      <Cookies />
+      <ScrollOverlay />
       <AboveTheFold />
       <RevealSection />
-
       <BoostApp />
       <BoostAppTwo />
       <BoostAppThree />
