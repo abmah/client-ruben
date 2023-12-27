@@ -119,7 +119,7 @@ function RevealSection() {
     });
 
     return () => revealAnimation.revert();
-  }, []);
+  }, [svgDimensions.width, svgDimensions.height]);
 
   return (
     <div ref={wrapper} className="reveal-section-wrapper">

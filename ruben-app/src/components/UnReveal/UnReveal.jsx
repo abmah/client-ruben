@@ -78,14 +78,14 @@ function RevealSection() {
     });
 
     return () => ctx.revert();
-  }, []);
+  }, [svgDimensions.width, svgDimensions.height]);
 
   return (
     <>
       <div ref={wrapperRef} className="unreveal-wrapper">
         <div className="unreveal-container">
           <img src={Road} alt="road" />
-        </div>{" "}
+        </div>
         <svg>
           <defs>
             <clipPath id="myClipPathtwo" ref={clipPathRefTwo}>

@@ -1,5 +1,5 @@
 import "./above-the-fold.css";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -19,6 +19,21 @@ function LandingPage() {
     document.documentElement.style.setProperty("--progress", `${percentage}%`);
   };
 
+  useEffect(() => {
+    // Function to update Swiper instance on window resize
+    const handleResize = () => {
+      if (swiperRef.current && swiperRef.current.swiper) {
+        swiperRef.current.swiper.update();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="above-the-fold-container">
       <Swiper
@@ -28,9 +43,7 @@ function LandingPage() {
         loop={true}
         autoplay={{
           delay: 4500,
-          disableOnInteraction: false,
         }}
-        scrollbar={true}
         modules={[Autoplay]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="above-the-fold-swiper"
