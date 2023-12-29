@@ -13,10 +13,11 @@
   gap: 0px;
   position: relative;
   height: 890px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .above-the-fold-section {
+
   display: flex;
   align-items: center;
   gap: 134px;

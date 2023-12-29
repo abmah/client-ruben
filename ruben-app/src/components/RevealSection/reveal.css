@@ -6,7 +6,7 @@
 
 .reveal-section {
   position: relative;
-  height: 1000px;
+  height: 100vh;
   clip-path: url(#myClipPath);
 
 }
@@ -62,7 +62,8 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  height: 1270px;
+  height: 100vh;
+
 }
 
 .what-we-do-text-container {
@@ -71,7 +72,7 @@
 
 .what-we-do-cards-container {
   position: absolute;
-  width: 65%;
+  width: 55%;
   height: 1000px;
 }
 
@@ -127,15 +128,18 @@
 
 .what-we-do-card {
   position: absolute;
+
 }
 
 .what-we-do-gray-card {
   top: 350px;
+  opacity: 0;
   left: 20px;
 }
 
 .what-we-do-yellow-card {
   bottom: 100px;
+  opacity: 0;
   left: 50px;
 }
 
@@ -147,6 +151,7 @@
 .what-we-do-blue-card {
   top: 500px;
   right: 0px;
+  opacity: 0;
 }
 
 .what-we-do-blue-card h1 {
@@ -159,6 +164,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  width: 400px
 }
 
 

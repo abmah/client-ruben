@@ -1,9 +1,11 @@
 .header-wrapper {
   position: fixed;
-  top: 65px;
+  top: 25px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0.9);
+  /* Use transform: scale(0.9) for scaling */
   width: 78%;
+  transform-origin: center center;
   z-index: 10;
 }
 
@@ -406,6 +408,7 @@
 }
 
 .language-change-pc {
+
   width: 60px;
   align-items: center;
   height: 30px;
@@ -416,10 +419,9 @@
   font-weight: 700;
   position: absolute;
   background-position: 80% center;
-  top: -45px;
+  top: -30px;
   right: 0;
   text-align: left;
-  /* Align text to the left */
   padding-left: 8px;
 }
 
@@ -461,6 +463,8 @@
 @media screen and (max-width: 900px) {
   .header-wrapper {
     width: 90%;
+    margin-top: 10px;
+    transform: translateX(-50%) scale(1);
   }
 
   .menu-open {

@@ -104,23 +104,47 @@ function RevealSection() {
       scrollTrigger: {
         trigger: ".reveal-section-top-wrapper",
         start: "top top",
-        end: "+=2000",
+        end: "+=2600",
         pin: true,
         scrub: true,
-        onUpdate: (self) => {
-          const newScale = 1 + self.progress * 12;
+      },
+    });
+
+    const textAnimation = gsap.to(
+      {},
+      {
+        onUpdate: () => {
+          const newScale = 1 + textAnimation.progress() * 12;
           setPosition({
             x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
             y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
           });
           setScale(newScale);
         },
-      },
-    });
-
+      }
+    );
     revealAnimation.to(".what-we-do-main-text-container", {
-      opacity: -5,
+      opacity: -2,
     });
+    revealAnimation.add(textAnimation);
+
+    // .what-we-do-flower
+
+    const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
+      opacity: 1,
+      scrub: false,
+    });
+    revealAnimation.add(grayCardAnimation);
+
+    const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
+      opacity: 1,
+    });
+    revealAnimation.add(yellowCardAnimation);
+
+    const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
+      opacity: 1,
+    });
+    revealAnimation.add(blueCardAnimation);
 
     return () => revealAnimation.revert();
   }, [svgDimensions.width, svgDimensions.height]);

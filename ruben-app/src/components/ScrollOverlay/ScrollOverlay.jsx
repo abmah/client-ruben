@@ -9,7 +9,7 @@ function ScrollOverlay() {
       const scrollY = window.scrollY || window.pageYOffset;
 
       // Check if the user has scrolled more than 300 pixels
-      if (scrollY > 300) {
+      if (scrollY > 1600) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
