@@ -104,7 +104,7 @@ function RevealSection() {
       scrollTrigger: {
         trigger: ".reveal-section-top-wrapper",
         start: "top top",
-        end: "+=2600",
+        end: "+=3000",
         pin: true,
         scrub: true,
       },
@@ -132,19 +132,32 @@ function RevealSection() {
 
     const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
       opacity: 1,
-      scrub: false,
+      x: 30,
     });
     revealAnimation.add(grayCardAnimation);
 
+    revealAnimation.to(".what-we-do-flower", {
+      rotate: 30,
+    });
+
     const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
       opacity: 1,
+      x: 30,
     });
     revealAnimation.add(yellowCardAnimation);
 
+    revealAnimation.to(".what-we-do-flower", {
+      rotate: 155,
+    });
+
     const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
       opacity: 1,
+      x: -30,
     });
     revealAnimation.add(blueCardAnimation);
+    revealAnimation.to(".what-we-do-flower", {
+      rotate: 270,
+    });
 
     return () => revealAnimation.revert();
   }, [svgDimensions.width, svgDimensions.height]);
