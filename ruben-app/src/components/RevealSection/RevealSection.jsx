@@ -100,11 +100,21 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
+    gsap.set(".what-we-do-flower", {
+      cssText: `
+      align-self: center;
+      width: 380px;
+  
+      position: static;
+      top: auto;
+      left: auto;
+      transform: none;`,
+    });
     const revealAnimation = gsap.timeline({
       scrollTrigger: {
         trigger: ".reveal-section-top-wrapper",
         start: "top top",
-        end: "+=3000",
+        end: "+=3500",
         pin: true,
         scrub: true,
       },
@@ -124,7 +134,7 @@ function RevealSection() {
       }
     );
     revealAnimation.to(".what-we-do-main-text-container", {
-      opacity: -2,
+      opacity: 0,
     });
     revealAnimation.add(textAnimation);
 

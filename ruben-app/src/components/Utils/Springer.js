@@ -54,6 +54,3 @@ function stepper(
   return reusedTuple
 }
 
-
-
-// use in ease functions const spring = Springer(0.7, 0.8); ease: spring

@@ -8,7 +8,6 @@
   position: relative;
   height: 100vh;
   clip-path: url(#myClipPath);
-
 }
 
 .what-we-do-wrapper-wrapper {
@@ -16,7 +15,6 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
 
 .what-we-do-main-text-container {
@@ -63,7 +61,6 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
-
 }
 
 .what-we-do-text-container {
@@ -128,7 +125,6 @@
 
 .what-we-do-card {
   position: absolute;
-
 }
 
 .what-we-do-gray-card {
@@ -164,15 +160,76 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  width: 400px
+  width: 400px;
 }
 
+@media screen and (max-width: 1600px) {
+  .what-we-do-main-text-container {
+    bottom: 26vh;
+  }
 
+  .what-we-do-main-text-container h1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .what-we-do-main-text-container p {
+    width: 506px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .what-we-do-text {
+    font-size: 32px;
+    font-style: normal;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .what-we-do-flower {
+    width: 350px;
+  }
+
+  .what-we-do-cards-container {
+    width: 74%;
+  }
+
+  .what-we-do-card-highlight {
+    font-size: 18px;
+  }
+
+  .what-we-do-card-sub {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  .what-we-do-gray-card {
+    top: 25%;
+  }
+
+  .what-we-do-blue-card {
+    top: 35%;
+  }
+
+  .what-we-do-yellow-card {
+    bottom: 39%;
+  }
+}
 
 @media screen and (max-width: 1230px) {
   .what-we-do-text {
     font-size: 32px;
     font-style: normal;
+  }
+
+  .what-we-do-cards-container {
+    width: 85%;
   }
 }
 
@@ -204,15 +261,7 @@
     display: none;
   }
 
-  .what-we-do-flower {
-    align-self: center;
-    width: 300px;
-    height: 300px;
-    position: static;
-    top: auto;
-    left: auto;
-    transform: none;
-  }
+
 
   .what-we-do-cards-container {
     position: relative;
@@ -240,23 +289,5 @@
 
   .what-we-do-card-sub {
     text-align: center;
-  }
-
-
-  .what-we-do-main-text-container h1 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
-  }
-
-  .what-we-do-main-text-container p {
-    width: 336px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    /* 177.778% */
   }
 }

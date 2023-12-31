@@ -17,9 +17,9 @@
 }
 
 .above-the-fold-section {
-
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 134px;
   position: relative;
   height: 780px;
@@ -31,6 +31,7 @@
 
 .above-the-fold-right-section {
   margin-top: 150px;
+  margin-right: 100px;
 }
 
 .above-the-fold-section-one {
@@ -165,17 +166,16 @@
   border-radius: 5px;
 }
 
-
-
 @media screen and (max-width: 1750px) {
+  .above-the-fold-container {
+    height: 700px;
 
-
+  }
 
   .above-the-fold-section img {
-    width: 700px;
+    width: 550px;
     margin-left: -30px;
-    margin-top: 20px;
-
+    margin-top: 110px;
   }
 
   .above-the-fold-section-two img {
@@ -183,23 +183,52 @@
   }
 
   .above-the-fold-right-section {
-    margin-top: 50px;
+    margin-top: 40px;
+  }
+
+  .above-the-fold-main-text {
+    font-size: 48px;
+    width: 640px;
+    margin-top: 80px;
+  }
+
+  .above-the-fold-sub-text {
+    font-size: 16px;
+  }
+
+  .above-the-fold-button {
+    width: 134px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .above-the-fold-section-navigation {
+    margin-top: 60px;
+    gap: 1px;
+  }
+
+  .above-the-fold-section-navigation-child p {
+    font-size: 16px;
+  }
+
+  .above-the-fold-section-navigation-child-line,
+  .above-the-fold-section-navigation-child-line-disabled {
+    width: 160px;
+  }
+
+  .above-the-fold-section {
+    gap: 14%;
   }
 }
 
 @media screen and (min-width: 1450px) and (max-width: 1600px) {
 
-  .above-the-fold-container {
-
-    height: fit-content;
-    margin-top: 10px;
-  }
 
   .above-the-fold-section {
     gap: 160px;
-    padding-bottom: 0px;
-    height: 700px;
-    margin-top: 0px;
+    /* padding-bottom: 0px; */
+    /* height: 700px; */
+    /* margin-top: 0px; */
   }
 
   .above-the-fold-main-text {
@@ -221,29 +250,33 @@
   .above-the-fold-section-two img {
     margin-top: 290px;
   }
-
-
-
-
 }
 
-
 @media screen and (max-width: 1450px) {
-
   .above-the-fold-section img {
     width: 500px;
     margin-left: -30px;
   }
+
+  .above-the-fold-main-text {
+    font-size: 40px;
+    width: 500px;
+  }
+
+
+
 }
 
 @media screen and (max-width: 1300px) {
   .above-the-fold-right-section {
     margin-left: 60px;
+
   }
 
   .above-the-fold-section img {
     display: none;
   }
+
 
 }
 
@@ -251,7 +284,6 @@
   .above-the-fold-container {
     overflow: hidden;
     width: 94vw;
-
     height: 500px;
     padding-top: 160px;
     position: relative;
@@ -264,7 +296,7 @@
   }
 
   .above-the-fold-right-section {
-    margin-top: 133px;
+    margin-top: 63px;
     margin-left: 4vw;
   }
 
@@ -333,8 +365,8 @@
     width: 100%;
   }
 
-
-
-
-
+  .above-the-fold-section-navigation-child-line,
+  .above-the-fold-section-navigation-child-line-disabled {
+    width: 190px;
+  }
 }

@@ -65,7 +65,25 @@
   opacity: 0;
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+@media screen and (max-width: 1550px) {
+
+  .scroll-overlay-line {
+    width: 70px;
+  }
+
+  .scroll-overlay-text {
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
   .scroll-overlay-wrapper {
     display: none;
   }
