@@ -21,6 +21,10 @@
   position: relative;
 }
 
+.clipped-road {
+  display: none;
+}
+
 
 .unreveal-bottom-text-container {
   position: absolute;
@@ -65,6 +69,47 @@
     margin-top: -92px;
   }
 
+}
 
+
+@media screen and (max-width: 900px) {
+
+  .unreveal-wrapper {
+    clip-path: none;
+    height: auto;
+    display: none;
+  }
+
+  .unreveal-top-wrapper {
+
+    height: 800PX;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clipped-road {
+    display: block;
+    width: 201.097px;
+    height: 196.076px;
+  }
+
+  .road-image {
+    display: none;
+  }
+
+  .unreveal-bottom-text-container {
+    position: static;
+    transform: none;
+    color: #2D3748;
+    text-align: center;
+  }
+
+  .unreveal-bottom-text-container {
+    opacity: 1 !important;
+  }
 
 }

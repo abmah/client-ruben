@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
 import Flower from "../../assets/flower.svg";
 import BackgroundLines from "../../assets/background-lines-lightgray.svg";
+import FlowerClipped from "../../assets/flower-clipped.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -110,70 +111,102 @@ function RevealSection() {
       left: auto;
       transform: none;`,
     });
-    const revealAnimation = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".reveal-section-top-wrapper",
-        start: "top top",
-        end: "+=3500",
-        pin: true,
-        scrub: true,
-      },
-    });
 
-    const textAnimation = gsap.to(
-      {},
-      {
-        onUpdate: () => {
-          const newScale = 1 + textAnimation.progress() * 12;
-          setPosition({
-            x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
-            y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
-          });
-          setScale(newScale);
+    const mm = gsap.matchMedia();
+    const breakPoint = 900;
+
+    let ctx = gsap.context(() => {
+      mm.add(
+        {
+          isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
+          isMobile: `(max-width: ${
+            breakPoint - 1
+          }px) and (prefers-reduced-motion: no-preference)`,
         },
-      }
-    );
-    revealAnimation.to(".what-we-do-main-text-container", {
-      opacity: 0,
-    });
-    revealAnimation.add(textAnimation);
+        (context) => {
+          let { isDesktop, isMobile } = context.conditions;
 
-    // .what-we-do-flower
+          if (isDesktop) {
+            const revealAnimation = gsap.timeline({
+              scrollTrigger: {
+                trigger: ".reveal-section-top-wrapper",
+                start: "top top",
+                end: "+=3500",
+                pin: true,
+                scrub: true,
+              },
+            });
 
-    const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
-      opacity: 1,
-      x: 30,
-    });
-    revealAnimation.add(grayCardAnimation);
+            const textAnimation = gsap.to(
+              {},
+              {
+                onUpdate: () => {
+                  const newScale = 1 + textAnimation.progress() * 12;
+                  setPosition({
+                    x:
+                      window.innerWidth / 2 -
+                      (svgDimensions.width * newScale) / 2,
+                    y:
+                      window.innerHeight / 2 -
+                      (svgDimensions.height * newScale) / 2,
+                  });
+                  setScale(newScale);
+                },
+              }
+            );
 
-    revealAnimation.to(".what-we-do-flower", {
-      rotate: 30,
-    });
+            revealAnimation.to(".what-we-do-main-text-container", {
+              opacity: 0,
+            });
+            revealAnimation.add(textAnimation);
 
-    const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
-      opacity: 1,
-      x: 30,
-    });
-    revealAnimation.add(yellowCardAnimation);
+            const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
+              opacity: 1,
+              x: 30,
+            });
+            revealAnimation.add(grayCardAnimation);
 
-    revealAnimation.to(".what-we-do-flower", {
-      rotate: 155,
-    });
+            revealAnimation.to(".what-we-do-flower", {
+              rotate: 30,
+            });
 
-    const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
-      opacity: 1,
-      x: -30,
-    });
-    revealAnimation.add(blueCardAnimation);
-    revealAnimation.to(".what-we-do-flower", {
-      rotate: 270,
-    });
+            const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
+              opacity: 1,
+              x: 30,
+            });
+            revealAnimation.add(yellowCardAnimation);
 
-    return () => revealAnimation.revert();
+            revealAnimation.to(".what-we-do-flower", {
+              rotate: 155,
+            });
+
+            const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
+              opacity: 1,
+              x: -30,
+            });
+            revealAnimation.add(blueCardAnimation);
+            revealAnimation.to(".what-we-do-flower", {
+              rotate: 270,
+            });
+          } else if (isMobile) {
+            // no specific animations for mobile at
+          }
+        }
+      );
+    });
+    return () => {
+      ctx.revert();
+      mm.kill();
+    };
   }, [svgDimensions.width, svgDimensions.height]);
 
   return (
     <div className="reveal-section-top-wrapper">
+      <img
+        className="clipped-flower"
+        src={FlowerClipped}
+        alt="clipped-flower"
+      />
       <div className="what-we-do-main-text-container">
         <h1>What We Do</h1>
         <p>

@@ -1,5 +1,6 @@
 import "./unreveal.css";
 import Road from "../../assets/road.svg";
+import ClippedRoad from "../../assets/clipped-road.svg";
 
 import { useEffect, useState, useRef, useMemo } from "react";
 import gsap from "gsap";
@@ -57,44 +58,68 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
+    const mm = gsap.matchMedia();
+    const breakPoint = 900;
+
     let ctx = gsap.context(() => {
-      let unrevealAnim = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".unreveal-top-wrapper",
-          start: "top top",
-          end: "+=1600",
-          pin: true,
-          scrub: true,
-          onUpdate: (self) => {
-            // Update the scale based on the scroll position with reversed direction
-            const newScale = 11 - self.progress * 11 + 1; // Adjusted the scale calculation
-            setPosition({
-              x: window.innerWidth / 2 - (svgDimensions.width * newScale) / 2,
-              y: window.innerHeight / 2 - (svgDimensions.height * newScale) / 2,
+      mm.add(
+        {
+          isDesktop: `(min-width: ${breakPoint}px) and (prefers-reduced-motion: no-preference)`,
+          isMobile: `(max-width: ${
+            breakPoint - 1
+          }px) and (prefers-reduced-motion: no-preference)`,
+        },
+        (context) => {
+          let { isDesktop } = context.conditions;
+
+          if (isDesktop) {
+            let unrevealAnim = gsap.timeline({
+              scrollTrigger: {
+                trigger: ".unreveal-top-wrapper",
+                start: "top top",
+                end: "+=1600",
+                pin: true,
+                scrub: true,
+                onUpdate: (self) => {
+                  // Update the scale based on the scroll position with reversed direction
+                  const newScale = 11 - self.progress * 11 + 1; // Adjusted the scale calculation
+                  setPosition({
+                    x:
+                      window.innerWidth / 2 -
+                      (svgDimensions.width * newScale) / 2,
+                    y:
+                      window.innerHeight / 2 -
+                      (svgDimensions.height * newScale) / 2,
+                  });
+                  setScale(newScale);
+                },
+              },
             });
-            setScale(newScale);
-          },
-        },
-      });
-      unrevealAnim.fromTo(
-        ".unreveal-bottom-text-container",
-        {
-          opacity: -20,
-        },
-        {
-          opacity: 1,
+            unrevealAnim.fromTo(
+              ".unreveal-bottom-text-container",
+              {
+                opacity: -20,
+              },
+              {
+                opacity: 1,
+              }
+            );
+          }
         }
       );
     });
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      mm.kill();
+    };
   }, [svgDimensions.width, svgDimensions.height]);
 
   return (
     <div className="unreveal-top-wrapper">
       <div ref={wrapperRef} className="unreveal-wrapper">
         <div className="unreveal-container">
-          <img src={Road} alt="road" />
+          <img className="road-image" src={Road} alt="road" />
         </div>
         <svg>
           <defs>
@@ -106,6 +131,7 @@ function RevealSection() {
         </svg>
       </div>
 
+      <img src={ClippedRoad} alt="clipped-road" className="clipped-road" />
       <div className="unreveal-bottom-text-container">
         <h1>Reinvent What Your Business Could Be</h1>
         <h1 className="unreveal-text-gray">Reinvent Talent / Tech / Skills</h1>

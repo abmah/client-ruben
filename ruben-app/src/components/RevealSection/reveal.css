@@ -17,6 +17,10 @@
   overflow: hidden;
 }
 
+.clipped-flower {
+  display: none;
+}
+
 .what-we-do-main-text-container {
   color: black;
   position: absolute;
@@ -191,7 +195,8 @@
   }
 
   .what-we-do-flower {
-    width: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .what-we-do-cards-container {
@@ -233,13 +238,38 @@
   }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 900px) {
+  .reveal-section {
+    position: relative;
+    height: auto;
+    clip-path: none;
+  }
+
+  .reveal-section-top-wrapper {
+    padding-top: 60px;
+  }
+
+  .clipped-flower {
+    display: block;
+    width: 201.097px;
+    height: 196.076px;
+    margin: 65px auto;
+  }
+
+  .what-we-do-main-text-container {
+    position: relative;
+    bottom: auto;
+  }
+
+  .what-we-do-main-text-container p {
+    width: 336px;
+  }
+
   .what-we-do-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    overflow: hidden;
   }
 
   .what-we-do-text-container {
@@ -255,39 +285,47 @@
 
   .what-we-do-text-main {
     margin-bottom: 30px;
+    margin-bottom: 50px;
   }
-
-  .background-lines {
-    display: none;
-  }
-
-
 
   .what-we-do-cards-container {
+    margin-top: 42px;
     position: relative;
     width: 100%;
-    margin-top: 40px;
-  }
-
-  .what-we-do-card {
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    top: 0;
-    left: 0;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
   }
 
-  .what-we-do-card-highlight {
-    width: 235px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 40px;
-    padding: 8px 8px;
+  .what-we-do-section {
+    overflow: visible;
   }
 
   .what-we-do-card-sub {
-    text-align: center;
+    margin: 0;
+  }
+
+  .what-we-do-card {
+    opacity: 1 !important;
+    position: static;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .what-we-do-card-highlight {
+    padding: 0;
+    width: 235px;
+    margin-bottom: 8px;
+  }
+
+  .what-we-do-card-sub {
+    width: 200px;
   }
 }
