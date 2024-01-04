@@ -120,7 +120,7 @@ function RevealSection() {
               <div className="text">
                 Access to high profile experts in start/stop model
               </div>
-              <button className="some-btn some-btn2">Some Button</button>
+              <button className="some-btn some-btn3">Some Button</button>
             </div>
           </div>
         </div>

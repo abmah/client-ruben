@@ -1,0 +1,330 @@
+.infra-above-the-fold-wrapper {
+  height: 650px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.infra-above-the-fold-container {
+  width: 98vw;
+  height: 90%;
+  background-color: #2d3748;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.infra-above-the-fold-left-section-wrapper {
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.infra-above-the-fold-left-section {
+  width: 640px;
+  z-index: 3;
+}
+
+.infra-above-the-fold-main-title {
+  color: #fff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.infra-above-the-fold-main-title strong {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.infra-above-the-fold-button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.infra-above-the-fold-button-container button {
+  width: 184px;
+  height: 56px;
+  flex-shrink: 0;
+
+  outline: none;
+  border-radius: 56px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.infra-learn-more-button {
+  background-color: white;
+  color: #222b38;
+  border: none;
+}
+
+.infra-get-in-contact-button {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.infra-above-the-fold-img {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1700px) {
+  .infra-above-the-fold-left-section-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .infra-above-the-fold-left-section-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .infra-above-the-fold-img {
+    width: 50%;
+    bottom: 0;
+  }
+}
+
+/* infra cards section */
+
+
+
+.infra-cards-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 500px;
+  color: #192430;
+  margin-top: 40px;
+}
+
+.infra-cards-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.infra-card {
+  max-width: 416px;
+  width: 30%;
+  height: 100%;
+  background: #eff2f5;
+  border-radius: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 477px;
+}
+
+.infra-card-header {
+  margin-top: 32px;
+  width: 100px;
+  color: #FFF;
+  padding: 6px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  background: #2D3748;
+  border-radius: 24px;
+  margin-bottom: 22px;
+}
+
+.infra-card-title {
+
+  margin-bottom: 46px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  /* 125% */
+}
+
+
+.infra-card-paragraph {
+  color: #192430;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 177.778% */
+}
+
+
+/* infra cards section */
+
+
+
+/* infra image section */
+
+
+
+.infra-images-wrapper {
+  width: 100%;
+  min-height: 800px;
+  color: #192430;
+  margin-top: 40px;
+}
+
+.infra-images-container {
+  border: 1px solid red;
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  gap: 160px;
+  color: #192430;
+  margin-top: 240px;
+}
+
+.infra-image-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.infra-image {
+
+  max-width: 551px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infra-image-text {
+  max-width: 627px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.infra-image-text-title {
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.infra-image-text-subtitle {
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.infra-image-text-paragraph {
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+/* infra image section */
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .infra-above-the-fold-left-section {
+    width: 386px;
+  }
+
+  .infra-above-the-fold-main-title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .infra-above-the-fold-img {
+    display: none;
+  }
+
+  .infra-cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .infra-card {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .infra-above-the-fold-main-title {
+    font-size: 36px;
+  }
+
+  .infra-get-in-contact-button {
+    display: none;
+  }
+
+
+  .infra-above-the-fold-left-section {
+    width: 100%;
+  }
+
+  .infra-above-the-fold-button-container .infra-learn-more-button {
+    width: 100%;
+  }
+
+  .infra-above-the-fold-img {
+    display: block;
+  }
+
+  .infra-above-the-fold-wrapper {
+    height: auto;
+  }
+
+  .infra-above-the-fold-container {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infra-above-the-fold-img {
+    position: static;
+    order: -1;
+    width: 100%;
+  }
+
+  .infra-above-the-fold-left-section {
+    order: 2;
+  }
+}

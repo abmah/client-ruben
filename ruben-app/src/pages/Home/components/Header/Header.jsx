@@ -9,6 +9,7 @@ import Talent from "./Items/Talent";
 import Skills from "./Items/Skills";
 import Tech from "./Items/Tech";
 import MobileMenu from "./Items/MobileMenu";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,11 +45,13 @@ function Header() {
             src={HeaderBackgroundMobile}
             alt="Header-background"
           />
-          <img
-            className="digital-future-logo"
-            src={DigitalFutureLogo}
-            alt="digital-future-logo"
-          />
+          <Link to="/">
+            <img
+              className="digital-future-logo"
+              src={DigitalFutureLogo}
+              alt="digital-future-logo"
+            />
+          </Link>
           <div onClick={handleMenuToggle} className="header-menu-toggle-button">
             <p>Menu</p>
             <img

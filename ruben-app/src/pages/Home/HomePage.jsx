@@ -22,7 +22,7 @@ function Home() {
       <BoostAppThree />
       <Achievements />
       <WhoWeAre />
-      <UnReveal />
+      {/* <UnReveal /> */}
       <ContactUs />
       <br />
     </>

@@ -9,6 +9,8 @@ import ProductivityandCollaboration from "../../../../../assets/productivity-and
 
 import SecurityandCompliance from "../../../../../assets/SecurityandCompliance.svg";
 
+import { Link } from "react-router-dom";
+
 function Tech() {
   return (
     <>
@@ -19,10 +21,10 @@ function Tech() {
             <img src={TopLeftArrow} alt="arrow" />
           </div>
         </div>
-        <div className="sub-menu-item">
+        <Link to="/infrastructure" className="sub-menu-item">
           <img src={InfrastructureModernization} alt="digital-experts" />
           <p>Infrastructure Modernization</p>
-        </div>
+        </Link>
 
         <div className="sub-menu-item">
           <img src={DataAnalytics} alt="strategy-consultants" />
