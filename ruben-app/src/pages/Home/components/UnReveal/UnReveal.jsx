@@ -77,7 +77,7 @@ function RevealSection() {
               scrollTrigger: {
                 trigger: ".unreveal-top-wrapper",
                 start: "top top",
-                end: "+=1600",
+                end: "+=500",
                 pin: true,
                 scrub: true,
                 onUpdate: (self) => {

@@ -8,6 +8,7 @@ import DataAnalytics from "../../../../../assets/data-analytics.svg";
 import ProductivityandCollaboration from "../../../../../assets/productivity-and-collaboration.svg";
 
 import SecurityandCompliance from "../../../../../assets/SecurityandCompliance.svg";
+
 function Tech() {
   return (
     <>

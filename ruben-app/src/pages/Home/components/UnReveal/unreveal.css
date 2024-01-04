@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 970px) {
   .unreveal-bottom-text-container {
-    width: 336px;
+    max-width: 336px;
   }
 
   .unreveal-bottom-text-container h1 {
@@ -81,7 +81,6 @@
   }
 
   .unreveal-top-wrapper {
-
     height: 800PX;
     overflow: visible;
     display: flex;
@@ -106,10 +105,10 @@
     transform: none;
     color: #2D3748;
     text-align: center;
-  }
 
-  .unreveal-bottom-text-container {
     opacity: 1 !important;
   }
+
+
 
 }

@@ -523,3 +523,21 @@
     width: 95%;
   }
 }
+
+@media screen and (max-width: 430px) {
+
+
+  .header-leftside {
+
+    transform: scale(.9);
+    margin-left: -4vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header-leftside {
+
+    transform: scale(.8);
+    margin-left: -6vw;
+  }
+}

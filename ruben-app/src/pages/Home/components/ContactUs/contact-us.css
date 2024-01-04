@@ -7,7 +7,6 @@
 .contact-us-container {
   border-radius: 40px;
   background: #222b38;
-
   width: 98%;
   display: flex;
   justify-content: space-around;
@@ -15,7 +14,7 @@
 }
 
 .contact-us-text-section {
-  width: 445px;
+  max-width: 445px;
   margin-top: 183px;
 }
 
@@ -214,5 +213,10 @@
 
   .form-group {
     width: 100%;
+  }
+
+  .contact-us-text-section {
+
+    width: 90%;
   }
 }

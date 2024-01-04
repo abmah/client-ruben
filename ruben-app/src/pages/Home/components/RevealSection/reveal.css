@@ -1,7 +1,7 @@
 .reveal-section-wrapper {
   width: 100%;
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 450px;
 }
 
 .reveal-section {
@@ -262,7 +262,7 @@
   }
 
   .what-we-do-main-text-container p {
-    width: 336px;
+    max-width: 336px;
   }
 
   .what-we-do-section {
@@ -327,5 +327,27 @@
 
   .what-we-do-card-sub {
     width: 200px;
+  }
+
+  .clip-path-svg {
+    display: none;
+  }
+
+
+  .what-we-do-flower {
+    max-width: 300px;
+
+  }
+
+
+}
+
+@media screen and (max-width: 370px) {
+  .what-we-do-main-text-container p {
+    width: 90%;
+  }
+
+  .what-we-do-flower {
+    max-width: 250px;
   }
 }
