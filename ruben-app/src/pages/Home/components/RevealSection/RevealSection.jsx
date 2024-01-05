@@ -132,7 +132,7 @@ function RevealSection() {
                 trigger: ".reveal-section-top-wrapper",
                 start: "top top",
                 end: "+=1200",
-                pin: true,
+                pin: ".reveal-section",
                 scrub: true,
               },
             });

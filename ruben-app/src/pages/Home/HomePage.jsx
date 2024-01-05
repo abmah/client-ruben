@@ -15,7 +15,7 @@ function Home() {
     <>
       {/* <ScrollOverlay /> */}
       <AboveTheFold />
-      {/* <RevealSection /> */}
+      <RevealSection />
       <Test />
       <BoostApp />
       <BoostAppTwo />
