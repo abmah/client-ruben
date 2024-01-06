@@ -92,8 +92,6 @@ function RevealSection() {
 
   return (
     <>
-      <div className="spacer"></div>
-
       <div className="gallery">
         <div className="left">
           <div className="detailsWrapper">
@@ -134,8 +132,6 @@ function RevealSection() {
           />
         </div>
       </div>
-
-      <div className="spacer"></div>
     </>
   );
 }

@@ -1,0 +1,83 @@
+.faq-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+}
+
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  color: #222B38;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-title {
+  max-width: 416px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  /* 160% */
+}
+
+.faq-section-container {
+  width: 50%;
+}
+
+.row-title {
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+
+}
+
+.row-content-text {
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 200% */
+}
+
+.faq-row {
+  border-bottom: 2px solid #B2B9C8 !important;
+}
+
+.collapsing-logo,
+.expanding-logo {
+  transform-origin: center center;
+  /* You can also use the following shorthand:
+  transform-origin: 50% 50%;
+  */
+}
+
+
+.icon-wrapper {
+  transform: none !important;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .faq-wrapper {
+    height: 100%;
+  }
+
+  .faq-container {
+
+    flex-direction: column;
+
+  }
+
+  .faq-section-container {
+    width: 100%;
+  }
+
+
+
+}
