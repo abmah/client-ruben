@@ -1,4 +1,5 @@
-import BlankImage from "../../../../assets/infra-image-blank.svg";
+import BlankImage from "../../../../../assets/infra-image-blank.svg";
+import "./images.css";
 
 function Images() {
   return (

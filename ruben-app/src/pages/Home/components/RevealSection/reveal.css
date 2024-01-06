@@ -32,6 +32,7 @@
   bottom: -90%;
   left: 50%;
   transform: translate(-50%);
+  display: none;
 }
 
 .what-we-do-main-text-container h1 {

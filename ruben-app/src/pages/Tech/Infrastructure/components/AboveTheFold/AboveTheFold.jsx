@@ -1,5 +1,5 @@
-import "../infrastructure.css";
-import Infrastructure from "../../../../assets/infrastructure.svg";
+import "./above-the-fold.css";
+import Infrastructure from "../../../../../assets/infrastructure.svg";
 function AboveTheFold() {
   return (
     <div className="infra-above-the-fold-wrapper">

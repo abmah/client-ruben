@@ -78,7 +78,7 @@ function RevealSection() {
                 trigger: ".unreveal-top-wrapper",
                 start: "top top",
                 end: "+=500",
-                pin: true,
+                pin: ".unreveal-wrapper",
                 scrub: true,
                 onUpdate: (self) => {
                   // Update the scale based on the scroll position with reversed direction

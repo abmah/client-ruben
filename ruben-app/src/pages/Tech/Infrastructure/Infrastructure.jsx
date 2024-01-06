@@ -1,7 +1,9 @@
-import AboveTheFold from "./components/AboveTheFold";
-import Cards from "./components/Cards";
-import Images from "./components/Images";
-import Services from "./components/Services";
+import AboveTheFold from "./components/AboveTheFold/AboveTheFold";
+import BottomCards from "./components/BottomCards/BottomCards";
+import Cards from "./components/Cards/Cards";
+import Images from "./components/ImagesSection/Images";
+import LetsTalk from "./components/LetsTalk/LetsTalk";
+import Services from "./components/Services/Services";
 
 function Infrastructure() {
   return (
@@ -10,6 +12,8 @@ function Infrastructure() {
       <Cards />
       <Images />
       <Services />
+      <BottomCards />
+      <LetsTalk />
     </>
   );
 }

@@ -1,5 +1,4 @@
-import "../infrastructure.css";
-
+import "./cards.css";
 function Cards() {
   return (
     <div className="infra-cards-wrapper">

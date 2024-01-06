@@ -2,13 +2,21 @@ import "./services.css";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Clowd from "../../../../assets/clowd.svg";
+import Clowd from "../../../../../assets/clowd.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function RightSectionChild() {
   return (
     <div className="services-right-section-child">
+      <div className="services-navigation-mobile">
+        <div className={`services-nav-item active    `}>Consult</div>
+        <div className={`services-nav-item services-nav-item-long `}>
+          Implement
+        </div>
+        <div className={`services-nav-item `}>Manage</div>
+        <div className={`services-nav-item `}>Improve</div>
+      </div>
       <h1 className="services-right-section-child-title">Consult</h1>
       <p className="services-right-section-subtitle">
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
