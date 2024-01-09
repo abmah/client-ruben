@@ -29,6 +29,8 @@ function Header() {
   // Close the menu when the route changes
   useEffect(() => {
     setIsMenuOpen(false);
+    // scroll to the top of the page
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (

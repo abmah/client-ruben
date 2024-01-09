@@ -103,6 +103,11 @@
 }
 
 
+.hidden {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 
 .sub-menu {
   z-index: 9;

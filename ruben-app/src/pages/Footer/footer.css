@@ -43,10 +43,13 @@
 .footer-top-content {
   display: flex;
   justify-content: space-between;
+
 }
 
 .footer-top-item {
   width: 217px;
+
+
 }
 
 .footer-logo-container {
@@ -64,8 +67,29 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  text-wrap: nowrap;
+
   line-height: normal;
 }
+
+.footer-top-item-option:hover {
+  text-decoration: underline;
+
+  cursor: pointer;
+}
+
+.footer-top-item-tech {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0px;
+}
+
+.footer-top-item-tech * {
+  margin-bottom: 16px;
+}
+
 
 @media screen and (max-width: 1080px) {
 

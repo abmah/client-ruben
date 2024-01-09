@@ -1,5 +1,6 @@
 import "./footer.css";
 import DigitalFuture from "../../assets/digital-future-logo-dark.svg";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="footer-wrapper">
@@ -25,16 +26,20 @@ function Footer() {
               <p className="footer-top-item-option">Hourly Based Experts</p>
               <p className="footer-top-item-option">Customized Programs</p>
             </div>
-            <div className="footer-top-item">
+            <div className="footer-top-item footer-top-item-tech">
               <p className="footer-top-item-title">Tech</p>
-              <p className="footer-top-item-option">
+              <Link to="infrastructure" className="footer-top-item-option">
                 Infrastructure Modernization
-              </p>
-              <p className="footer-top-item-option">Data, Analytics</p>
-              <p className="footer-top-item-option">
+              </Link>
+              <Link to="data" className="footer-top-item-option">
+                Data, Analytics
+              </Link>
+              <Link to="collaboration" className="footer-top-item-option">
                 Productivity and Collaboration
-              </p>
-              <p className="footer-top-item-option">Security and Compliance</p>
+              </Link>
+              <Link to="security" className="footer-top-item-option">
+                Security and Compliance
+              </Link>
             </div>
           </div>
           <div className="footer-line"></div>
