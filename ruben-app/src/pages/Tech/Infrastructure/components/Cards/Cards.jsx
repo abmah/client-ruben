@@ -1,36 +1,36 @@
 import "./cards.css";
 function Cards() {
   return (
-    <div className="tech-cards-wrapper">
-      <div className="tech-cards-container">
-        <div className="tech-card">
-          <div className="tech-card-header">Loremips</div>
-          <div className="tech-card-title">
+    <div className="tech-infra-cards-wrapper">
+      <div className="tech-infra-cards-container">
+        <div className="tech-infra-card">
+          <div className="tech-infra-card-header">Loremips</div>
+          <div className="tech-infra-card-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
-          <p className="tech-card-paragraph">
+          <p className="tech-infra-card-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exerc.
           </p>
         </div>
-        <div className="tech-card">
-          <div className="tech-card-header">Loremips</div>
-          <div className="tech-card-title">
+        <div className="tech-infra-card">
+          <div className="tech-infra-card-header">Loremips</div>
+          <div className="tech-infra-card-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
-          <p className="tech-card-paragraph">
+          <p className="tech-infra-card-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exerc.
           </p>
         </div>
-        <div className="tech-card">
-          <div className="tech-card-header">Loremips</div>
-          <div className="tech-card-title">
+        <div className="tech-infra-card">
+          <div className="tech-infra-card-header">Loremips</div>
+          <div className="tech-infra-card-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
-          <p className="tech-card-paragraph">
+          <p className="tech-infra-card-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exerc.

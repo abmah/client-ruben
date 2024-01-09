@@ -1,8 +1,8 @@
-.bottom-cards-wrapper {
+.tech-infra-bottom-cards-wrapper {
   margin-top: 50px;
 }
 
-.bottom-cards-container {
+.tech-infra-bottom-cards-container {
   color: #192430;
   width: 80%;
   display: flex;
@@ -12,7 +12,7 @@
 }
 
 
-.bottom-cards-title {
+.tech-infra-bottom-cards-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -20,7 +20,7 @@
   max-width: 598px;
 }
 
-.bottom-cards-parent {
+.tech-infra-bottom-cards-parent {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -28,7 +28,7 @@
 
 }
 
-.bottom-card {
+.tech-infra-bottom-card {
   max-width: 416px;
   min-height: 436px;
   padding: 36px;
@@ -40,7 +40,7 @@
 
 }
 
-.bottom-card-header-circle {
+.tech-infra-bottom-card-header-circle {
   margin-top: 20px;
   width: 56px;
   height: 56px;
@@ -50,7 +50,7 @@
 
 }
 
-.bottom-card-title {
+.tech-infra-bottom-card-title {
 
   max-width: 344px;
   font-size: 32px;
@@ -60,7 +60,7 @@
 
 }
 
-.bottom-card-subtitle {
+.tech-infra-bottom-card-subtitle {
 
   font-size: 18px;
   font-style: normal;
@@ -69,20 +69,20 @@
   max-width: 344px;
 }
 
-.bottom-card-orange {
+.tech-infra-bottom-card-orange {
 
   border: 2px solid #F9B934;
 }
 
-.bottom-card-orange div:nth-child(1) {
+.tech-infra-bottom-card-orange div:nth-child(1) {
   background-color: #F9B934;
 }
 
-.bottom-card-blue {
+.tech-infra-bottom-card-blue {
   border: 2px solid #222B38;
 }
 
-.bottom-card-blue div:nth-child(1) {
+.tech-infra-bottom-card-blue div:nth-child(1) {
   background-color: #222B38;
 }
 
@@ -90,18 +90,18 @@
 @media screen and (max-width:1300px) {
 
 
-  .bottom-cards-container {
+  .tech-infra-bottom-cards-container {
     width: 97%;
   }
 
 
-  .bottom-card {
+  .tech-infra-bottom-card {
     max-width: 362px;
     min-height: 312px;
     gap: 24px;
   }
 
-  .bottom-card-title {
+  .tech-infra-bottom-card-title {
 
     font-size: 18px;
     font-style: normal;
@@ -110,7 +110,7 @@
 
   }
 
-  .bottom-card-subtitle {
+  .tech-infra-bottom-card-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -126,13 +126,13 @@
 @media screen and (max-width:1000px) {
 
 
-  .bottom-cards-parent {
+  .tech-infra-bottom-cards-parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .bottom-cards-title {
+  .tech-infra-bottom-cards-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;

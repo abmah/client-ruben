@@ -1,6 +1,6 @@
-/* tech cards section */
+/* tech-infra cards section */
 
-.tech-cards-wrapper {
+.tech-infra-cards-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: 40px;
 }
 
-.tech-cards-container {
+.tech-infra-cards-container {
   width: 80%;
   height: 100%;
   display: flex;
@@ -20,7 +20,7 @@
   gap: 20px;
 }
 
-.tech-card {
+.tech-infra-card {
   max-width: 416px;
   width: 30%;
   height: 100%;
@@ -31,7 +31,7 @@
   min-height: 477px;
 }
 
-.tech-card-header {
+.tech-infra-card-header {
   margin-top: 32px;
   width: 100px;
   color: #FFF;
@@ -46,7 +46,7 @@
   margin-bottom: 22px;
 }
 
-.tech-card-title {
+.tech-infra-card-title {
   margin-bottom: 46px;
   font-size: 32px;
   font-style: normal;
@@ -54,7 +54,7 @@
   line-height: 40px;
 }
 
-.tech-card-paragraph {
+.tech-infra-card-paragraph {
   color: #192430;
   font-size: 18px;
   font-style: normal;
@@ -62,43 +62,43 @@
   line-height: 32px;
 }
 
-/* tech cards section */
+/* tech-infra cards section */
 
-/* tech image section */
+/* tech-infra image section */
 
 /* ... (previous styles) ... */
 
-/* tech image section */
+/* tech-infra image section */
 
 @media screen and (max-width:1300px) {
-  .tech-images-container {
+  .tech-infra-images-container {
     max-width: 97%;
   }
 
-  .tech-cards-container {
+  .tech-infra-cards-container {
     width: 97%;
   }
 
-  .tech-card {
+  .tech-infra-card {
     width: 100%;
     max-width: 362px;
     min-height: 410px;
   }
 
-  .tech-card-title {
+  .tech-infra-card-title {
     font-size: 24px;
     font-style: normal;
     line-height: normal;
   }
 
-  .tech-card-paragraph {
+  .tech-infra-card-paragraph {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
   }
 
-  .tech-image {
+  .tech-infra-image {
     border-radius: 24px;
     max-width: 100%;
     height: 385px;
@@ -107,28 +107,28 @@
     gap: 20px;
   }
 
-  .tech-image-text-title {
+  .tech-infra-image-text-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
-  .tech-image-text-subtitle {
+  .tech-infra-image-text-subtitle {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
   }
 
-  .tech-card-paragraph {
+  .tech-infra-card-paragraph {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .tech-image-text {
+  .tech-infra-image-text {
     max-width: 500px;
   }
 }

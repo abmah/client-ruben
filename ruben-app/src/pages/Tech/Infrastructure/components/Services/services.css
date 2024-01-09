@@ -1,8 +1,8 @@
-.services-wrapper {
+.tech-infra-services-wrapper {
   margin-top: 100px;
 }
 
-.services-container {
+.tech-infra-services-container {
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -11,12 +11,12 @@
   gap: 20px;
 }
 
-.services-right-section {
+.tech-infra-services-right-section {
   width: 70%;
 
 }
 
-.services-nav-section {
+.tech-infra-services-nav-section {
   width: 240px;
   height: 700px;
   gap: 24px;
@@ -26,7 +26,7 @@
 
 }
 
-.services-nav-item {
+.tech-infra-services-nav-item {
   cursor: pointer;
   border-radius: 32px;
   color: #2d3748;
@@ -48,11 +48,11 @@
   color: white;
 }
 
-.services-nav-item-long {
+.tech-infra-services-nav-item-long {
   padding-right: 28px;
 }
 
-.services-right-section-child {
+.tech-infra-services-right-section-child {
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -60,14 +60,14 @@
   max-width: 900px;
 }
 
-.services-right-section-child-title {
+.tech-infra-services-right-section-child-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.services-right-section-subtitle {
+.tech-infra-services-right-section-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -75,13 +75,13 @@
   max-width: 576px;
 }
 
-.services-right-section-cards-container {
+.tech-infra-services-right-section-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.servies-right-section-card {
+.tech-infra-services-right-section-card {
   width: 280px;
   height: 120px;
   display: flex;
@@ -94,16 +94,16 @@
   gap: 27px;
 }
 
-.servies-right-section-card img {
+.tech-infra-services-right-section-card img {
   width: 20px;
   height: 14px;
 }
 
-.servies-right-section-card p {
+.tech-infra-services-right-section-card p {
   width: 166px;
 }
 
-.services-right-section-btn {
+.tech-infra-services-right-section-btn {
   border-radius: 28px;
   width: 184px;
   height: 56px;
@@ -119,17 +119,17 @@
   margin-top: 32px;
 }
 
-.services-section-space {
+.tech-infra-services-section-space {
   height: 230px;
 }
 
-.services-navigation-mobile {
+.tech-infra-services-navigation-mobile {
   display: none;
 }
 
 @media screen and (max-width: 1300px) {
 
-  .services-container {
+  .tech-infra-services-container {
     display: flex;
     width: 97%;
 
@@ -139,18 +139,18 @@
 
 
 @media screen and (max-width: 900px) {
-  .services-navigation-mobile {
+  .tech-infra-services-navigation-mobile {
     display: flex;
     flex-wrap: wrap;
     max-width: 336px;
     gap: 16px;
   }
 
-  .services-nav-item-long {
+  .tech-infra-services-nav-item-long {
     padding-right: 12px;
   }
 
-  .services-nav-item {
+  .tech-infra-services-nav-item {
 
     font-size: 18px;
     font-style: normal;
@@ -159,21 +159,21 @@
     transition: unset;
   }
 
-  .services-nav-item {
+  .tech-infra-services-nav-item {
     cursor: unset;
     width: 115px;
     height: 40px;
   }
 
-  .services-right-section {
+  .tech-infra-services-right-section {
     width: 100%;
   }
 
-  .services-nav-section {
+  .tech-infra-services-nav-section {
     display: none;
   }
 
-  .services-right-section-child {
+  .tech-infra-services-right-section-child {
     margin-bottom: 80px;
   }
 }
@@ -184,25 +184,25 @@
 
 
 
-  .services-container {
+  .tech-infra-services-container {
     width: 90%;
   }
 
-  .services-right-section-child {
+  .tech-infra-services-right-section-child {
     height: auto;
 
   }
 
-  .services-right-section-cards-container {
+  .tech-infra-services-right-section-cards-container {
     flex-direction: column;
   }
 
-  .servies-right-section-card {
+  .tech-infra-services-right-section-card {
     width: 100%;
     height: 88px;
   }
 
-  .services-right-section-btn {
+  .tech-infra-services-right-section-btn {
     width: 100%;
 
   }

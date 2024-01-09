@@ -1,0 +1,125 @@
+.tech-data-lets-talk-section-wrapper {
+  margin-top: 200px;
+}
+
+.tech-data-lets-talk-section-container {
+  background: #222b38;
+  border-radius: 24px;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 446px;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tech-data-lets-talk-section-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  margin-top: 0;
+  /* 160% */
+}
+
+.tech-data-lets-talk-section-image {
+  margin-top: 65px;
+}
+
+.tech-data-lets-talk-section-subtitle {
+  margin-top: 0;
+  max-width: 780px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.tech-data-lets-talk-section-button {
+  width: 240px;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #f9b934;
+  border: none;
+  color: #2d3748;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.tech-data-contact-us-button-img {
+  background: #222b38;
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+
+}
+
+.tech-data-contact-us-button-img img {
+  margin-top: 16px;
+}
+
+
+@media screen and (max-width:600px) {
+
+
+  .tech-data-lets-talk-section-container {
+    width: 97%;
+
+  }
+
+  .tech-data-lets-talk-section-title {
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+    /* 266.667% */
+  }
+
+  .tech-data-lets-talk-section-image {
+    margin-top: 30px;
+  }
+
+  .tech-data-lets-talk-section-subtitle {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 187.5% */
+  }
+
+  .tech-data-lets-talk-section-button {
+    width: 97%;
+    display: flex;
+    position: relative;
+
+
+  }
+
+  .tech-data-contact-us-button-img {
+    position: absolute;
+    right: 6px;
+  }
+
+
+  .tech-data-lets-talk-section-button p {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+
+  }
+
+
+}

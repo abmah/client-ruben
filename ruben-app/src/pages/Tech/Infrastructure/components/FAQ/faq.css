@@ -1,10 +1,10 @@
-.faq-wrapper {
+.tech-infra-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.faq-container {
+.tech-infra-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.faq-title {
+.tech-infra-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.faq-section-container {
+.tech-infra-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.faq-row {
+.tech-infra-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .faq-wrapper {
+  .tech-infra-faq-wrapper {
     height: 100%;
   }
 
-  .faq-container {
+  .tech-infra-faq-container {
 
     flex-direction: column;
 
   }
 
-  .faq-section-container {
+  .tech-infra-faq-section-container {
     width: 100%;
   }
 

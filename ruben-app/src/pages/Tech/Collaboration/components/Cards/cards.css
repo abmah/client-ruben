@@ -1,0 +1,128 @@
+/* tech-collaboration cards section */
+
+.tech-collaboration-cards-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  color: #192430;
+  margin-top: 40px;
+}
+
+.tech-collaboration-cards-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.tech-collaboration-card {
+  max-width: 416px;
+  width: 30%;
+  height: 100%;
+  background: #eff2f5;
+  border-radius: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 477px;
+}
+
+.tech-collaboration-card-header {
+  margin-top: 32px;
+  width: 100px;
+  color: #FFF;
+  padding: 6px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  background: #2D3748;
+  border-radius: 24px;
+  margin-bottom: 22px;
+}
+
+.tech-collaboration-card-title {
+  margin-bottom: 46px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.tech-collaboration-card-paragraph {
+  color: #192430;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+
+
+@media screen and (max-width:1300px) {
+  .tech-collaboration-images-container {
+    max-width: 97%;
+  }
+
+  .tech-collaboration-cards-container {
+    width: 97%;
+  }
+
+  .tech-collaboration-card {
+    width: 100%;
+    max-width: 362px;
+    min-height: 410px;
+  }
+
+  .tech-collaboration-card-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .tech-collaboration-card-paragraph {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .tech-collaboration-image {
+    border-radius: 24px;
+    max-width: 100%;
+    height: 385px;
+    order: -2;
+    object-fit: cover;
+    gap: 20px;
+  }
+
+  .tech-collaboration-image-text-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .tech-collaboration-image-text-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .tech-collaboration-card-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .tech-collaboration-image-text {
+    max-width: 500px;
+  }
+}

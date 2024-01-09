@@ -1,0 +1,83 @@
+.tech-data-faq-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  min-height: 600px;
+}
+
+.tech-data-faq-container {
+  width: 80%;
+  margin: 0 auto;
+  color: #222B38;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-data-faq-title {
+  max-width: 416px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+  /* 160% */
+}
+
+.tech-data-faq-section-container {
+  width: 55%;
+}
+
+.row-title {
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+
+}
+
+.row-content-text {
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 200% */
+}
+
+.tech-data-faq-row {
+  border-bottom: 2px solid #B2B9C8 !important;
+}
+
+.collapsing-logo,
+.expanding-logo {
+  transform-origin: center center;
+  /* You can also use the following shorthand:
+  transform-origin: 50% 50%;
+  */
+}
+
+
+.icon-wrapper {
+  transform: none !important;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .tech-data-faq-wrapper {
+    height: 100%;
+  }
+
+  .tech-data-faq-container {
+
+    flex-direction: column;
+
+  }
+
+  .tech-data-faq-section-container {
+    width: 100%;
+  }
+
+
+
+}

@@ -1,10 +1,10 @@
-.tech-above-the-fold-wrapper {
+.tech-infra-above-the-fold-wrapper {
   height: 650px;
   overflow: hidden;
   margin-top: 10px;
 }
 
-.tech-above-the-fold-container {
+.tech-infra-above-the-fold-container {
   width: 98vw;
   height: 90%;
   background-color: #2d3748;
@@ -17,18 +17,18 @@
   margin: 0 auto;
 }
 
-.tech-above-the-fold-left-section-wrapper {
+.tech-infra-above-the-fold-left-section-wrapper {
   width: 60%;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.tech-above-the-fold-left-section {
+.tech-infra-above-the-fold-left-section {
   width: 640px;
   z-index: 3;
 }
 
-.tech-above-the-fold-main-title {
+.tech-infra-above-the-fold-main-title {
   color: #fff;
   font-size: 56px;
   font-style: normal;
@@ -36,20 +36,20 @@
   line-height: normal;
 }
 
-.tech-above-the-fold-main-title strong {
+.tech-infra-above-the-fold-main-title strong {
   color: #fff;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.tech-above-the-fold-button-container {
+.tech-infra-above-the-fold-button-container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.tech-above-the-fold-button-container button {
+.tech-infra-above-the-fold-button-container button {
   width: 184px;
   height: 56px;
   flex-shrink: 0;
@@ -61,59 +61,59 @@
   line-height: normal;
 }
 
-.tech-learn-more-button {
+.tech-infra-learn-more-button {
   background-color: white;
   color: #222b38;
   border: none;
 }
 
-.tech-get-in-contact-button {
+.tech-infra-get-in-contact-button {
   background-color: transparent;
   border: 2px solid white;
 }
 
-.tech-above-the-fold-img {
+.tech-infra-above-the-fold-img {
   position: absolute;
   right: 0;
   z-index: 1;
 }
 
 @media screen and (max-width: 1700px) {
-  .tech-above-the-fold-left-section-wrapper {
+  .tech-infra-above-the-fold-left-section-wrapper {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .tech-above-the-fold-left-section-wrapper {
+  .tech-infra-above-the-fold-left-section-wrapper {
     width: 95%;
     margin: 0 auto;
   }
 
-  .tech-above-the-fold-img {
+  .tech-infra-above-the-fold-img {
     width: 50%;
     bottom: 0;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .tech-above-the-fold-left-section {
+  .tech-infra-above-the-fold-left-section {
     width: 386px;
   }
 
-  .tech-above-the-fold-main-title {
+  .tech-infra-above-the-fold-main-title {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .tech-cards-container {
+  .tech-infra-cards-container {
     flex-direction: column;
     gap: 20px;
   }
 
-  .tech-image-parent {
+  .tech-infra-image-parent {
     flex-direction: column;
     gap: 20px;
     width: 100%;
@@ -122,31 +122,31 @@
 }
 
 @media screen and (max-width: 700px) {
-  .tech-above-the-fold-main-title {
+  .tech-infra-above-the-fold-main-title {
     font-size: 36px;
   }
 
-  .tech-get-in-contact-button {
+  .tech-infra-get-in-contact-button {
     display: none;
   }
 
-  .tech-above-the-fold-left-section {
+  .tech-infra-above-the-fold-left-section {
     width: 100%;
   }
 
-  .tech-above-the-fold-button-container .tech-learn-more-button {
+  .tech-infra-above-the-fold-button-container .tech-infra-learn-more-button {
     width: 100%;
   }
 
-  .tech-above-the-fold-img {
+  .tech-infra-above-the-fold-img {
     display: block;
   }
 
-  .tech-above-the-fold-wrapper {
+  .tech-infra-above-the-fold-wrapper {
     height: auto;
   }
 
-  .tech-above-the-fold-container {
+  .tech-infra-above-the-fold-container {
     padding-top: 100px;
     padding-bottom: 30px;
     width: 95vw;
@@ -154,13 +154,13 @@
     flex-direction: column;
   }
 
-  .tech-above-the-fold-img {
+  .tech-infra-above-the-fold-img {
     position: static;
     order: -1;
     width: 100%;
   }
 
-  .tech-above-the-fold-left-section {
+  .tech-infra-above-the-fold-left-section {
     order: 2;
   }
 }

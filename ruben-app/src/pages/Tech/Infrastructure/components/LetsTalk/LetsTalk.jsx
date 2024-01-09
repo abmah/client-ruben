@@ -4,22 +4,22 @@ import TopRightArrow from "../../../../../assets/top-right-arrow.svg";
 
 function LetsTalk() {
   return (
-    <div className="lets-talk-section-wrapper">
-      <div className="lets-talk-section-container">
+    <div className="tech-infra-lets-talk-section-wrapper">
+      <div className="tech-infra-lets-talk-section-container">
         <img
           src={LetsTalkLogo}
           alt="lets-talk"
-          className="lets-talk-section-image"
+          className="tech-infra-lets-talk-section-image"
         ></img>
-        <h1 className="lets-talk-section-title">Let’s Talk!</h1>
-        <p className="lets-talk-section-subtitle">
+        <h1 className="tech-infra-lets-talk-section-title">Let’s Talk!</h1>
+        <p className="tech-infra-lets-talk-section-subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exerc.
         </p>
-        <button className="lets-talk-section-button">
+        <button className="tech-infra-lets-talk-section-button">
           <p>CONTACT US</p>
-          <div className="contact-us-button-img">
+          <div className="tech-infra-contact-us-button-img">
             <img src={TopRightArrow} alt="top-right-arrow" />
           </div>
         </button>

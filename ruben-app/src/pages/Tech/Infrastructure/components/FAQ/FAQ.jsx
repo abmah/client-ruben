@@ -61,24 +61,34 @@ const data = {
 };
 
 function ExpandingLogo() {
-  return <img src={ExpandLogo} alt="expand" className="expanding-logo"></img>;
+  return (
+    <img
+      src={ExpandLogo}
+      alt="expand"
+      className="tech-infra-expanding-logo"
+    ></img>
+  );
 }
 
 function CollapsingLogo() {
   return (
-    <img src={CollapseLogo} alt="collapse" className="collapsing-logo"></img>
+    <img
+      src={CollapseLogo}
+      alt="collapse"
+      className="tech-infra-collapsing-logo"
+    ></img>
   );
 }
 
 function FAQ() {
   return (
-    <div className="faq-wrapper">
-      <div className="faq-container">
-        <div className="faq-left-section">
-          <img src={FaqImage} alt="faq" className="faq-image" />
-          <h1 className="faq-title">Frequently Asked Questions</h1>
+    <div className="tech-infra-faq-wrapper">
+      <div className="tech-infra-faq-container">
+        <div className="tech-infra-faq-left-section">
+          <img src={FaqImage} alt="faq" className="tech-infra-faq-image" />
+          <h1 className="tech-infra-faq-title">Frequently Asked Questions</h1>
         </div>
-        <div className="faq-section-container">
+        <div className="tech-infra-faq-section-container">
           <Faq
             data={data}
             config={{

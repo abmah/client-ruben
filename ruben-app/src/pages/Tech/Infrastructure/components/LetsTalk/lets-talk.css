@@ -1,8 +1,8 @@
-.lets-talk-section-wrapper {
+.tech-infra-lets-talk-section-wrapper {
   margin-top: 200px;
 }
 
-.lets-talk-section-container {
+.tech-infra-lets-talk-section-container {
   background: #222b38;
   border-radius: 24px;
   color: white;
@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 
-.lets-talk-section-title {
+.tech-infra-lets-talk-section-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -25,11 +25,11 @@
   /* 160% */
 }
 
-.lets-talk-section-image {
+.tech-infra-lets-talk-section-image {
   margin-top: 65px;
 }
 
-.lets-talk-section-subtitle {
+.tech-infra-lets-talk-section-subtitle {
   margin-top: 0;
   max-width: 780px;
   text-align: center;
@@ -39,7 +39,7 @@
   line-height: 32px;
 }
 
-.lets-talk-section-button {
+.tech-infra-lets-talk-section-button {
   width: 240px;
   height: 64px;
   flex-shrink: 0;
@@ -55,7 +55,7 @@
   margin-top: 20px;
 }
 
-.contact-us-button-img {
+.tech-infra-contact-us-button-img {
   background: #222b38;
   width: 52px;
   height: 52px;
@@ -63,7 +63,7 @@
 
 }
 
-.contact-us-button-img img {
+.tech-infra-contact-us-button-img img {
   margin-top: 16px;
 }
 
@@ -71,12 +71,12 @@
 @media screen and (max-width:600px) {
 
 
-  .lets-talk-section-container {
+  .tech-infra-lets-talk-section-container {
     width: 97%;
 
   }
 
-  .lets-talk-section-title {
+  .tech-infra-lets-talk-section-title {
 
     font-size: 24px;
     font-style: normal;
@@ -85,11 +85,11 @@
     /* 266.667% */
   }
 
-  .lets-talk-section-image {
+  .tech-infra-lets-talk-section-image {
     margin-top: 30px;
   }
 
-  .lets-talk-section-subtitle {
+  .tech-infra-lets-talk-section-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -98,7 +98,7 @@
     /* 187.5% */
   }
 
-  .lets-talk-section-button {
+  .tech-infra-lets-talk-section-button {
     width: 97%;
     display: flex;
     position: relative;
@@ -106,13 +106,13 @@
 
   }
 
-  .contact-us-button-img {
+  .tech-infra-contact-us-button-img {
     position: absolute;
     right: 6px;
   }
 
 
-  .lets-talk-section-button p {
+  .tech-infra-lets-talk-section-button p {
 
     font-size: 16px;
     font-style: normal;

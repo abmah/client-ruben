@@ -26,15 +26,14 @@ function Services() {
 
           if (isDesktop) {
             ScrollTrigger.create({
-              trigger: ".services-wrapper",
+              trigger: ".tech-infra-services-wrapper",
               start: "top top",
               end: "bottom bottom",
-              pin: ".services-nav-section",
+              pin: ".tech-infra-services-nav-section",
               onUpdate: (self) => {
                 const progress = self.progress * 100;
                 const newActiveNav = Math.min(3, Math.floor(progress / 25));
                 setActiveNav(newActiveNav);
-                console.log(newActiveNav);
               },
             });
           }
@@ -65,11 +64,11 @@ function Services() {
 
   return (
     <>
-      <div className="services-wrapper">
-        <div className="services-container">
-          <div className="services-nav-section">
+      <div className="tech-infra-services-wrapper">
+        <div className="tech-infra-services-container">
+          <div className="tech-infra-services-nav-section">
             <div
-              className={`services-nav-item services-nav-item-dark ${
+              className={`tech-infra-services-nav-item services-nav-item-dark ${
                 activeNav === 0 ? "active" : ""
               }`}
               onClick={() => handleClick(0)}
@@ -77,7 +76,7 @@ function Services() {
               Consult
             </div>
             <div
-              className={`services-nav-item services-nav-item-long ${
+              className={`tech-infra-services-nav-item services-nav-item-long ${
                 activeNav === 1 ? "active" : ""
               }`}
               onClick={() => handleClick(1)}
@@ -85,171 +84,201 @@ function Services() {
               Implement
             </div>
             <div
-              className={`services-nav-item ${activeNav === 2 ? "active" : ""}`}
+              className={`tech-infra-services-nav-item ${
+                activeNav === 2 ? "active" : ""
+              }`}
               onClick={() => handleClick(2)}
             >
               Manage
             </div>
             <div
-              className={`services-nav-item ${activeNav === 3 ? "active" : ""}`}
+              className={`tech-infra-services-nav-item ${
+                activeNav === 3 ? "active" : ""
+              }`}
               onClick={() => handleClick(3)}
             >
               Improve
             </div>
           </div>
-          <div className="services-right-section">
-            <div className="services-section-space"></div>
-            <div className="services-right-section-child">
-              <div className="services-navigation-mobile">
-                <div className={`services-nav-item active    `}>Consult</div>
-                <div className={`services-nav-item services-nav-item-long `}>
-                  Implement
+          <div className="tech-infra-services-right-section">
+            <div className="tech-infra-services-section-space"></div>
+            <div className="tech-infra-services-right-section-child">
+              <div className="tech-infra-services-navigation-mobile">
+                <div className={`tech-infra-services-nav-item active    `}>
+                  Consult
                 </div>
-                <div className={`services-nav-item `}>Manage</div>
-                <div className={`services-nav-item `}>Improve</div>
-              </div>
-              <h1 className="services-right-section-child-title">Consult</h1>
-              <p className="services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="services-right-section-cards-container">
-                <div className="servies-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="servies-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="servies-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="servies-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="services-right-section-child">
-              <div className="services-navigation-mobile">
-                <div className={`services-nav-item     `}>Consult</div>
                 <div
-                  className={`services-nav-item services-nav-item-long active `}
+                  className={`tech-infra-services-nav-item services-nav-item-long `}
                 >
                   Implement
                 </div>
-                <div className={`services-nav-item `}>Manage</div>
-                <div className={`services-nav-item `}>Improve</div>
+                <div className={`tech-infra-services-nav-item `}>Manage</div>
+                <div className={`tech-infra-services-nav-item `}>Improve</div>
               </div>
-              <h1 className="services-right-section-child-title">Implement</h1>
-              <p className="services-right-section-subtitle">
+              <h1 className="tech-infra-services-right-section-child-title">
+                Consult
+              </h1>
+              <p className="tech-infra-services-right-section-subtitle">
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
-              <div className="services-right-section-cards-container">
-                <div className="servies-right-section-card">
+              <div className="tech-infra-services-right-section-cards-container">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
               </div>
-              <button className="services-right-section-btn">
+              <button className="tech-infra-services-right-section-btn">
                 Explore more
               </button>
             </div>{" "}
-            <div className="services-right-section-child">
-              <div className="services-navigation-mobile">
-                <div className={`services-nav-item     `}>Consult</div>
-                <div className={`services-nav-item services-nav-item-long `}>
+            <div className="tech-infra-services-right-section-child">
+              <div className="tech-infra-services-navigation-mobile">
+                <div className={`tech-infra-services-nav-item     `}>
+                  Consult
+                </div>
+                <div
+                  className={`tech-infra-services-nav-item services-nav-item-long active `}
+                >
                   Implement
                 </div>
-                <div className={`services-nav-item active `}>Manage</div>
-                <div className={`services-nav-item `}>Improve</div>
+                <div className={`tech-infra-services-nav-item `}>Manage</div>
+                <div className={`tech-infra-services-nav-item `}>Improve</div>
               </div>
-              <h1 className="services-right-section-child-title">Manage</h1>
-              <p className="services-right-section-subtitle">
+              <h1 className="tech-infra-services-right-section-child-title">
+                Implement
+              </h1>
+              <p className="tech-infra-services-right-section-subtitle">
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
-              <div className="services-right-section-cards-container">
-                <div className="servies-right-section-card">
+              <div className="tech-infra-services-right-section-cards-container">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
               </div>
-              <button className="services-right-section-btn">
+              <button className="tech-infra-services-right-section-btn">
                 Explore more
               </button>
             </div>{" "}
-            <div className="services-right-section-child">
-              <div className="services-navigation-mobile">
-                <div className={`services-nav-item     `}>Consult</div>
-                <div className={`services-nav-item services-nav-item-long `}>
+            <div className="tech-infra-services-right-section-child">
+              <div className="tech-infra-services-navigation-mobile">
+                <div className={`tech-infra-services-nav-item     `}>
+                  Consult
+                </div>
+                <div
+                  className={`tech-infra-services-nav-item services-nav-item-long `}
+                >
                   Implement
                 </div>
-                <div className={`services-nav-item `}>Manage</div>
-                <div className={`services-nav-item active `}>Improve</div>
+                <div className={`tech-infra-services-nav-item active `}>
+                  Manage
+                </div>
+                <div className={`tech-infra-services-nav-item `}>Improve</div>
               </div>
-              <h1 className="services-right-section-child-title">Improve</h1>
-              <p className="services-right-section-subtitle">
+              <h1 className="tech-infra-services-right-section-child-title">
+                Manage
+              </h1>
+              <p className="tech-infra-services-right-section-subtitle">
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
-              <div className="services-right-section-cards-container">
-                <div className="servies-right-section-card">
+              <div className="tech-infra-services-right-section-cards-container">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
-                <div className="servies-right-section-card">
+                <div className="tech-infra-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
                   <p>labore et dolore magna aliqua ut enim </p>
                 </div>
               </div>
-              <button className="services-right-section-btn">
+              <button className="tech-infra-services-right-section-btn">
+                Explore more
+              </button>
+            </div>{" "}
+            <div className="tech-infra-services-right-section-child">
+              <div className="tech-infra-services-navigation-mobile">
+                <div className={`tech-infra-services-nav-item     `}>
+                  Consult
+                </div>
+                <div
+                  className={`tech-infra-services-nav-item services-nav-item-long `}
+                >
+                  Implement
+                </div>
+                <div className={`tech-infra-services-nav-item `}>Manage</div>
+                <div className={`tech-infra-services-nav-item active `}>
+                  Improve
+                </div>
+              </div>
+              <h1 className="tech-infra-services-right-section-child-title">
+                Improve
+              </h1>
+              <p className="tech-infra-services-right-section-subtitle">
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div className="tech-infra-services-right-section-cards-container">
+                <div className="tech-infra-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="tech-infra-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="tech-infra-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="tech-infra-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+              </div>
+              <button className="tech-infra-services-right-section-btn">
                 Explore more
               </button>
             </div>
-            <div className="services-section-space"></div>
+            <div className="tech-infra-services-section-space"></div>
           </div>
         </div>
       </div>
