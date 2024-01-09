@@ -75,7 +75,8 @@
 .tech-data-above-the-fold-img {
   position: absolute;
   right: 0;
-  z-index: 1;
+  z-index: 0;
+  bottom: 8%;
 }
 
 @media screen and (max-width: 1700px) {
@@ -91,10 +92,7 @@
     margin: 0 auto;
   }
 
-  .tech-data-above-the-fold-img {
-    width: 50%;
-    bottom: 0;
-  }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -104,6 +102,11 @@
 
   .tech-data-above-the-fold-main-title {
     font-size: 44px;
+  }
+
+  .tech-data-above-the-fold-img {
+    height: 280px;
+
   }
 }
 
@@ -118,6 +121,11 @@
     gap: 20px;
     width: 100%;
     max-width: 362px;
+  }
+
+  .tech-data-above-the-fold-img {
+    width: 100%;
+
   }
 }
 
@@ -157,7 +165,8 @@
   .tech-data-above-the-fold-img {
     position: static;
     order: -1;
-    width: 100%;
+    width: 160%;
+    margin-right: 50%;
   }
 
   .tech-data-above-the-fold-left-section {

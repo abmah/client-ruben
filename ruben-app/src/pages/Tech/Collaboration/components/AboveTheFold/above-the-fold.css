@@ -74,7 +74,7 @@
 
 .tech-collaboration-above-the-fold-img {
   position: absolute;
-  right: 0;
+  right: 10%;
   z-index: 1;
 }
 
@@ -92,8 +92,8 @@
   }
 
   .tech-collaboration-above-the-fold-img {
-    width: 50%;
-    bottom: 0;
+    /* width: 50%;
+    bottom: 0; */
   }
 }
 
@@ -119,6 +119,10 @@
     width: 100%;
     max-width: 362px;
   }
+
+  .tech-collaboration-above-the-fold-img {
+    right: -15%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -138,9 +142,6 @@
     width: 100%;
   }
 
-  .tech-collaboration-above-the-fold-img {
-    display: block;
-  }
 
   .tech-collaboration-above-the-fold-wrapper {
     height: auto;
@@ -152,12 +153,15 @@
     width: 95vw;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   .tech-collaboration-above-the-fold-img {
-    position: static;
+    position: relative;
     order: -1;
-    width: 100%;
+    width: 50%;
+    right: 25%;
+
   }
 
   .tech-collaboration-above-the-fold-left-section {

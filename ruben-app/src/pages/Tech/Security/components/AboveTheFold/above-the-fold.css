@@ -157,7 +157,8 @@
   .tech-security-above-the-fold-img {
     position: static;
     order: -1;
-    width: 100%;
+    width: 110%;
+    margin-left: -40px;
   }
 
   .tech-security-above-the-fold-left-section {
