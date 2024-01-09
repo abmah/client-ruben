@@ -8,6 +8,9 @@
   position: relative;
   height: 100vh;
   clip-path: url(#myClipPath);
+  /* background-image: url(./123.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .what-we-do-wrapper-wrapper {
@@ -160,6 +163,7 @@
 }
 
 .what-we-do-flower {
+  /* display: none; */
   position: absolute;
   top: 50%;
   left: 50%;

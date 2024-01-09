@@ -101,6 +101,11 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
+    var revealSection = document.querySelector(".reveal-section");
+
+    // Set the background size to make it larger or smaller
+    revealSection.style.backgroundSize = "90%";
+    revealSection.style.backgroundPosition = "20% 30%";
     gsap.set(".what-we-do-flower", {
       cssText: `
       align-self: center;
@@ -133,7 +138,7 @@ function RevealSection() {
                 start: "top top",
                 end: "+=1200",
                 pin: ".reveal-section",
-                scrub: true,
+                scrub: 1,
               },
             });
 
@@ -151,6 +156,9 @@ function RevealSection() {
                       (svgDimensions.height * newScale) / 2,
                   });
                   setScale(newScale);
+                  // revealSection.style.backgroundSize = `${
+                  //   90 + textAnimation.progress() * 15
+                  // }%`;
                 },
               }
             );

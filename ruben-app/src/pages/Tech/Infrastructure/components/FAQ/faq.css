@@ -1,7 +1,7 @@
 .faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
-  height: 600px;
+  min-height: 600px;
 }
 
 .faq-container {
@@ -22,7 +22,7 @@
 }
 
 .faq-section-container {
-  width: 50%;
+  width: 55%;
 }
 
 .row-title {

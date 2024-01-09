@@ -6,45 +6,6 @@ import Clowd from "../../../../../assets/clowd.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function RightSectionChild() {
-  return (
-    <div className="services-right-section-child">
-      <div className="services-navigation-mobile">
-        <div className={`services-nav-item active    `}>Consult</div>
-        <div className={`services-nav-item services-nav-item-long `}>
-          Implement
-        </div>
-        <div className={`services-nav-item `}>Manage</div>
-        <div className={`services-nav-item `}>Improve</div>
-      </div>
-      <h1 className="services-right-section-child-title">Consult</h1>
-      <p className="services-right-section-subtitle">
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <div className="services-right-section-cards-container">
-        <div className="servies-right-section-card">
-          <img src={Clowd} alt="services-image" />
-          <p>labore et dolore magna aliqua ut enim </p>
-        </div>
-        <div className="servies-right-section-card">
-          <img src={Clowd} alt="services-image" />
-          <p>labore et dolore magna aliqua ut enim </p>
-        </div>
-        <div className="servies-right-section-card">
-          <img src={Clowd} alt="services-image" />
-          <p>labore et dolore magna aliqua ut enim </p>
-        </div>
-        <div className="servies-right-section-card">
-          <img src={Clowd} alt="services-image" />
-          <p>labore et dolore magna aliqua ut enim </p>
-        </div>
-      </div>
-      <button className="services-right-section-btn">Explore more</button>
-    </div>
-  );
-}
-
 function Services() {
   const [activeNav, setActiveNav] = useState(0);
 
@@ -138,10 +99,156 @@ function Services() {
           </div>
           <div className="services-right-section">
             <div className="services-section-space"></div>
-            <RightSectionChild />
-            <RightSectionChild />
-            <RightSectionChild />
-            <RightSectionChild />
+            <div className="services-right-section-child">
+              <div className="services-navigation-mobile">
+                <div className={`services-nav-item active    `}>Consult</div>
+                <div className={`services-nav-item services-nav-item-long `}>
+                  Implement
+                </div>
+                <div className={`services-nav-item `}>Manage</div>
+                <div className={`services-nav-item `}>Improve</div>
+              </div>
+              <h1 className="services-right-section-child-title">Consult</h1>
+              <p className="services-right-section-subtitle">
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div className="services-right-section-cards-container">
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+              </div>
+              <button className="services-right-section-btn">
+                Explore more
+              </button>
+            </div>{" "}
+            <div className="services-right-section-child">
+              <div className="services-navigation-mobile">
+                <div className={`services-nav-item     `}>Consult</div>
+                <div
+                  className={`services-nav-item services-nav-item-long active `}
+                >
+                  Implement
+                </div>
+                <div className={`services-nav-item `}>Manage</div>
+                <div className={`services-nav-item `}>Improve</div>
+              </div>
+              <h1 className="services-right-section-child-title">Implement</h1>
+              <p className="services-right-section-subtitle">
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div className="services-right-section-cards-container">
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+              </div>
+              <button className="services-right-section-btn">
+                Explore more
+              </button>
+            </div>{" "}
+            <div className="services-right-section-child">
+              <div className="services-navigation-mobile">
+                <div className={`services-nav-item     `}>Consult</div>
+                <div className={`services-nav-item services-nav-item-long `}>
+                  Implement
+                </div>
+                <div className={`services-nav-item active `}>Manage</div>
+                <div className={`services-nav-item `}>Improve</div>
+              </div>
+              <h1 className="services-right-section-child-title">Manage</h1>
+              <p className="services-right-section-subtitle">
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div className="services-right-section-cards-container">
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+              </div>
+              <button className="services-right-section-btn">
+                Explore more
+              </button>
+            </div>{" "}
+            <div className="services-right-section-child">
+              <div className="services-navigation-mobile">
+                <div className={`services-nav-item     `}>Consult</div>
+                <div className={`services-nav-item services-nav-item-long `}>
+                  Implement
+                </div>
+                <div className={`services-nav-item `}>Manage</div>
+                <div className={`services-nav-item active `}>Improve</div>
+              </div>
+              <h1 className="services-right-section-child-title">Improve</h1>
+              <p className="services-right-section-subtitle">
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </p>
+              <div className="services-right-section-cards-container">
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+                <div className="servies-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>labore et dolore magna aliqua ut enim </p>
+                </div>
+              </div>
+              <button className="services-right-section-btn">
+                Explore more
+              </button>
+            </div>
             <div className="services-section-space"></div>
           </div>
         </div>
