@@ -4,30 +4,35 @@
 }
 
 .headline {
-  width: 380px;
+  width: min-content;
+  padding: 0px 24px;
   height: 76px;
   flex-shrink: 0;
-  border-radius: 28px;
+  border-radius: 40px;
   background: #718096;
   color: #FFF;
-  text-align: center;
-  font-family: Outfit;
   font-size: 34px;
+  text-wrap: nowrap;
   font-style: normal;
   font-weight: 600;
-  line-height: 72px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 125% */
   /* 166.667% */
 }
 
 .text {
-  margin: 0.8em 0 0 0;
-  width: 254px;
+  margin-top: 32px;
+
   border-radius: 6px;
   color: #192430;
   font-family: Outfit;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  margin-bottom: 20px;
   line-height: 32px;
 
 }
@@ -41,19 +46,22 @@
 }
 
 .left {
+
   width: 50%;
 }
 
 .detailsWrapper {
   margin: auto;
   width: 80%;
+
+  padding-bottom: 200px;
+  padding-top: 400px;
 }
 
 .details {
   color: #2D3748;
-
-  height: 60vh;
-  min-height: 600px;
+  height: 400px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,12 +92,7 @@
   background-color: #2D3748;
 }
 
-.photos {
-  width: 40vw;
-  height: 40vw;
 
-
-}
 
 .flower-test {
   transform: rotate(-70deg);
@@ -102,24 +105,46 @@
   outline: none;
   color: white;
   border-radius: 30px;
-  height: 60px;
-  width: 200px;
-  background-color: #F9B934;
+  width: 296px;
+  height: 48px;
+  background: #E4E9EF;
   font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.some-btn1 {
-  background-color: #718096;
-
+.some-btn p {
+  color: #181F28;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.some-btn2 {
-  background-color: #F9B934;
-  color: #192430;
-
-
+.some-btn div {
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
 
-.some-btn3 {
-  background-color: #2D3748;
+.flower-button-container {
+  min-width: 630px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+@media screen and (max-width:900px) {
+
+  .right {
+    display: none;
+  }
+
 }

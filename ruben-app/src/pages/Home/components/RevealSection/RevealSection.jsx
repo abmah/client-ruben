@@ -138,7 +138,7 @@ function RevealSection() {
                 start: "top top",
                 end: "+=1200",
                 pin: ".reveal-section",
-                scrub: 1,
+                scrub: true,
               },
             });
 
