@@ -55,23 +55,21 @@ function RevealSection() {
 
                 const clampedIndex = Math.min(Math.max(newIndex, 0), 2);
                 console.log(newIndex, clampedIndex);
-                // Apply opacity and x-offset based on the active detail index
+                // Apply filter brightness and y-offset based on the active detail index
                 detailsElements.forEach((detail, index) => {
-                  if (index === clampedIndex) {
-                    // Active detail
-                    gsap.to(detail, { opacity: 1, y: -130 });
-                  } else {
-                    // Inactive details
-                    gsap.to(detail, { opacity: 0, y: 0 });
-                  }
+                  const filterBrightness = index === clampedIndex ? 1 : 0.5;
+                  gsap.to(detail, {
+                    filter: `brightness(${filterBrightness})`,
+                  });
                 });
               },
             });
 
-            // Set initial opacity and y-offset for all details divs
+            // Set initial filter brightness and y-offset for all details divs
             detailsElements.forEach((detail, index) => {
+              const filterBrightness = index === 0 ? 1 : 0.5;
               gsap.set(detail, {
-                opacity: index === 0 ? 1 : 0,
+                filter: `brightness(${filterBrightness})`,
               });
             });
 
@@ -79,8 +77,8 @@ function RevealSection() {
             // const tlDown = gsap.timeline();
             // const tlUp = gsap.timeline();
             // detailsElements.forEach((detail, index) => {
-            //   tlDown.to(detail, { opacity: 0, duration: 0.5 }, index * 0.2);
-            //   tlUp.to(detail, { opacity: 1, duration: 0.5 }, index * 0.2);
+            //   tlDown.to(detail, { filter: "brightness(0.5)", duration: 0.5 }, index * 0.2);
+            //   tlUp.to(detail, { filter: "brightness(1)", duration: 0.5 }, index * 0.2);
             // });
           }
         }
@@ -100,7 +98,6 @@ function RevealSection() {
       <div className="gallery">
         <div className="left">
           <div className="detailsWrapper">
-            <div className="empty"></div>
             <div className="details">
               <div className="headline">Talent Augmentation</div>
               <div className="text">
@@ -154,7 +151,7 @@ function RevealSection() {
                 </button>
               </div>
             </div>
-            <div className="details">
+            <div className="details details-3">
               <div className="headline headline3">Cloud Tech</div>
               <div className="text">
                 Access to high profile experts in start/stop model

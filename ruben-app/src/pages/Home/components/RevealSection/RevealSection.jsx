@@ -6,6 +6,7 @@ import "./reveal.css";
 import Flower from "../../../../assets/flower.svg";
 import BackgroundLines from "../../../../assets/background-lines-lightgray.svg";
 import FlowerClipped from "../../../../assets/flower-clipped.svg";
+import TriAngle from "./right-triangle.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -18,6 +19,30 @@ function WhatWeDo() {
         src={BackgroundLines}
         alt="background-lines"
       />
+      <div className="reveal-section-text-wrapper">
+        <h1>Deliver Stronger Outcomes in Changing Conditions</h1>
+        <div>
+          <img src={TriAngle} alt="triangle" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div>
+          <img src={TriAngle} alt="triangle" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div>
+          <img src={TriAngle} alt="triangle" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
       <div className="what-we-do-text-container">
         <h1 className="what-we-do-text what-we-do-text-main">
           Wrong <span className="what-we-do-text-highlight"> talent</span> is
@@ -101,11 +126,11 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
-    var revealSection = document.querySelector(".reveal-section");
+    // var revealSection = document.querySelector(".reveal-section");
 
     // Set the background size to make it larger or smaller
-    revealSection.style.backgroundSize = "90%";
-    revealSection.style.backgroundPosition = "20% 30%";
+    // revealSection.style.backgroundSize = "90%";
+    // revealSection.style.backgroundPosition = "20% 30%";
     gsap.set(".what-we-do-flower", {
       cssText: `
       align-self: center;
@@ -136,9 +161,23 @@ function RevealSection() {
               scrollTrigger: {
                 trigger: ".reveal-section-top-wrapper",
                 start: "top top",
-                end: "+=1200",
+                end: "+=400",
                 pin: ".reveal-section",
                 scrub: true,
+                onUpdate: (self) => {
+                  if (self.progress >= 0.2) {
+                    // Set the opacity to make it visible
+                    gsap.set(".reveal-section-text-wrapper", { opacity: 1 });
+                    console.log("yo");
+                  } else {
+                    // Set the opacity to 0 if below 0.2
+                    gsap.set(".reveal-section-text-wrapper", {
+                      opacity: 0,
+                      duration: 0.1,
+                    });
+                    console.log("do");
+                  }
+                },
               },
             });
 
@@ -147,6 +186,7 @@ function RevealSection() {
               {
                 onUpdate: () => {
                   const newScale = 1 + textAnimation.progress() * 12;
+
                   setPosition({
                     x:
                       window.innerWidth / 2 -
@@ -163,39 +203,39 @@ function RevealSection() {
               }
             );
 
-            revealAnimation.to(".what-we-do-main-text-container", {
-              opacity: 0,
-            });
+            // revealAnimation.to(".what-we-do-main-text-container", {
+            //   opacity: 0,
+            // });
             revealAnimation.add(textAnimation);
 
-            const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
-              opacity: 1,
-              x: 30,
-            });
-            revealAnimation.add(grayCardAnimation);
+            // const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
+            //   opacity: 1,
+            //   x: 30,
+            // });
+            // revealAnimation.add(grayCardAnimation);
 
-            revealAnimation.to(".what-we-do-flower", {
-              rotate: 30,
-            });
+            // revealAnimation.to(".what-we-do-flower", {
+            //   rotate: 30,
+            // });
 
-            const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
-              opacity: 1,
-              x: 30,
-            });
-            revealAnimation.add(yellowCardAnimation);
+            // const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
+            //   opacity: 1,
+            //   x: 30,
+            // });
+            // revealAnimation.add(yellowCardAnimation);
 
-            revealAnimation.to(".what-we-do-flower", {
-              rotate: 155,
-            });
+            // revealAnimation.to(".what-we-do-flower", {
+            //   rotate: 155,
+            // });
 
-            const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
-              opacity: 1,
-              x: -30,
-            });
-            revealAnimation.add(blueCardAnimation);
-            revealAnimation.to(".what-we-do-flower", {
-              rotate: 270,
-            });
+            // const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
+            //   opacity: 1,
+            //   x: -30,
+            // });
+            // revealAnimation.add(blueCardAnimation);
+            // revealAnimation.to(".what-we-do-flower", {
+            //   rotate: 270,
+            // });
           } else if (isMobile) {
             // no specific animations for mobile at
           }

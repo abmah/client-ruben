@@ -8,9 +8,11 @@
   position: relative;
   height: 100vh;
   clip-path: url(#myClipPath);
-  /* background-image: url(./123.jpg);
+  background-image: url(./bg.svg);
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
+  background-color: #2D3748;
+
 }
 
 .what-we-do-wrapper-wrapper {
@@ -25,6 +27,7 @@
 }
 
 .what-we-do-main-text-container {
+  display: none;
   color: black;
   position: absolute;
   z-index: 1;
@@ -44,6 +47,7 @@
   font-family: Outfit;
   font-size: 40px;
   font-style: normal;
+  display: none;
   font-weight: 600;
   line-height: normal;
   margin-bottom: 0;
@@ -69,10 +73,14 @@
   position: relative;
   overflow: hidden;
   height: 100vh;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .what-we-do-text-container {
+  display: none;
   margin-bottom: 20px;
+
 }
 
 .what-we-do-cards-container {
@@ -170,6 +178,7 @@
   transform: translate(-50%, -50%);
   z-index: -1;
   width: 400px;
+  display: none;
 }
 
 @media screen and (max-width: 1600px) {
@@ -355,4 +364,56 @@
   .what-we-do-flower {
     max-width: 250px;
   }
+}
+
+
+.reveal-section-text-wrapper {
+
+  align-self: flex-start;
+  opacity: 0;
+  margin-top: 12%;
+  max-width: 519px;
+}
+
+.reveal-section-text-wrapper h1 {
+  color: #FFF;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  /* 140% */
+}
+
+.reveal-section-text-wrapper>div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 34px;
+}
+
+.reveal-section-text-wrapper img {
+  flex-shrink: 0;
+}
+
+.reveal-section-text-wrapper p {
+  color: #FFF;
+  margin-top: -10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+
+  /* 160% */
+}
+
+
+@media screen and (max-width:1500px) {
+
+  .reveal-section-text-wrapper {
+    transform: scale(.9);
+    margin-top: 8%;
+  }
+
 }
