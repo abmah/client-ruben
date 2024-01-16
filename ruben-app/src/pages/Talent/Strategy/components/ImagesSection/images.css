@@ -1,0 +1,164 @@
+/* talent-digital image section */
+
+.talent-digital-images-wrapper {
+  width: 100%;
+  min-height: 800px;
+  color: #192430;
+  margin-top: 40px;
+}
+
+.talent-digital-images-container {
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  gap: 160px;
+  color: #192430;
+  margin-top: 240px;
+}
+
+.talent-digital-image-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.talent-digital-image {
+  max-width: 551px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.talent-digital-image-text {
+  max-width: 627px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.talent-digital-image-text-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.talent-digital-image-text-subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.talent-digital-image-text-paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* talent-digital image section */
+
+@media screen and (max-width:1300px) {
+  .talent-digital-images-container {
+    max-width: 97%;
+  }
+
+  .talent-digital-image {
+    border-radius: 24px;
+    max-width: 100%;
+    height: 385px;
+    order: -2;
+    object-fit: cover;
+    gap: 20px;
+  }
+
+  .talent-digital-image-text-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .talent-digital-image-text-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .talent-digital-image-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .talent-digital-image-text {
+    max-width: 500px;
+  }
+}
+
+/* Add other media queries if necessary */
+
+/* talent-digital image section */
+
+/* ... (previous styles) ... */
+
+@media screen and (max-width:1300px) {
+  .talent-digital-images-container {
+    max-width: 97%;
+  }
+
+  .talent-digital-image {
+    border-radius: 24px;
+    max-width: 100%;
+    height: 385px;
+    order: -2;
+    object-fit: cover;
+    gap: 20px;
+  }
+
+  .talent-digital-image-text-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .talent-digital-image-text-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .talent-digital-image-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .talent-digital-image-text {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .talent-digital-above-the-fold-main-title {
+    font-size: 36px;
+  }
+
+  /* ... (other relevant styles) ... */
+}
+
+/* Add other media queries if necessary */

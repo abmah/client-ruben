@@ -1,0 +1,134 @@
+/* talent-digital cards section */
+
+.talent-digital-cards-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  color: #192430;
+  margin-top: 40px;
+}
+
+.talent-digital-cards-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.talent-digital-card {
+  max-width: 416px;
+  width: 30%;
+  height: 100%;
+  background: #eff2f5;
+  border-radius: 24px;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 477px;
+}
+
+.talent-digital-card-header {
+  margin-top: 32px;
+  width: 100px;
+  color: #FFF;
+  padding: 6px 0px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  background: #718096;
+  border-radius: 24px;
+  margin-bottom: 22px;
+}
+
+.talent-digital-card-title {
+  margin-bottom: 46px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.talent-digital-card-paragraph {
+  color: #192430;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+/* talent-digital cards section */
+
+/* talent-digital image section */
+
+/* ... (previous styles) ... */
+
+/* talent-digital image section */
+
+@media screen and (max-width:1300px) {
+  .talent-digital-images-container {
+    max-width: 97%;
+  }
+
+  .talent-digital-cards-container {
+    width: 97%;
+  }
+
+  .talent-digital-card {
+    width: 100%;
+    max-width: 362px;
+    min-height: 410px;
+  }
+
+  .talent-digital-card-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .talent-digital-card-paragraph {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  .talent-digital-image {
+    border-radius: 24px;
+    max-width: 100%;
+    height: 385px;
+    order: -2;
+    object-fit: cover;
+    gap: 20px;
+  }
+
+  .talent-digital-image-text-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .talent-digital-image-text-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .talent-digital-card-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .talent-digital-image-text {
+    max-width: 500px;
+  }
+}

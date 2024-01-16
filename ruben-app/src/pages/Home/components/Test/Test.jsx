@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -17,7 +17,6 @@ import ProgramsButton from "./programs-button.svg";
 
 import DigitalButton from "./digital-button.svg";
 import StrategyButton from "./strategy-button.svg";
-// import OperationsButton from "./operations-button.svg";
 import HourlyButton from "./hourly-button.svg";
 
 function RevealSection() {
@@ -40,7 +39,7 @@ function RevealSection() {
           }px) and (prefers-reduced-motion: no-preference)`,
         },
         (context) => {
-          let { isDesktop, isMobile } = context.conditions;
+          let { isDesktop } = context.conditions;
           if (isDesktop) {
             ScrollTrigger.create({
               trigger: ".gallery",
@@ -185,9 +184,11 @@ function RevealSection() {
               </div>
             </div>
           </div>
-        </div>
-
+        </div>{" "}
         <div className="right">
+          <div className="right-title">
+            <h1>Service offering designed to build up Transformation</h1>
+          </div>
           <img
             className="flower-test"
             ref={flowerRef}

@@ -1,6 +1,6 @@
 .gallery {
   overflow: hidden;
-
+  position: relative;
 }
 
 .headline {
@@ -98,7 +98,8 @@
 .flower-test {
   transform: rotate(-70deg);
   width: 70%;
-  margin-top: 100px;
+  margin-top: 50px;
+  z-index: 1000;
 }
 
 .some-btn {
@@ -152,4 +153,34 @@
 
 .details-3 {
   margin-top: -70px;
+}
+
+.right-title {
+  color: #192430;
+  background-color: white;
+  position: absolute;
+  left: -100%;
+  width: 500px;
+
+  z-index: 100;
+  top: -30px;
+  padding-top: 130px;
+  width: 100vw;
+  padding-left: 10%;
+  padding-bottom: 40px;
+
+}
+
+
+.right-title h1 {
+  margin-bottom: 0px;
+}
+
+.gallery {}
+
+
+.helloworld {
+  color: #192430;
+  margin-top: 70px;
+  margin-bottom: 0px;
 }

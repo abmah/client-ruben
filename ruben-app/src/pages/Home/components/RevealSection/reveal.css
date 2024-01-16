@@ -1,18 +1,16 @@
 .reveal-section-wrapper {
   width: 100%;
   position: relative;
-  margin-bottom: 450px;
+
 }
 
 .reveal-section {
   position: relative;
   height: 100vh;
   clip-path: url(#myClipPath);
-  background-image: url(./bg.svg);
+  background-image: url(./../../../../assets/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2D3748;
-
 }
 
 .what-we-do-wrapper-wrapper {

@@ -1,13 +1,13 @@
 import TopRightArrow from "../../../../assets/top-right-arrow.svg";
 import "./whoweare.css";
 
-import PersonOne from "./people/person-one.png";
-import PersonTwo from "./people/person-two.png";
-import PersonThree from "./people/person-three.png";
-import PersonFour from "./people/person-four.png";
-import PersonFive from "./people/person-five.png";
-import PersonSix from "./people/person-six.png";
-import PersonSeven from "./people/person-seven.png";
+import PersonOne from "./people/person-one.webp";
+import PersonTwo from "./people/person-two.webp";
+import PersonThree from "./people/person-three.webp";
+import PersonFour from "./people/person-four.webp";
+import PersonFive from "./people/person-five.webp";
+import PersonSix from "./people/person-six.webp";
+import PersonSeven from "./people/person-seven.webp";
 
 function WhoWeAre() {
   return (

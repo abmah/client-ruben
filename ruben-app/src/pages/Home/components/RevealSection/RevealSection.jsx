@@ -3,10 +3,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./reveal.css";
-import Flower from "../../../../assets/flower.svg";
 import BackgroundLines from "../../../../assets/background-lines-lightgray.svg";
-import FlowerClipped from "../../../../assets/flower-clipped.svg";
-import TriAngle from "./right-triangle.svg";
+import TriAngle from "../../../../assets/right-triangle.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -51,28 +49,6 @@ function WhatWeDo() {
         <h1 className="what-we-do-text">
           We offer 3 solutions to accelerate transformation.
         </h1>
-      </div>
-      <img className="what-we-do-flower" src={Flower} alt="flower" />
-
-      <div className="what-we-do-cards-container">
-        <div className="what-we-do-card what-we-do-gray-card">
-          <h1 className="what-we-do-card-highlight">Talent Augmentation</h1>
-          <p className="what-we-do-card-sub">
-            Access to high profile experts in start/stop model
-          </p>
-        </div>
-        <div className="what-we-do-card what-we-do-yellow-card">
-          <h1 className="what-we-do-card-highlight">Upskilling Programs</h1>
-          <p className="what-we-do-card-sub">
-            Access to high profile experts in start/stop model
-          </p>
-        </div>
-        <div className="what-we-do-card what-we-do-blue-card">
-          <h1 className="what-we-do-card-highlight">Cloud Tech</h1>
-          <p className="what-we-do-card-sub">
-            Access to high profile experts in start/stop model
-          </p>
-        </div>
       </div>
     </div>
   );
@@ -126,11 +102,6 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
-    // var revealSection = document.querySelector(".reveal-section");
-
-    // Set the background size to make it larger or smaller
-    // revealSection.style.backgroundSize = "90%";
-    // revealSection.style.backgroundPosition = "20% 30%";
     gsap.set(".what-we-do-flower", {
       cssText: `
       align-self: center;
@@ -203,39 +174,7 @@ function RevealSection() {
               }
             );
 
-            // revealAnimation.to(".what-we-do-main-text-container", {
-            //   opacity: 0,
-            // });
             revealAnimation.add(textAnimation);
-
-            // const grayCardAnimation = gsap.to(".what-we-do-gray-card", {
-            //   opacity: 1,
-            //   x: 30,
-            // });
-            // revealAnimation.add(grayCardAnimation);
-
-            // revealAnimation.to(".what-we-do-flower", {
-            //   rotate: 30,
-            // });
-
-            // const yellowCardAnimation = gsap.to(".what-we-do-yellow-card", {
-            //   opacity: 1,
-            //   x: 30,
-            // });
-            // revealAnimation.add(yellowCardAnimation);
-
-            // revealAnimation.to(".what-we-do-flower", {
-            //   rotate: 155,
-            // });
-
-            // const blueCardAnimation = gsap.to(".what-we-do-blue-card", {
-            //   opacity: 1,
-            //   x: -30,
-            // });
-            // revealAnimation.add(blueCardAnimation);
-            // revealAnimation.to(".what-we-do-flower", {
-            //   rotate: 270,
-            // });
           } else if (isMobile) {
             // no specific animations for mobile at
           }
@@ -250,11 +189,11 @@ function RevealSection() {
 
   return (
     <div className="reveal-section-top-wrapper">
-      <img
+      {/* <img
         className="clipped-flower"
         src={FlowerClipped}
         alt="clipped-flower"
-      />
+      /> */}
       <div className="what-we-do-main-text-container">
         <h1>What We Do</h1>
         <p>
