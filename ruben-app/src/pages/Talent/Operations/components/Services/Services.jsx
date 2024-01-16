@@ -49,9 +49,11 @@ function Services() {
 
   const handleClick = (index) => {
     console.log(index);
-    const rightSection = document.querySelector(".services-right-section");
+    const rightSection = document.querySelector(
+      ".talent-operations-services-right-section"
+    );
     const childElements = rightSection.getElementsByClassName(
-      "services-right-section-child"
+      "talent-operations-services-right-section-child"
     );
 
     if (childElements.length > index) {
@@ -69,7 +71,7 @@ function Services() {
           <div className="talent-operations-services-nav-section">
             <div
               className={`talent-operations-services-nav-item services-nav-item-dark ${
-                activeNav === 0 ? "active" : ""
+                activeNav === 0 ? "active-talent" : ""
               }`}
               onClick={() => handleClick(0)}
             >
@@ -77,7 +79,7 @@ function Services() {
             </div>
             <div
               className={`talent-operations-services-nav-item services-nav-item-long ${
-                activeNav === 1 ? "active" : ""
+                activeNav === 1 ? "active-talent" : ""
               }`}
               onClick={() => handleClick(1)}
             >
@@ -85,7 +87,7 @@ function Services() {
             </div>
             <div
               className={`talent-operations-services-nav-item ${
-                activeNav === 2 ? "active" : ""
+                activeNav === 2 ? "active-talent" : ""
               }`}
               onClick={() => handleClick(2)}
             >
@@ -93,7 +95,7 @@ function Services() {
             </div>
             <div
               className={`talent-operations-services-nav-item ${
-                activeNav === 3 ? "active" : ""
+                activeNav === 3 ? "active-talent" : ""
               }`}
               onClick={() => handleClick(3)}
             >
@@ -105,7 +107,7 @@ function Services() {
             <div className="talent-operations-services-right-section-child">
               <div className="talent-operations-services-navigation-mobile">
                 <div
-                  className={`talent-operations-services-nav-item active    `}
+                  className={`talent-operations-services-nav-item active-talent    `}
                 >
                   Consult
                 </div>
@@ -157,7 +159,7 @@ function Services() {
                   Consult
                 </div>
                 <div
-                  className={`talent-operations-services-nav-item services-nav-item-long active `}
+                  className={`talent-operations-services-nav-item services-nav-item-long active-talent `}
                 >
                   Implement
                 </div>
@@ -208,7 +210,9 @@ function Services() {
                 >
                   Implement
                 </div>
-                <div className={`talent-operations-services-nav-item active `}>
+                <div
+                  className={`talent-operations-services-nav-item active-talent `}
+                >
                   Manage
                 </div>
                 <div className={`talent-operations-services-nav-item `}>
@@ -258,7 +262,9 @@ function Services() {
                 <div className={`talent-operations-services-nav-item `}>
                   Manage
                 </div>
-                <div className={`talent-operations-services-nav-item active `}>
+                <div
+                  className={`talent-operations-services-nav-item active-talent `}
+                >
                   Improve
                 </div>
               </div>

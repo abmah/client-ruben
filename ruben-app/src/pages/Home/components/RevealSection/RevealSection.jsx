@@ -102,16 +102,16 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
-    gsap.set(".what-we-do-flower", {
-      cssText: `
-      align-self: center;
-      width: 380px;
-  
-      position: static;
-      top: auto;
-      left: auto;
-      transform: none;`,
-    });
+    // gsap.set(".what-we-do-flower", {
+    //   cssText: `
+    //   align-self: center;
+    //   width: 380px;
+
+    //   position: static;
+    //   top: auto;
+    //   left: auto;
+    //   transform: none;`,
+    // });
 
     const mm = gsap.matchMedia();
     const breakPoint = 900;
@@ -139,14 +139,12 @@ function RevealSection() {
                   if (self.progress >= 0.2) {
                     // Set the opacity to make it visible
                     gsap.set(".reveal-section-text-wrapper", { opacity: 1 });
-                    console.log("yo");
                   } else {
                     // Set the opacity to 0 if below 0.2
                     gsap.set(".reveal-section-text-wrapper", {
                       opacity: 0,
                       duration: 0.1,
                     });
-                    console.log("do");
                   }
                 },
               },

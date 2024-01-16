@@ -49,9 +49,11 @@ function Services() {
 
   const handleClick = (index) => {
     console.log(index);
-    const rightSection = document.querySelector(".services-right-section");
+    const rightSection = document.querySelector(
+      ".tech-security-services-right-section"
+    );
     const childElements = rightSection.getElementsByClassName(
-      "services-right-section-child"
+      "tech-security-services-right-section-child"
     );
 
     if (childElements.length > index) {

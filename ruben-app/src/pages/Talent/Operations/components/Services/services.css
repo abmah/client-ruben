@@ -42,7 +42,7 @@
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.active {
+.active-talent {
   background: #718096;
   color: white;
 }
