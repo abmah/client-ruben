@@ -1,0 +1,171 @@
+.talent-operations-above-the-fold-wrapper {
+  height: 650px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.talent-operations-above-the-fold-container {
+  width: 98vw;
+  height: 90%;
+  background-color: #718096;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.talent-operations-above-the-fold-left-section-wrapper {
+  width: 60%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.talent-operations-above-the-fold-left-section {
+  width: 640px;
+  z-index: 3;
+}
+
+.talent-operations-above-the-fold-main-title {
+  color: #fff;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.talent-operations-above-the-fold-main-title strong {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.talent-operations-above-the-fold-button-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.talent-operations-above-the-fold-button-container button {
+  width: 184px;
+  height: 56px;
+  flex-shrink: 0;
+  outline: none;
+  border-radius: 56px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.talent-operations-learn-more-button {
+  background-color: white;
+  color: #222b38;
+  border: none;
+}
+
+.talent-operations-get-in-contact-button {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.talent-operations-above-the-fold-img {
+  position: absolute;
+  right: 10%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 1700px) {
+  .talent-operations-above-the-fold-left-section-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .talent-operations-above-the-fold-left-section-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+  .talent-operations-above-the-fold-left-section {
+    width: 386px;
+  }
+
+  .talent-operations-above-the-fold-main-title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .talent-operations-cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .talent-operations-image-parent {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 362px;
+  }
+
+  .talent-operations-above-the-fold-img {
+    right: -20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .talent-operations-above-the-fold-main-title {
+    font-size: 36px;
+  }
+
+  .talent-operations-get-in-contact-button {
+    display: none;
+  }
+
+  .talent-operations-above-the-fold-left-section {
+    width: 100%;
+  }
+
+  .talent-operations-above-the-fold-button-container .talent-operations-learn-more-button {
+    width: 100%;
+  }
+
+  .talent-operations-above-the-fold-img {
+    display: block;
+  }
+
+  .talent-operations-above-the-fold-wrapper {
+    height: auto;
+  }
+
+  .talent-operations-above-the-fold-container {
+    padding-top: 100px;
+    padding-bottom: 30px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .talent-operations-above-the-fold-img {
+    position: static;
+    order: -1;
+    width: 70%;
+    /* transform: rotate(90deg); */
+
+  }
+
+  .talent-operations-above-the-fold-left-section {
+    order: 2;
+  }
+}

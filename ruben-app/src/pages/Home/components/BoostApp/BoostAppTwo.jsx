@@ -2,8 +2,6 @@ import "./boost-app.css";
 
 import Progress from "../../../../assets/progress.svg";
 
-import YellowLines from "../../../../assets/yellow-lines.svg";
-
 import YellowFlower from "../../../../assets/yellow-flower.svg";
 
 function BoostApp() {
@@ -11,7 +9,7 @@ function BoostApp() {
     <div className="boost-app-section">
       <img
         className="blue-lines-background"
-        src={YellowLines}
+        // src={YellowLines}
         alt="blue-lines"
       />
       <div className="boost-app-left-section">

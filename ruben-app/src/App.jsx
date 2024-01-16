@@ -10,6 +10,8 @@ import Security from "./pages/Tech/Security/Security";
 import Collaboration from "./pages/Tech/Collaboration/Collaboration";
 import DigitalExperts from "./pages/Talent/DigitalExperts/DigitalExperts";
 import Strategy from "./pages/Talent/Strategy/Strategy";
+import Hourly from "./pages/Talent/HourlyBased/Hourly";
+import Operations from "./pages/Talent/Operations/Operations";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path="/collaboration" element={<Collaboration />} />
         <Route path="/digital-experts" element={<DigitalExperts />} />
         <Route path="/strategy-consultants" element={<Strategy />} />
+        <Route path="/hourly-based-experts" element={<Hourly />} />
+        <Route path="/operations-consultants" element={<Operations />} />
       </Routes>
       <Footer />
     </>

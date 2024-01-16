@@ -3,8 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./test.css";
-import Flower from "../../../../assets/flower.svg";
-
 gsap.registerPlugin(ScrollTrigger);
 
 import InfraBtn from "./infrastructure-button.svg";
@@ -18,6 +16,8 @@ import ProgramsButton from "./programs-button.svg";
 import DigitalButton from "./digital-button.svg";
 import StrategyButton from "./strategy-button.svg";
 import HourlyButton from "./hourly-button.svg";
+
+import Flower from "../../../../assets/flower.svg";
 
 function RevealSection() {
   const flowerRef = useRef(null);

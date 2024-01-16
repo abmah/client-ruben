@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./reveal.css";
-import BackgroundLines from "../../../../assets/background-lines-lightgray.svg";
+
 import TriAngle from "../../../../assets/right-triangle.svg";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -12,11 +12,11 @@ gsap.ticker.lagSmoothing(0);
 function WhatWeDo() {
   return (
     <div className="what-we-do-section">
-      <img
+      {/* <img
         className="background-lines"
         src={BackgroundLines}
         alt="background-lines"
-      />
+      /> */}
       <div className="reveal-section-text-wrapper">
         <h1>Deliver Stronger Outcomes in Changing Conditions</h1>
         <div>

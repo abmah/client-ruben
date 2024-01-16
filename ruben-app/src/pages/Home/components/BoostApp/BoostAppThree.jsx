@@ -1,12 +1,11 @@
 import "./boost-app.css";
 import GrayFlower from "../../../../assets/blue-flower.svg";
 import Progress from "../../../../assets/progress.svg";
-import LinesGray from "../../../../assets/gray-lines.svg";
 
 function BoostApp() {
   return (
     <div className="boost-app-section">
-      <img className="blue-lines-background" src={LinesGray} alt="blue-lines" />
+      {/* <img className="blue-lines-background" src={LinesGray} alt="blue-lines" /> */}
       <div className="boost-app-left-section">
         <h1>Boost app performance, innovate at scale</h1>
         <div className="boost-app-progress-section">
