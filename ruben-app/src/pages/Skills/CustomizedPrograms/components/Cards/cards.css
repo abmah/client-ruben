@@ -70,6 +70,25 @@
 
 /* talent-programs image section */
 
+@media screen and (max-width: 1000px) {
+  .talent-programs-cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .talent-programs-image-parent {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 362px;
+  }
+
+  .talent-programs-above-the-fold-img {
+    width: 100%;
+
+  }
+}
+
 @media screen and (max-width:1300px) {
   .talent-programs-images-container {
     max-width: 97%;
