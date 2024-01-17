@@ -1,6 +1,29 @@
 import "./above-the-fold.css";
 import CollaborationImage from "../../../../../assets/teams.svg";
+
+import lottie from "lottie-web";
+import { useRef, useEffect } from "react";
+
+import animationData from "./teams.json";
+
 function AboveTheFold() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []); // Empty dependency array to run the effect only once
+
   return (
     <div className="tech-collaboration-above-the-fold-wrapper">
       <div className="tech-collaboration-above-the-fold-container">
@@ -20,11 +43,12 @@ function AboveTheFold() {
             </div>
           </div>
         </div>
-        <img
+        <div
           className="tech-collaboration-above-the-fold-img"
+          ref={container}
           src={CollaborationImage}
           alt="collaboration"
-        />
+        ></div>
       </div>
     </div>
   );

@@ -1,6 +1,29 @@
 import "./above-the-fold.css";
 import Infrastructure from "../../../../../assets/infrastructure.svg";
+
+import lottie from "lottie-web";
+import { useRef, useEffect } from "react";
+
+import animationData from "./infrastructure.json";
+
 function AboveTheFold() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []); // Empty dependency array to run the effect only once
+
   return (
     <div className="tech-infra-above-the-fold-wrapper">
       <div className="tech-infra-above-the-fold-container">
@@ -20,11 +43,12 @@ function AboveTheFold() {
             </div>
           </div>
         </div>
-        <img
+        <div
+          ref={container}
           className="tech-infra-above-the-fold-img"
           src={Infrastructure}
           alt="infrastructure"
-        />
+        ></div>
       </div>
     </div>
   );

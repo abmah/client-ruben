@@ -1,6 +1,29 @@
 import "./above-the-fold.css";
 import Security from "../../../../../assets/security.svg";
+
+import lottie from "lottie-web";
+import { useRef, useEffect } from "react";
+
+import animationData from "./security2.json";
+
 function AboveTheFold() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []); // Empty dependency array to run the effect only once
+
   return (
     <div className="tech-security-above-the-fold-wrapper">
       <div className="tech-security-above-the-fold-container">
@@ -20,11 +43,12 @@ function AboveTheFold() {
             </div>
           </div>
         </div>
-        <img
+        <div
+          ref={container}
           className="tech-security-above-the-fold-img"
           src={Security}
           alt="security"
-        />
+        ></div>
       </div>
     </div>
   );
