@@ -12,6 +12,8 @@ import DigitalExperts from "./pages/Talent/DigitalExperts/DigitalExperts";
 import Strategy from "./pages/Talent/Strategy/Strategy";
 import Hourly from "./pages/Talent/HourlyBased/Hourly";
 import Operations from "./pages/Talent/Operations/Operations";
+import OpenAcademy from "./pages/Skills/OpenAcademy/OpenAcademy";
+import CustomizedPrograms from "./pages/Skills/CustomizedPrograms/CustomizedPrograms";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/strategy-consultants" element={<Strategy />} />
         <Route path="/hourly-based-experts" element={<Hourly />} />
         <Route path="/operations-consultants" element={<Operations />} />
+        <Route path="/open-academy" element={<OpenAcademy />} />
+        <Route path="/customized-programs" element={<CustomizedPrograms />} />
       </Routes>
       <Footer />
     </>

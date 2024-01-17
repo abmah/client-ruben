@@ -1,0 +1,144 @@
+.skills-programs-bottom-cards-wrapper {
+  margin-top: 50px;
+}
+
+.skills-programs-bottom-cards-container {
+  color: #192430;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+
+.skills-programs-bottom-cards-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  max-width: 598px;
+}
+
+.skills-programs-bottom-cards-parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+
+}
+
+.skills-programs-bottom-card {
+  max-width: 416px;
+  min-height: 436px;
+  padding: 36px;
+  border-radius: 24px;
+  border: 2px solid #B2B9C8;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.skills-programs-bottom-card-header-circle {
+  margin-top: 20px;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  background: #B2B9C8;
+  border-radius: 56px;
+
+}
+
+.skills-programs-bottom-card-title {
+
+  max-width: 344px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+
+}
+
+.skills-programs-bottom-card-subtitle {
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 344px;
+}
+
+.skills-programs-bottom-card-orange {
+
+  border: 2px solid #F9B934;
+}
+
+.skills-programs-bottom-card-orange div:nth-child(1) {
+  background-color: #F9B934;
+}
+
+.skills-programs-bottom-card-blue {
+  border: 2px solid #222B38;
+}
+
+.skills-programs-bottom-card-blue div:nth-child(1) {
+  background-color: #222B38;
+}
+
+
+@media screen and (max-width:1300px) {
+
+
+  .skills-programs-bottom-cards-container {
+    width: 97%;
+  }
+
+
+  .skills-programs-bottom-card {
+    max-width: 362px;
+    min-height: 312px;
+    gap: 24px;
+  }
+
+  .skills-programs-bottom-card-title {
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+
+  }
+
+  .skills-programs-bottom-card-subtitle {
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+  }
+
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+
+  .skills-programs-bottom-cards-parent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-programs-bottom-cards-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 336px;
+    text-wrap: wrap;
+
+  }
+}

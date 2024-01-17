@@ -1,58 +1,10 @@
 import { useEffect, useState, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import "./reveal.css";
-
-import TriAngle from "../../../../assets/right-triangle.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
-
-function WhatWeDo() {
-  return (
-    <div className="what-we-do-section">
-      {/* <img
-        className="background-lines"
-        src={BackgroundLines}
-        alt="background-lines"
-      /> */}
-      <div className="reveal-section-text-wrapper">
-        <h1>Deliver Stronger Outcomes in Changing Conditions</h1>
-        <div>
-          <img src={TriAngle} alt="triangle" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div>
-          <img src={TriAngle} alt="triangle" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <div>
-          <img src={TriAngle} alt="triangle" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div className="what-we-do-text-container">
-        <h1 className="what-we-do-text what-we-do-text-main">
-          Wrong <span className="what-we-do-text-highlight"> talent</span> is
-          the top showstopper of a Transformation Journey.
-        </h1>
-        <h1 className="what-we-do-text">
-          We offer 3 solutions to accelerate transformation.
-        </h1>
-      </div>
-    </div>
-  );
-}
 
 function RevealSection() {
   const wrapper = useRef(null);
@@ -85,7 +37,7 @@ function RevealSection() {
         y: newHeight / 2 - (svgDimensions.height * newScale) / 2,
       });
       setScale(newScale);
-    }, 200); // Adjust the debounce time as needed
+    }, 0);
 
     return debounceResize;
   }, [scale, svgDimensions.width, svgDimensions.height]);
@@ -102,17 +54,6 @@ function RevealSection() {
   }, [handleResize]); // Adjust the dependencies if needed
 
   useEffect(() => {
-    // gsap.set(".what-we-do-flower", {
-    //   cssText: `
-    //   align-self: center;
-    //   width: 380px;
-
-    //   position: static;
-    //   top: auto;
-    //   left: auto;
-    //   transform: none;`,
-    // });
-
     const mm = gsap.matchMedia();
     const breakPoint = 900;
 
@@ -135,18 +76,6 @@ function RevealSection() {
                 end: "+=400",
                 pin: ".reveal-section",
                 scrub: true,
-                onUpdate: (self) => {
-                  if (self.progress >= 0.2) {
-                    // Set the opacity to make it visible
-                    gsap.set(".reveal-section-text-wrapper", { opacity: 1 });
-                  } else {
-                    // Set the opacity to 0 if below 0.2
-                    gsap.set(".reveal-section-text-wrapper", {
-                      opacity: 0,
-                      duration: 0.1,
-                    });
-                  }
-                },
               },
             });
 
@@ -154,7 +83,7 @@ function RevealSection() {
               {},
               {
                 onUpdate: () => {
-                  const newScale = 1 + textAnimation.progress() * 12;
+                  const newScale = 1 + textAnimation.progress() * 13;
 
                   setPosition({
                     x:
@@ -165,9 +94,6 @@ function RevealSection() {
                       (svgDimensions.height * newScale) / 2,
                   });
                   setScale(newScale);
-                  // revealSection.style.backgroundSize = `${
-                  //   90 + textAnimation.progress() * 15
-                  // }%`;
                 },
               }
             );
@@ -187,23 +113,8 @@ function RevealSection() {
 
   return (
     <div className="reveal-section-top-wrapper">
-      {/* <img
-        className="clipped-flower"
-        src={FlowerClipped}
-        alt="clipped-flower"
-      /> */}
-      <div className="what-we-do-main-text-container">
-        <h1>What We Do</h1>
-        <p>
-          DFME is a one-stop-shop for enterprise transformation needs. We
-          empower our clients to excel in 3 critical areas of transformation
-          projects: talent, technology, skills.
-        </p>
-      </div>
       <div ref={wrapper} className="reveal-section-wrapper">
-        <div className="reveal-section">
-          <WhatWeDo />
-        </div>
+        <div className="reveal-section"></div>
 
         <svg className="clip-path-svg">
           <defs>

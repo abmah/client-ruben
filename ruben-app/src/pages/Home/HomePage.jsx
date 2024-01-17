@@ -15,11 +15,12 @@ function Home() {
     <>
       <AboveTheFold />
       <RevealSection />
+      <FloatingCards />
       <Test />
       <BoostApp />
       <BoostAppTwo />
       <BoostAppThree />
-      <FloatingCards />
+
       <Achievements />
       <WhoWeAre />
       <UnReveal />

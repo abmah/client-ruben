@@ -1,417 +1,43 @@
 .reveal-section-wrapper {
   width: 100%;
   position: relative;
-
+  margin: 0 auto;
+  /* Add this line to center the element horizontally */
 }
 
 .reveal-section {
   position: relative;
-  height: 100vh;
+  height: 110vh;
   clip-path: url(#myClipPath);
-  background-image: url(./../../../../assets/bg.svg);
+  background-image: url(./bg.svg);
   background-repeat: no-repeat;
+
   background-size: cover;
+  background-color: #222B38;
+  overflow: visible;
 }
 
-.what-we-do-wrapper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+
+.reveal-section {
+  background-position: 50% center;
 }
 
-.clipped-flower {
-  display: none;
-}
-
-.what-we-do-main-text-container {
-  display: none;
-  color: black;
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  bottom: -90%;
-  left: 50%;
-  transform: translate(-50%);
-  display: none;
-}
-
-.what-we-do-main-text-container h1 {
-  color: #192430;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 40px;
-  font-style: normal;
-  display: none;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 0;
-}
-
-.what-we-do-main-text-container p {
-  text-align: center;
-  color: #192430;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 40px;
-  /* 166.667% */
-  width: 697px;
-}
-
-.what-we-do-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  width: 75%;
-  margin: 0 auto;
-}
-
-.what-we-do-text-container {
-  display: none;
-  margin-bottom: 20px;
-
-}
-
-.what-we-do-cards-container {
-  position: absolute;
-  width: 55%;
-  height: 1000px;
-}
-
-.background-lines {
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  display: none;
-}
-
-.what-we-do-card-highlight {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 55px;
-  border-radius: 28px;
-  background: #718096;
-  flex-shrink: 0;
-  width: max-content;
-  padding: 0px 26px;
-  margin-bottom: 16px;
-}
-
-.what-we-do-card-sub {
-  margin-top: 0px;
-  color: #192430;
-  font-size: 20px;
-  width: 254px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-}
-
-.what-we-do-text-container {
-  margin-top: 140px;
-}
-
-.what-we-do-text {
-  color: #192430;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.what-we-do-text-highlight {
-  color: #718096;
-}
-
-.what-we-do-card {
-  position: absolute;
-}
-
-.what-we-do-gray-card {
-  top: 350px;
-  opacity: 0;
-  left: 20px;
-}
-
-.what-we-do-yellow-card {
-  bottom: 100px;
-  opacity: 0;
-  left: 50px;
-}
-
-.what-we-do-yellow-card h1 {
-  background: #f9b934;
-  color: #2d3748;
-}
-
-.what-we-do-blue-card {
-  top: 500px;
-  right: 0px;
-  opacity: 0;
-}
-
-.what-we-do-blue-card h1 {
-  background: #2d3748;
-}
-
-.what-we-do-flower {
-  /* display: none; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  width: 400px;
-  display: none;
-}
-
-@media screen and (max-width: 1600px) {
-  .what-we-do-main-text-container {
-    bottom: 26vh;
-  }
-
-  .what-we-do-main-text-container h1 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-  }
-
-  .what-we-do-main-text-container p {
-    width: 506px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-  }
-
-  .what-we-do-text {
-    font-size: 32px;
-    font-style: normal;
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
-  .what-we-do-flower {
-    width: 300px;
-    height: 300px;
-  }
-
-  .what-we-do-cards-container {
-    width: 74%;
-  }
-
-  .what-we-do-card-highlight {
-    font-size: 18px;
-  }
-
-  .what-we-do-card-sub {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-  }
-
-  .what-we-do-gray-card {
-    top: 25%;
-  }
-
-  .what-we-do-blue-card {
-    top: 35%;
-  }
-
-  .what-we-do-yellow-card {
-    bottom: 39%;
-  }
-}
-
-@media screen and (max-width: 1230px) {
-  .what-we-do-text {
-    font-size: 32px;
-    font-style: normal;
-  }
-
-  .what-we-do-cards-container {
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .reveal-section {
-    position: relative;
-    height: auto;
-    clip-path: none;
-  }
+    background-position: 90% center;
 
-  .reveal-section-top-wrapper {
-    padding-top: 60px;
-  }
-
-  .clipped-flower {
-    display: block;
-    width: 201.097px;
-    height: 196.076px;
-    margin: 65px auto;
-  }
-
-  .what-we-do-main-text-container {
-    position: relative;
-    bottom: auto;
-  }
-
-  .what-we-do-main-text-container p {
-    max-width: 336px;
-  }
-
-  .what-we-do-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-  }
-
-  .what-we-do-text-container {
-    margin-top: 120px;
-    margin-left: 27px;
-    margin-bottom: 52px;
-  }
-
-  .what-we-do-text {
-    font-size: 24px;
-    font-style: normal;
-  }
-
-  .what-we-do-text-main {
-    margin-bottom: 30px;
-    margin-bottom: 50px;
-  }
-
-  .what-we-do-cards-container {
-    margin-top: 42px;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .what-we-do-section {
-    overflow: visible;
-  }
-
-  .what-we-do-card-sub {
-    margin: 0;
-  }
-
-  .what-we-do-card {
-    opacity: 1 !important;
-    position: static;
-    gap: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .what-we-do-card-highlight {
-    padding: 0;
-    width: 235px;
-    margin-bottom: 8px;
-  }
-
-  .what-we-do-card-sub {
-    width: 200px;
-  }
-
-  .clip-path-svg {
-    display: none;
-  }
-
-
-  .what-we-do-flower {
-    max-width: 300px;
-
-  }
-
-
-}
-
-@media screen and (max-width: 370px) {
-  .what-we-do-main-text-container p {
-    width: 90%;
-  }
-
-  .what-we-do-flower {
-    max-width: 250px;
   }
 }
 
 
-.reveal-section-text-wrapper {
-
-  align-self: flex-start;
-  opacity: 0;
-  margin-top: 12%;
-  max-width: 519px;
-}
-
-.reveal-section-text-wrapper h1 {
-  color: #FFF;
-
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 56px;
-  /* 140% */
-}
-
-.reveal-section-text-wrapper>div {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 34px;
-}
-
-.reveal-section-text-wrapper img {
-  flex-shrink: 0;
-}
-
-.reveal-section-text-wrapper p {
-  color: #FFF;
-  margin-top: -10px;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-
-  /* 160% */
-}
-
-
-@media screen and (max-width:1500px) {
-
-  .reveal-section-text-wrapper {
-    transform: scale(.9);
-    margin-top: 8%;
+@media screen and (max-width: 1400px) {
+  .reveal-section {
+    background-position: 80% center;
   }
+}
 
+@media screen and (max-width: 700px) {
+  .reveal-section {
+    background-position: 70% center;
+  }
 }
