@@ -124,7 +124,7 @@
   }
 
   .reveal-section-content {
-    width: 90%;
+    width: 95%;
 
   }
 }
@@ -160,6 +160,7 @@
     opacity: 1;
     pointer-events: all;
   }
+
 
 
 }
