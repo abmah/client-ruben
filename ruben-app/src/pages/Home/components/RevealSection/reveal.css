@@ -6,11 +6,10 @@
 
 .reveal-section {
   position: relative;
-
+  height: 100vh;
   clip-path: url(#myClipPath);
   background-image: url(./bg.svg);
   background-repeat: no-repeat;
-
   background-size: cover;
   background-color: #222B38;
   overflow: visible;
@@ -88,6 +87,7 @@
   align-items: center;
   justify-self: center;
   margin-top: 24px;
+
 }
 
 .reveal-section-sub-text-footer p {
@@ -98,6 +98,11 @@
   .reveal-section-big-text {
     color: #ffffff;
     font-size: 80px;
+
+  }
+
+  .reveal-section-big-text-fourth {
+    margin-bottom: 20px;
 
   }
 }
@@ -115,6 +120,11 @@
   .reveal-section-big-text {
     color: #ffffff;
     font-size: 70px;
+
+  }
+
+  .reveal-section-content {
+    width: 90%;
 
   }
 }
@@ -159,10 +169,12 @@
     background-position: 70% center;
     clip-path: unset;
     background-color: unset;
+
   }
 
   .reveal-section-big-text {
     font-size: 40px;
     color: #222B38;
+
   }
 }

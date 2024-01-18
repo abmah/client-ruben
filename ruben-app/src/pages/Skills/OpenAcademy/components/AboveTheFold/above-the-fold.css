@@ -124,8 +124,9 @@
   }
 
   .skills-academy-above-the-fold-img {
-    right: -200px;
-    height: 70%;
+    right: -140px;
+    height: 50%;
+
     bottom: 10%;
   }
 }
