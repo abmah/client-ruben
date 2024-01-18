@@ -2,6 +2,7 @@ import { useEffect, useState, useRef, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
+import ArrowDown from "../../../../assets/orange-arrow-down.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -57,6 +58,8 @@ function RevealSection() {
     const mm = gsap.matchMedia();
     const breakPoint = 900;
 
+    let textContent = document.getElementById("text-content");
+
     let ctx = gsap.context(() => {
       mm.add(
         {
@@ -73,7 +76,7 @@ function RevealSection() {
               scrollTrigger: {
                 trigger: ".reveal-section-top-wrapper",
                 start: "top top",
-                end: "+=400",
+                end: "+=600",
                 pin: ".reveal-section",
                 scrub: true,
               },
@@ -84,6 +87,11 @@ function RevealSection() {
               {
                 onUpdate: () => {
                   const newScale = 1 + textAnimation.progress() * 13;
+                  if (textAnimation.progress() > 0.1) {
+                    textContent.classList.remove("hide");
+                  } else {
+                    textContent.classList.add("hide");
+                  }
 
                   setPosition({
                     x:
@@ -114,7 +122,31 @@ function RevealSection() {
   return (
     <div className="reveal-section-top-wrapper">
       <div ref={wrapper} className="reveal-section-wrapper">
-        <div className="reveal-section"></div>
+        <div className="reveal-section">
+          <div id="text-content" className="reveal-section-content">
+            <div className="reveal-section-big-text">
+              <p className="reveal-section-big-text-first">
+                Stronger outcomes,
+              </p>
+              <p className="reveal-section-big-text-second">in</p>
+              <p className="reveal-section-big-text-third">changing</p>
+              <p className="reveal-section-big-text-fourth">conditions</p>
+            </div>
+            <div className="reveal-section-sub-text">
+              <div className="yellow-line"></div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                nulla repudiandae voluptatibus, voluptatum deleniti odio minus
+                accusamus nobis ut perspiciatis animi pariatur placeat illum
+                harum eos sed. Debitis, velit labore.
+              </p>
+              <div className="reveal-section-sub-text-footer">
+                <p>Lorem ipsum, dol</p>
+                <img src={ArrowDown} alt="arrow down" />
+              </div>
+            </div>
+          </div>
+        </div>
 
         <svg className="clip-path-svg">
           <defs>

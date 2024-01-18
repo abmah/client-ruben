@@ -1,13 +1,12 @@
 .reveal-section-wrapper {
   width: 100%;
-  position: relative;
-  margin: 0 auto;
-  /* Add this line to center the element horizontally */
+
+
 }
 
 .reveal-section {
   position: relative;
-  height: 110vh;
+
   clip-path: url(#myClipPath);
   background-image: url(./bg.svg);
   background-repeat: no-repeat;
@@ -15,16 +14,90 @@
   background-size: cover;
   background-color: #222B38;
   overflow: visible;
+
 }
+
 
 
 .reveal-section {
   background-position: 50% center;
 }
 
-@media screen and (max-width: 1400px) {
-  .reveal-section {
-    background-position: 90% center;
+.reveal-section-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.reveal-section-big-text {
+  color: #ffffff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 10px;
+  text-wrap: nowrap;
+  padding-top: 60px;
+  /* 83.333% */
+}
+
+.reveal-section-big-text-first {
+
+  color: #F9B934;
+}
+
+.reveal-section-big-text-second {
+  margin-left: 7%;
+}
+
+.reveal-section-big-text-third {
+  margin-left: 10%;
+}
+
+.reveal-section-big-text-fourth {
+  margin-left: 16%;
+}
+
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+.reveal-section-sub-text {
+  width: 546px;
+}
+
+.reveal-section-sub-text p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.yellow-line {
+  background-color: #F9B934;
+  width: 42px;
+  border-radius: 8px;
+  height: 8px;
+}
+
+
+.reveal-section-sub-text-footer {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-self: center;
+  margin-top: 24px;
+}
+
+.reveal-section-sub-text-footer p {
+  margin-top: 0;
+}
+
+@media screen and (max-width:1600px) {
+  .reveal-section-big-text {
+    color: #ffffff;
+    font-size: 80px;
 
   }
 }
@@ -34,10 +107,62 @@
   .reveal-section {
     background-position: 80% center;
   }
+
+  .reveal-section {
+    background-position: 90% center;
+  }
+
+  .reveal-section-big-text {
+    color: #ffffff;
+    font-size: 70px;
+
+  }
+}
+
+@media screen and (max-width:900px) {
+  .reveal-section-big-text {
+    color: #ffffff;
+    font-size: 60px;
+    margin-top: 0;
+    padding-top: 100px;
+
+  }
+
+
+  .reveal-section {
+    position: relative;
+    height: 100vh;
+    clip-path: url(#myClipPath);
+    background-image: url(./bg.svg);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    overflow: visible;
+
+  }
+
+  .reveal-section-big-text {
+    display: block;
+  }
+
+  .hide {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
 }
 
 @media screen and (max-width: 700px) {
   .reveal-section {
     background-position: 70% center;
+    clip-path: unset;
+    background-color: unset;
+  }
+
+  .reveal-section-big-text {
+    font-size: 40px;
+    color: #222B38;
   }
 }
