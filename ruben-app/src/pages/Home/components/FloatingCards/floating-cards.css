@@ -1,8 +1,10 @@
 .floating-cards-container {
   position: relative;
   height: 340vh;
-
+  overflow: hidden;
 }
+
+
 
 .floating-cards-background {
   height: 100vh;
@@ -21,6 +23,7 @@
 
 .floating-card {
   height: 400px;
+  border-radius: 16px;
   width: 600px;
   z-index: 12;
   position: absolute;
@@ -77,6 +80,7 @@
   pointer-events: none;
   top: 0;
   left: 0;
+
   z-index: 10;
 
 }
@@ -87,10 +91,17 @@
 
 }
 
+.floating-card-title {
+  position: absolute;
+  left: 0;
+  top: 300px;
+
+}
+
 .floating-card-second-title {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 300px;
+  left: 0;
 }
 
 .floating-card-background {

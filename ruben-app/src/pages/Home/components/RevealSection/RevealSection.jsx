@@ -138,7 +138,7 @@ function RevealSection() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
                 nulla repudiandae voluptatibus, voluptatum deleniti odio minus
                 accusamus nobis ut perspiciatis animi pariatur placeat illum
-                harum eos sed. Debitis, velit labore.
+                harum eos sed. Debitis.
               </p>
               <div className="reveal-section-sub-text-footer">
                 <p>Lorem ipsum, dol</p>

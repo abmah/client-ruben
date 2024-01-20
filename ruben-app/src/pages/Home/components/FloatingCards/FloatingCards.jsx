@@ -139,7 +139,7 @@ function FloatingCards() {
             <div className="floating-card-content">
               <div className="floating-card-title">some title here </div>
               <div className="floating-card-second-title">
-                second title here
+                Lorem, ipsum dolor sit amet
               </div>
             </div>
           </div>
@@ -148,9 +148,7 @@ function FloatingCards() {
             <div className="floating-card-content">
               <div className="floating-card-title">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                exercitationem autem, odio possimus similique rem inventore illo
-                fugit minus quibusdam dolore vero. Dolores commodi recusandae
-                corrupti nobis sed illum dolor.
+                exercitationem autem, odio possimus s
               </div>
               <div className="floating-card-second-title">hello</div>
             </div>
@@ -159,10 +157,7 @@ function FloatingCards() {
             <div className="floating-card-background-third floating-card-background"></div>
             <div className="floating-card-content">
               <div className="floating-card-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                exercitationem autem, odio possimus similique rem inventore illo
-                fugit minus quibusdam dolore vero. Dolores commodi recusandae
-                corrupti nobis sed illum dolor.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </div>
               <div className="floating-card-second-title">hello</div>
             </div>
