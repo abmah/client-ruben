@@ -123,7 +123,7 @@ function RevealSection() {
     <div className="reveal-section-top-wrapper">
       <div ref={wrapper} className="reveal-section-wrapper">
         <div className="reveal-section">
-          <div id="text-content" className="reveal-section-content">
+          <div id="text-content" className="reveal-section-content hide">
             <div className="reveal-section-big-text">
               <p className="reveal-section-big-text-first">
                 Stronger outcomes,

@@ -1,6 +1,28 @@
 import "./above-the-fold.css";
 import AcademyExperts from "../../../../../assets/customized-programs-logo.svg";
+
+import lottie from "lottie-web";
+import { useRef, useEffect } from "react";
+
+import animationData from "./programs.json";
 function AboveTheFold() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []); // Empty dependency array to run the effect only once
+
   return (
     <div className="skills-programs-above-the-fold-wrapper">
       <div className="skills-programs-above-the-fold-container">
@@ -20,11 +42,12 @@ function AboveTheFold() {
             </div>
           </div>
         </div>
-        <img
+        <div
+          ref={container}
           className="skills-programs-above-the-fold-img"
           src={AcademyExperts}
           alt="programs-future"
-        />
+        ></div>
       </div>
     </div>
   );
