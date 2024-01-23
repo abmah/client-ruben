@@ -1,6 +1,6 @@
 .floating-cards-container {
   position: relative;
-  height: 340vh;
+  height: 380vh;
   overflow: hidden;
 }
 
@@ -77,7 +77,7 @@
   transition: transform 0.5s ease-in-out .3s;
   height: 300%;
   position: relative;
-  pointer-events: none;
+  pointer-events: fill;
   top: 0;
   left: 0;
 
@@ -111,4 +111,73 @@
   z-index: 10;
   left: 0;
   top: 0;
+}
+
+.floating-card-second-title-first {
+
+
+
+  margin-top: -100px;
+  bottom: 160px;
+}
+
+.floating-card-content-one,
+.floating-card-content-two,
+.floating-card-content-three {
+  display: flex;
+}
+
+
+
+.floating-card-content-first {
+  height: 33%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+
+.floating-card-content-first>p {
+  margin: 0;
+}
+
+
+.floating-card-content-second {
+  height: 34%;
+
+}
+
+.floating-card-content-third {
+  height: 33%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.floating-card-content-third>p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.floating-card-link {
+  justify-self: flex-end;
+
+  align-self: flex-end;
+  width: 100px;
+  height: 40px;
+}
+
+.floating-card-link:hover .floating-card-link-line {
+  width: 100%;
+}
+
+.floating-card-link-line {
+  transition: .5s cubic-bezier(0.19, .4, 0.5, 1);
+  height: 2px;
+  background-color: #fff;
+  width: 0%;
 }

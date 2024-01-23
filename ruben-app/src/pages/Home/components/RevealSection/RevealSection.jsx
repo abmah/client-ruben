@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useMemo } from "react";
+import { useState, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
@@ -7,7 +7,28 @@ import ArrowDown from "../../../../assets/orange-arrow-down.svg";
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
 
+import lottie from "lottie-web";
+import { useRef, useEffect } from "react";
+
+import animationData from "./arrow.json";
+
 function RevealSection() {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []); // Empty dependency array to run the effect only once
   const wrapper = useRef(null);
   const clipPathRef = useRef(null);
   const svgDimensions = { width: 211, height: 252 };
@@ -129,20 +150,23 @@ function RevealSection() {
                 Stronger outcomes,
               </p>
               <p className="reveal-section-big-text-second">in</p>
-              <p className="reveal-section-big-text-third">changing</p>
+              <p className="reveal-section-big-text-third">challenging</p>
               <p className="reveal-section-big-text-fourth">conditions</p>
             </div>
             <div className="reveal-section-sub-text">
               <div className="yellow-line"></div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                nulla repudiandae voluptatibus, voluptatum deleniti odio minus
-                accusamus nobis ut perspiciatis animi pariatur placeat illum
-                harum eos sed. Debitis.
+                Talent, Skills and Technology are integral elements of
+                enterprise transformation success. Poor selection of project
+                teams, inadequate internal skill set or dated tech are top 3
+                reasons of failure and have knock-on effect on agility.
               </p>
               <div className="reveal-section-sub-text-footer">
-                <p>Lorem ipsum, dol</p>
-                <img src={ArrowDown} alt="arrow down" />
+                <p>We’re known for tools boosting agility</p>
+                <div
+                  ref={container}
+                  className="reveal-section-arrow-down"
+                ></div>
               </div>
             </div>
           </div>

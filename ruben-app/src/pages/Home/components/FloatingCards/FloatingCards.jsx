@@ -8,6 +8,7 @@ import animationData from "./Accenture_CardIllu_Anim_001_Timed_Alpha_violet.json
 import animationDataTwo from "./Accenture_CardIllu_Anim_002_Timed_Alpha_red.json";
 import animationDataThree from "./Accenture_CardIllu_Anim_003_Timed_Alpha_blue.json";
 import lottie from "lottie-web";
+import { Link } from "react-router-dom";
 
 function FloatingCards() {
   useEffect(() => {
@@ -25,6 +26,10 @@ function FloatingCards() {
     const containerThree = document.querySelector(
       ".floating-card-background-third"
     );
+
+    const firstCard = document.querySelector(".floating-card-one");
+    const secondCard = document.querySelector(".floating-card-two");
+    const thirdCard = document.querySelector(".floating-card-three");
 
     const animationOne = lottie.loadAnimation({
       container: containerOne,
@@ -50,46 +55,46 @@ function FloatingCards() {
       animationData: animationDataThree,
     });
 
-    containerOne.addEventListener("mouseenter", () =>
+    firstCard.addEventListener("mouseenter", () =>
       playAnimation(animationOne, 1)
     );
-    containerOne.addEventListener("mouseleave", () =>
+    firstCard.addEventListener("mouseleave", () =>
       playAnimation(animationOne, -1)
     );
 
-    containerTwo.addEventListener("mouseenter", () =>
+    secondCard.addEventListener("mouseenter", () =>
       playAnimation(animationTwo, 1)
     );
-    containerTwo.addEventListener("mouseleave", () =>
+    secondCard.addEventListener("mouseleave", () =>
       playAnimation(animationTwo, -1)
     );
 
-    containerThree.addEventListener("mouseenter", () =>
+    thirdCard.addEventListener("mouseenter", () =>
       playAnimation(animationThree, 1)
     );
-    containerThree.addEventListener("mouseleave", () =>
+    thirdCard.addEventListener("mouseleave", () =>
       playAnimation(animationThree, -1)
     );
 
     return () => {
-      containerOne.removeEventListener("mouseenter", () =>
+      firstCard.removeEventListener("mouseenter", () =>
         playAnimation(animationOne, 1)
       );
-      containerOne.removeEventListener("mouseleave", () =>
+      firstCard.removeEventListener("mouseleave", () =>
         playAnimation(animationOne, -1)
       );
 
-      containerTwo.removeEventListener("mouseenter", () =>
+      secondCard.removeEventListener("mouseenter", () =>
         playAnimation(animationTwo, 1)
       );
-      containerTwo.removeEventListener("mouseleave", () =>
+      secondCard.removeEventListener("mouseleave", () =>
         playAnimation(animationTwo, -1)
       );
 
-      containerThree.removeEventListener("mouseenter", () =>
+      thirdCard.removeEventListener("mouseenter", () =>
         playAnimation(animationThree, 1)
       );
-      containerThree.removeEventListener("mouseleave", () =>
+      thirdCard.removeEventListener("mouseleave", () =>
         playAnimation(animationThree, -1)
       );
 
@@ -137,29 +142,39 @@ function FloatingCards() {
           <div className="floating-card floating-card-one">
             <div className="floating-card-background-first floating-card-background"></div>
             <div className="floating-card-content">
-              <div className="floating-card-title">some title here </div>
-              <div className="floating-card-second-title">
-                Lorem, ipsum dolor sit amet
+              <div className="floating-card-content-first">
+                <p> Your team is struggling with resources and expertise?</p>
+              </div>
+              <div className="floating-card-content-second"></div>
+              <div className="floating-card-content-third">
+                <p>
+                  What if you could reshuffle your team's expertise and
+                  resources whenever needed and flexibliy add and reduce
+                  members? If the risk of wrong hire would not exist and
+                  time-to-hire would be close to zero? Check how our Talent
+                  Augmentation service helps solve Talent related problems.
+                </p>
+                <div className="floating-card-link">
+                  <Link to="infrastructure">some-link</Link>
+                  <div className="floating-card-link-line"></div>
+                </div>
               </div>
             </div>
           </div>
           <div className="floating-card floating-card-two">
             <div className="floating-card-background-second floating-card-background"></div>
             <div className="floating-card-content">
-              <div className="floating-card-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                exercitationem autem, odio possimus s
-              </div>
-              <div className="floating-card-second-title">hello</div>
+              <div className="floating-card-content-first">hello</div>
+              <div className="floating-card-content-second"></div>
+              <div className="floating-card-content-third">bye</div>
             </div>
           </div>
           <div className="floating-card floating-card-three">
             <div className="floating-card-background-third floating-card-background"></div>
             <div className="floating-card-content">
-              <div className="floating-card-title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </div>
-              <div className="floating-card-second-title">hello</div>
+              <div className="floating-card-content-first">hello</div>
+              <div className="floating-card-content-second"></div>
+              <div className="floating-card-content-third">bye</div>
             </div>
           </div>{" "}
         </div>

@@ -24,7 +24,7 @@
 }
 
 .reveal-section-content {
-  width: 80%;
+  width: 68%;
   margin: 0 auto;
 }
 
@@ -67,11 +67,14 @@
 
 .reveal-section-sub-text {
   max-width: 546px;
+  margin-top: 40px;
+
 }
 
 .reveal-section-sub-text p {
   font-size: 20px;
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .yellow-line {
@@ -87,18 +90,29 @@
   gap: 28px;
   align-items: center;
   justify-self: center;
-  margin-top: 24px;
+  margin-top: 4px;
+
 
 }
 
 .reveal-section-sub-text-footer p {
   margin-top: 0;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  /* 164.286% */
+}
+
+.reveal-section-arrow-down {
+  cursor: pointer;
+  height: 50px;
+
 }
 
 @media screen and (max-width:1600px) {
   .reveal-section-big-text {
     color: #ffffff;
-    font-size: 80px;
+    font-size: 70px;
 
   }
 
@@ -120,17 +134,28 @@
 
   .reveal-section-big-text {
     color: #ffffff;
-    font-size: 70px;
+    font-size: 65px;
 
   }
 
+
+}
+
+@media screen and (max-width: 1300px) {
+  .reveal-section-content {
+    width: 80%;
+
+  }
+
+
+}
+
+@media screen and (max-width:900px) {
   .reveal-section-content {
     width: 95%;
 
   }
-}
 
-@media screen and (max-width:900px) {
   .reveal-section-big-text {
     color: #ffffff;
     font-size: 60px;
@@ -191,5 +216,11 @@
 
   .reveal-section-sub-text p {
     font-size: 16px;
+
+  }
+
+  .reveal-section-sub-text-footer p {
+    text-wrap: nowrap;
+
   }
 }
