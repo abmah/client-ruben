@@ -77,7 +77,7 @@
   right: 0;
   z-index: 1;
   pointer-events: none;
-  bottom: 7%;
+  bottom: -20%;
 }
 
 @media screen and (max-width: 1700px) {
@@ -93,9 +93,7 @@
     margin: 0 auto;
   }
 
-  .talent-strategy-above-the-fold-img {
-    right: -100px;
-  }
+
 }
 
 
@@ -109,7 +107,8 @@
   }
 
   .talent-strategy-above-the-fold-img {
-    height: 40%;
+    height: 90%;
+
   }
 }
 
@@ -127,8 +126,9 @@
   }
 
   .talent-strategy-above-the-fold-img {
-    height: 30%;
+    height: 80%;
     right: 0%;
+
   }
 
 
@@ -170,8 +170,6 @@
   .talent-strategy-above-the-fold-img {
     position: static;
     order: -1;
-    width: 230%;
-    margin-left: -104%;
 
   }
 

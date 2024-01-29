@@ -74,9 +74,11 @@
 
 .talent-digital-above-the-fold-img {
   position: absolute;
-  right: 0;
+  left: 0;
   z-index: 1;
+  bottom: 40px;
   pointer-events: none;
+
 }
 
 @media screen and (max-width: 1700px) {
@@ -92,9 +94,7 @@
     margin: 0 auto;
   }
 
-  .talent-digital-above-the-fold-img {
-    right: -100px;
-  }
+
 }
 
 
@@ -121,11 +121,7 @@
     max-width: 362px;
   }
 
-  .talent-digital-above-the-fold-img {
-    right: -200px;
-    height: 70%;
-    bottom: 10%;
-  }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -165,7 +161,7 @@
     position: static;
     order: -1;
     width: 230%;
-    margin-left: -120%;
+    margin-left: -150%;
 
   }
 
