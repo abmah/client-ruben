@@ -261,7 +261,16 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.contact-button-mobile {
+  background-color: #171f28;
+}
+
 
 
 

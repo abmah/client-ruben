@@ -15,6 +15,7 @@ import Operations from "./pages/Talent/Operations/Operations";
 import OpenAcademy from "./pages/Skills/OpenAcademy/OpenAcademy";
 import CustomizedPrograms from "./pages/Skills/CustomizedPrograms/CustomizedPrograms";
 import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/open-academy" element={<OpenAcademy />} />
         <Route path="/customized-programs" element={<CustomizedPrograms />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

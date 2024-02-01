@@ -60,6 +60,11 @@
   font-weight: 400;
 }
 
+.meet-the-team-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
 .selected {
   border-bottom: 3px solid #192430;
   color: #192430;
@@ -68,6 +73,18 @@
 
 .orange-background {
   background-color: #f9b934;
+}
+
+.dark-background {
+  background-color: #222B38;
+}
+
+.white-background {
+  background-color: #EFF2F5;
+}
+
+.gray-background {
+  background-color: #718096;
 }
 
 .meet-the-team-member-position-and-location {
@@ -125,6 +142,10 @@
     gap: 0;
   }
 
+  .meet-the-team-member-name {
+    margin-bottom: 20px;
+  }
+
   .meet-the-team-member-position-and-location * {
     margin: 2px;
   }
@@ -150,7 +171,24 @@
   }
 }
 
+
+@media screen and (max-width: 1000px) {
+
+  .meet-the-team-title {
+    font-size: 24px;
+
+  }
+
+  .meet-the-team-switch-item {
+    font-size: 20px;
+  }
+
+
+}
+
 @media screen and (max-width: 650px) {
+
+
 
   .meet-the-team-switch {
     flex-wrap: wrap;
@@ -163,5 +201,9 @@
   .meet-the-team-member {
     max-width: 160px;
     height: 270px;
+  }
+
+  .meet-the-team-member-image {
+    margin-top: -10px;
   }
 }

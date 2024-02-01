@@ -116,7 +116,9 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
         <div className="whatsapp-logo-button">
           <img src={WhatsappLogo} alt="whatsapp-logo" />
         </div>
-        <button className="contact-button">Contact</button>
+        <Link to="contact" className="contact-button contact-button-mobile">
+          Contact
+        </Link>
       </div>
     </div>
   );

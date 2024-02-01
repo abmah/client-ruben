@@ -78,7 +78,15 @@
     max-width: 100%;
   }
 
+  .about-our-values-card-title {
+    font-size: 20px;
+  }
+
   .about-our-values-card-border {
     margin-bottom: 30px;
+  }
+
+  .about-our-values-title {
+    font-size: 24px;
   }
 }

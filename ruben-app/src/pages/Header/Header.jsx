@@ -92,7 +92,9 @@ function Header() {
             <img src={WhatsappLogo} alt="whatsapp-logo" />
           </button>
 
-          <button className="contact-button">Contact</button>
+          <Link to="contact" className="contact-button">
+            Contact
+          </Link>
           <select
             className="language-change-button language-change-pc"
             value={selectedLanguage}
