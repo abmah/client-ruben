@@ -1,0 +1,73 @@
+.contact-by-dep-container {
+  color: #222B38;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+
+
+.contact-by-dep-title {
+  margin-bottom: 100px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact-by-dep-cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.contact-by-dep-card {
+  width: 304px;
+  height: 379px;
+  background-color: #EFF2F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  color: #181F28;
+  margin-bottom: 30px;
+
+}
+
+.contact-by-dep-card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact-by-dep-card h1 {
+  font-size: 24px;
+
+}
+
+.contact-by-dep-card p {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width:1000px) {
+  .contact-by-dep-container {
+    color: #222B38;
+    width: 95%;
+    margin: 0 auto;
+
+  }
+
+  .contact-by-dep-title {
+    font-size: 24px;
+  }
+
+
+}

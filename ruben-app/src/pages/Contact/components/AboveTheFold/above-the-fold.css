@@ -20,7 +20,7 @@
 }
 
 .contact-above-the-fold-content {
-  width: 65%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -217,6 +217,21 @@
 }
 
 @media screen and (max-width:1000px) {
+  .contact-above-the-fold-content {
+    width: 95%;
+  }
+
+  .contact-above-the-fold-paragraph {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width:800px) {
+
+  .contact-above-the-fold-wrapper {
+    margin-bottom: 1000px;
+
+  }
 
   .contact-above-the-fold-content {
     width: 95%;
@@ -228,7 +243,7 @@
 
 
   .contact-above-the-fold-paragraph {
-
+    max-width: 457px;
     font-size: 18px;
   }
 
@@ -268,12 +283,10 @@
 
   .contact-above-the-fold-wrapper {
     margin-bottom: 800px;
-    border: 1px solid red;
+
   }
 
-  .contact-above-the-fold-container {
-    border: 1px solid blue;
-  }
+
 
   .contact-above-the-fold-left-section {
     gap: 100px;
@@ -283,7 +296,7 @@
   }
 
   .contact-above-the-fold-content {
-    border: 1px solid green;
+
     display: flex;
     justify-content: space-around;
     gap: 100px;
