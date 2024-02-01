@@ -1,5 +1,5 @@
 import "./contact-us.css";
-import TopRightArrow from "../../../../assets/top-right-arrow.svg";
+import TopRightArrow from "../../../assets/top-right-arrow.svg";
 function ContactUs() {
   return (
     <div className="contact-us-wrapper">

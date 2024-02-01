@@ -8,6 +8,7 @@ import About from "./About";
 import Talent from "./Talent";
 import Skills from "./Skills";
 import Tech from "./Tech";
+import { Link } from "react-router-dom";
 
 SubMenu.propTypes = {
   goBack: PropTypes.func.isRequired,
@@ -72,12 +73,12 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
 
       {currentLevel === "main" ? (
         <>
-          <div className="mobile-menu-main-item">
+          <Link to="about" className="mobile-menu-main-item">
             <p>About</p>
             <div className="right-facing-arrow about-mobile-menu-arrow">
               <img src={RightFacingArrowBlue} alt="right-facing-arrow" />
             </div>
-          </div>
+          </Link>
           <div
             className="mobile-menu-main-item mobile-menu-main-item-second"
             onClick={() => handleUpdateCurrentLevel("subTalent")}

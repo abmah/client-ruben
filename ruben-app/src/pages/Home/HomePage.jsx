@@ -5,11 +5,11 @@ import BoostAppTwo from "./components/BoostApp/BoostAppTwo";
 import BoostAppThree from "./components/BoostApp/BoostAppThree";
 import Achievements from "./components/Achievements/Achievements";
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
-import ContactUs from "./components/ContactUs/ContactUs";
+
 import UnReveal from "./components/UnReveal/UnReveal";
 import Test from "./components/Test/Test";
 import FloatingCards from "./components/FloatingCards/FloatingCards";
-
+import ContactUs from "../Components/ContactUs/ContactUs";
 function Home() {
   return (
     <>
@@ -20,7 +20,6 @@ function Home() {
       <BoostApp />
       <BoostAppTwo />
       <BoostAppThree />
-
       <Achievements />
       <WhoWeAre />
       <UnReveal />

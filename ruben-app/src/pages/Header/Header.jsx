@@ -70,9 +70,9 @@ function Header() {
             />
           </div>
           <div className="header-menu">
-            <div className="menu-item">
+            <Link to="about" className="menu-item">
               <p>About</p>
-            </div>
+            </Link>
             <div className="menu-item menu-item-talent">
               <p>Talent</p>
               <Talent />
