@@ -7,16 +7,17 @@ import Achievements from "./components/Achievements/Achievements";
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
 
 import UnReveal from "./components/UnReveal/UnReveal";
-import Test from "./components/Test/Test";
+
 import FloatingCards from "./components/FloatingCards/FloatingCards";
 import ContactUs from "../Components/ContactUs/ContactUs";
+import RotatingFlower from "./components/RotatingFlower/RotatingFlower";
 function Home() {
   return (
     <>
       <AboveTheFold />
       <RevealSection />
       <FloatingCards />
-      <Test />
+      <RotatingFlower />
       <BoostApp />
       <BoostAppTwo />
       <BoostAppThree />
