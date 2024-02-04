@@ -2,7 +2,6 @@ import { useState, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
-import ArrowDown from "../../../../assets/orange-arrow-down.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -32,12 +31,11 @@ function RevealSection() {
   const wrapper = useRef(null);
   const clipPathRef = useRef(null);
   const svgDimensions = { width: 211, height: 252 };
-
+  const [scale, setScale] = useState(0.7);
   const [position, setPosition] = useState({
-    x: window.innerWidth / 2 - svgDimensions.width / 2,
-    y: window.innerHeight / 2 - svgDimensions.height / 2,
+    x: window.innerWidth / 2 - (svgDimensions.width * scale) / 2,
+    y: window.innerHeight / 2 - (svgDimensions.height * scale) / 2,
   });
-  const [scale, setScale] = useState(1);
 
   // Memoize functions and objects
   const updateClipPath = useMemo(() => {
@@ -107,7 +105,7 @@ function RevealSection() {
               {},
               {
                 onUpdate: () => {
-                  const newScale = 1 + textAnimation.progress() * 13;
+                  const newScale = scale + textAnimation.progress() * 13;
                   if (textAnimation.progress() > 0.1) {
                     textContent.classList.remove("hide");
                   } else {

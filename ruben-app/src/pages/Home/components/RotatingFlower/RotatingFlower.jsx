@@ -91,7 +91,7 @@ function RotatingFlower() {
             <div className="rotating-flower-details">
               <img
                 ref={flowerRef}
-                className="mobile-rotating-flower"
+                className="mobile-rotating-flower mobile-rotating-flower-first"
                 src={Flower}
                 alt="flower"
               />
@@ -118,7 +118,7 @@ function RotatingFlower() {
             <div className="rotating-flower-details">
               <img
                 ref={flowerRef}
-                className="mobile-rotating-flower"
+                className="mobile-rotating-flower mobile-rotating-flower-second"
                 src={Flower}
                 alt="flower"
               />
@@ -147,7 +147,7 @@ function RotatingFlower() {
             <div className="rotating-flower-details">
               <img
                 ref={flowerRef}
-                className="mobile-rotating-flower"
+                className="mobile-rotating-flower   mobile-rotating-flower-third"
                 src={Flower}
                 alt="flower"
               />

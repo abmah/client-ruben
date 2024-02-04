@@ -11,10 +11,12 @@ import UnReveal from "./components/UnReveal/UnReveal";
 import FloatingCards from "./components/FloatingCards/FloatingCards";
 import ContactUs from "../Components/ContactUs/ContactUs";
 import RotatingFlower from "./components/RotatingFlower/RotatingFlower";
+import Banner from "./components/Banner/Banner";
 function Home() {
   return (
     <>
       <AboveTheFold />
+      <Banner />
       <RevealSection />
       <FloatingCards />
       <RotatingFlower />

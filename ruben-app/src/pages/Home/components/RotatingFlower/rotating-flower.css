@@ -259,6 +259,18 @@
   display: none;
 }
 
+.mobile-rotating-flower-first {
+  transform: rotate(-45deg);
+}
+
+.mobile-rotating-flower-second {
+  transform: rotate(60deg);
+}
+
+.mobile-rotating-flower-third {
+  transform: rotate(175deg);
+}
+
 @media screen and (max-width: 900px) {
 
 
@@ -274,7 +286,7 @@
 
   .mobile-rotating-flower {
     display: block;
-    width: 300px;
+    width: 250px;
     align-self: center;
   }
 
