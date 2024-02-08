@@ -8,9 +8,37 @@ import animationData from "./Accenture_CardIllu_Anim_001_Timed_Alpha_violet.json
 import animationDataTwo from "./Accenture_CardIllu_Anim_002_Timed_Alpha_red.json";
 import animationDataThree from "./Accenture_CardIllu_Anim_003_Timed_Alpha_blue.json";
 import lottie from "lottie-web";
-import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function FloatingCards() {
+FloatingCards.propTypes = {
+  scrollRef: PropTypes.object.isRequired,
+  scrollRefTwo: PropTypes.object.isRequired,
+  scrollRefThree: PropTypes.object.isRequired,
+};
+
+function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
+  const scrollToRef = (num) => {
+    if (scrollRef.current) {
+      if (num == 1) {
+        scrollRef.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      } else if (num == 2) {
+        scrollRefTwo.current.scrollIntoView({
+          behavior: "smooth",
+          alignToTop: false,
+          block: "center",
+        });
+      } else {
+        scrollRefThree.current.scrollIntoView({
+          behavior: "smooth",
+          alignToTop: false,
+          block: "center",
+        });
+      }
+    }
+  };
+
   useEffect(() => {
     const playAnimation = (animation, direction) => {
       animation.setDirection(direction);
@@ -143,19 +171,32 @@ function FloatingCards() {
             <div className="floating-card-background-first floating-card-background"></div>
             <div className="floating-card-content">
               <div className="floating-card-content-first">
-                <p> Your team is struggling with resources and expertise?</p>
+                <p className="floating-card-content-title">
+                  {" "}
+                  Your team is struggling <br /> with resources and expertise?
+                </p>
               </div>
               <div className="floating-card-content-second"></div>
               <div className="floating-card-content-third">
-                <p>
-                  What if you could reshuffle your team's expertise and
-                  resources whenever needed and flexibliy add and reduce
-                  members? If the risk of wrong hire would not exist and
-                  time-to-hire would be close to zero? Check how our Talent
-                  Augmentation service helps solve Talent related problems.
+                <p className="floating-card-content-third-text floating-card-content-third-text-first">
+                  What if you could reshuffle your team&apos;s <br /> expertise
+                  and resources whenever needed?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-second">
+                  if you could flexibly add and reduce members?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-third">
+                  if the and time-to-hire would be close to zero?
+                </p>
+
+                <p className="floating-card-content-third-text floating-card-content-third-text-fourth">
+                  Check how our Talent Augmentation service <br /> helps solve
+                  Talent related problems.
                 </p>
                 <div className="floating-card-link">
-                  <Link to="infrastructure">some-link</Link>
+                  <div to="infrastructure" onClick={() => scrollToRef(1)}>
+                    Learn More
+                  </div>
                   <div className="floating-card-link-line"></div>
                 </div>
               </div>
@@ -164,23 +205,82 @@ function FloatingCards() {
           <div className="floating-card floating-card-two">
             <div className="floating-card-background-second floating-card-background"></div>
             <div className="floating-card-content">
-              <div className="floating-card-content-first">hello</div>
+              <div className="floating-card-content-first">
+                <p className="floating-card-content-title">
+                  Struggling to pair internal skillsets with transformation
+                  efforts?
+                </p>
+              </div>
               <div className="floating-card-content-second"></div>
-              <div className="floating-card-content-third">bye</div>
+              <div className="floating-card-content-third">
+                <p className="floating-card-content-third-text floating-card-content-third-text-first">
+                  What if your teams could easily stay ahead of the curve,
+                  uplifting their productivity?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-second">
+                  if they could learn latest tools and features adjusted <br />{" "}
+                  to their job scope?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-third">
+                  What if you could provide your stakeholders (e.g. customers)
+                  with customized learning experience on scale?
+                </p>
+
+                <p className="floating-card-content-third-text floating-card-content-third-text-fourth">
+                  Check how our Upskilling services help boost <br />{" "}
+                  productivity and growth.
+                </p>
+                <div className="floating-card-link">
+                  <div to="infrastructure" onClick={() => scrollToRef(2)}>
+                    Learn More
+                  </div>
+                  <div className="floating-card-link-line"></div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="floating-card floating-card-three">
             <div className="floating-card-background-third floating-card-background"></div>
             <div className="floating-card-content">
-              <div className="floating-card-content-first">hello</div>
+              <div className="floating-card-content-first">
+                <p className="floating-card-content-title">
+                  Technology debt is slowing your business down?
+                </p>
+              </div>
               <div className="floating-card-content-second"></div>
-              <div className="floating-card-content-third">bye</div>
+              <div className="floating-card-content-third">
+                <p className="floating-card-content-third-text floating-card-content-third-text-first">
+                  What if you could instantly move to scalable, modern IT
+                  invironments without upfront costs?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-second">
+                  if the mess in data and its security would not be a concern
+                  anymore?
+                </p>
+                <p className="floating-card-content-third-text floating-card-content-third-text-third">
+                  Check how our Technology imeplementation can <br /> optimize
+                  your operations.
+                </p>
+
+                {/* <p className="floating-card-content-third-text floating-card-content-third-text-fourth">
+                  Check how our Talent Augmentation service <br /> helps solve
+                  Talent related problems.
+                </p> */}
+                <div className="floating-card-link">
+                  <div to="infrastructure" onClick={() => scrollToRef(3)}>
+                    Learn More
+                  </div>
+                  <div className="floating-card-link-line"></div>
+                </div>
+              </div>
             </div>
           </div>{" "}
         </div>
         <div className="spacing-two "></div>
         <div className="floating-cards-background">
-          <h1>Global recognition and awards</h1>
+          <h1 className="floating-cards-background-text">
+            Services designed to amplify agility
+          </h1>
         </div>
       </div>
     </div>

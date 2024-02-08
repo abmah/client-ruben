@@ -1,6 +1,7 @@
 .who-we-are-wrapper {
   height: 620px;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .who-we-are-container {
@@ -28,6 +29,17 @@
   align-items: center;
   gap: 40px;
 
+}
+
+.achievement-button-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.achievement-button-arrow img {
+  margin-bottom: 16px;
 }
 
 

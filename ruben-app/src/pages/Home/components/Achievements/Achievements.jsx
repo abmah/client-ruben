@@ -5,31 +5,51 @@ import "swiper/css";
 
 import "./achievements.css";
 import Rectangle from "../../../../assets/blank-rectangle.svg";
-
 import ThreeDotsNext from "../../../../assets/three-dots-next.svg";
 import ThreeDotsPrev from "../../../../assets/three-dots-prev.svg";
-import TopRightArrow from "../../../../assets/top-right-arrow.svg";
 
+import DarkGreyDots from "./dark-grey.svg";
+import GreyDots from "./grey.svg";
+import OrangeDots from "./orange.svg";
 import RainbowDots from "../../../../assets/rainbow-dots.svg";
 
-function AchievementsCard() {
+function AchievementsCard({ dotColor }) {
+  let dots;
+  switch (dotColor) {
+    case "dark":
+      dots = <img className="dots" src={DarkGreyDots} alt="dark-dots" />;
+      break;
+    case "grey":
+      dots = <img className="dots" src={GreyDots} alt="grey-dots" />;
+      break;
+    case "orange":
+      dots = <img className="dots" src={OrangeDots} alt="orange-dots" />;
+      break;
+    default:
+      dots = <img className="dots" src={RainbowDots} alt="rainbow-dots" />;
+  }
+
   return (
     <div className="achievement-slide">
       <div className="slide-text-container">
-        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exerc.
-        </p>
-        <button>
-          <p>BUTTON</p>
-          <div className="achievement-button-arrow">
-            <img src={TopRightArrow} alt="top-right-arrow" />
+        {dots}
+        <div className="slide-text-image">
+          <div className="slide-text-content">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exerc.
+            </p>
           </div>
-        </button>
+          <img
+            className="slide-blank-image"
+            src={Rectangle}
+            alt="blank-image"
+          />
+        </div>
+        {dots}
       </div>
-      <img src={Rectangle} alt="blank-image" />
     </div>
   );
 }
@@ -60,19 +80,17 @@ export function Achievements() {
           >
             <img src={ThreeDotsPrev} alt="rainbow-dots" />
           </button>
-          <img src={RainbowDots} alt="rainbow-dots" />
           <Swiper ref={swiperRef} loop={true} className="achievements-swiper">
             <SwiperSlide>
-              <AchievementsCard />
+              <AchievementsCard dotColor="grey" />
             </SwiperSlide>
             <SwiperSlide>
-              <AchievementsCard />
+              <AchievementsCard dotColor="dark" />
             </SwiperSlide>
             <SwiperSlide>
-              <AchievementsCard />
+              <AchievementsCard dotColor="orange" />
             </SwiperSlide>
-          </Swiper>{" "}
-          <img src={RainbowDots} alt="rainbow-dots" />
+          </Swiper>
           <button
             className="achievements-nav-button-next"
             onClick={handleNextSlide}

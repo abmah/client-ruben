@@ -14,10 +14,13 @@ function Banner() {
         </div>
         <div className="banner-middle-section">
           <div className="middle-section-background"></div>
+
           <p>
+            <span className="banner-middle-section-header">What we do</span>
+            <br />
             We offer one-stop-shop experience for enterprise transformation,
             accelerating go-to-market in 3 critical areas for transformation
-            projects: Talent, Technology, Skills.
+            projects: <br /> Talent, Technology, Skills.
           </p>
           <img className="banner-circles" src={Circles} alt="circles" />
         </div>

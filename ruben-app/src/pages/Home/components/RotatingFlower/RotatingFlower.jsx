@@ -7,8 +7,9 @@ import "./rotating-flower.css";
 gsap.registerPlugin(ScrollTrigger);
 
 import Flower from "../../../../assets/flower.svg";
+import { Link } from "react-router-dom";
 
-function RotatingFlower() {
+function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
   const flowerRef = useRef(null);
 
   useEffect(() => {
@@ -85,7 +86,7 @@ function RotatingFlower() {
 
   return (
     <>
-      <div className="rotating-flower-wrapper">
+      <div ref={scrollRef} className="rotating-flower-wrapper">
         <div className="rotating-flower-left-section">
           <div className="rotating-flower-details-section">
             <div className="rotating-flower-details">
@@ -105,17 +106,17 @@ function RotatingFlower() {
                 Access to high profile experts in start/stop model
               </div>
               <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
+                Pre-vetted high-profile experts from various industries
+                available on demand to join your team - from digital experts to
+                strategy consultants.
               </div>
-              <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
-              </div>
-              <button className="rotating-flower-details-btn">
-                <p>BUTTON</p>
+
+              <Link to="contact" className="rotating-flower-details-btn">
+                <p>Contact Us</p>
                 <img src={TopRightArrow} alt="right-top-arrow" />
-              </button>
+              </Link>
             </div>
-            <div className="rotating-flower-details">
+            <div ref={scrollRefTwo} className="rotating-flower-details">
               <img
                 ref={flowerRef}
                 className="mobile-rotating-flower mobile-rotating-flower-second"
@@ -131,20 +132,23 @@ function RotatingFlower() {
                 Programs
               </div>
               <div className="rotating-flower-details-text">
-                Access to high profile experts in start/stop model
+                Customized upskilling programs designed to deliver value.
               </div>
               <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
+                Accelerator programs built to generate impact on key
+                stakeholders (employees, customers, resellers) through carefully
+                crafted training curriculum.
               </div>
-              <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
-              </div>
-              <button className="rotating-flower-details-btn">
-                <p>BUTTON</p>
+
+              <Link to="contact" className="rotating-flower-details-btn">
+                <p>Contact Us</p>
                 <img src={TopRightArrow} alt="right-top-arrow" />
-              </button>
+              </Link>
             </div>
-            <div className="rotating-flower-details">
+            <div
+              ref={scrollRefThree}
+              className="rotating-flower-details rotating-flower-details-last"
+            >
               <img
                 ref={flowerRef}
                 className="mobile-rotating-flower   mobile-rotating-flower-third"
@@ -159,18 +163,19 @@ function RotatingFlower() {
                 Tech
               </div>
               <div className="rotating-flower-details-text">
-                Access to high profile experts in start/stop model
+                Modern tech stack implementation by a certified team of
+                engineers.
               </div>
               <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
+                Agile scaling and tangible business value delivered through
+                consultancy, cost-optimized licencing, managed services focused
+                on modern cloud based solutions.
               </div>
-              <div className="rotating-flower-details-text sub-text">
-                Access to high profile experts in start/stop model
-              </div>
-              <button className="rotating-flower-details-btn">
-                <p>BUTTON</p>
+
+              <Link to="contact" className="rotating-flower-details-btn">
+                <p>Contact Us</p>
                 <img src={TopRightArrow} alt="right-top-arrow" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>{" "}

@@ -8,6 +8,7 @@ import PersonFour from "./people/person-four.webp";
 import PersonFive from "./people/person-five.webp";
 import PersonSix from "./people/person-six.webp";
 import PersonSeven from "./people/person-seven.webp";
+import { Link } from "react-router-dom";
 
 function WhoWeAre() {
   return (
@@ -15,14 +16,14 @@ function WhoWeAre() {
       <div className="who-we-are-container">
         <h1 className="who-we-are-title">Who We Are</h1>
         <h1 className="who-we-are-subtitle">
-          Lorem Ipsum is simply dummy text of the printing{" "}
+          We are improvers, resolvers, change advocates and engineers
         </h1>
-        <button className="who-we-are-button">
-          <p>LOREMIPS</p>
+        <Link to="/about" className="who-we-are-button">
+          <p>About us</p>
           <div className="achievement-button-arrow">
             <img src={TopRightArrow} alt="top-right-arrow" />
           </div>
-        </button>
+        </Link>
 
         <div className="people-images-container">
           <img

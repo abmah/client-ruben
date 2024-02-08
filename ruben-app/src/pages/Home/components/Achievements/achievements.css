@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   color: #192430;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .achievements-title {
@@ -42,6 +42,23 @@
 
 .slide-text-container {
   width: 437px;
+  display: flex;
+  width: 100%;
+}
+
+.slide-text-image {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+}
+
+.rainbow-dots {
+  margin: 0 20px;
+}
+
+.slide-text-content {
+  flex-direction: column;
+  max-width: 437px;
 }
 
 .achievement-slide h3 {
@@ -51,7 +68,7 @@
   line-height: 40px;
 }
 
-.achievement-slide img {
+.slide-blank-image {
   margin-top: 25px;
 }
 
@@ -137,36 +154,58 @@
   .achievement-slide {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     height: 100%;
     justify-content: flex-start;
   }
 
-  .achievement-slide>img {
-    width: 290px;
-    order: 1;
-  }
-
   .slide-text-container {
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 
+    max-width: unset;
+    height: 100%;
     order: 2;
     margin-top: 25px;
-    text-align: center;
+    max-width: unset;
+  }
+
+  .slide-text-image {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .rainbow-dots {
+    margin: 0;
+    height: 100%;
+  }
+
+  .slide-text-content {
+    order: 2;
+
+    max-width: 260px;
+
+    text-align: left;
+  }
+
+  .slide-blank-image {
+    margin-top: 25px;
+  }
+
+  .slide-blank-image {
+    max-width: 290px;
+    order: 1;
   }
 
   .achievements-swiper {
     height: 602px;
   }
 
-  .slide-text-container {
-    width: 240px;
-    text-align: left;
-  }
-
   .achievements-container {
     width: 50%;
-    min-width: 500px;
+
   }
 
   .achievement-slide h3 {
@@ -190,12 +229,10 @@
     right: -30px;
   }
 
-  .achievement-slide button {
-    margin-top: 20px;
-  }
+
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .achievements-container {
     width: 100%;
     min-width: auto;

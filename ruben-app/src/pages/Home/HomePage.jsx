@@ -12,20 +12,32 @@ import FloatingCards from "./components/FloatingCards/FloatingCards";
 import ContactUs from "../Components/ContactUs/ContactUs";
 import RotatingFlower from "./components/RotatingFlower/RotatingFlower";
 import Banner from "./components/Banner/Banner";
+import { useRef } from "react";
 function Home() {
+  let scrollRef = useRef(null);
+  let scrollRefTwo = useRef(null);
+  let scrollRefThree = useRef(null);
   return (
     <>
       <AboveTheFold />
       <Banner />
       <RevealSection />
-      <FloatingCards />
-      <RotatingFlower />
-      <BoostApp />
+      <FloatingCards
+        scrollRef={scrollRef}
+        scrollRefTwo={scrollRefTwo}
+        scrollRefThree={scrollRefThree}
+      />
+      <RotatingFlower
+        scrollRef={scrollRef}
+        scrollRefTwo={scrollRefTwo}
+        scrollRefThree={scrollRefThree}
+      />
+      {/* <BoostApp />
       <BoostAppTwo />
-      <BoostAppThree />
+      <BoostAppThree /> */}
       <Achievements />
       <WhoWeAre />
-      <UnReveal />
+      {/* <UnReveal /> */}
       <ContactUs />
       <br />
     </>
