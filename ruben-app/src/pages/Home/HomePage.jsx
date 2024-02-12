@@ -13,6 +13,8 @@ import ContactUs from "../components/ContactUs/ContactUs";
 import RotatingFlower from "./components/RotatingFlower/RotatingFlower";
 import Banner from "./components/Banner/Banner";
 import { useRef } from "react";
+
+// comment here
 function Home() {
   let scrollRef = useRef(null);
   let scrollRefTwo = useRef(null);
