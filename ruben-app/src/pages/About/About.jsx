@@ -1,4 +1,4 @@
-import ContactUs from "../Components/ContactUs/ContactUs";
+import ContactUs from "../components/ContactUs/ContactUs";
 import AboveTheFold from "./components/AboveTheFold/AboveTheFold";
 import MeetTheTeam from "./components/MeetTheTeam/MeetTheTeam";
 import OurStory from "./components/OurStory/OurStory";
