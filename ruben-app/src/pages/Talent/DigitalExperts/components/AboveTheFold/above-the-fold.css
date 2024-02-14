@@ -120,12 +120,6 @@
     gap: 20px;
   }
 
-  .talent-digital-image-parent {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 362px;
-  }
 
 
 }
@@ -143,8 +137,9 @@
     width: 100%;
   }
 
-  .talent-digital-above-the-fold-button-container .talent-digital-learn-more-button {
+  .talent-digital-learn-more-button {
     width: 100%;
+    display: none;
   }
 
   .talent-digital-above-the-fold-img {

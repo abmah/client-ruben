@@ -1,7 +1,3 @@
-.talent-digital-bottom-cards-wrapper {
-  margin-top: 50px;
-}
-
 .talent-digital-bottom-cards-container {
   color: #192430;
   width: 80%;
@@ -9,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 
@@ -91,7 +88,7 @@
 
 
   .talent-digital-bottom-cards-container {
-    width: 97%;
+    width: 90%;
   }
 
 

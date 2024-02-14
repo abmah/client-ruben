@@ -25,7 +25,7 @@ function Images() {
           <img
             src={GoodCompany}
             alt="blank image"
-            className="talent-digital-image"
+            className="talent-digital-image talent-digital-image-top"
           />
         </div>{" "}
         <div className="talent-digital-image-parent">

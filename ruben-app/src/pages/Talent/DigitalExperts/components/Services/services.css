@@ -11,7 +11,7 @@
 
 .talent-digital-services-main-title {
   color: #192430;
-  margin-bottom: -100px;
+  margin-bottom: -40px;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -71,8 +71,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 150px;
-  margin-bottom: 50px;
+  padding-top: 70px;
+
 
 }
 
@@ -128,6 +128,9 @@
   color: #222b38;
   font-size: 18px;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: normal;
   border: none;
@@ -135,11 +138,15 @@
   margin-top: 32px;
 }
 
+.talent-digital-services-line {
+  width: 100%;
+  height: 1px;
+  background: #00000017;
+  margin-top: 80px;
 
-
-.talent-digital-services-navigation-mobile {
-  display: none;
 }
+
+
 
 @media screen and (max-width: 1400px) {
   .talent-digital-services-container {
@@ -149,15 +156,6 @@
 
 }
 
-@media screen and (max-width: 1300px) {
-
-  .talent-digital-services-container {
-
-    width: 97%;
-
-  }
-
-}
 
 
 @media screen and (max-width: 900px) {
@@ -166,6 +164,8 @@
     font-size: 24px;
     font-style: normal;
     line-height: normal;
+    margin-bottom: -100px;
+    margin-top: 40px;
   }
 
   .talent-digital-services-right-section-child {
@@ -182,12 +182,7 @@
     margin-top: 0px;
   }
 
-  .talent-digital-services-navigation-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 336px;
-    gap: 16px;
-  }
+
 
   .talent-digital-services-nav-item-long {
     padding-right: 12px;
@@ -217,7 +212,11 @@
   }
 
   .talent-digital-services-right-section-child {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+  }
+
+  .talent-digital-services-line {
+    margin-top: 40px;
   }
 }
 

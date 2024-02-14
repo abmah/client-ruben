@@ -81,12 +81,11 @@
 }
 
 @media screen and (max-width:1300px) {
-  .talent-digital-images-container {
-    max-width: 97%;
-  }
+
 
   .talent-digital-cards-container {
-    width: 97%;
+    width: 90%;
+
   }
 
   .talent-digital-card {

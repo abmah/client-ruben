@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Clowd from "../../../../../assets/clowd.svg";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -109,24 +110,6 @@ function Services() {
             </div>
             <div className="talent-digital-services-right-section">
               <div className="talent-digital-services-right-section-child">
-                <div className="talent-digital-services-navigation-mobile">
-                  <div
-                    className={`talent-digital-services-nav-item active-talent    `}
-                  >
-                    Industries
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item services-nav-item-long `}
-                  >
-                    Areas
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Skillsets
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Positions
-                  </div>
-                </div>
                 <h1 className="talent-digital-services-right-section-child-title">
                   Industries
                 </h1>
@@ -185,27 +168,15 @@ function Services() {
                     <p>Consumer Goods</p>
                   </div>
                 </div>
-                <button className="talent-digital-services-right-section-btn">
-                  Explore more
-                </button>
+                <Link
+                  to="/contact"
+                  className="talent-digital-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="talent-digital-services-line"></div>
               </div>{" "}
               <div className="talent-digital-services-right-section-child">
-                <div className="talent-digital-services-navigation-mobile">
-                  <div className={`talent-digital-services-nav-item     `}>
-                    Industries
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item services-nav-item-long active-talent `}
-                  >
-                    Areas
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Skillsets
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Positions
-                  </div>
-                </div>
                 <h1 className="talent-digital-services-right-section-child-title">
                   Areas
                 </h1>
@@ -264,29 +235,15 @@ function Services() {
                     <p>Automation</p>
                   </div>
                 </div>
-                <button className="talent-digital-services-right-section-btn">
-                  Explore more
-                </button>
+                <Link
+                  to="/contact"
+                  className="talent-digital-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>
+                <div className="talent-digital-services-line"></div>
               </div>{" "}
               <div className="talent-digital-services-right-section-child">
-                <div className="talent-digital-services-navigation-mobile">
-                  <div className={`talent-digital-services-nav-item     `}>
-                    Industries
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item services-nav-item-long `}
-                  >
-                    Areas
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item active-talent `}
-                  >
-                    Skillsets
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Positions
-                  </div>
-                </div>
                 <h1 className="talent-digital-services-right-section-child-title">
                   Skillsets
                 </h1>
@@ -346,29 +303,15 @@ function Services() {
                     <p>Machine Learning</p>
                   </div>
                 </div>
-                <button className="talent-digital-services-right-section-btn">
-                  Explore more
-                </button>
+                <Link
+                  to="/contact"
+                  className="talent-digital-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="talent-digital-services-line"></div>
               </div>{" "}
               <div className="talent-digital-services-right-section-child">
-                <div className="talent-digital-services-navigation-mobile">
-                  <div className={`talent-digital-services-nav-item     `}>
-                    Industries
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item services-nav-item-long `}
-                  >
-                    Areas
-                  </div>
-                  <div className={`talent-digital-services-nav-item `}>
-                    Skillsets
-                  </div>
-                  <div
-                    className={`talent-digital-services-nav-item active-talent `}
-                  >
-                    Positions
-                  </div>
-                </div>
                 <h1 className="talent-digital-services-right-section-child-title">
                   Positions
                 </h1>
@@ -429,9 +372,12 @@ function Services() {
                     <p>Cloud Architect</p>
                   </div>
                 </div>
-                <button className="talent-digital-services-right-section-btn">
-                  Explore more
-                </button>
+                <Link
+                  to="/contact"
+                  className="talent-digital-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
               </div>
             </div>
           </div>

@@ -7,24 +7,49 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-top-content">
-            <div className="footer-top-item footer-logo-container">
+            <Link to="/" className="footer-top-item footer-logo-container">
               <img src={DigitalFuture} alt="DigitalFuture" />
+            </Link>
+            <div className="footer-top-item footer-top-item-about-contact">
+              <Link to="/about" className="footer-top-item-title">
+                About
+              </Link>
+              <Link to="/contact" className="footer-top-item-title">
+                Contact Us
+              </Link>
             </div>
             <div className="footer-top-item">
-              <p className="footer-top-item-title">About</p>
-              <p className="footer-top-item-title">Contact Us</p>
-            </div>
-            <div className="footer-top-item">
-              <p className="footer-top-item-title">Talent</p>
-              <p className="footer-top-item-option">Digital Experts</p>
-              <p className="footer-top-item-option">Strategy Consultants</p>
-              <p className="footer-top-item-option">Operations Consultant</p>
-              <p className="footer-top-item-option">Hourly Based Experts</p>
+              <a className="footer-top-item-title">Talent</a>
+              <Link to="/digital-experts" className="footer-top-item-option">
+                Digital Experts
+              </Link>
+              <Link
+                to="/strategy-consultants"
+                className="footer-top-item-option"
+              >
+                Strategy Consultants
+              </Link>
+              <Link
+                to="/operations-consultants"
+                className="footer-top-item-option"
+              >
+                Operations Consultant
+              </Link>
+              <Link
+                to="/hourly-based-experts"
+                className="footer-top-item-option"
+              >
+                Hourly Based Experts
+              </Link>
             </div>
             <div className="footer-top-item">
               <p className="footer-top-item-title">Skills</p>
-              <p className="footer-top-item-option">Hourly Based Experts</p>
-              <p className="footer-top-item-option">Customized Programs</p>
+              <Link to="open-academy" className="footer-top-item-option">
+                Open Academy
+              </Link>
+              <Link to="customized-programs" className="footer-top-item-option">
+                Customized Programs
+              </Link>
             </div>
             <div className="footer-top-item footer-top-item-tech">
               <p className="footer-top-item-title">Tech</p>
