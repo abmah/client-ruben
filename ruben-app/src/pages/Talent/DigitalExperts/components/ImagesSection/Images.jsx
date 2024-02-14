@@ -1,4 +1,5 @@
-import BlankImage from "../../../../../assets/infra-image-blank.svg";
+import GoodCompany from "./good-company.svg";
+import TalentAug from "./talent-aug.svg";
 import "./images.css";
 
 function Images() {
@@ -8,23 +9,21 @@ function Images() {
         <div className="talent-digital-image-parent">
           <div className="talent-digital-image-text">
             <div className="talent-digital-image-text-title">
-              Lorem ipsum dolor sit amet consect
+              Flexible and Rapid Talent Augmentation
             </div>
             <div className="talent-digital-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+              Quickly assemble the teams you need and get things done - from
+              quick turnarounds to big transformations
             </div>
             <div className="talent-digital-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+              You can rely on our contractor database or let us find the high
+              quality experts for your custom needs. All that with one invoice,
+              employment formalities on us, while maintaining highest level of
+              confidentiality at all time.
             </div>
           </div>
           <img
-            src={BlankImage}
+            src={GoodCompany}
             alt="blank image"
             className="talent-digital-image"
           />
@@ -32,25 +31,22 @@ function Images() {
         <div className="talent-digital-image-parent">
           {" "}
           <img
-            src={BlankImage}
+            src={TalentAug}
             alt="blank image"
             className="talent-digital-image"
           />
           <div className="talent-digital-image-text">
             <div className="talent-digital-image-text-title">
-              Lorem ipsum dolor sit amet consect
+              This is how good companies find good company
             </div>
             <div className="talent-digital-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+              Proof of quality: we have a track record with top brands, e.g. in
+              Technology, FMCG, Consulting industries.
             </div>
             <div className="talent-digital-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+              We take extra effort to eliminate risks and we diligently check
+              background and references of our candidates and prioritise
+              confidentiality of all stakeholders.
             </div>
           </div>
         </div>

@@ -1,8 +1,8 @@
-.talent-digital-services-wrapper {
+.talent-strategy-services-wrapper {
   margin-top: 100px;
 }
 
-.talent-digital-services-container {
+.talent-strategy-services-container {
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -11,11 +11,11 @@
   gap: 20px;
 }
 
-.talent-digital-services-right-section {
+.talent-strategy-services-right-section {
   width: 70%;
 }
 
-.talent-digital-services-nav-section {
+.talent-strategy-services-nav-section {
   width: 240px;
   height: 700px;
   gap: 24px;
@@ -25,7 +25,7 @@
 
 }
 
-.talent-digital-services-nav-item {
+.talent-strategy-services-nav-item {
   cursor: pointer;
   border-radius: 32px;
   color: #2d3748;
@@ -47,11 +47,11 @@
   color: white;
 }
 
-.talent-digital-services-nav-item-long {
+.talent-strategy-services-nav-item-long {
   padding-right: 28px;
 }
 
-.talent-digital-services-right-section-child {
+.talent-strategy-services-right-section-child {
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -59,14 +59,14 @@
   max-width: 900px;
 }
 
-.talent-digital-services-right-section-child-title {
+.talent-strategy-services-right-section-child-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.talent-digital-services-right-section-subtitle {
+.talent-strategy-services-right-section-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -74,13 +74,13 @@
   max-width: 576px;
 }
 
-.talent-digital-services-right-section-cards-container {
+.talent-strategy-services-right-section-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.talent-digital-services-right-section-card {
+.talent-strategy-services-right-section-card {
   width: 280px;
   height: 120px;
   display: flex;
@@ -93,16 +93,16 @@
   gap: 27px;
 }
 
-.talent-digital-services-right-section-card img {
+.talent-strategy-services-right-section-card img {
   width: 20px;
   height: 14px;
 }
 
-.talent-digital-services-right-section-card p {
+.talent-strategy-services-right-section-card p {
   width: 166px;
 }
 
-.talent-digital-services-right-section-btn {
+.talent-strategy-services-right-section-btn {
   border-radius: 28px;
   width: 184px;
   height: 56px;
@@ -118,17 +118,17 @@
   margin-top: 32px;
 }
 
-.talent-digital-services-section-space {
+.talent-strategy-services-section-space {
   height: 230px;
 }
 
-.talent-digital-services-navigation-mobile {
+.talent-strategy-services-navigation-mobile {
   display: none;
 }
 
 @media screen and (max-width: 1300px) {
 
-  .talent-digital-services-container {
+  .talent-strategy-services-container {
     display: flex;
     width: 97%;
 
@@ -138,18 +138,18 @@
 
 
 @media screen and (max-width: 900px) {
-  .talent-digital-services-navigation-mobile {
+  .talent-strategy-services-navigation-mobile {
     display: flex;
     flex-wrap: wrap;
     max-width: 336px;
     gap: 16px;
   }
 
-  .talent-digital-services-nav-item-long {
+  .talent-strategy-services-nav-item-long {
     padding-right: 12px;
   }
 
-  .talent-digital-services-nav-item {
+  .talent-strategy-services-nav-item {
 
     font-size: 18px;
     font-style: normal;
@@ -158,21 +158,21 @@
     transition: unset;
   }
 
-  .talent-digital-services-nav-item {
+  .talent-strategy-services-nav-item {
     cursor: unset;
     width: 115px;
     height: 40px;
   }
 
-  .talent-digital-services-right-section {
+  .talent-strategy-services-right-section {
     width: 100%;
   }
 
-  .talent-digital-services-nav-section {
+  .talent-strategy-services-nav-section {
     display: none;
   }
 
-  .talent-digital-services-right-section-child {
+  .talent-strategy-services-right-section-child {
     margin-bottom: 80px;
   }
 }
@@ -183,25 +183,25 @@
 
 
 
-  .talent-digital-services-container {
+  .talent-strategy-services-container {
     width: 90%;
   }
 
-  .talent-digital-services-right-section-child {
+  .talent-strategy-services-right-section-child {
     height: auto;
 
   }
 
-  .talent-digital-services-right-section-cards-container {
+  .talent-strategy-services-right-section-cards-container {
     flex-direction: column;
   }
 
-  .talent-digital-services-right-section-card {
+  .talent-strategy-services-right-section-card {
     width: 100%;
     height: 88px;
   }
 
-  .talent-digital-services-right-section-btn {
+  .talent-strategy-services-right-section-btn {
     width: 100%;
 
   }

@@ -13,9 +13,9 @@ function LetsTalk() {
         ></img>
         <h1 className="talent-digital-lets-talk-section-title">Let’s Talk!</h1>
         <p className="talent-digital-lets-talk-section-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exerc.
+          Contact us for inquiries, feedback, or any assistance you may need.
+          Our team is ready to respond promptly to discuss and clarify any
+          questions you may have.
         </p>
         <button className="talent-digital-lets-talk-section-button">
           <p>CONTACT US</p>

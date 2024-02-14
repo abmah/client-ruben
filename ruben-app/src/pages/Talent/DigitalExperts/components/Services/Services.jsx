@@ -59,7 +59,7 @@ function Services() {
     if (childElements.length > index) {
       childElements[index].scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     }
   };
@@ -75,7 +75,7 @@ function Services() {
               }`}
               onClick={() => handleClick(0)}
             >
-              Consult
+              Industries
             </div>
             <div
               className={`talent-digital-services-nav-item services-nav-item-long ${
@@ -83,7 +83,7 @@ function Services() {
               }`}
               onClick={() => handleClick(1)}
             >
-              Implement
+              Areas
             </div>
             <div
               className={`talent-digital-services-nav-item ${
@@ -91,7 +91,7 @@ function Services() {
               }`}
               onClick={() => handleClick(2)}
             >
-              Manage
+              Skillsets
             </div>
             <div
               className={`talent-digital-services-nav-item ${
@@ -99,7 +99,7 @@ function Services() {
               }`}
               onClick={() => handleClick(3)}
             >
-              Improve
+              Positions
             </div>
           </div>
           <div className="talent-digital-services-right-section">
@@ -109,44 +109,76 @@ function Services() {
                 <div
                   className={`talent-digital-services-nav-item active-talent    `}
                 >
-                  Consult
+                  Industries
                 </div>
                 <div
                   className={`talent-digital-services-nav-item services-nav-item-long `}
                 >
-                  Implement
+                  Areas
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Manage
+                  Skillsets
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Improve
+                  Positions
                 </div>
               </div>
               <h1 className="talent-digital-services-right-section-child-title">
-                Consult
+                Industries
               </h1>
               <p className="talent-digital-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                Throughout the years we have developed extensive understanding
+                of various industries where we helped securing digital experts
+                and contractors.
               </p>
               <div className="talent-digital-services-right-section-cards-container">
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Retail</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Ecommerce</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Fintech</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Energy</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Public Sector</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Transporation</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Sports</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Entertainment</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Culture</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Manufacturing</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Agriculture</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Consumer Goods</p>
                 </div>
               </div>
               <button className="talent-digital-services-right-section-btn">
@@ -156,44 +188,76 @@ function Services() {
             <div className="talent-digital-services-right-section-child">
               <div className="talent-digital-services-navigation-mobile">
                 <div className={`talent-digital-services-nav-item     `}>
-                  Consult
+                  Industries
                 </div>
                 <div
                   className={`talent-digital-services-nav-item services-nav-item-long active-talent `}
                 >
-                  Implement
+                  Areas
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Manage
+                  Skillsets
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Improve
+                  Positions
                 </div>
               </div>
               <h1 className="talent-digital-services-right-section-child-title">
-                Implement
+                Areas
               </h1>
               <p className="talent-digital-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                Digital related roles cover various areas of daily enterprise
+                operations. We understand the characteristics of these areas and
+                are able to understand your specific requirements.
               </p>
               <div className="talent-digital-services-right-section-cards-container">
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Digital Marketing</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Martech</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Online Analytics</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>UX/UI</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Data Analysis</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Data Enginering</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Ecommerce Operations</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Performance Marketing</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Social Media Marketing</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Cloud Computing</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Cybersecurity</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Automation</p>
                 </div>
               </div>
               <button className="talent-digital-services-right-section-btn">
@@ -203,46 +267,79 @@ function Services() {
             <div className="talent-digital-services-right-section-child">
               <div className="talent-digital-services-navigation-mobile">
                 <div className={`talent-digital-services-nav-item     `}>
-                  Consult
+                  Industries
                 </div>
                 <div
                   className={`talent-digital-services-nav-item services-nav-item-long `}
                 >
-                  Implement
+                  Areas
                 </div>
                 <div
                   className={`talent-digital-services-nav-item active-talent `}
                 >
-                  Manage
+                  Skillsets
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Improve
+                  Positions
                 </div>
               </div>
               <h1 className="talent-digital-services-right-section-child-title">
-                Manage
+                Skillsets
               </h1>
               <p className="talent-digital-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                In the rapidly evolving digital landscape, various skills are
+                crucial for professionals to excel in their roles. We map the
+                skillset of profiles we work with making it easier for you to
+                find the perfect match. Examples of skills we map:
               </p>
               <div className="talent-digital-services-right-section-cards-container">
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>User Experience Design</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Coding</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Project Management</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Google Analytics</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Agile Methodologies</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Generative AI</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>SEM and SEO</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Email Marketing</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Marketing Automation</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Content Management Systems (CMS)</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Reporting and Dashboarding</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Machine Learning</p>
                 </div>
               </div>
               <button className="talent-digital-services-right-section-btn">
@@ -252,46 +349,80 @@ function Services() {
             <div className="talent-digital-services-right-section-child">
               <div className="talent-digital-services-navigation-mobile">
                 <div className={`talent-digital-services-nav-item     `}>
-                  Consult
+                  Industries
                 </div>
                 <div
                   className={`talent-digital-services-nav-item services-nav-item-long `}
                 >
-                  Implement
+                  Areas
                 </div>
                 <div className={`talent-digital-services-nav-item `}>
-                  Manage
+                  Skillsets
                 </div>
                 <div
                   className={`talent-digital-services-nav-item active-talent `}
                 >
-                  Improve
+                  Positions
                 </div>
               </div>
               <h1 className="talent-digital-services-right-section-child-title">
-                Improve
+                Positions
               </h1>
               <p className="talent-digital-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
+                Digital transformation has led to the emergence of various
+                standardized roles aimed at driving organizational change and
+                innovation. From Junior levels to CXO levels, from specialists
+                to experts, we can support with contractors for any of the
+                internal positions you may look to temporarily fill in.
               </p>
               <div className="talent-digital-services-right-section-cards-container">
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>SEM Specialist</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Digital Project Manager</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>PPC (Pay-Per-Click) Specialist</p>
                 </div>
                 <div className="talent-digital-services-right-section-card">
                   <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
+                  <p>Conversion Rate Optimization (CRO) Manager</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Marketing Automation Expert</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Digital Marketing Manager</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Predictive Analytics Specialist</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Big Data Engineer</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Business Intelligence Analyst</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Ecommerce Manager</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Machine Learning Engineer</p>
+                </div>
+                <div className="talent-digital-services-right-section-card">
+                  <img src={Clowd} alt="services-image" />
+                  <p>Cloud Architect</p>
                 </div>
               </div>
               <button className="talent-digital-services-right-section-btn">

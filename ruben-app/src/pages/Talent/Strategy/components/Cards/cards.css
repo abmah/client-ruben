@@ -1,6 +1,6 @@
-/* talent-digital cards section */
+/* talent-strategy cards section */
 
-.talent-digital-cards-wrapper {
+.talent-strategy-cards-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +11,7 @@
   margin-top: 40px;
 }
 
-.talent-digital-cards-container {
+.talent-strategy-cards-container {
   width: 80%;
   height: 100%;
   display: flex;
@@ -20,7 +20,7 @@
   gap: 20px;
 }
 
-.talent-digital-card {
+.talent-strategy-card {
   max-width: 416px;
   width: 30%;
   height: 100%;
@@ -31,7 +31,7 @@
   min-height: 477px;
 }
 
-.talent-digital-card-header {
+.talent-strategy-card-header {
   margin-top: 32px;
   width: 100px;
   color: #FFF;
@@ -46,7 +46,7 @@
   margin-bottom: 22px;
 }
 
-.talent-digital-card-title {
+.talent-strategy-card-title {
   margin-bottom: 46px;
   font-size: 32px;
   font-style: normal;
@@ -54,7 +54,7 @@
   line-height: 40px;
 }
 
-.talent-digital-card-paragraph {
+.talent-strategy-card-paragraph {
   color: #192430;
   font-size: 18px;
   font-style: normal;
@@ -62,43 +62,43 @@
   line-height: 32px;
 }
 
-/* talent-digital cards section */
+/* talent-strategy cards section */
 
-/* talent-digital image section */
+/* talent-strategy image section */
 
 /* ... (previous styles) ... */
 
-/* talent-digital image section */
+/* talent-strategy image section */
 
 @media screen and (max-width:1300px) {
-  .talent-digital-images-container {
+  .talent-strategy-images-container {
     max-width: 97%;
   }
 
-  .talent-digital-cards-container {
+  .talent-strategy-cards-container {
     width: 97%;
   }
 
-  .talent-digital-card {
+  .talent-strategy-card {
     width: 100%;
     max-width: 362px;
     min-height: 410px;
   }
 
-  .talent-digital-card-title {
+  .talent-strategy-card-title {
     font-size: 24px;
     font-style: normal;
     line-height: normal;
   }
 
-  .talent-digital-card-paragraph {
+  .talent-strategy-card-paragraph {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
   }
 
-  .talent-digital-image {
+  .talent-strategy-image {
     border-radius: 24px;
     max-width: 100%;
     height: 385px;
@@ -107,28 +107,28 @@
     gap: 20px;
   }
 
-  .talent-digital-image-text-title {
+  .talent-strategy-image-text-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
-  .talent-digital-image-text-subtitle {
+  .talent-strategy-image-text-subtitle {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
   }
 
-  .talent-digital-card-paragraph {
+  .talent-strategy-card-paragraph {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .talent-digital-image-text {
+  .talent-strategy-image-text {
     max-width: 500px;
   }
 }

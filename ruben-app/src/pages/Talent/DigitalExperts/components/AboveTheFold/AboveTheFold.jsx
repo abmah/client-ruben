@@ -28,8 +28,8 @@ function AboveTheFold() {
         <div className="talent-digital-above-the-fold-left-section-wrapper">
           <div className="talent-digital-above-the-fold-left-section">
             <h1 className="talent-digital-above-the-fold-main-title">
-              Modernize You <strong>Digital Experts</strong> to Scale and
-              Innovate
+              Pre-vetted interim <strong>Digital Experts</strong> Contractors in
+              start-stop model
             </h1>
             <div className="talent-digital-above-the-fold-button-container">
               <button className="talent-digital-learn-more-button">

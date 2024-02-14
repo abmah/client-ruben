@@ -4,36 +4,38 @@ function Cards() {
     <div className="talent-digital-cards-wrapper">
       <div className="talent-digital-cards-container">
         <div className="talent-digital-card">
-          <div className="talent-digital-card-header">Loremips</div>
-          <div className="talent-digital-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </div>
+          <div className="talent-digital-card-header">Use Case</div>
+          <div className="talent-digital-card-title">Interim Management</div>
           <p className="talent-digital-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            High profile leaders, bringing wealth of specialized experience in
+            digital strategies and technologies. Their temporary presence allows
+            for rapid adaptation to evolving technological landscapes and allows
+            to facilitate knowledge transfer to existing teams, leaving a
+            lasting impact.
           </p>
         </div>
         <div className="talent-digital-card">
-          <div className="talent-digital-card-header">Loremips</div>
-          <div className="talent-digital-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </div>
+          <div className="talent-digital-card-header">Use Case</div>
+          <div className="talent-digital-card-title">Augmenting New Skills</div>
           <p className="talent-digital-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            Enhance capabilities of your team with temporary injection of
+            specialized skills. Augmenting new skills allows to implement
+            cutting-edge technologies and enhance problem-solving capabilities,
+            fostering innovation and efficiency in addressing complex challenges
+            within the digital landscape.
           </p>
         </div>
         <div className="talent-digital-card">
-          <div className="talent-digital-card-header">Loremips</div>
+          <div className="talent-digital-card-header">Use Case</div>
           <div className="talent-digital-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Boosting Team Capacity
           </div>
           <p className="talent-digital-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            Adding temporary resources is essential when scaling operations,
+            meeting growing demands, and ensuring timely project delivery. It
+            enables teams to handle increased workloads efficiently, capitalize
+            on emerging opportunities, and maintain a responsive and agile
+            approach.
           </p>
         </div>
       </div>

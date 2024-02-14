@@ -12,6 +12,7 @@
 }
 
 .talent-digital-cards-container {
+
   width: 80%;
   height: 100%;
   display: flex;
@@ -23,8 +24,8 @@
 .talent-digital-card {
   max-width: 416px;
   width: 30%;
-  height: 100%;
-  background: #eff2f5;
+  height: 500px;
+  border: 1px #718096 solid;
   border-radius: 24px;
   padding: 20px;
   box-sizing: border-box;
@@ -47,10 +48,12 @@
 }
 
 .talent-digital-card-title {
-  margin-bottom: 46px;
+
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
+  height: 70px;
+
   line-height: 40px;
 }
 
@@ -69,6 +72,13 @@
 /* ... (previous styles) ... */
 
 /* talent-digital image section */
+
+@media screen and (max-width:1400px) {
+
+  .talent-digital-card-paragraph {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width:1300px) {
   .talent-digital-images-container {

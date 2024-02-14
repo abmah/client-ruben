@@ -11,7 +11,8 @@ function BottomCards() {
           <div className="talent-digital-bottom-card">
             <div className="talent-digital-bottom-card-header-circle"></div>
             <div className="talent-digital-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Save time: start the project almost immediately after sharing the
+              requirements
             </div>
             <div className="talent-digital-bottom-card-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -22,7 +23,8 @@ function BottomCards() {
           <div className="talent-digital-bottom-card talent-digital-bottom-card-orange">
             <div className="talent-digital-bottom-card-header-circle"></div>
             <div className="talent-digital-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              No commitment: incur costs only if you accept the final candidate
+              from us
             </div>
             <div className="talent-digital-bottom-card-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -33,7 +35,8 @@ function BottomCards() {
           <div className="talent-digital-bottom-card talent-digital-bottom-card-blue">
             <div className="talent-digital-bottom-card-header-circle"></div>
             <div className="talent-digital-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Safe and secure: we diligently check background and references of
+              our candidates
             </div>
             <div className="talent-digital-bottom-card-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
