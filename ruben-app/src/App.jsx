@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Header />
-      <Cookies />
+      {/* <Cookies /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/infrastructure" element={<Infrastructure />} />

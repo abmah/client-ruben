@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 800px;
   color: #192430;
-  margin-top: 40px;
+
 }
 
 .talent-digital-images-container {
@@ -17,9 +17,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 500px;
-  gap: 160px;
+  gap: 80px;
   color: #192430;
-  margin-top: 240px;
+  margin-top: 90px;
 }
 
 .talent-digital-image-parent {

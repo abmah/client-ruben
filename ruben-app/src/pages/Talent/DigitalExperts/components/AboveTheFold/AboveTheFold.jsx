@@ -2,6 +2,7 @@ import "./above-the-fold.css";
 import DigitalFuture from "../../../../../assets/digital-experts-logo.svg";
 import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import animationData from "./digital-hero-img.json";
 
@@ -22,22 +23,37 @@ function AboveTheFold() {
       animation.destroy();
     };
   }, []); // Empty dependency array to run the effect only once
+
+  const handleLearnMoreClick = () => {
+    // console.log("clicked");
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth", // Optionally, you can change this to "auto" for instant scrolling
+    });
+  };
+
   return (
     <div className="talent-digital-above-the-fold-wrapper">
       <div className="talent-digital-above-the-fold-container">
         <div className="talent-digital-above-the-fold-left-section-wrapper">
           <div className="talent-digital-above-the-fold-left-section">
             <h1 className="talent-digital-above-the-fold-main-title">
-              Pre-vetted interim <strong>Digital Experts</strong> Contractors in
+              Pre-vetted interim <strong>Digital Expert</strong> Contractors in
               start-stop model
             </h1>
             <div className="talent-digital-above-the-fold-button-container">
-              <button className="talent-digital-learn-more-button">
+              <button
+                onClick={handleLearnMoreClick}
+                className="talent-digital-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="talent-digital-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="talent-digital-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>

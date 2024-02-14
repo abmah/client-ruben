@@ -1,6 +1,7 @@
 import "./lets-talk.css";
 import LetsTalkLogo from "../../../../../assets/lets-talk-logo.svg";
 import TopRightArrow from "../../../../../assets/top-right-arrow.svg";
+import { Link } from "react-router-dom";
 
 function LetsTalk() {
   return (
@@ -17,12 +18,12 @@ function LetsTalk() {
           Our team is ready to respond promptly to discuss and clarify any
           questions you may have.
         </p>
-        <button className="talent-digital-lets-talk-section-button">
+        <Link to="/contact" className="talent-digital-lets-talk-section-button">
           <p>CONTACT US</p>
           <div className="talent-digital-contact-us-button-img">
             <img src={TopRightArrow} alt="top-right-arrow" />
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );
