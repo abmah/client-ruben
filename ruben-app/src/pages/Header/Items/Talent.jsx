@@ -7,7 +7,7 @@ import StrategyConsultants from "../../../assets/strategy-consultants.svg";
 
 import OperationsConsultants from "../../../assets/operations-consultants.svg";
 
-import HourlyBasedExperts from "../../../assets/hourly-based-experts.svg";
+import SubjectBasedExperts from "../../../assets/subject-based-experts.svg";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -74,12 +74,12 @@ function Talent() {
         </Link>
 
         <Link
-          to="/hourly-based-experts"
+          to="/subject-based-experts"
           onClick={handleSubMenuClick}
           className="sub-menu-item"
         >
-          <img src={HourlyBasedExperts} alt="hourly-based-experts" />
-          <p>Hourly Based Experts</p>
+          <img src={SubjectBasedExperts} alt="subject-based-experts" />
+          <p>Subject Matter Experts</p>
         </Link>
       </div>
       <div

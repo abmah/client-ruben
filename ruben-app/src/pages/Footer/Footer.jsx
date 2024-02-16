@@ -36,10 +36,10 @@ function Footer() {
                 Operations Consultant
               </Link>
               <Link
-                to="/hourly-based-experts"
+                to="/subject-based-experts"
                 className="footer-top-item-option"
               >
-                Hourly Based Experts
+                Subject Matter Experts
               </Link>
             </div>
             <div className="footer-top-item">

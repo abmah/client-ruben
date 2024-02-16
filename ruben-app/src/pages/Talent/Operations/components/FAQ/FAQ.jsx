@@ -8,54 +8,57 @@ import CollapseLogo from "../../../../../assets/collapse.svg";
 const data = {
   rows: [
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "What is talent augmentation?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+        "Talent augmentation involves supplementing an organization's workforce with external professionals, often on a temporary basis, to fill skill gaps, meet project demands, or address specific needs without the long-term commitment of hiring full-time employees.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How is talent augmentation different from traditional hiring?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Talent augmentation allows organizations to quickly access specialized skills without the lengthy recruitment process, providing flexibility to scale up or down as needed. Unlike traditional hiring, it offers a more agile and cost-effective approach to workforce management.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What types of skills can be augmented through talent augmentation services?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Talent augmentation can cover a wide range of skills, including but not limited to software development, project management, operations marketing, data analysis, operations, cybersecurity, and design, depending on the specific needs of the organization.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How does the talent augmentation process work?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Organizations typically partner with talent augmentation providers like us who assess their needs, identify skill requirements, and then source and deploy qualified professionals. The augmented talent works collaboratively with the in-house team on specific projects or tasks.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "What are the benefits of talent augmentation?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Benefits include access to specialized skills, increased flexibility to adapt to changing project requirements, faster project delivery, cost-effectiveness compared to hiring full-time staff, and the ability to scale resources up or down based on demand.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How is the quality of augmented talent ensured?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "We employ rigorous screening processes to ensure the expertise and professionalism of our candidates as well as check references, and assess previous work experience to maintain high-quality standards.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can talent augmentation be a long-term solution for staffing needs?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, talent augmentation can be a long-term solution based on the organization's requirements. It provides flexibility, allowing businesses to extend or reduce the duration of engagements according to evolving needs.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How does talent augmentation impact team dynamics?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "When integrated seamlessly, augmented talent can enhance team dynamics by bringing fresh perspectives, diverse skills, and valuable experiences. Clear communication and collaboration are key to ensuring a positive impact on team dynamics.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can talent augmentation be customized for specific industry requirements?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, talent augmentation services are often tailored to meet the specific needs and compliance requirements of various industries, ensuring that the augmented talent aligns with the unique challenges and regulations of the client's sector.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "What is the cost structure associated with talent augmentation?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "The cost structure varies based on factors such as the level of expertise required, project duration, and the specific skills needed. Talent augmentation is often cost-effective compared to hiring full-time employees as it eliminates long-term commitments and associated overhead costs.",
     },
   ],
 };

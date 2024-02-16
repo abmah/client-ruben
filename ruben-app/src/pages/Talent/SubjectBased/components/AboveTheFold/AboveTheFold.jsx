@@ -2,10 +2,9 @@ import "./above-the-fold.css";
 
 import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
+
+import animationData from "./subject.json";
 import { Link } from "react-router-dom";
-
-import animationData from "./digital-hero-img.json";
-
 function AboveTheFold() {
   const container = useRef(null);
 
@@ -31,24 +30,24 @@ function AboveTheFold() {
   };
 
   return (
-    <div className="talent-digital-above-the-fold-wrapper">
-      <div className="talent-digital-above-the-fold-container">
-        <div className="talent-digital-above-the-fold-left-section-wrapper">
-          <div className="talent-digital-above-the-fold-left-section">
-            <h1 className="talent-digital-above-the-fold-main-title">
-              Pre-vetted interim <strong>Digital Expert</strong> Contractors in
-              start-stop model
+    <div className="talent-subject-above-the-fold-wrapper">
+      <div className="talent-subject-above-the-fold-container">
+        <div className="talent-subject-above-the-fold-left-section-wrapper">
+          <div className="talent-subject-above-the-fold-left-section">
+            <h1 className="talent-subject-above-the-fold-main-title">
+              Highly specialized <strong> Subject Matter Experts</strong> for
+              hourly based consultancy
             </h1>
-            <div className="talent-digital-above-the-fold-button-container">
+            <div className="talent-subject-above-the-fold-button-container">
               <button
                 onClick={handleLearnMoreClick}
-                className="talent-digital-learn-more-button"
+                className="talent-subject-learn-more-button"
               >
                 Learn More
               </button>
               <Link
                 to="/contact"
-                className="talent-digital-get-in-contact-button"
+                className="talent-subject-get-in-contact-button"
               >
                 Get in contact
               </Link>
@@ -57,8 +56,8 @@ function AboveTheFold() {
         </div>
         <div
           ref={container}
-          className="talent-digital-above-the-fold-img"
-          alt="digital-future"
+          className="talent-subject-above-the-fold-img"
+          alt="subject"
         ></div>
       </div>
     </div>

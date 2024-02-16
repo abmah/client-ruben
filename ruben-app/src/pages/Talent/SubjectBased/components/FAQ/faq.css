@@ -1,10 +1,10 @@
-.talent-digital-faq-wrapper {
+.talent-strategy-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.talent-digital-faq-container {
+.talent-strategy-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.talent-digital-faq-title {
+.talent-strategy-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.talent-digital-faq-section-container {
+.talent-strategy-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.talent-digital-faq-row {
+.talent-strategy-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .talent-digital-faq-wrapper {
+  .talent-strategy-faq-wrapper {
     height: 100%;
   }
 
-  .talent-digital-faq-container {
+  .talent-strategy-faq-container {
 
     flex-direction: column;
 
   }
 
-  .talent-digital-faq-section-container {
+  .talent-strategy-faq-section-container {
     width: 100%;
   }
 

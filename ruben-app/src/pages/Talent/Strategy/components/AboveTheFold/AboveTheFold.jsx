@@ -1,10 +1,10 @@
 import "./above-the-fold.css";
-import Strategy from "../../../../../assets/strategy-logo.svg";
 
 import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./strategy-hero-img.json";
+import { Link } from "react-router-dom";
 function AboveTheFold() {
   const container = useRef(null);
 
@@ -17,34 +17,46 @@ function AboveTheFold() {
       animationData: animationData,
     });
 
-    // Cleanup function to stop the animation when the component unmounts
     return () => {
       animation.destroy();
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
+
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="talent-strategy-above-the-fold-wrapper">
       <div className="talent-strategy-above-the-fold-container">
         <div className="talent-strategy-above-the-fold-left-section-wrapper">
           <div className="talent-strategy-above-the-fold-left-section">
             <h1 className="talent-strategy-above-the-fold-main-title">
-              Modernize You <strong>strategy Experts</strong> to Scale and
-              Innovate
+              Pre-vetted <strong>Strategy Consultant</strong> Contractors in
+              start-stop model
             </h1>
             <div className="talent-strategy-above-the-fold-button-container">
-              <button className="talent-strategy-learn-more-button">
+              <button
+                onClick={handleLearnMoreClick}
+                className="talent-strategy-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="talent-strategy-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="talent-strategy-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         <div
           ref={container}
           className="talent-strategy-above-the-fold-img"
-          src={Strategy}
           alt="strategy"
         ></div>
       </div>

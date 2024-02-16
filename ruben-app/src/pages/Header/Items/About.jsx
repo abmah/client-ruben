@@ -7,7 +7,7 @@ import StrategyConsultants from "../../../assets/strategy-consultants.svg";
 
 import OperationsConsultants from "../../../assets/operations-consultants.svg";
 
-import HourlyBasedExperts from "../../../assets/hourly-based-experts.svg";
+import SubjectBasedExperts from "../../../assets/subject-based-experts.svg";
 function About() {
   return (
     <div className="sub-menu">
@@ -33,8 +33,8 @@ function About() {
       </div>
 
       <div className="sub-menu-item">
-        <img src={HourlyBasedExperts} alt="hourly-based-experts" />
-        <p>Hourly Based Experts</p>
+        <img src={SubjectBasedExperts} alt="subject-based-experts" />
+        <p>Subject Matter Experts</p>
       </div>
     </div>
   );

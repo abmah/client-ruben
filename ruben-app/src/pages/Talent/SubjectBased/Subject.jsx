@@ -6,7 +6,7 @@ import Images from "./components/ImagesSection/Images";
 import LetsTalk from "./components/LetsTalk/LetsTalk";
 import Services from "./components/Services/Services";
 
-function Hourly() {
+function Subject() {
   return (
     <>
       <AboveTheFold />
@@ -20,4 +20,4 @@ function Hourly() {
   );
 }
 
-export default Hourly;
+export default Subject;

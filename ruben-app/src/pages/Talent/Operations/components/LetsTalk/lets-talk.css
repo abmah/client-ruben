@@ -1,5 +1,6 @@
 .talent-operations-lets-talk-section-wrapper {
-  margin-top: 200px;
+  margin-top: 50px;
+
 }
 
 .talent-operations-lets-talk-section-container {
@@ -63,10 +64,14 @@
 
 }
 
-.talent-operations-contact-us-button-img img {
-  margin-top: 16px;
-}
 
+
+.talent-operations-contact-us-button-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 @media screen and (max-width:600px) {
 

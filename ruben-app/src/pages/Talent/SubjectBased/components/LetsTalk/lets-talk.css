@@ -1,8 +1,9 @@
-.talent-hourly-lets-talk-section-wrapper {
-  margin-top: 200px;
+.talent-strategy-lets-talk-section-wrapper {
+  margin-top: 50px;
+
 }
 
-.talent-hourly-lets-talk-section-container {
+.talent-strategy-lets-talk-section-container {
   background: #222b38;
   border-radius: 24px;
   color: white;
@@ -16,7 +17,7 @@
   flex-direction: column;
 }
 
-.talent-hourly-lets-talk-section-title {
+.talent-strategy-lets-talk-section-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -25,11 +26,11 @@
   /* 160% */
 }
 
-.talent-hourly-lets-talk-section-image {
+.talent-strategy-lets-talk-section-image {
   margin-top: 65px;
 }
 
-.talent-hourly-lets-talk-section-subtitle {
+.talent-strategy-lets-talk-section-subtitle {
   margin-top: 0;
   max-width: 780px;
   text-align: center;
@@ -39,7 +40,7 @@
   line-height: 32px;
 }
 
-.talent-hourly-lets-talk-section-button {
+.talent-strategy-lets-talk-section-button {
   width: 240px;
   height: 64px;
   flex-shrink: 0;
@@ -55,7 +56,7 @@
   margin-top: 20px;
 }
 
-.talent-hourly-contact-us-button-img {
+.talent-strategy-contact-us-button-img {
   background: #222b38;
   width: 52px;
   height: 52px;
@@ -63,20 +64,24 @@
 
 }
 
-.talent-hourly-contact-us-button-img img {
-  margin-top: 16px;
-}
 
+
+.talent-strategy-contact-us-button-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 @media screen and (max-width:600px) {
 
 
-  .talent-hourly-lets-talk-section-container {
+  .talent-strategy-lets-talk-section-container {
     width: 97%;
 
   }
 
-  .talent-hourly-lets-talk-section-title {
+  .talent-strategy-lets-talk-section-title {
 
     font-size: 24px;
     font-style: normal;
@@ -85,11 +90,11 @@
     /* 266.667% */
   }
 
-  .talent-hourly-lets-talk-section-image {
+  .talent-strategy-lets-talk-section-image {
     margin-top: 30px;
   }
 
-  .talent-hourly-lets-talk-section-subtitle {
+  .talent-strategy-lets-talk-section-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -98,7 +103,7 @@
     /* 187.5% */
   }
 
-  .talent-hourly-lets-talk-section-button {
+  .talent-strategy-lets-talk-section-button {
     width: 97%;
     display: flex;
     position: relative;
@@ -106,13 +111,13 @@
 
   }
 
-  .talent-hourly-contact-us-button-img {
+  .talent-strategy-contact-us-button-img {
     position: absolute;
     right: 6px;
   }
 
 
-  .talent-hourly-lets-talk-section-button p {
+  .talent-strategy-lets-talk-section-button p {
 
     font-size: 16px;
     font-style: normal;

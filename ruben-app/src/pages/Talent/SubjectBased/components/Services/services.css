@@ -1,15 +1,15 @@
-.talent-operations-services-wrapper {
+.talent-subject-services-wrapper {
   margin-top: 100px;
 }
 
-.talent-operations-services-container {
+.talent-subject-services-container {
 
   width: 80%;
   margin: 0 auto;
 
 }
 
-.talent-operations-services-main-title {
+.talent-subject-services-main-title {
   color: #192430;
   margin-bottom: -40px;
   font-size: 40px;
@@ -20,17 +20,17 @@
 }
 
 
-.talent-operations-services-content {
+.talent-subject-services-content {
   color: #192430;
   display: flex;
   gap: 20px;
 }
 
-.talent-operations-services-right-section {
+.talent-subject-services-right-section {
   width: 80%;
 }
 
-.talent-operations-services-nav-section {
+.talent-subject-services-nav-section {
   width: 240px;
   height: 700px;
   gap: 24px;
@@ -40,7 +40,7 @@
 
 }
 
-.talent-operations-services-nav-item {
+.talent-subject-services-nav-item {
   cursor: pointer;
   border-radius: 32px;
   color: #2d3748;
@@ -62,11 +62,11 @@
   color: white;
 }
 
-.talent-operations-services-nav-item-long {
+.talent-subject-services-nav-item-long {
   padding-right: 28px;
 }
 
-.talent-operations-services-right-section-child {
+.talent-subject-services-right-section-child {
 
   display: flex;
   flex-direction: column;
@@ -76,14 +76,14 @@
 
 }
 
-.talent-operations-services-right-section-child-title {
+.talent-subject-services-right-section-child-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.talent-operations-services-right-section-subtitle {
+.talent-subject-services-right-section-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -91,13 +91,13 @@
   max-width: 576px;
 }
 
-.talent-operations-services-right-section-cards-container {
+.talent-subject-services-right-section-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.talent-operations-services-right-section-card {
+.talent-subject-services-right-section-card {
   width: 280px;
   height: 120px;
   display: flex;
@@ -110,16 +110,16 @@
   gap: 27px;
 }
 
-.talent-operations-services-right-section-card img {
+.talent-subject-services-right-section-card img {
   width: 20px;
   height: 14px;
 }
 
-.talent-operations-services-right-section-card p {
+.talent-subject-services-right-section-card p {
   width: 166px;
 }
 
-.talent-operations-services-right-section-btn {
+.talent-subject-services-right-section-btn {
   border-radius: 28px;
   width: 184px;
   height: 56px;
@@ -138,7 +138,7 @@
   margin-top: 32px;
 }
 
-.talent-operations-services-line {
+.talent-subject-services-line {
   width: 100%;
   height: 1px;
   background: #00000017;
@@ -149,7 +149,7 @@
 
 
 @media screen and (max-width: 1400px) {
-  .talent-operations-services-container {
+  .talent-subject-services-container {
     width: 97%;
   }
 
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 900px) {
 
-  .talent-operations-services-main-title {
+  .talent-subject-services-main-title {
     font-size: 24px;
     font-style: normal;
     line-height: normal;
@@ -168,27 +168,27 @@
     margin-top: 40px;
   }
 
-  .talent-operations-services-right-section-child {
+  .talent-subject-services-right-section-child {
     padding-top: 0px;
   }
 
-  .talent-operations-services-content {
+  .talent-subject-services-content {
     padding-top: 150px;
   }
 
 
 
-  .talent-operations-services-wrapper {
+  .talent-subject-services-wrapper {
     margin-top: 0px;
   }
 
 
 
-  .talent-operations-services-nav-item-long {
+  .talent-subject-services-nav-item-long {
     padding-right: 12px;
   }
 
-  .talent-operations-services-nav-item {
+  .talent-subject-services-nav-item {
 
     font-size: 18px;
     font-style: normal;
@@ -197,25 +197,25 @@
     transition: unset;
   }
 
-  .talent-operations-services-nav-item {
+  .talent-subject-services-nav-item {
     cursor: unset;
     width: 115px;
     height: 40px;
   }
 
-  .talent-operations-services-right-section {
+  .talent-subject-services-right-section {
     width: 100%;
   }
 
-  .talent-operations-services-nav-section {
+  .talent-subject-services-nav-section {
     display: none;
   }
 
-  .talent-operations-services-right-section-child {
+  .talent-subject-services-right-section-child {
     margin-bottom: 20px;
   }
 
-  .talent-operations-services-line {
+  .talent-subject-services-line {
     margin-top: 40px;
   }
 }
@@ -226,25 +226,25 @@
 
 
 
-  .talent-operations-services-container {
+  .talent-subject-services-container {
     width: 90%;
   }
 
-  .talent-operations-services-right-section-child {
+  .talent-subject-services-right-section-child {
     height: auto;
 
   }
 
-  .talent-operations-services-right-section-cards-container {
+  .talent-subject-services-right-section-cards-container {
     flex-direction: column;
   }
 
-  .talent-operations-services-right-section-card {
+  .talent-subject-services-right-section-card {
     width: 100%;
     height: 88px;
   }
 
-  .talent-operations-services-right-section-btn {
+  .talent-subject-services-right-section-btn {
     width: 100%;
 
   }

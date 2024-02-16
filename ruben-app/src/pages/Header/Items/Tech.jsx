@@ -72,7 +72,7 @@ function Tech() {
           className="sub-menu-item"
           onClick={handleSubMenuClick}
         >
-          <img src={SecurityandCompliance} alt="hourly-based-experts" />
+          <img src={SecurityandCompliance} alt="security-and-compliance" />
           <p>Security and Compliance</p>
         </Link>
       </div>

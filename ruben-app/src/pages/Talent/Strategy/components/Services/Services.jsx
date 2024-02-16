@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Clowd from "../../../../../assets/clowd.svg";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,7 +33,7 @@ function Services() {
               pin: ".talent-strategy-services-nav-section",
               onUpdate: (self) => {
                 const progress = self.progress * 100;
-                const newActiveNav = Math.min(3, Math.floor(progress / 25));
+                const newActiveNav = Math.min(2, Math.floor(progress / 33));
                 setActiveNav(newActiveNav);
               },
             });
@@ -59,7 +60,7 @@ function Services() {
     if (childElements.length > index) {
       childElements[index].scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     }
   };
@@ -68,237 +69,215 @@ function Services() {
     <>
       <div className="talent-strategy-services-wrapper">
         <div className="talent-strategy-services-container">
-          <div className="talent-strategy-services-nav-section">
-            <div
-              className={`talent-strategy-services-nav-item services-nav-item-dark ${
-                activeNav === 0 ? "active-talent" : ""
-              }`}
-              onClick={() => handleClick(0)}
-            >
-              Consult
+          <h1 className="talent-strategy-services-main-title">
+            200+ consultant profiles available on project-basis, with top brand
+            experience and diverse industry specialisation and seniority
+          </h1>
+          <div className="talent-strategy-services-content">
+            <div className="talent-strategy-services-nav-section">
+              <div
+                className={`talent-strategy-services-nav-item services-nav-item-dark ${
+                  activeNav === 0 ? "active-talent" : ""
+                }`}
+                onClick={() => handleClick(0)}
+              >
+                Industries
+              </div>
+              <div
+                className={`talent-strategy-services-nav-item services-nav-item-long ${
+                  activeNav === 1 ? "active-talent" : ""
+                }`}
+                onClick={() => handleClick(1)}
+              >
+                Seniority
+              </div>
+              <div
+                className={`talent-strategy-services-nav-item ${
+                  activeNav === 2 ? "active-talent" : ""
+                }`}
+                onClick={() => handleClick(2)}
+              >
+                Specialisation
+              </div>
             </div>
-            <div
-              className={`talent-strategy-services-nav-item services-nav-item-long ${
-                activeNav === 1 ? "active-talent" : ""
-              }`}
-              onClick={() => handleClick(1)}
-            >
-              Implement
+            <div className="talent-strategy-services-right-section">
+              <div className="talent-strategy-services-right-section-child">
+                <h1 className="talent-strategy-services-right-section-child-title">
+                  Industries
+                </h1>
+                <p className="talent-strategy-services-right-section-subtitle">
+                  Throughout the years we have developed extensive understanding
+                  of various industries where we helped securing strategy
+                  consultancy contractors.
+                </p>
+                <div className="talent-strategy-services-right-section-cards-container">
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Retail</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Ecommerce</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Fintech</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Energy</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Public Sector</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Transporation</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Sports</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Entertainment</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Culture</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Manufacturing</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Agriculture</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Consumer Goods</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="talent-strategy-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="talent-strategy-services-line"></div>
+              </div>{" "}
+              <div className="talent-strategy-services-right-section-child">
+                <h1 className="talent-strategy-services-right-section-child-title">
+                  Seniority
+                </h1>
+                <p className="talent-strategy-services-right-section-subtitle">
+                  The Consultants we work with can support your organization to
+                  cover different levels of engagement, from Associate to
+                  Engagement Manager
+                </p>
+                <div className="talent-strategy-services-right-section-cards-container">
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Analyst</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Associate Consultant</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Senior Associate Consulant</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Consultant</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Senior Consultant</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Case Team Leader</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Project Manager</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Engagement Manager</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Principal</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="talent-strategy-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>
+                <div className="talent-strategy-services-line"></div>
+              </div>{" "}
+              <div className="talent-strategy-services-right-section-child">
+                <h1 className="talent-strategy-services-right-section-child-title">
+                  Specialisation
+                </h1>
+                <p className="talent-strategy-services-right-section-subtitle">
+                  We provide profiles specialised in broad scope of strategy
+                  development work and in different types of projects.
+                </p>
+                <div className="talent-strategy-services-right-section-cards-container">
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Opening a New Market</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Supply Chain</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Production</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Sourcing</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>New Business Line</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Organizational Design</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Organizational Efficiency</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Ecommerce & Digital</p>
+                  </div>
+                  <div className="talent-strategy-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Regulatory Transformation</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="talent-strategy-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="talent-strategy-services-line"></div>
+              </div>{" "}
             </div>
-            <div
-              className={`talent-strategy-services-nav-item ${
-                activeNav === 2 ? "active-talent" : ""
-              }`}
-              onClick={() => handleClick(2)}
-            >
-              Manage
-            </div>
-            <div
-              className={`talent-strategy-services-nav-item ${
-                activeNav === 3 ? "active-talent" : ""
-              }`}
-              onClick={() => handleClick(3)}
-            >
-              Improve
-            </div>
-          </div>
-          <div className="talent-strategy-services-right-section">
-            <div className="talent-strategy-services-section-space"></div>
-            <div className="talent-strategy-services-right-section-child">
-              <div className="talent-strategy-services-navigation-mobile">
-                <div
-                  className={`talent-strategy-services-nav-item active-talent    `}
-                >
-                  Consult
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Manage
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Improve
-                </div>
-              </div>
-              <h1 className="talent-strategy-services-right-section-child-title">
-                Consult
-              </h1>
-              <p className="talent-strategy-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="talent-strategy-services-right-section-cards-container">
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="talent-strategy-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="talent-strategy-services-right-section-child">
-              <div className="talent-strategy-services-navigation-mobile">
-                <div className={`talent-strategy-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item services-nav-item-long active-talent `}
-                >
-                  Implement
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Manage
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Improve
-                </div>
-              </div>
-              <h1 className="talent-strategy-services-right-section-child-title">
-                Implement
-              </h1>
-              <p className="talent-strategy-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="talent-strategy-services-right-section-cards-container">
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="talent-strategy-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="talent-strategy-services-right-section-child">
-              <div className="talent-strategy-services-navigation-mobile">
-                <div className={`talent-strategy-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item active-talent `}
-                >
-                  Manage
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Improve
-                </div>
-              </div>
-              <h1 className="talent-strategy-services-right-section-child-title">
-                Manage
-              </h1>
-              <p className="talent-strategy-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="talent-strategy-services-right-section-cards-container">
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="talent-strategy-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="talent-strategy-services-right-section-child">
-              <div className="talent-strategy-services-navigation-mobile">
-                <div className={`talent-strategy-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div className={`talent-strategy-services-nav-item `}>
-                  Manage
-                </div>
-                <div
-                  className={`talent-strategy-services-nav-item active-talent `}
-                >
-                  Improve
-                </div>
-              </div>
-              <h1 className="talent-strategy-services-right-section-child-title">
-                Improve
-              </h1>
-              <p className="talent-strategy-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="talent-strategy-services-right-section-cards-container">
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="talent-strategy-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="talent-strategy-services-right-section-btn">
-                Explore more
-              </button>
-            </div>
-            <div className="talent-strategy-services-section-space"></div>
           </div>
         </div>
       </div>

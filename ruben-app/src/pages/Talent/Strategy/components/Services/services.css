@@ -3,16 +3,31 @@
 }
 
 .talent-strategy-services-container {
-  display: flex;
+
   width: 80%;
   margin: 0 auto;
-  color: #192430;
 
+}
+
+.talent-strategy-services-main-title {
+  color: #192430;
+  margin-bottom: -40px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  max-width: 1200px;
+}
+
+
+.talent-strategy-services-content {
+  color: #192430;
+  display: flex;
   gap: 20px;
 }
 
 .talent-strategy-services-right-section {
-  width: 70%;
+  width: 80%;
 }
 
 .talent-strategy-services-nav-section {
@@ -52,11 +67,13 @@
 }
 
 .talent-strategy-services-right-section-child {
-  height: 600px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  padding-top: 70px;
+
+
 }
 
 .talent-strategy-services-right-section-child-title {
@@ -111,6 +128,9 @@
   color: #222b38;
   font-size: 18px;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: normal;
   border: none;
@@ -118,32 +138,51 @@
   margin-top: 32px;
 }
 
-.talent-strategy-services-section-space {
-  height: 230px;
+.talent-strategy-services-line {
+  width: 100%;
+  height: 1px;
+  background: #00000017;
+  margin-top: 80px;
+
 }
 
-.talent-strategy-services-navigation-mobile {
-  display: none;
-}
 
-@media screen and (max-width: 1300px) {
 
+@media screen and (max-width: 1400px) {
   .talent-strategy-services-container {
-    display: flex;
     width: 97%;
-
   }
 
+
 }
+
 
 
 @media screen and (max-width: 900px) {
-  .talent-strategy-services-navigation-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 336px;
-    gap: 16px;
+
+  .talent-strategy-services-main-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: -100px;
+    margin-top: 40px;
   }
+
+  .talent-strategy-services-right-section-child {
+    padding-top: 0px;
+  }
+
+  .talent-strategy-services-content {
+    padding-top: 150px;
+  }
+
+
+
+  .talent-strategy-services-wrapper {
+    margin-top: 0px;
+  }
+
+
 
   .talent-strategy-services-nav-item-long {
     padding-right: 12px;
@@ -173,7 +212,11 @@
   }
 
   .talent-strategy-services-right-section-child {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+  }
+
+  .talent-strategy-services-line {
+    margin-top: 40px;
   }
 }
 

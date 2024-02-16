@@ -1,26 +1,23 @@
-.talent-hourly-bottom-cards-wrapper {
-  margin-top: 50px;
-}
-
-.talent-hourly-bottom-cards-container {
+.talent-strategy-bottom-cards-container {
   color: #192430;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 
-.talent-hourly-bottom-cards-title {
+.talent-strategy-bottom-cards-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 56px;
-  max-width: 598px;
+  max-width: 700px
 }
 
-.talent-hourly-bottom-cards-parent {
+.talent-strategy-bottom-cards-parent {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -28,9 +25,9 @@
 
 }
 
-.talent-hourly-bottom-card {
+.talent-strategy-bottom-card {
   max-width: 416px;
-  min-height: 436px;
+  min-height: 306px;
   padding: 36px;
   border-radius: 24px;
   border: 2px solid #B2B9C8;
@@ -40,7 +37,7 @@
 
 }
 
-.talent-hourly-bottom-card-header-circle {
+.talent-strategy-bottom-card-header-circle {
   margin-top: 20px;
   width: 56px;
   height: 56px;
@@ -50,7 +47,7 @@
 
 }
 
-.talent-hourly-bottom-card-title {
+.talent-strategy-bottom-card-title {
 
   max-width: 344px;
   font-size: 32px;
@@ -60,7 +57,7 @@
 
 }
 
-.talent-hourly-bottom-card-subtitle {
+.talent-strategy-bottom-card-subtitle {
 
   font-size: 18px;
   font-style: normal;
@@ -69,20 +66,20 @@
   max-width: 344px;
 }
 
-.talent-hourly-bottom-card-orange {
+.talent-strategy-bottom-card-orange {
 
   border: 2px solid #F9B934;
 }
 
-.talent-hourly-bottom-card-orange div:nth-child(1) {
+.talent-strategy-bottom-card-orange div:nth-child(1) {
   background-color: #F9B934;
 }
 
-.talent-hourly-bottom-card-blue {
+.talent-strategy-bottom-card-blue {
   border: 2px solid #222B38;
 }
 
-.talent-hourly-bottom-card-blue div:nth-child(1) {
+.talent-strategy-bottom-card-blue div:nth-child(1) {
   background-color: #222B38;
 }
 
@@ -90,18 +87,18 @@
 @media screen and (max-width:1300px) {
 
 
-  .talent-hourly-bottom-cards-container {
-    width: 97%;
+  .talent-strategy-bottom-cards-container {
+    width: 90%;
   }
 
 
-  .talent-hourly-bottom-card {
+  .talent-strategy-bottom-card {
     max-width: 362px;
-    min-height: 312px;
+    min-height: 252px;
     gap: 24px;
   }
 
-  .talent-hourly-bottom-card-title {
+  .talent-strategy-bottom-card-title {
 
     font-size: 18px;
     font-style: normal;
@@ -110,7 +107,7 @@
 
   }
 
-  .talent-hourly-bottom-card-subtitle {
+  .talent-strategy-bottom-card-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -126,18 +123,18 @@
 @media screen and (max-width:1000px) {
 
 
-  .talent-hourly-bottom-cards-parent {
+  .talent-strategy-bottom-cards-parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .talent-hourly-bottom-cards-title {
+  .talent-strategy-bottom-cards-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    max-width: 336px;
+    max-width: 396px;
     text-wrap: wrap;
 
   }

@@ -4,36 +4,39 @@ function Cards() {
     <div className="talent-operations-cards-wrapper">
       <div className="talent-operations-cards-container">
         <div className="talent-operations-card">
-          <div className="talent-operations-card-header">Loremips</div>
-          <div className="talent-operations-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </div>
+          <div className="talent-operations-card-header">Use Case</div>
+          <div className="talent-operations-card-title">Interim Management</div>
           <p className="talent-operations-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            Experienced Consultants with years of specialisation in the field
+            can engage as interim stream leaders or CXOs, providing
+            organizations with immediate leadership and specialized expertise in
+            optimization and cost cutting projects. The flexibility and
+            objective perspective they bring can contribute significantly to
+            success.
           </p>
         </div>
         <div className="talent-operations-card">
-          <div className="talent-operations-card-header">Loremips</div>
+          <div className="talent-operations-card-header">Use Case</div>
           <div className="talent-operations-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Strenghten Consultancy Teams
           </div>
           <p className="talent-operations-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            Contractors provide flexibility in team composition, allowing
+            organizations to scale up or down or add industry-specific knowledge
+            to the team. With this flexibility organizations can tailor the
+            skill set to match the unique requirements of each project.
           </p>
         </div>
         <div className="talent-operations-card">
-          <div className="talent-operations-card-header">Loremips</div>
+          <div className="talent-operations-card-header">Use Case</div>
           <div className="talent-operations-card-title">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            Strenghten Transformation Teams
           </div>
           <p className="talent-operations-card-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exerc.
+            In-house operations consultant can offer a flexible, cost-effective
+            approach in adressing specific organizational challenge. Typically
+            this kind of engagmeent comes with lower overhead costs compared to
+            employment or hiring a strategy consultancy agencies.
           </p>
         </div>
       </div>
