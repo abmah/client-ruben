@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Clowd from "../../../../../assets/clowd.svg";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,10 +27,10 @@ function Services() {
 
           if (isDesktop) {
             ScrollTrigger.create({
-              trigger: ".tech-collaboration-services-wrapper",
+              trigger: ".cloud-collaboration-services-wrapper",
               start: "top top",
               end: "bottom bottom",
-              pin: ".tech-collaboration-services-nav-section",
+              pin: ".cloud-collaboration-services-nav-section",
               onUpdate: (self) => {
                 const progress = self.progress * 100;
                 const newActiveNav = Math.min(3, Math.floor(progress / 25));
@@ -50,251 +51,223 @@ function Services() {
   const handleClick = (index) => {
     console.log(index);
     const rightSection = document.querySelector(
-      ".tech-collaboration-services-right-section"
+      ".cloud-collaboration-services-right-section"
     );
     const childElements = rightSection.getElementsByClassName(
-      "tech-collaboration-services-right-section-child"
+      "cloud-collaboration-services-right-section-child"
     );
 
     if (childElements.length > index) {
       childElements[index].scrollIntoView({
         behavior: "smooth",
-        block: "center",
+        block: "start",
       });
     }
   };
 
   return (
     <>
-      <div className="tech-collaboration-services-wrapper">
-        <div className="tech-collaboration-services-container">
-          <div className="tech-collaboration-services-nav-section">
-            <div
-              className={`tech-collaboration-services-nav-item services-nav-item-dark ${
-                activeNav === 0 ? "active" : ""
-              }`}
-              onClick={() => handleClick(0)}
-            >
-              Consult
-            </div>
-            <div
-              className={`tech-collaboration-services-nav-item services-nav-item-long ${
-                activeNav === 1 ? "active" : ""
-              }`}
-              onClick={() => handleClick(1)}
-            >
-              Implement
-            </div>
-            <div
-              className={`tech-collaboration-services-nav-item ${
-                activeNav === 2 ? "active" : ""
-              }`}
-              onClick={() => handleClick(2)}
-            >
-              Manage
-            </div>
-            <div
-              className={`tech-collaboration-services-nav-item ${
-                activeNav === 3 ? "active" : ""
-              }`}
-              onClick={() => handleClick(3)}
-            >
-              Improve
-            </div>
-          </div>
-          <div className="tech-collaboration-services-right-section">
-            <div className="tech-collaboration-services-section-space"></div>
-            <div className="tech-collaboration-services-right-section-child">
-              <div className="tech-collaboration-services-navigation-mobile">
-                <div
-                  className={`tech-collaboration-services-nav-item active    `}
-                >
-                  Consult
-                </div>
-                <div
-                  className={`tech-collaboration-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Manage
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Improve
-                </div>
+      <div className="cloud-collaboration-services-wrapper">
+        <div className="cloud-collaboration-services-container">
+          <h1 className="cloud-collaboration-services-main-title">
+            Optimize your workforce productivity, fostering scalability,
+            cost-efficiency, agility and remote collaboration.
+          </h1>
+          <div className="cloud-collaboration-services-content">
+            <div className="cloud-collaboration-services-nav-section">
+              <div
+                className={`cloud-collaboration-services-nav-item services-nav-item-dark ${
+                  activeNav === 0 ? "active-cloud" : ""
+                }`}
+                onClick={() => handleClick(0)}
+              >
+                Migrate
               </div>
-              <h1 className="tech-collaboration-services-right-section-child-title">
-                Consult
-              </h1>
-              <p className="tech-collaboration-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="tech-collaboration-services-right-section-cards-container">
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="tech-collaboration-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="tech-collaboration-services-right-section-child">
-              <div className="tech-collaboration-services-navigation-mobile">
-                <div className={`tech-collaboration-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`tech-collaboration-services-nav-item services-nav-item-long active `}
-                >
-                  Implement
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Manage
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Improve
-                </div>
-              </div>
-              <h1 className="tech-collaboration-services-right-section-child-title">
-                Implement
-              </h1>
-              <p className="tech-collaboration-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="tech-collaboration-services-right-section-cards-container">
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-              </div>
-              <button className="tech-collaboration-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="tech-collaboration-services-right-section-child">
-              <div className="tech-collaboration-services-navigation-mobile">
-                <div className={`tech-collaboration-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`tech-collaboration-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div className={`tech-collaboration-services-nav-item active `}>
-                  Manage
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Improve
-                </div>
-              </div>
-              <h1 className="tech-collaboration-services-right-section-child-title">
+              <div
+                className={`cloud-collaboration-services-nav-item services-nav-item-long ${
+                  activeNav === 1 ? "active-cloud" : ""
+                }`}
+                onClick={() => handleClick(1)}
+              >
                 Manage
-              </h1>
-              <p className="tech-collaboration-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="tech-collaboration-services-right-section-cards-container">
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
               </div>
-              <button className="tech-collaboration-services-right-section-btn">
-                Explore more
-              </button>
-            </div>{" "}
-            <div className="tech-collaboration-services-right-section-child">
-              <div className="tech-collaboration-services-navigation-mobile">
-                <div className={`tech-collaboration-services-nav-item     `}>
-                  Consult
-                </div>
-                <div
-                  className={`tech-collaboration-services-nav-item services-nav-item-long `}
-                >
-                  Implement
-                </div>
-                <div className={`tech-collaboration-services-nav-item `}>
-                  Manage
-                </div>
-                <div className={`tech-collaboration-services-nav-item active `}>
-                  Improve
-                </div>
+              <div
+                className={`cloud-collaboration-services-nav-item ${
+                  activeNav === 2 ? "active-cloud" : ""
+                }`}
+                onClick={() => handleClick(2)}
+              >
+                Upgrade
               </div>
-              <h1 className="tech-collaboration-services-right-section-child-title">
-                Improve
-              </h1>
-              <p className="tech-collaboration-services-right-section-subtitle">
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.
-              </p>
-              <div className="tech-collaboration-services-right-section-cards-container">
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
-                <div className="tech-collaboration-services-right-section-card">
-                  <img src={Clowd} alt="services-image" />
-                  <p>labore et dolore magna aliqua ut enim </p>
-                </div>
+              <div
+                className={`cloud-collaboration-services-nav-item ${
+                  activeNav === 3 ? "active-cloud" : ""
+                }`}
+                onClick={() => handleClick(3)}
+              >
+                Optimize
               </div>
-              <button className="tech-collaboration-services-right-section-btn">
-                Explore more
-              </button>
             </div>
-            <div className="tech-collaboration-services-section-space"></div>
+            <div className="cloud-collaboration-services-right-section">
+              <div className="cloud-collaboration-services-right-section-child">
+                <h1 className="cloud-collaboration-services-right-section-child-title">
+                  Migrate
+                </h1>
+                <p className="cloud-collaboration-services-right-section-subtitle">
+                  Empower your organization to migrate to cloud based
+                  collaboration suite by leveraging a highly tailored migration
+                  plan.
+                </p>
+                <div className="cloud-collaboration-services-right-section-cards-container">
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>TCO Analysis & Cost Optimization</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Adoption & Migration Planning</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Email Migration</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Storage Migration</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Calendar Migration</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Dual / Split delivery Migration</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="cloud-collaboration-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="cloud-collaboration-services-line"></div>
+              </div>{" "}
+              <div className="cloud-collaboration-services-right-section-child">
+                <h1 className="cloud-collaboration-services-right-section-child-title">
+                  Manage
+                </h1>
+                <p className="cloud-collaboration-services-right-section-subtitle">
+                  Comprehensive support and managed services, with monitoring
+                  what matters, proactively reducing incidents and ensuring
+                  highest security of settings.
+                </p>
+                <div className="cloud-collaboration-services-right-section-cards-container">
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Ongoing Tech Support</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Incident Response</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Employee & Admin Trainings</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Security Audits</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Maturity Audits</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Assisted Roll-out of New Features</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="cloud-collaboration-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>
+                <div className="cloud-collaboration-services-line"></div>
+              </div>{" "}
+              <div className="cloud-collaboration-services-right-section-child">
+                <h1 className="cloud-collaboration-services-right-section-child-title">
+                  Upgrade
+                </h1>
+                <p className="cloud-collaboration-services-right-section-subtitle">
+                  Transform towards more sophisticated solutions as your company
+                  grows and the needs for security and productivity solutions
+                  grow along.
+                </p>
+                <div className="cloud-collaboration-services-right-section-cards-container">
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Enterprise Licences</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Mixed Tier Licences</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Chrome OS Devices</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Vault Licences</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Duet AI licences</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Cloud Search Licences</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="cloud-collaboration-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+                <div className="cloud-collaboration-services-line"></div>
+              </div>{" "}
+              <div className="cloud-collaboration-services-right-section-child">
+                <h1 className="cloud-collaboration-services-right-section-child-title">
+                  Optimize
+                </h1>
+                <p className="cloud-collaboration-services-right-section-subtitle">
+                  Stay ahead of the curve by leveraging the advanced GWS
+                  functions: automation, AI.
+                </p>
+                <div className="cloud-collaboration-services-right-section-cards-container">
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Workflow Automation (Appscripts)</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>AI and Generative AI Trainings</p>
+                  </div>
+                  <div className="cloud-collaboration-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Low-Code Implementations (Appsheet)</p>
+                  </div>
+                </div>
+                <Link
+                  to="/contact"
+                  className="cloud-collaboration-services-right-section-btn"
+                >
+                  Let&#39;s Connect
+                </Link>{" "}
+              </div>
+            </div>
           </div>
         </div>
       </div>

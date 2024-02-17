@@ -47,12 +47,12 @@ function Tech() {
           onClick={handleSubMenuClick}
         >
           <img src={InfrastructureModernization} alt="digital-experts" />
-          <p>Infrastructure Modernization</p>
+          <p>Cloud Adoption and Migration</p>
         </Link>
 
         <Link to="/data" className="sub-menu-item" onClick={handleSubMenuClick}>
           <img src={DataAnalytics} alt="strategy-consultants" />
-          <p>Data, Analytics</p>
+          <p>Data, Analytics, AI</p>
         </Link>
 
         <Link

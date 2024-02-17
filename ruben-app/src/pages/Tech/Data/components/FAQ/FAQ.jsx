@@ -4,58 +4,67 @@ import FaqImage from "../../../../../assets/faq.svg";
 
 import ExpandLogo from "../../../../../assets/expand.svg";
 import CollapseLogo from "../../../../../assets/collapse.svg";
-
-const data = {
+let data = {
   rows: [
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title:
+        "Why should an organization consider moving its data to the cloud?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+        "Moving data to the cloud provides scalability, flexibility, and cost-efficiency, allowing organizations to adapt to changing data needs, access advanced analytics, and optimize resource utilization.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What are the security measures in place to protect data in the cloud?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud service providers implement robust security measures, including encryption, access controls, and compliance certifications, ensuring data integrity and protection.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How does the cloud support large-scale data storage and processing?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud platforms offer scalable storage solutions and data processing services, allowing organizations to handle large volumes of data efficiently and cost-effectively.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What considerations are important when migrating existing data to the cloud?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Considerations include data transfer methods, compatibility with cloud platforms, and potential downtime. A well-planned migration strategy is essential for a smooth transition.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How can the cloud enhance data analytics capabilities for businesses?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud-based analytics tools provide organizations with advanced capabilities such as real-time analytics, machine learning, and data visualization, enabling informed decision-making.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What is the role of data governance in a cloud-based data environment?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Data governance ensures data quality, compliance, and security in the cloud, establishing policies and processes to govern data throughout its lifecycle.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How can organizations manage and control costs associated with cloud data storage?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Implementing cost-monitoring tools, optimizing storage resources, and utilizing tiered storage options are strategies to manage and control cloud data storage costs.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What is the impact of the cloud on data accessibility and collaboration within organizations?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud platforms enhance data accessibility, enabling remote collaboration, real-time updates, and seamless sharing of data across teams, fostering collaboration and productivity.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How can the cloud address compliance requirements for sensitive data?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud providers offer compliance certifications and features such as encryption and access controls, helping organizations meet regulatory requirements and protect sensitive data.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How does the cloud support disaster recovery and data backup strategies?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Cloud platforms provide scalable and resilient infrastructure, allowing organizations to implement robust disaster recovery and backup solutions, ensuring data availability and continuity.",
     },
   ],
 };
@@ -65,7 +74,7 @@ function ExpandingLogo() {
     <img
       src={ExpandLogo}
       alt="expand"
-      className="tech-data-expanding-logo"
+      className="cloud-data-expanding-logo"
     ></img>
   );
 }
@@ -75,20 +84,20 @@ function CollapsingLogo() {
     <img
       src={CollapseLogo}
       alt="collapse"
-      className="tech-data-collapsing-logo"
+      className="cloud-data-collapsing-logo"
     ></img>
   );
 }
 
 function FAQ() {
   return (
-    <div className="tech-data-faq-wrapper">
-      <div className="tech-data-faq-container">
-        <div className="tech-data-faq-left-section">
-          <img src={FaqImage} alt="faq" className="tech-data-faq-image" />
-          <h1 className="tech-data-faq-title">Frequently Asked Questions</h1>
+    <div className="cloud-data-faq-wrapper">
+      <div className="cloud-data-faq-container">
+        <div className="cloud-data-faq-left-section">
+          <img src={FaqImage} alt="faq" className="cloud-data-faq-image" />
+          <h1 className="cloud-data-faq-title">Frequently Asked Questions</h1>
         </div>
-        <div className="tech-data-faq-section-container">
+        <div className="cloud-data-faq-section-container">
           <Faq
             data={data}
             config={{

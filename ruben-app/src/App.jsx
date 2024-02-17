@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./pages/Footer/Footer";
 import Header from "./pages/Header/Header";
 // import Cookies from "./pages/Cookies/Cookies";
-import Infrastructure from "./pages/Tech/Infrastructure/Infrastructure";
+import Infrastructure from "./pages/Tech/CloudAdoption/CloudAdoption";
 import Data from "./pages/Tech/Data/Data";
 import Security from "./pages/Tech/Security/Security";
 import Collaboration from "./pages/Tech/Collaboration/Collaboration";

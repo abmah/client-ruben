@@ -21,7 +21,11 @@ function Home() {
   let scrollRefThree = useRef(null);
   return (
     <>
-      <AboveTheFold />
+      <AboveTheFold
+        scrollRef={scrollRef}
+        scrollRefTwo={scrollRefTwo}
+        scrollRefThree={scrollRefThree}
+      />
       <Banner />
       <RevealSection />
       <FloatingCards

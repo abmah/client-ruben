@@ -1,8 +1,9 @@
-.tech-collaboration-lets-talk-section-wrapper {
-  margin-top: 200px;
+.cloud-collaboration-lets-talk-section-wrapper {
+  margin-top: 50px;
+
 }
 
-.tech-collaboration-lets-talk-section-container {
+.cloud-collaboration-lets-talk-section-container {
   background: #222b38;
   border-radius: 24px;
   color: white;
@@ -16,7 +17,7 @@
   flex-direction: column;
 }
 
-.tech-collaboration-lets-talk-section-title {
+.cloud-collaboration-lets-talk-section-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -25,11 +26,11 @@
   /* 160% */
 }
 
-.tech-collaboration-lets-talk-section-image {
+.cloud-collaboration-lets-talk-section-image {
   margin-top: 65px;
 }
 
-.tech-collaboration-lets-talk-section-subtitle {
+.cloud-collaboration-lets-talk-section-subtitle {
   margin-top: 0;
   max-width: 780px;
   text-align: center;
@@ -39,7 +40,7 @@
   line-height: 32px;
 }
 
-.tech-collaboration-lets-talk-section-button {
+.cloud-collaboration-lets-talk-section-button {
   width: 240px;
   height: 64px;
   flex-shrink: 0;
@@ -55,7 +56,7 @@
   margin-top: 20px;
 }
 
-.tech-collaboration-contact-us-button-img {
+.cloud-collaboration-contact-us-button-img {
   background: #222b38;
   width: 52px;
   height: 52px;
@@ -63,20 +64,24 @@
 
 }
 
-.tech-collaboration-contact-us-button-img img {
-  margin-top: 16px;
-}
 
+
+.cloud-collaboration-contact-us-button-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 @media screen and (max-width:600px) {
 
 
-  .tech-collaboration-lets-talk-section-container {
+  .cloud-collaboration-lets-talk-section-container {
     width: 97%;
 
   }
 
-  .tech-collaboration-lets-talk-section-title {
+  .cloud-collaboration-lets-talk-section-title {
 
     font-size: 24px;
     font-style: normal;
@@ -85,11 +90,11 @@
     /* 266.667% */
   }
 
-  .tech-collaboration-lets-talk-section-image {
+  .cloud-collaboration-lets-talk-section-image {
     margin-top: 30px;
   }
 
-  .tech-collaboration-lets-talk-section-subtitle {
+  .cloud-collaboration-lets-talk-section-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -98,7 +103,7 @@
     /* 187.5% */
   }
 
-  .tech-collaboration-lets-talk-section-button {
+  .cloud-collaboration-lets-talk-section-button {
     width: 97%;
     display: flex;
     position: relative;
@@ -106,13 +111,13 @@
 
   }
 
-  .tech-collaboration-contact-us-button-img {
+  .cloud-collaboration-contact-us-button-img {
     position: absolute;
     right: 6px;
   }
 
 
-  .tech-collaboration-lets-talk-section-button p {
+  .cloud-collaboration-lets-talk-section-button p {
 
     font-size: 16px;
     font-style: normal;

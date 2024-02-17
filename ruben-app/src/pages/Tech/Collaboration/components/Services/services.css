@@ -1,22 +1,36 @@
-.tech-collaboration-services-wrapper {
+.cloud-collaboration-services-wrapper {
   margin-top: 100px;
 }
 
-.tech-collaboration-services-container {
-  display: flex;
+.cloud-collaboration-services-container {
+
   width: 80%;
   margin: 0 auto;
-  color: #192430;
 
+}
+
+.cloud-collaboration-services-main-title {
+  color: #192430;
+  margin-bottom: -40px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  max-width: 1200px;
+}
+
+
+.cloud-collaboration-services-content {
+  color: #192430;
+  display: flex;
   gap: 20px;
 }
 
-.tech-collaboration-services-right-section {
-  width: 70%;
-
+.cloud-collaboration-services-right-section {
+  width: 80%;
 }
 
-.tech-collaboration-services-nav-section {
+.cloud-collaboration-services-nav-section {
   width: 240px;
   height: 700px;
   gap: 24px;
@@ -26,7 +40,7 @@
 
 }
 
-.tech-collaboration-services-nav-item {
+.cloud-collaboration-services-nav-item {
   cursor: pointer;
   border-radius: 32px;
   color: #2d3748;
@@ -43,31 +57,33 @@
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.active {
+.active-cloud {
   background: #2d3748;
   color: white;
 }
 
-.tech-collaboration-services-nav-item-long {
+.cloud-collaboration-services-nav-item-long {
   padding-right: 28px;
 }
 
-.tech-collaboration-services-right-section-child {
-  height: 600px;
+.cloud-collaboration-services-right-section-child {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  padding-top: 70px;
+
+
 }
 
-.tech-collaboration-services-right-section-child-title {
+.cloud-collaboration-services-right-section-child-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.tech-collaboration-services-right-section-subtitle {
+.cloud-collaboration-services-right-section-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -75,13 +91,13 @@
   max-width: 576px;
 }
 
-.tech-collaboration-services-right-section-cards-container {
+.cloud-collaboration-services-right-section-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.tech-collaboration-services-right-section-card {
+.cloud-collaboration-services-right-section-card {
   width: 280px;
   height: 120px;
   display: flex;
@@ -94,16 +110,16 @@
   gap: 27px;
 }
 
-.tech-collaboration-services-right-section-card img {
+.cloud-collaboration-services-right-section-card img {
   width: 20px;
   height: 14px;
 }
 
-.tech-collaboration-services-right-section-card p {
+.cloud-collaboration-services-right-section-card p {
   width: 166px;
 }
 
-.tech-collaboration-services-right-section-btn {
+.cloud-collaboration-services-right-section-btn {
   border-radius: 28px;
   width: 184px;
   height: 56px;
@@ -112,6 +128,9 @@
   color: #222b38;
   font-size: 18px;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: normal;
   border: none;
@@ -119,38 +138,57 @@
   margin-top: 32px;
 }
 
-.tech-collaboration-services-section-space {
-  height: 230px;
+.cloud-collaboration-services-line {
+  width: 100%;
+  height: 1px;
+  background: #00000017;
+  margin-top: 80px;
+
 }
 
-.tech-collaboration-services-navigation-mobile {
-  display: none;
-}
 
-@media screen and (max-width: 1300px) {
 
-  .tech-collaboration-services-container {
-    display: flex;
+@media screen and (max-width: 1400px) {
+  .cloud-collaboration-services-container {
     width: 97%;
-
   }
 
+
 }
+
 
 
 @media screen and (max-width: 900px) {
-  .tech-collaboration-services-navigation-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 336px;
-    gap: 16px;
+
+  .cloud-collaboration-services-main-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: -100px;
+    margin-top: 40px;
   }
 
-  .tech-collaboration-services-nav-item-long {
+  .cloud-collaboration-services-right-section-child {
+    padding-top: 0px;
+  }
+
+  .cloud-collaboration-services-content {
+    padding-top: 150px;
+  }
+
+
+
+  .cloud-collaboration-services-wrapper {
+    margin-top: 0px;
+  }
+
+
+
+  .cloud-collaboration-services-nav-item-long {
     padding-right: 12px;
   }
 
-  .tech-collaboration-services-nav-item {
+  .cloud-collaboration-services-nav-item {
 
     font-size: 18px;
     font-style: normal;
@@ -159,22 +197,26 @@
     transition: unset;
   }
 
-  .tech-collaboration-services-nav-item {
+  .cloud-collaboration-services-nav-item {
     cursor: unset;
     width: 115px;
     height: 40px;
   }
 
-  .tech-collaboration-services-right-section {
+  .cloud-collaboration-services-right-section {
     width: 100%;
   }
 
-  .tech-collaboration-services-nav-section {
+  .cloud-collaboration-services-nav-section {
     display: none;
   }
 
-  .tech-collaboration-services-right-section-child {
-    margin-bottom: 80px;
+  .cloud-collaboration-services-right-section-child {
+    margin-bottom: 20px;
+  }
+
+  .cloud-collaboration-services-line {
+    margin-top: 40px;
   }
 }
 
@@ -184,25 +226,25 @@
 
 
 
-  .tech-collaboration-services-container {
+  .cloud-collaboration-services-container {
     width: 90%;
   }
 
-  .tech-collaboration-services-right-section-child {
+  .cloud-collaboration-services-right-section-child {
     height: auto;
 
   }
 
-  .tech-collaboration-services-right-section-cards-container {
+  .cloud-collaboration-services-right-section-cards-container {
     flex-direction: column;
   }
 
-  .tech-collaboration-services-right-section-card {
+  .cloud-collaboration-services-right-section-card {
     width: 100%;
     height: 88px;
   }
 
-  .tech-collaboration-services-right-section-btn {
+  .cloud-collaboration-services-right-section-btn {
     width: 100%;
 
   }

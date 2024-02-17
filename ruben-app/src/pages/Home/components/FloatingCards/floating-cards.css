@@ -216,3 +216,102 @@
   background-color: #fff;
   width: 0%;
 }
+
+
+@media screen and (max-width:900px) {
+
+  .floating-cards-container {
+    height: fit-content;
+  }
+
+  .floating-cards-container br {
+    display: none;
+  }
+
+
+  .floating-card-content-first {
+    display: none;
+  }
+
+  .floating-card-content-second {
+    display: none
+  }
+
+
+  .floating-card {
+    position: relative;
+    top: unset;
+    left: unset;
+
+  }
+
+
+  .floating-card-one,
+  .floating-card-two,
+  .floating-card-three {
+    left: 0;
+    right: 0;
+    margin: unset;
+  }
+
+  .floating-card-background {
+    display: none;
+  }
+
+  .spacing {
+    height: 0;
+  }
+
+  .spacing-two {
+    height: 0;
+  }
+
+
+  .floating-cards-background-text {
+    position: static;
+  }
+
+  .floating-card {
+    transition: unset;
+
+
+  }
+
+  .floating-card:hover .floating-card-content {
+    transform: unset;
+
+  }
+
+  .floating-card-link {
+    position: absolute;
+    top: 330px;
+  }
+
+
+  .floating-card-content {
+    transition: unset;
+  }
+
+  .floating-cards-background {
+    height: unset;
+    width: unset;
+    position: unset;
+    pointer-events: unset;
+
+    color: #192430;
+
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .floating-cards-background-text {
+    /* display: none; */
+    font-size: 24px;
+
+
+  }
+
+}

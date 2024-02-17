@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import LandingYellow from "../../../../../assets/landing-yellow.svg";
 import "../above-the-fold.css";
-function AboveTheFoldSectionTwo() {
+function AboveTheFoldSectionTwo({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-two">
       <img
@@ -20,10 +21,18 @@ function AboveTheFoldSectionTwo() {
           trainings
         </p>
         <div className="above-the-fold-buttons-container">
-          <button className="above-the-fold-button">View Services</button>
-          <button className="above-the-fold-button lets-talk-button">
-            Let&apos;s Talk
+          <button
+            onClick={() => scrollToRef(2)}
+            className="above-the-fold-button"
+          >
+            View Services
           </button>
+          <Link
+            to="/contact"
+            className="above-the-fold-button lets-talk-button"
+          >
+            Let&apos;s Talk
+          </Link>
         </div>
         <div className="above-the-fold-section-navigation">
           <div className="above-the-fold-section-navigation-child">

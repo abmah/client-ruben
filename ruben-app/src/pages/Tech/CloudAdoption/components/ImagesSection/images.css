@@ -1,0 +1,183 @@
+/* cloud-adoption image section */
+
+.cloud-adoption-images-wrapper {
+  width: 100%;
+  min-height: 800px;
+  color: #192430;
+
+}
+
+.cloud-adoption-images-container {
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  min-height: 500px;
+  gap: 80px;
+  color: #192430;
+  margin-top: 90px;
+}
+
+.cloud-adoption-image-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.cloud-adoption-image {
+  max-width: 500px;
+  max-height: 381px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cloud-adoption-image-text {
+  max-width: 627px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.cloud-adoption-image-text-title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cloud-adoption-image-text-subtitle {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.cloud-adoption-image-text-paragraph {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+
+
+
+/* cloud-adoption image section */
+
+
+/* Add other media queries if necessary */
+
+/* cloud-adoption image section */
+
+/* ... (previous styles) ... */
+
+
+@media screen and (max-width:1000px) {
+
+  .cloud-adoption-image-parent {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 362px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .cloud-adoption-images-container {
+    max-width: 90%;
+
+  }
+
+
+
+
+  .cloud-adoption-image {
+    border-radius: 24px;
+    width: 400px;
+    max-height: 300px;
+    order: -2;
+    object-fit: contain;
+    gap: 20px;
+  }
+
+  .cloud-adoption-image-text-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .cloud-adoption-image-text-subtitle {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .cloud-adoption-image-paragraph {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .cloud-adoption-image-text {
+    max-width: 500px;
+  }
+
+
+
+  .cloud-adoption-image {
+    margin-bottom: 40px;
+  }
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+  .cloud-adoption-image-parent {
+    flex-direction: column;
+
+
+  }
+
+  .cloud-adoption-image {
+
+    order: 4;
+
+
+
+  }
+
+  .cloud-adoption-image-top {
+    margin-bottom: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .cloud-adoption-image {
+    width: 100%;
+    max-height: 300px;
+
+
+  }
+
+  .cloud-adoption-images-container {
+    margin-top: 100px;
+    gap: 50px;
+
+  }
+
+
+}

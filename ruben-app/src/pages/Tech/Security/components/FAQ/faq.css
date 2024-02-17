@@ -1,10 +1,10 @@
-.tech-security-faq-wrapper {
+.cloud-security-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.tech-security-faq-container {
+.cloud-security-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.tech-security-faq-title {
+.cloud-security-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.tech-security-faq-section-container {
+.cloud-security-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.tech-security-faq-row {
+.cloud-security-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .tech-security-faq-wrapper {
+  .cloud-security-faq-wrapper {
     height: 100%;
   }
 
-  .tech-security-faq-container {
+  .cloud-security-faq-container {
 
     flex-direction: column;
 
   }
 
-  .tech-security-faq-section-container {
+  .cloud-security-faq-section-container {
     width: 100%;
   }
 

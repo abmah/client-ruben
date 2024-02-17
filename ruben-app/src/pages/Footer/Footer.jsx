@@ -52,12 +52,12 @@ function Footer() {
               </Link>
             </div>
             <div className="footer-top-item footer-top-item-tech">
-              <p className="footer-top-item-title">Tech</p>
+              <p className="footer-top-item-title">Cloud</p>
               <Link to="infrastructure" className="footer-top-item-option">
-                Infrastructure Modernization
+                Cloud Adoption and Migration
               </Link>
               <Link to="data" className="footer-top-item-option">
-                Data, Analytics
+                Data, Analytics, AI
               </Link>
               <Link to="collaboration" className="footer-top-item-option">
                 Productivity and Collaboration

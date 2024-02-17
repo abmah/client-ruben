@@ -82,7 +82,7 @@ function Header() {
               <Skills />
             </div>
             <div className="menu-item menu-item-tech">
-              <p>Tech</p>
+              <p>Cloud</p>
               <Tech />
             </div>
           </div>

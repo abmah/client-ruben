@@ -5,6 +5,7 @@ import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./teams.json";
+import { Link } from "react-router-dom";
 
 function AboveTheFold() {
   const container = useRef(null);
@@ -22,29 +23,42 @@ function AboveTheFold() {
     return () => {
       animation.destroy();
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
+
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className="tech-collaboration-above-the-fold-wrapper">
-      <div className="tech-collaboration-above-the-fold-container">
-        <div className="tech-collaboration-above-the-fold-left-section-wrapper">
-          <div className="tech-collaboration-above-the-fold-left-section">
-            <h1 className="tech-collaboration-above-the-fold-main-title">
-              Modernize You <strong>Infrastructure</strong> to Scale and
-              Innovate
+    <div className="cloud-collaboration-above-the-fold-wrapper">
+      <div className="cloud-collaboration-above-the-fold-container">
+        <div className="cloud-collaboration-above-the-fold-left-section-wrapper">
+          <div className="cloud-collaboration-above-the-fold-left-section">
+            <h1 className="cloud-collaboration-above-the-fold-main-title">
+              Amplify <strong> productivity and collaboration</strong> through
+              Cloud Office Tools
             </h1>
-            <div className="tech-collaboration-above-the-fold-button-container">
-              <button className="tech-collaboration-learn-more-button">
+            <div className="cloud-collaboration-above-the-fold-button-container">
+              <button
+                onClick={handleLearnMoreClick}
+                className="cloud-collaboration-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="tech-collaboration-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="cloud-collaboration-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         <div
-          className="tech-collaboration-above-the-fold-img"
+          className="cloud-collaboration-above-the-fold-img"
           ref={container}
           src={CollaborationImage}
           alt="collaboration"

@@ -1,10 +1,10 @@
-.tech-data-faq-wrapper {
+.cloud-data-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.tech-data-faq-container {
+.cloud-data-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.tech-data-faq-title {
+.cloud-data-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.tech-data-faq-section-container {
+.cloud-data-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.tech-data-faq-row {
+.cloud-data-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .tech-data-faq-wrapper {
+  .cloud-data-faq-wrapper {
     height: 100%;
   }
 
-  .tech-data-faq-container {
+  .cloud-data-faq-container {
 
     flex-direction: column;
 
   }
 
-  .tech-data-faq-section-container {
+  .cloud-data-faq-section-container {
     width: 100%;
   }
 

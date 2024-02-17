@@ -1,56 +1,54 @@
-import BlankImage from "../../../../../assets/infra-image-blank.svg";
+import GoodCompany from "./good-company.svg";
+import TalentAug from "./talent-aug.svg";
 import "./images.css";
 
 function Images() {
   return (
-    <div className="tech-collaboration-images-wrapper">
-      <div className="tech-collaboration-images-container">
-        <div className="tech-collaboration-image-parent">
-          <div className="tech-collaboration-image-text">
-            <div className="tech-collaboration-image-text-title">
-              Lorem ipsum dolor sit amet consect
+    <div className="cloud-collaboration-images-wrapper">
+      <div className="cloud-collaboration-images-container">
+        <div className="cloud-collaboration-image-parent">
+          <div className="cloud-collaboration-image-text">
+            <div className="cloud-collaboration-image-text-title">
+              Workforce Productivity Strategy
             </div>
-            <div className="tech-collaboration-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+            <div className="cloud-collaboration-image-text-subtitle">
+              We support to define directions and outcomes
             </div>
-            <div className="tech-collaboration-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupicollaborationt non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+            <div className="cloud-collaboration-image-text-paragraph">
+              A successful cloud transformation for workforce productivity
+              relies on a well-defined strategy, serving as the foundation. This
+              strategy outlines the objectives behind the transformation and
+              articulates success criteria: increased productivity, optimized
+              remote work capabilities, data security.
             </div>
           </div>
           <img
-            src={BlankImage}
+            src={GoodCompany}
             alt="blank image"
-            className="tech-collaboration-image"
+            className="cloud-collaboration-image cloud-collaboration-image-top"
           />
         </div>{" "}
-        <div className="tech-collaboration-image-parent">
+        <div className="cloud-collaboration-image-parent">
           {" "}
           <img
-            src={BlankImage}
+            src={TalentAug}
             alt="blank image"
-            className="tech-collaboration-image"
+            className="cloud-collaboration-image"
           />
-          <div className="tech-collaboration-image-text">
-            <div className="tech-collaboration-image-text-title">
-              Lorem ipsum dolor sit amet consect
+          <div className="cloud-collaboration-image-text">
+            <div className="cloud-collaboration-image-text-title">
+              Migration Support
             </div>
-            <div className="tech-collaboration-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+            <div className="cloud-collaboration-image-text-subtitle">
+              Our team of Certified Workspace Administrators and Project
+              Managers will put you on the right migration path
             </div>
-            <div className="tech-collaboration-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupicollaborationt non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+            <div className="cloud-collaboration-image-text-paragraph">
+              Our team will map all sources of data in your current work
+              environemnt (like files, emails, contacts) and migrate to Google
+              Workspace without any downtime. With a customized roll-out and
+              trainings plan, designed to promote a shared purpose, our experts
+              help drive adoption and efficiency.
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
-.tech-collaboration-faq-wrapper {
+.cloud-collaboration-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.tech-collaboration-faq-container {
+.cloud-collaboration-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.tech-collaboration-faq-title {
+.cloud-collaboration-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.tech-collaboration-faq-section-container {
+.cloud-collaboration-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.tech-collaboration-faq-row {
+.cloud-collaboration-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .tech-collaboration-faq-wrapper {
+  .cloud-collaboration-faq-wrapper {
     height: 100%;
   }
 
-  .tech-collaboration-faq-container {
+  .cloud-collaboration-faq-container {
 
     flex-direction: column;
 
   }
 
-  .tech-collaboration-faq-section-container {
+  .cloud-collaboration-faq-section-container {
     width: 100%;
   }
 

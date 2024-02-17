@@ -6,12 +6,12 @@ import { Autoplay } from "swiper/modules";
 import AboveTheFoldSectionOne from "./Items/AboveTheFoldSectionOne";
 import AboveTheFoldSectionTwo from "./Items/AboveTheFoldSectionTwo";
 import AboveTheFoldSectionThree from "./Items/AboveTheFoldSectionThree";
+import PropTypes from "prop-types"; // Import PropTypes for prop validation
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-function LandingPage() {
+function LandingPage({ scrollRef, scrollRefTwo, scrollRefThree }) {
   const swiperRef = useRef(null);
 
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -34,6 +34,29 @@ function LandingPage() {
     };
   }, []);
 
+  const scrollToRef = (num) => {
+    if (scrollRef.current) {
+      if (num == 1) {
+        console.log("scrolling to ref");
+        scrollRef.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      } else if (num == 2) {
+        scrollRefTwo.current.scrollIntoView({
+          behavior: "smooth",
+          alignToTop: false,
+          block: "center",
+        });
+      } else {
+        scrollRefThree.current.scrollIntoView({
+          behavior: "smooth",
+          alignToTop: false,
+          block: "center",
+        });
+      }
+    }
+  };
+
   return (
     <div className="above-the-fold-container">
       <Swiper
@@ -49,13 +72,13 @@ function LandingPage() {
         className="above-the-fold-swiper"
       >
         <SwiperSlide>
-          <AboveTheFoldSectionOne />
+          <AboveTheFoldSectionOne scrollToRef={scrollToRef} />
         </SwiperSlide>
         <SwiperSlide>
-          <AboveTheFoldSectionTwo />
+          <AboveTheFoldSectionTwo scrollToRef={scrollToRef} />
         </SwiperSlide>
         <SwiperSlide>
-          <AboveTheFoldSectionThree />
+          <AboveTheFoldSectionThree scrollToRef={scrollToRef} />
         </SwiperSlide>
       </Swiper>
     </div>
@@ -63,3 +86,8 @@ function LandingPage() {
 }
 
 export default LandingPage;
+LandingPage.propTypes = {
+  scrollRef: PropTypes.object.isRequired,
+  scrollRefTwo: PropTypes.object.isRequired,
+  scrollRefThree: PropTypes.object.isRequired,
+};

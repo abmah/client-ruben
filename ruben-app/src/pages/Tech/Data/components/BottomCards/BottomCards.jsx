@@ -2,43 +2,34 @@ import "./bottom-cards.css";
 
 function BottomCards() {
   return (
-    <div className="tech-data-bottom-cards-wrapper">
-      <div className="tech-data-bottom-cards-container">
-        <h1 className="tech-data-bottom-cards-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    <div className="cloud-data-bottom-cards-wrapper">
+      <div className="cloud-data-bottom-cards-container">
+        <h1 className="cloud-data-bottom-cards-title">
+          A value proposition that stand out
         </h1>
-        <div className="tech-data-bottom-cards-parent">
-          <div className="tech-data-bottom-card">
-            <div className="tech-data-bottom-card-header-circle"></div>
-            <div className="tech-data-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </div>
-            <div className="tech-data-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+        <div className="cloud-data-bottom-cards-parent">
+          <div className="cloud-data-bottom-card">
+            <div className="cloud-data-bottom-card-header-circle"></div>
+            <div className="cloud-data-bottom-card-title">Easy Deployment</div>
+            <div className="cloud-data-bottom-card-subtitle">
+              With offices in Dubai and Riyadh and footprint in all GCC
+              countries we can easily deploy our team onsite
             </div>
           </div>
-          <div className="tech-data-bottom-card tech-data-bottom-card-orange">
-            <div className="tech-data-bottom-card-header-circle"></div>
-            <div className="tech-data-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </div>
-            <div className="tech-data-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+          <div className="cloud-data-bottom-card cloud-data-bottom-card-orange">
+            <div className="cloud-data-bottom-card-header-circle"></div>
+            <div className="cloud-data-bottom-card-title">Multi Certified</div>
+            <div className="cloud-data-bottom-card-subtitle">
+              Our engineers hold certifications from top cloud vendors like GCP,
+              AWS, Azure.
             </div>
           </div>
-          <div className="tech-data-bottom-card tech-data-bottom-card-blue">
-            <div className="tech-data-bottom-card-header-circle"></div>
-            <div className="tech-data-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </div>
-            <div className="tech-data-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+          <div className="cloud-data-bottom-card cloud-data-bottom-card-blue">
+            <div className="cloud-data-bottom-card-header-circle"></div>
+            <div className="cloud-data-bottom-card-title">Cloud Agnostic</div>
+            <div className="cloud-data-bottom-card-subtitle">
+              We are capable in extending full scope support with multi-cloud
+              environments including GCP, AWS and Azure
             </div>
           </div>
         </div>

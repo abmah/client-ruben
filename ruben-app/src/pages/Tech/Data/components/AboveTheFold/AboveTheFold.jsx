@@ -5,6 +5,7 @@ import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./lottie.json";
+import { Link } from "react-router-dom";
 
 function AboveTheFold() {
   const container = useRef(null);
@@ -24,27 +25,37 @@ function AboveTheFold() {
     };
   }, []); // Empty dependency array to run the effect only once
 
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
+
   return (
-    <div className="tech-data-above-the-fold-wrapper">
-      <div className="tech-data-above-the-fold-container">
-        <div className="tech-data-above-the-fold-left-section-wrapper">
-          <div className="tech-data-above-the-fold-left-section">
-            <h1 className="tech-data-above-the-fold-main-title">
-              Modernize You <strong>Infrastructure</strong> to Scale and
-              Innovate
+    <div className="cloud-data-above-the-fold-wrapper">
+      <div className="cloud-data-above-the-fold-container">
+        <div className="cloud-data-above-the-fold-left-section-wrapper">
+          <div className="cloud-data-above-the-fold-left-section">
+            <h1 className="cloud-data-above-the-fold-main-title">
+              Modernize Your <br /> <strong> Data Infrastructure</strong> <br />{" "}
+              through Cloud Adoption and Migration
             </h1>
-            <div className="tech-data-above-the-fold-button-container">
-              <button className="tech-data-learn-more-button">
+            <div className="cloud-data-above-the-fold-button-container">
+              <button
+                onClick={handleLearnMoreClick}
+                className="cloud-data-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="tech-data-get-in-contact-button">
+              <Link to="/contact" className="cloud-data-get-in-contact-button">
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
-        {/* <img className="tech-data-above-the-fold-img" src={Data} alt="data" /> */}
-        <div className="tech-data-above-the-fold-img" ref={container}></div>
+        {/* <img className="cloud-data-above-the-fold-img" src={Data} alt="data" /> */}
+        <div className="cloud-data-above-the-fold-img" ref={container}></div>
       </div>
     </div>
   );

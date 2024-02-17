@@ -1,10 +1,10 @@
-.tech-infra-faq-wrapper {
+.cloud-adoption-faq-wrapper {
   margin-top: 100px;
   margin-bottom: 100px;
   min-height: 600px;
 }
 
-.tech-infra-faq-container {
+.cloud-adoption-faq-container {
   width: 80%;
   margin: 0 auto;
   color: #222B38;
@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-.tech-infra-faq-title {
+.cloud-adoption-faq-title {
   max-width: 416px;
   font-size: 40px;
   font-style: normal;
@@ -21,7 +21,7 @@
   /* 160% */
 }
 
-.tech-infra-faq-section-container {
+.cloud-adoption-faq-section-container {
   width: 55%;
 }
 
@@ -43,7 +43,7 @@
   /* 200% */
 }
 
-.tech-infra-faq-row {
+.cloud-adoption-faq-row {
   border-bottom: 2px solid #B2B9C8 !important;
 }
 
@@ -64,17 +64,17 @@
 
 
 @media screen and (max-width: 1000px) {
-  .tech-infra-faq-wrapper {
+  .cloud-adoption-faq-wrapper {
     height: 100%;
   }
 
-  .tech-infra-faq-container {
+  .cloud-adoption-faq-container {
 
     flex-direction: column;
 
   }
 
-  .tech-infra-faq-section-container {
+  .cloud-adoption-faq-section-container {
     width: 100%;
   }
 

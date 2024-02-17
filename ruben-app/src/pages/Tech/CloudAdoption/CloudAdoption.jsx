@@ -6,7 +6,7 @@ import Images from "./components/ImagesSection/Images";
 import LetsTalk from "./components/LetsTalk/LetsTalk";
 import Services from "./components/Services/Services";
 
-function Infrastructure() {
+function CloudAdoption() {
   return (
     <>
       <AboveTheFold />
@@ -20,4 +20,4 @@ function Infrastructure() {
   );
 }
 
-export default Infrastructure;
+export default CloudAdoption;

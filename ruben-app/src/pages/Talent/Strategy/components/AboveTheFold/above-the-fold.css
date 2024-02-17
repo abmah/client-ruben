@@ -116,17 +116,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .talent-strategy-cards-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .talent-strategy-image-parent {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 362px;
-  }
 
   .talent-strategy-above-the-fold-img {
     height: 80%;

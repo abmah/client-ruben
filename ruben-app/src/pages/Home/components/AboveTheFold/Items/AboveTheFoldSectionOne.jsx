@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import LandingGray from "../../../../../assets/landing-gray.svg";
 import "../above-the-fold.css";
-function AboveTheFoldSectionOne() {
+function AboveTheFoldSectionOne({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-one">
       <img
@@ -19,10 +20,18 @@ function AboveTheFoldSectionOne() {
           Flexibly assign high caliber experts to strengthen your projects
         </p>
         <div className="above-the-fold-buttons-container">
-          <button className="above-the-fold-button">View Services</button>
-          <button className="above-the-fold-button lets-talk-button">
-            Let&apos;s Talk
+          <button
+            onClick={() => scrollToRef(1)}
+            className="above-the-fold-button"
+          >
+            View Services
           </button>
+          <Link
+            to="/contact"
+            className="above-the-fold-button lets-talk-button"
+          >
+            Let&apos;s Talk
+          </Link>
         </div>
         <div className="above-the-fold-section-navigation">
           <div className="above-the-fold-section-navigation-child section-one-talent">

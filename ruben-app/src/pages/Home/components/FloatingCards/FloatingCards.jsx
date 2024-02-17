@@ -165,6 +165,11 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
   return (
     <div className="floating-cards-wrapper">
       <div className="floating-cards-container">
+        <div className="floating-cards-background">
+          <h1 className="floating-cards-background-text">
+            Services designed to amplify agility
+          </h1>
+        </div>
         <div className="spacing"></div>
         <div className="floating-cards-parent">
           <div className="floating-card floating-card-one">
@@ -277,11 +282,6 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
           </div>{" "}
         </div>
         <div className="spacing-two "></div>
-        <div className="floating-cards-background">
-          <h1 className="floating-cards-background-text">
-            Services designed to amplify agility
-          </h1>
-        </div>
       </div>
     </div>
   );

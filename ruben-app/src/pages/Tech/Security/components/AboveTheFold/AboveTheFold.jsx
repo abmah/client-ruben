@@ -5,6 +5,7 @@ import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./security2.json";
+import { Link } from "react-router-dom";
 
 function AboveTheFold() {
   const container = useRef(null);
@@ -22,30 +23,43 @@ function AboveTheFold() {
     return () => {
       animation.destroy();
     };
-  }, []); // Empty dependency array to run the effect only once
+  }, []);
+
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
 
   return (
-    <div className="tech-security-above-the-fold-wrapper">
-      <div className="tech-security-above-the-fold-container">
-        <div className="tech-security-above-the-fold-left-section-wrapper">
-          <div className="tech-security-above-the-fold-left-section">
-            <h1 className="tech-security-above-the-fold-main-title">
-              Modernize You <strong>Infrastructure</strong> to Scale and
-              Innovate
+    <div className="cloud-security-above-the-fold-wrapper">
+      <div className="cloud-security-above-the-fold-container">
+        <div className="cloud-security-above-the-fold-left-section-wrapper">
+          <div className="cloud-security-above-the-fold-left-section">
+            <h1 className="cloud-security-above-the-fold-main-title">
+              Cloud <strong> Security</strong> Solutions to reduce risks and
+              protect users
             </h1>
-            <div className="tech-security-above-the-fold-button-container">
-              <button className="tech-security-learn-more-button">
+            <div className="cloud-security-above-the-fold-button-container">
+              <button
+                onClick={handleLearnMoreClick}
+                className="cloud-security-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="tech-security-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="cloud-security-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>
         <div
           ref={container}
-          className="tech-security-above-the-fold-img"
+          className="cloud-security-above-the-fold-img"
           src={Security}
           alt="security"
         ></div>

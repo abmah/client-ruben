@@ -1,26 +1,23 @@
-.tech-security-bottom-cards-wrapper {
-  margin-top: 50px;
-}
-
-.tech-security-bottom-cards-container {
+.cloud-security-bottom-cards-container {
   color: #192430;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 
-.tech-security-bottom-cards-title {
+.cloud-security-bottom-cards-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 56px;
-  max-width: 598px;
+  max-width: 700px
 }
 
-.tech-security-bottom-cards-parent {
+.cloud-security-bottom-cards-parent {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -28,9 +25,9 @@
 
 }
 
-.tech-security-bottom-card {
+.cloud-security-bottom-card {
   max-width: 416px;
-  min-height: 436px;
+  min-height: 306px;
   padding: 36px;
   border-radius: 24px;
   border: 2px solid #B2B9C8;
@@ -40,7 +37,7 @@
 
 }
 
-.tech-security-bottom-card-header-circle {
+.cloud-security-bottom-card-header-circle {
   margin-top: 20px;
   width: 56px;
   height: 56px;
@@ -50,7 +47,7 @@
 
 }
 
-.tech-security-bottom-card-title {
+.cloud-security-bottom-card-title {
 
   max-width: 344px;
   font-size: 32px;
@@ -60,7 +57,7 @@
 
 }
 
-.tech-security-bottom-card-subtitle {
+.cloud-security-bottom-card-subtitle {
 
   font-size: 18px;
   font-style: normal;
@@ -69,20 +66,20 @@
   max-width: 344px;
 }
 
-.tech-security-bottom-card-orange {
+.cloud-security-bottom-card-orange {
 
   border: 2px solid #F9B934;
 }
 
-.tech-security-bottom-card-orange div:nth-child(1) {
+.cloud-security-bottom-card-orange div:nth-child(1) {
   background-color: #F9B934;
 }
 
-.tech-security-bottom-card-blue {
+.cloud-security-bottom-card-blue {
   border: 2px solid #222B38;
 }
 
-.tech-security-bottom-card-blue div:nth-child(1) {
+.cloud-security-bottom-card-blue div:nth-child(1) {
   background-color: #222B38;
 }
 
@@ -90,18 +87,18 @@
 @media screen and (max-width:1300px) {
 
 
-  .tech-security-bottom-cards-container {
-    width: 97%;
+  .cloud-security-bottom-cards-container {
+    width: 90%;
   }
 
 
-  .tech-security-bottom-card {
+  .cloud-security-bottom-card {
     max-width: 362px;
-    min-height: 312px;
+    min-height: 252px;
     gap: 24px;
   }
 
-  .tech-security-bottom-card-title {
+  .cloud-security-bottom-card-title {
 
     font-size: 18px;
     font-style: normal;
@@ -110,7 +107,7 @@
 
   }
 
-  .tech-security-bottom-card-subtitle {
+  .cloud-security-bottom-card-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -126,18 +123,18 @@
 @media screen and (max-width:1000px) {
 
 
-  .tech-security-bottom-cards-parent {
+  .cloud-security-bottom-cards-parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .tech-security-bottom-cards-title {
+  .cloud-security-bottom-cards-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    max-width: 336px;
+    max-width: 396px;
     text-wrap: wrap;
 
   }

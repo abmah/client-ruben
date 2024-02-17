@@ -1,26 +1,23 @@
-.tech-collaboration-bottom-cards-wrapper {
-  margin-top: 50px;
-}
-
-.tech-collaboration-bottom-cards-container {
+.cloud-collaboration-bottom-cards-container {
   color: #192430;
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 
-.tech-collaboration-bottom-cards-title {
+.cloud-collaboration-bottom-cards-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
   line-height: 56px;
-  max-width: 598px;
+  max-width: 700px
 }
 
-.tech-collaboration-bottom-cards-parent {
+.cloud-collaboration-bottom-cards-parent {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -28,9 +25,9 @@
 
 }
 
-.tech-collaboration-bottom-card {
+.cloud-collaboration-bottom-card {
   max-width: 416px;
-  min-height: 436px;
+  min-height: 306px;
   padding: 36px;
   border-radius: 24px;
   border: 2px solid #B2B9C8;
@@ -40,7 +37,7 @@
 
 }
 
-.tech-collaboration-bottom-card-header-circle {
+.cloud-collaboration-bottom-card-header-circle {
   margin-top: 20px;
   width: 56px;
   height: 56px;
@@ -50,7 +47,7 @@
 
 }
 
-.tech-collaboration-bottom-card-title {
+.cloud-collaboration-bottom-card-title {
 
   max-width: 344px;
   font-size: 32px;
@@ -60,7 +57,7 @@
 
 }
 
-.tech-collaboration-bottom-card-subtitle {
+.cloud-collaboration-bottom-card-subtitle {
 
   font-size: 18px;
   font-style: normal;
@@ -69,20 +66,20 @@
   max-width: 344px;
 }
 
-.tech-collaboration-bottom-card-orange {
+.cloud-collaboration-bottom-card-orange {
 
   border: 2px solid #F9B934;
 }
 
-.tech-collaboration-bottom-card-orange div:nth-child(1) {
+.cloud-collaboration-bottom-card-orange div:nth-child(1) {
   background-color: #F9B934;
 }
 
-.tech-collaboration-bottom-card-blue {
+.cloud-collaboration-bottom-card-blue {
   border: 2px solid #222B38;
 }
 
-.tech-collaboration-bottom-card-blue div:nth-child(1) {
+.cloud-collaboration-bottom-card-blue div:nth-child(1) {
   background-color: #222B38;
 }
 
@@ -90,18 +87,18 @@
 @media screen and (max-width:1300px) {
 
 
-  .tech-collaboration-bottom-cards-container {
-    width: 97%;
+  .cloud-collaboration-bottom-cards-container {
+    width: 90%;
   }
 
 
-  .tech-collaboration-bottom-card {
+  .cloud-collaboration-bottom-card {
     max-width: 362px;
-    min-height: 312px;
+    min-height: 252px;
     gap: 24px;
   }
 
-  .tech-collaboration-bottom-card-title {
+  .cloud-collaboration-bottom-card-title {
 
     font-size: 18px;
     font-style: normal;
@@ -110,7 +107,7 @@
 
   }
 
-  .tech-collaboration-bottom-card-subtitle {
+  .cloud-collaboration-bottom-card-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -126,18 +123,18 @@
 @media screen and (max-width:1000px) {
 
 
-  .tech-collaboration-bottom-cards-parent {
+  .cloud-collaboration-bottom-cards-parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .tech-collaboration-bottom-cards-title {
+  .cloud-collaboration-bottom-cards-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    max-width: 336px;
+    max-width: 396px;
     text-wrap: wrap;
 
   }

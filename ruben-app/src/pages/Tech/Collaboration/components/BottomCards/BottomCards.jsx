@@ -2,43 +2,41 @@ import "./bottom-cards.css";
 
 function BottomCards() {
   return (
-    <div className="tech-collaboration-bottom-cards-wrapper">
-      <div className="tech-collaboration-bottom-cards-container">
-        <h1 className="tech-collaboration-bottom-cards-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    <div className="cloud-collaboration-bottom-cards-wrapper">
+      <div className="cloud-collaboration-bottom-cards-container">
+        <h1 className="cloud-collaboration-bottom-cards-title">
+          A value proposition that stand out
         </h1>
-        <div className="tech-collaboration-bottom-cards-parent">
-          <div className="tech-collaboration-bottom-card">
-            <div className="tech-collaboration-bottom-card-header-circle"></div>
-            <div className="tech-collaboration-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        <div className="cloud-collaboration-bottom-cards-parent">
+          <div className="cloud-collaboration-bottom-card">
+            <div className="cloud-collaboration-bottom-card-header-circle"></div>
+            <div className="cloud-collaboration-bottom-card-title">
+              Easy Deployment
             </div>
-            <div className="tech-collaboration-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
-            </div>
-          </div>
-          <div className="tech-collaboration-bottom-card tech-collaboration-bottom-card-orange">
-            <div className="tech-collaboration-bottom-card-header-circle"></div>
-            <div className="tech-collaboration-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </div>
-            <div className="tech-collaboration-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+            <div className="cloud-collaboration-bottom-card-subtitle">
+              With offices in Dubai and Riyadh and footprint in all GCC
+              countries we can easily deploy our team onsite
             </div>
           </div>
-          <div className="tech-collaboration-bottom-card tech-collaboration-bottom-card-blue">
-            <div className="tech-collaboration-bottom-card-header-circle"></div>
-            <div className="tech-collaboration-bottom-card-title">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          <div className="cloud-collaboration-bottom-card cloud-collaboration-bottom-card-orange">
+            <div className="cloud-collaboration-bottom-card-header-circle"></div>
+            <div className="cloud-collaboration-bottom-card-title">
+              Certified Administrators
             </div>
-            <div className="tech-collaboration-bottom-card-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+            <div className="cloud-collaboration-bottom-card-subtitle">
+              Our engineers are among few in MENA to be officialy certifiedby
+              Google as GWS Administrators.
+            </div>
+          </div>
+          <div className="cloud-collaboration-bottom-card cloud-collaboration-bottom-card-blue">
+            <div className="cloud-collaboration-bottom-card-header-circle"></div>
+            <div className="cloud-collaboration-bottom-card-title">
+              Mixed Licencing
+            </div>
+            <div className="cloud-collaboration-bottom-card-subtitle">
+              We offer mixed licencing, allowing to keep some employees on
+              cost-efficient licences and others on top-tier storage and
+              security.
             </div>
           </div>
         </div>

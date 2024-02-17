@@ -1,22 +1,36 @@
-.tech-security-services-wrapper {
+.cloud-security-services-wrapper {
   margin-top: 100px;
 }
 
-.tech-security-services-container {
-  display: flex;
+.cloud-security-services-container {
+
   width: 80%;
   margin: 0 auto;
-  color: #192430;
 
+}
+
+.cloud-security-services-main-title {
+  color: #192430;
+  margin-bottom: -40px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  max-width: 1200px;
+}
+
+
+.cloud-security-services-content {
+  color: #192430;
+  display: flex;
   gap: 20px;
 }
 
-.tech-security-services-right-section {
-  width: 70%;
-
+.cloud-security-services-right-section {
+  width: 80%;
 }
 
-.tech-security-services-nav-section {
+.cloud-security-services-nav-section {
   width: 240px;
   height: 700px;
   gap: 24px;
@@ -26,7 +40,7 @@
 
 }
 
-.tech-security-services-nav-item {
+.cloud-security-services-nav-item {
   cursor: pointer;
   border-radius: 32px;
   color: #2d3748;
@@ -43,31 +57,33 @@
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.active {
+.active-cloud {
   background: #2d3748;
   color: white;
 }
 
-.tech-security-services-nav-item-long {
+.cloud-security-services-nav-item-long {
   padding-right: 28px;
 }
 
-.tech-security-services-right-section-child {
-  height: 600px;
+.cloud-security-services-right-section-child {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  padding-top: 70px;
+
+
 }
 
-.tech-security-services-right-section-child-title {
+.cloud-security-services-right-section-child-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.tech-security-services-right-section-subtitle {
+.cloud-security-services-right-section-subtitle {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -75,13 +91,13 @@
   max-width: 576px;
 }
 
-.tech-security-services-right-section-cards-container {
+.cloud-security-services-right-section-cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.tech-security-services-right-section-card {
+.cloud-security-services-right-section-card {
   width: 280px;
   height: 120px;
   display: flex;
@@ -94,16 +110,16 @@
   gap: 27px;
 }
 
-.tech-security-services-right-section-card img {
+.cloud-security-services-right-section-card img {
   width: 20px;
   height: 14px;
 }
 
-.tech-security-services-right-section-card p {
+.cloud-security-services-right-section-card p {
   width: 166px;
 }
 
-.tech-security-services-right-section-btn {
+.cloud-security-services-right-section-btn {
   border-radius: 28px;
   width: 184px;
   height: 56px;
@@ -112,6 +128,9 @@
   color: #222b38;
   font-size: 18px;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: normal;
   border: none;
@@ -119,38 +138,57 @@
   margin-top: 32px;
 }
 
-.tech-security-services-section-space {
-  height: 230px;
+.cloud-security-services-line {
+  width: 100%;
+  height: 1px;
+  background: #00000017;
+  margin-top: 80px;
+
 }
 
-.tech-security-services-navigation-mobile {
-  display: none;
-}
 
-@media screen and (max-width: 1300px) {
 
-  .tech-security-services-container {
-    display: flex;
+@media screen and (max-width: 1400px) {
+  .cloud-security-services-container {
     width: 97%;
-
   }
 
+
 }
+
 
 
 @media screen and (max-width: 900px) {
-  .tech-security-services-navigation-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 336px;
-    gap: 16px;
+
+  .cloud-security-services-main-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: -100px;
+    margin-top: 40px;
   }
 
-  .tech-security-services-nav-item-long {
+  .cloud-security-services-right-section-child {
+    padding-top: 0px;
+  }
+
+  .cloud-security-services-content {
+    padding-top: 150px;
+  }
+
+
+
+  .cloud-security-services-wrapper {
+    margin-top: 0px;
+  }
+
+
+
+  .cloud-security-services-nav-item-long {
     padding-right: 12px;
   }
 
-  .tech-security-services-nav-item {
+  .cloud-security-services-nav-item {
 
     font-size: 18px;
     font-style: normal;
@@ -159,22 +197,26 @@
     transition: unset;
   }
 
-  .tech-security-services-nav-item {
+  .cloud-security-services-nav-item {
     cursor: unset;
     width: 115px;
     height: 40px;
   }
 
-  .tech-security-services-right-section {
+  .cloud-security-services-right-section {
     width: 100%;
   }
 
-  .tech-security-services-nav-section {
+  .cloud-security-services-nav-section {
     display: none;
   }
 
-  .tech-security-services-right-section-child {
-    margin-bottom: 80px;
+  .cloud-security-services-right-section-child {
+    margin-bottom: 20px;
+  }
+
+  .cloud-security-services-line {
+    margin-top: 40px;
   }
 }
 
@@ -184,25 +226,25 @@
 
 
 
-  .tech-security-services-container {
+  .cloud-security-services-container {
     width: 90%;
   }
 
-  .tech-security-services-right-section-child {
+  .cloud-security-services-right-section-child {
     height: auto;
 
   }
 
-  .tech-security-services-right-section-cards-container {
+  .cloud-security-services-right-section-cards-container {
     flex-direction: column;
   }
 
-  .tech-security-services-right-section-card {
+  .cloud-security-services-right-section-card {
     width: 100%;
     height: 88px;
   }
 
-  .tech-security-services-right-section-btn {
+  .cloud-security-services-right-section-btn {
     width: 100%;
 
   }

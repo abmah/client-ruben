@@ -5,57 +5,58 @@ import FaqImage from "../../../../../assets/faq.svg";
 import ExpandLogo from "../../../../../assets/expand.svg";
 import CollapseLogo from "../../../../../assets/collapse.svg";
 
-const data = {
+let data = {
   rows: [
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "What is Google Workspace?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+        "Google Workspace is a suite of cloud-based collaboration and productivity tools by Google, including Gmail, Google Docs, Google Drive, Google Meet, and more, designed to streamline communication and collaboration within organizations.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How is Google Workspace different from G Suite?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace is the evolution of G Suite, offering the same set of collaboration tools with enhanced features. It reflects Google's integrated approach to productivity, emphasizing communication and collaboration.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "What applications are included in Google Workspace?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace includes Gmail, Google Calendar, Google Drive, Google Docs, Google Sheets, Google Slides, Google Meet, Google Forms, and other collaborative tools for communication and productivity.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How does Google Workspace support remote work and collaboration?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace facilitates remote work by providing real-time collaboration on documents, video conferencing through Google Meet, and centralized storage on Google Drive, enabling seamless collaboration regardless of location.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Is Google Workspace suitable for small businesses?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, Google Workspace is suitable for businesses of all sizes, offering scalable plans tailored to the needs of small, medium, and large enterprises. It provides a cost-effective and collaborative solution for organizations.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Can I use my own domain with Google Workspace?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, Google Workspace allows users to use their own domain for email addresses, providing a professional and branded communication experience.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "How is data security handled in Google Workspace?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace employs robust security measures, including encryption, multi-factor authentication, and compliance certifications, ensuring the protection and privacy of user data.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Can I access Google Workspace applications offline?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, many Google Workspace applications, including Google Docs and Google Sheets, support offline access, allowing users to work without an internet connection. Changes made offline will sync when the connection is restored.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "What are the pricing plans for Google Workspace?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace offers various pricing plans, including Business Starter, Business Standard, Business Plus, and Enterprise editions. The pricing is per user per month and varies based on the features included in each plan.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How does Google Workspace integrate with other third-party applications?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Google Workspace supports integration with a wide range of third-party applications through the Google Workspace Marketplace, allowing users to enhance their productivity by connecting with tools and services they use regularly.",
     },
   ],
 };
@@ -65,7 +66,7 @@ function ExpandingLogo() {
     <img
       src={ExpandLogo}
       alt="expand"
-      className="tech-collaboration-expanding-logo"
+      className="cloud-collaboration-expanding-logo"
     ></img>
   );
 }
@@ -75,26 +76,26 @@ function CollapsingLogo() {
     <img
       src={CollapseLogo}
       alt="collapse"
-      className="tech-collaboration-collapsing-logo"
+      className="cloud-collaboration-collapsing-logo"
     ></img>
   );
 }
 
 function FAQ() {
   return (
-    <div className="tech-collaboration-faq-wrapper">
-      <div className="tech-collaboration-faq-container">
-        <div className="tech-collaboration-faq-left-section">
+    <div className="cloud-collaboration-faq-wrapper">
+      <div className="cloud-collaboration-faq-container">
+        <div className="cloud-collaboration-faq-left-section">
           <img
             src={FaqImage}
             alt="faq"
-            className="tech-collaboration-faq-image"
+            className="cloud-collaboration-faq-image"
           />
-          <h1 className="tech-collaboration-faq-title">
+          <h1 className="cloud-collaboration-faq-title">
             Frequently Asked Questions
           </h1>
         </div>
-        <div className="tech-collaboration-faq-section-container">
+        <div className="cloud-collaboration-faq-section-container">
           <Faq
             data={data}
             config={{

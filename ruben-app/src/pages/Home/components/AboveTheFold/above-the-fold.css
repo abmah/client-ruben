@@ -84,6 +84,12 @@
   gap: 16px;
 }
 
+.lets-talk-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .above-the-fold-button {
   margin-top: 0;
   width: 184px;

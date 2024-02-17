@@ -1,48 +1,50 @@
-import BlankImage from "../../../../../assets/infra-image-blank.svg";
+import GoodCompany from "./good-company.svg";
+import TalentAug from "./talent-aug.svg";
 import "./images.css";
 
 function Images() {
   return (
-    <div className="tech-data-images-wrapper">
-      <div className="tech-data-images-container">
-        <div className="tech-data-image-parent">
-          <div className="tech-data-image-text">
-            <div className="tech-data-image-text-title">
-              Lorem ipsum dolor sit amet consect
+    <div className="cloud-data-images-wrapper">
+      <div className="cloud-data-images-container">
+        <div className="cloud-data-image-parent">
+          <div className="cloud-data-image-text">
+            <div className="cloud-data-image-text-title">
+              Cloud Data Strategy
             </div>
-            <div className="tech-data-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+            <div className="cloud-data-image-text-subtitle">
+              We support to define directions and outcomes
             </div>
-            <div className="tech-data-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+            <div className="cloud-data-image-text-paragraph">
+              A successful cloud transformation in data relies on a well-defined
+              Strategy, serving as the foundation. This strategy provides
+              guidance to the entire organization, outlining the objectives and
+              reasons behind the transformation, and clearly articulating the
+              criteria for success.
             </div>
           </div>
-          <img src={BlankImage} alt="blank image" className="tech-data-image" />
+          <img
+            src={GoodCompany}
+            alt="blank image"
+            className="cloud-data-image cloud-data-image-top"
+          />
         </div>{" "}
-        <div className="tech-data-image-parent">
+        <div className="cloud-data-image-parent">
           {" "}
-          <img src={BlankImage} alt="blank image" className="tech-data-image" />
-          <div className="tech-data-image-text">
-            <div className="tech-data-image-text-title">
-              Lorem ipsum dolor sit amet consect
+          <img src={TalentAug} alt="blank image" className="cloud-data-image" />
+          <div className="cloud-data-image-text">
+            <div className="cloud-data-image-text-title">
+              Data Migration Support
             </div>
-            <div className="tech-data-image-text-subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut
+            <div className="cloud-data-image-text-subtitle">
+              Our team of Solutions Architects, Cloud Engineers, and Project
+              Managers will put you on the right execution path
             </div>
-            <div className="tech-data-image-text-paragraph">
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident, sunt in culpa qui officia
-              deserunt mollit anim id est laborum.
+            <div className="cloud-data-image-text-paragraph">
+              Our team will create deployment-ready landing zone and assist in
+              configuring resource management, identity and access management
+              (IAM), networking, billing management, logging and monitoring.
+              Disaster readiness plans will be developed, prioritizing the
+              resilience to critical data.
             </div>
           </div>
         </div>
