@@ -4,62 +4,76 @@ import FaqImage from "../../../../../assets/faq.svg";
 
 import ExpandLogo from "../../../../../assets/expand.svg";
 import CollapseLogo from "../../../../../assets/collapse.svg";
-
-const data = {
+let data = {
   rows: [
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title:
+        "Why should our organization consider outsourced customized training programs?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+        "Outsourced customized training programs offer specialized expertise, tailored content, and flexibility to meet your organization's unique needs, enhancing the effectiveness of training initiatives.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How can your training programs be customized for our specific requirements?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Training providers work closely with your organization to understand its goals, challenges, and culture, creating bespoke content and delivery methods aligned with your specific needs.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What advantages do customized training programs have over off-the-shelf solutions?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Customized training programs address specific challenges and goals unique to your organization, ensuring relevance, engagement, and practical applicability for participants.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can your training programs accommodate various learning styles and preferences?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, customized training programs can be designed to incorporate diverse learning styles, ensuring that the content resonates with a broad audience.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How your training programs save time and resources for our organization?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Outsourcing allows your organization to leverage the expertise of training professionals, reducing the time and resources spent on in-house program development and delivery.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How your training programs stay current with industry trends and best practices?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Training providers often have industry experts who continuously update content to reflect the latest trends and best practices, ensuring the training remains relevant.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can outsourced training programs be delivered virtually or in-person?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, training programs can be adapted to various delivery formats, including virtual, in-person, or blended approaches, depending on your organization's preferences and needs.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "What metrics can be used to measure the success of outsourced training programs?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Metrics may include improvements in performance, revenue growth, employee satisfaction, knowledge retention, and the application of newly acquired skills on the job.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can outsourced training programs be adapted for global teams with diverse cultural backgrounds?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, training content can be customized to be culturally sensitive and relevant, ensuring its effectiveness across diverse global teams.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can outsourced training programs be scaled for both small and large organizations?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, training providers can scale programs to accommodate the size of your organization, ensuring consistency and effectiveness across different scales.",
+    },
+    {
+      title:
+        "How can we ensure the confidentiality of sensitive information when outsourcing training programs?",
+      content:
+        "We ensure robust confidentiality agreements and security measures in place to protect sensitive organizational information.",
     },
   ],
 };
-
 function ExpandingLogo() {
   return (
     <img

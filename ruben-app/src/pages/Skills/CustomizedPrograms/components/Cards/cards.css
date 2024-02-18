@@ -1,6 +1,6 @@
-/* talent-programs cards section */
+/* skills-programs cards section */
 
-.talent-programs-cards-wrapper {
+.skills-programs-cards-wrapper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -11,7 +11,8 @@
   margin-top: 40px;
 }
 
-.talent-programs-cards-container {
+.skills-programs-cards-container {
+
   width: 80%;
   height: 100%;
   display: flex;
@@ -20,18 +21,18 @@
   gap: 20px;
 }
 
-.talent-programs-card {
+.skills-programs-card {
   max-width: 416px;
   width: 30%;
-  height: 100%;
-  background: #eff2f5;
+  height: 500px;
+  border: 1px #718096 solid;
   border-radius: 24px;
   padding: 20px;
   box-sizing: border-box;
   min-height: 477px;
 }
 
-.talent-programs-card-header {
+.skills-programs-card-header {
   margin-top: 32px;
   width: 100px;
   color: #192430;
@@ -41,20 +42,22 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  background: #F9B934;
+  background: #f9b934;
   border-radius: 24px;
   margin-bottom: 22px;
 }
 
-.talent-programs-card-title {
-  margin-bottom: 46px;
+.skills-programs-card-title {
+
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
+  height: 70px;
+
   line-height: 40px;
 }
 
-.talent-programs-card-paragraph {
+.skills-programs-card-paragraph {
   color: #192430;
   font-size: 18px;
   font-style: normal;
@@ -62,63 +65,43 @@
   line-height: 32px;
 }
 
-/* talent-programs cards section */
 
-/* talent-programs image section */
 
-/* ... (previous styles) ... */
+@media screen and (max-width:1400px) {
 
-/* talent-programs image section */
-
-@media screen and (max-width: 1000px) {
-  .talent-programs-cards-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .talent-programs-image-parent {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 362px;
-  }
-
-  .talent-programs-above-the-fold-img {
-    width: 100%;
-
+  .skills-programs-card-paragraph {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width:1300px) {
-  .talent-programs-images-container {
-    max-width: 97%;
-  }
 
-  .talent-programs-cards-container {
-    width: 97%;
+
+  .skills-programs-cards-container {
+    width: 90%;
 
   }
 
-  .talent-programs-card {
+  .skills-programs-card {
     width: 100%;
     max-width: 362px;
     min-height: 410px;
   }
 
-  .talent-programs-card-title {
+  .skills-programs-card-title {
     font-size: 24px;
     font-style: normal;
     line-height: normal;
   }
 
-  .talent-programs-card-paragraph {
+  .skills-programs-card-paragraph {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
   }
 
-  .talent-programs-image {
+  .skills-programs-image {
     border-radius: 24px;
     max-width: 100%;
     height: 385px;
@@ -127,28 +110,38 @@
     gap: 20px;
   }
 
-  .talent-programs-image-text-title {
+  .skills-programs-image-text-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
 
-  .talent-programs-image-text-subtitle {
+  .skills-programs-image-text-subtitle {
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 38px;
   }
 
-  .talent-programs-card-paragraph {
+  .skills-programs-card-paragraph {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
   }
 
-  .talent-programs-image-text {
+  .skills-programs-image-text {
     max-width: 500px;
   }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .skills-programs-cards-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+
 }

@@ -5,6 +5,7 @@ import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./programs.json";
+import { Link } from "react-router-dom";
 function AboveTheFold() {
   const container = useRef(null);
 
@@ -23,22 +24,35 @@ function AboveTheFold() {
     };
   }, []); // Empty dependency array to run the effect only once
 
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="skills-programs-above-the-fold-wrapper">
       <div className="skills-programs-above-the-fold-container">
         <div className="skills-programs-above-the-fold-left-section-wrapper">
           <div className="skills-programs-above-the-fold-left-section">
             <h1 className="skills-programs-above-the-fold-main-title">
-              Modernize You <strong>programs Experts</strong> to Scale and
-              Innovate
+              Customized <strong> upskilling programs</strong> designed to drive
+              change
             </h1>
             <div className="skills-programs-above-the-fold-button-container">
-              <button className="skills-programs-learn-more-button">
+              <button
+                onClick={handleLearnMoreClick}
+                className="skills-programs-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="skills-programs-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="skills-programs-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>

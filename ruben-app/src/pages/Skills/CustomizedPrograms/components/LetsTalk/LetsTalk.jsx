@@ -1,6 +1,7 @@
 import "./lets-talk.css";
 import LetsTalkLogo from "../../../../../assets/lets-talk-logo.svg";
 import TopRightArrow from "../../../../../assets/top-right-arrow.svg";
+import { Link } from "react-router-dom";
 
 function LetsTalk() {
   return (
@@ -13,16 +14,19 @@ function LetsTalk() {
         ></img>
         <h1 className="skills-programs-lets-talk-section-title">Let’s Talk!</h1>
         <p className="skills-programs-lets-talk-section-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exerc.
+          Contact us for inquiries, feedback, or any assistance you may need.
+          Our team is ready to respond promptly to discuss and clarify any
+          questions you may have.
         </p>
-        <button className="skills-programs-lets-talk-section-button">
+        <Link
+          to="/contact"
+          className="skills-programs-lets-talk-section-button"
+        >
           <p>CONTACT US</p>
           <div className="skills-programs-contact-us-button-img">
             <img src={TopRightArrow} alt="top-right-arrow" />
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );

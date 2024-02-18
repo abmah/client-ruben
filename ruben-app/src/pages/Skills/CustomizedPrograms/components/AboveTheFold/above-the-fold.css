@@ -49,7 +49,7 @@
   gap: 20px;
 }
 
-.skills-programs-above-the-fold-button-container button {
+.skills-programs-above-the-fold-button-container * {
   width: 184px;
   height: 56px;
   flex-shrink: 0;
@@ -71,6 +71,9 @@
 .skills-programs-get-in-contact-button {
   background-color: transparent;
   border: 2px solid #192430;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-programs-above-the-fold-img {
@@ -111,7 +114,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .skills-programs-cards-container {
+  /* .skills-programs-cards-container {
     flex-direction: column;
     gap: 20px;
   }
@@ -121,7 +124,7 @@
     gap: 20px;
     width: 100%;
     max-width: 362px;
-  }
+  } */
 
   .skills-programs-above-the-fold-img {
     right: -120px;
@@ -135,16 +138,14 @@
     font-size: 36px;
   }
 
-  .skills-programs-get-in-contact-button {
-    display: none;
-  }
+
 
   .skills-programs-above-the-fold-left-section {
     width: 100%;
   }
 
-  .skills-programs-above-the-fold-button-container .skills-programs-learn-more-button {
-    width: 100%;
+  .skills-programs-above-the-fold-button-container {
+    display: none;
   }
 
   .skills-programs-above-the-fold-img {

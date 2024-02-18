@@ -70,8 +70,8 @@ function Header() {
             />
           </div>
           <div className="header-menu">
-            <Link to="about" className="menu-item">
-              <p>About</p>
+            <Link to="/" className="menu-item menu-item-about">
+              <p>Home</p>
             </Link>
             <div className="menu-item menu-item-talent">
               <p>Talent</p>
