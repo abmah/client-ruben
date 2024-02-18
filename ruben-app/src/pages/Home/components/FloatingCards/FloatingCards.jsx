@@ -184,8 +184,8 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
               <div className="floating-card-content-second"></div>
               <div className="floating-card-content-third">
                 <p className="floating-card-content-third-text floating-card-content-third-text-first">
-                  What if you could reshuffle your team&apos;s <br /> expertise
-                  and resources whenever needed?
+                  What if you could reshuffle your team's <br /> expertise and
+                  resources whenever needed?
                 </p>
                 <p className="floating-card-content-third-text floating-card-content-third-text-second">
                   if you could flexibly add and reduce members?

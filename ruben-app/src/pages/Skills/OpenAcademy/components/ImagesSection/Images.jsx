@@ -40,7 +40,7 @@ function Images() {
               Comprehensive yet step by setp
             </div>
             <div className="skills-academy-image-text-subtitle">
-              You can&apos;t learn everything in few days!
+              You can't learn everything in few days!
             </div>
             <div className="skills-academy-image-text-paragraph">
               We understand that transitioning from novice to expert takes time.

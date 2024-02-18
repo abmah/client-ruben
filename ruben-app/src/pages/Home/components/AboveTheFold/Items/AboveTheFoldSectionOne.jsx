@@ -30,7 +30,7 @@ function AboveTheFoldSectionOne({ scrollToRef }) {
             to="/contact"
             className="above-the-fold-button lets-talk-button"
           >
-            Let&apos;s Talk
+            Let's Talk
           </Link>
         </div>
         <div className="above-the-fold-section-navigation">
