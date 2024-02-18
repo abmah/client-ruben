@@ -219,22 +219,17 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
               <div className="floating-card-content-second"></div>
               <div className="floating-card-content-third">
                 <p className="floating-card-content-third-text floating-card-content-third-text-first">
-                  What if your teams could easily stay ahead of the curve,
-                  uplifting their productivity?
+                  You are looking to access customized learnings, focused only
+                  on relevant job skills?
                 </p>
                 <p className="floating-card-content-third-text floating-card-content-third-text-second">
-                  if they could learn latest tools and features adjusted <br />{" "}
-                  to their job scope?
+                  Your business is looking to deliver outcome-driven, scaled
+                  learning experience to its employees or customers?
                 </p>
                 <p className="floating-card-content-third-text floating-card-content-third-text-third">
-                  What if you could provide your stakeholders (e.g. customers)
-                  with customized learning experience on scale?
+                  Check how our Upskilling services help boosting growth.
                 </p>
 
-                <p className="floating-card-content-third-text floating-card-content-third-text-fourth">
-                  Check how our Upskilling services help boost <br />{" "}
-                  productivity and growth.
-                </p>
                 <div className="floating-card-link">
                   <div to="infrastructure" onClick={() => scrollToRef(2)}>
                     Learn More
