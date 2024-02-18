@@ -8,7 +8,7 @@ function Cards() {
           <div className="skills-academy-card-title">Learn for the job</div>
           <p className="skills-academy-card-paragraph">
             If you aim to enter or progress in the thriving digital industry,
-            you&pos;re in the right spot. This course provides comprehensive
+            you're in the right spot. This course provides comprehensive
             knowledge of the essential tools required for a career in this
             field. It also enables advancing your practical skills in managing
             digital campaigns.
@@ -21,8 +21,8 @@ function Cards() {
             Digital campaigns are a powerful tool for business growth, offering
             a targeted approach to reach potential customers. Through our
             guidance you will learn how online channels such as social media,
-            search engines, and email can enhance your company&pos;s visibility
-            and help generate leads.
+            search engines, and email can enhance your company's visibility and
+            help generate leads.
           </p>
         </div>
         <div className="skills-academy-card">
