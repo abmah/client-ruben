@@ -73,12 +73,12 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
 
       {currentLevel === "main" ? (
         <>
-          <Link to="about" className="mobile-menu-main-item">
+          {/* <Link to="about" className="mobile-menu-main-item">
             <p>About</p>
             <div className="right-facing-arrow about-mobile-menu-arrow">
               <img src={RightFacingArrowBlue} alt="right-facing-arrow" />
             </div>
-          </Link>
+          </Link> */}
           <div
             className="mobile-menu-main-item mobile-menu-main-item-second"
             onClick={() => handleUpdateCurrentLevel("subTalent")}

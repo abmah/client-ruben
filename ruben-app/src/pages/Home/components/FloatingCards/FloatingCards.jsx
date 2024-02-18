@@ -226,7 +226,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                   Your business is looking to deliver outcome-driven, scaled
                   learning experience to its employees or customers?
                 </p>
-                <p className="floating-card-content-third-text floating-card-content-third-text-third">
+                <p className="floating-card-content-third-text floating-card-content-third-text-fourth">
                   Check how our Upskilling services help boosting growth.
                 </p>
 
