@@ -15,10 +15,10 @@ function ContactByDep() {
               <img src={Talent} alt="talent" />
             </div>
             <h1>Talent</h1>
-            <p className="contact-by-dep-phone-number">+00 00 000 00 00</p>
-            <p className="contact-by-dep-email">talent@dfme.com</p>
+            <p className="contact-by-dep-phone-number">+971 58 104 34 75</p>
+            <p className="contact-by-dep-email">talent@digital-future.me</p>
             <p className="contact-by-dep-time">
-              <strong>M-F </strong>8:00 AM - 4:00 PM (GMT +4)
+              <strong>M-F </strong>8:00 AM - 6:00 PM GST
             </p>
           </div>
           <div className="contact-by-dep-card">
@@ -26,10 +26,10 @@ function ContactByDep() {
               <img src={Skills} alt="talent" />
             </div>
             <h1>Skills</h1>
-            <p className="contact-by-dep-phone-number">+00 00 000 00 00</p>
-            <p className="contact-by-dep-email">talent@dfme.com</p>
+            <p className="contact-by-dep-phone-number">+971 50 465 9425</p>
+            <p className="contact-by-dep-email">skills@digital-future.me</p>
             <p className="contact-by-dep-time">
-              <strong>M-F </strong>8:00 AM - 4:00 PM (GMT +4)
+              <strong>M-F </strong>8:00 AM - 6:00 PM GST
             </p>
           </div>
           <div className="contact-by-dep-card">
@@ -37,10 +37,10 @@ function ContactByDep() {
               <img src={Tech} alt="talent" />
             </div>
             <h1>Tech</h1>
-            <p className="contact-by-dep-phone-number">+00 00 000 00 00</p>
-            <p className="contact-by-dep-email">talent@dfme.com</p>
+            <p className="contact-by-dep-phone-number">+971 52 308 92 09</p>
+            <p className="contact-by-dep-email">cloud@digital-future.me</p>
             <p className="contact-by-dep-time">
-              <strong>M-F </strong>8:00 AM - 4:00 PM (GMT +4)
+              <strong>M-F </strong>8:00 AM - 6:00 PM GST
             </p>
           </div>
           <div className="contact-by-dep-card">
@@ -48,10 +48,10 @@ function ContactByDep() {
               <img src={General} alt="talent" />
             </div>
             <h1>General Office</h1>
-            <p className="contact-by-dep-phone-number">+00 00 000 00 00</p>
-            <p className="contact-by-dep-email">talent@dfme.com</p>
+            <p className="contact-by-dep-phone-number">+971 58 104 3475</p>
+            <p className="contact-by-dep-email">hello@digital-future.me</p>
             <p className="contact-by-dep-time">
-              <strong>M-F </strong>8:00 AM - 4:00 PM (GMT +4)
+              <strong>M-F </strong>8:00 AM - 6:00 PM GST
             </p>
           </div>
         </div>

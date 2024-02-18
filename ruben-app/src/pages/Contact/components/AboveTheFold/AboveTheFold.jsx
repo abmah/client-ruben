@@ -10,9 +10,9 @@ function AboveTheFold() {
             <div>
               <h1 className="contact-above-the-fold-main-title">Contact Us</h1>
               <p className="contact-above-the-fold-paragraph">
-                Lorem ipsum dolor sit amet,{" "}
-                <strong>consectetur adipiscing elit,</strong> sed do eiusmod
-                tempor
+                Contact us for{" "}
+                <strong> inquiries, feedback, or assistance.</strong> Our team
+                is ready to respond promptly, within 1 hour during working time.
               </p>
             </div>
             <div className="contact-atf-img">

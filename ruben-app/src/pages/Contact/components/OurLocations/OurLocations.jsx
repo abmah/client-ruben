@@ -10,7 +10,8 @@ function OurLocations() {
             <div className="our-locations-card-header">
               <img src={Pin} alt="location-pin" />
               <p>
-                Dubai <br /> 62 Marchmont St, London WC1N 1AB, United Kingdom
+                Dubai, UAE <br /> Dubai Internet City, Innovation Hub 2A
+                Building
               </p>
             </div>
           </div>
@@ -18,18 +19,18 @@ function OurLocations() {
             <div className="our-locations-card-header">
               <img src={Pin} alt="location-pin" />
               <p>
-                Dubai <br /> 62 Marchmont St, London WC1N 1AB, United Kingdom
+                Riaydh, KSA <br /> Riyadh, Al Mas Tower, Al Olaya
               </p>
             </div>
           </div>
-          <div className="our-locations-card">
+          {/* <div className="our-locations-card">
             <div className="our-locations-card-header">
               <img src={Pin} alt="location-pin" />
               <p>
                 Dubai <br /> 62 Marchmont St, London WC1N 1AB, United Kingdom
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
