@@ -42,7 +42,7 @@
 .footer-line {
   height: 1px;
   width: 100%;
-  background-color: #B2B9C8;
+  background-color: #b2b9c85c;
   margin-top: 92px;
 
 }
@@ -153,5 +153,10 @@
 
   .footer-bottom-content {
     align-items: center;
+  }
+
+  .footer-line {
+    width: 90%;
+    margin: 50px auto 0 auto;
   }
 }

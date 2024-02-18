@@ -133,7 +133,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
   }, []);
   useEffect(() => {
     const mm = gsap.matchMedia();
-    const breakPoint = 900;
+    const breakPoint = 0;
 
     let ctx = gsap.context(() => {
       mm.add(

@@ -218,100 +218,73 @@
 }
 
 
-@media screen and (max-width:900px) {
-
-  .floating-cards-container {
-    height: fit-content;
-  }
-
-  .floating-cards-container br {
-    display: none;
-  }
-
-
-  .floating-card-content-first {
-    display: none;
-  }
-
-  .floating-card-content-second {
-    display: none
-  }
-
-
-  .floating-card {
-    position: relative;
-    top: unset;
-    left: unset;
-
-  }
-
-
-  .floating-card-one,
-  .floating-card-two,
-  .floating-card-three {
-    left: 0;
-    right: 0;
-    margin: unset;
-  }
-
-  .floating-card-background {
-    display: none;
-  }
-
-  .spacing {
-    height: 0;
-  }
-
-  .spacing-two {
-    height: 0;
-  }
-
+@media screen and (max-width: 900px) {
 
   .floating-cards-background-text {
-    position: static;
+    font-size: 10vw;
   }
 
-  .floating-card {
-    transition: unset;
 
-
-  }
-
-  .floating-card:hover .floating-card-content {
-    transform: unset;
-
-  }
 
   .floating-card-link {
-    position: absolute;
-    top: 330px;
+
+
+    bottom: -30px;
+
+  }
+
+  .floating-card-content-third-text-third {
+    margin-bottom: 20px;
   }
 
 
-  .floating-card-content {
-    transition: unset;
+  .floating-card-content-title {
+
+
+    padding-left: 10px;
+
+    padding-right: 10px;
   }
 
-  .floating-cards-background {
-    height: unset;
-    width: unset;
-    position: unset;
-    pointer-events: unset;
+  .floating-card {
 
-    color: #192430;
-
-
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
+    width: 300px;
+    height: 450px;
   }
 
-  .floating-cards-background-text {
-    /* display: none; */
-    font-size: 24px;
+  .floating-card-background-first,
+  .floating-card-background-second,
+  .floating-card-background-third {
+
+    width: 250%;
+    left: -50%;
+  }
+
+  .floating-card p {
+    font-size: 18px;
+  }
+
+  .floating-card-content-third-text-first {
+    margin-top: 20px;
+  }
+
+  .floating-card-three {
+    left: 10%;
+  }
 
 
+}
+
+
+@media screen and (max-width:350px) {
+
+
+  .floating-card {
+    width: 250px;
+  }
+
+  .floating-card p {
+    font-size: 16px;
   }
 
 }

@@ -10,14 +10,7 @@ function Footer() {
             <Link to="/" className="footer-top-item footer-logo-container">
               <img src={DigitalFuture} alt="DigitalFuture" />
             </Link>
-            <div className="footer-top-item footer-top-item-about-contact">
-              <Link to="/about" className="footer-top-item-title">
-                About
-              </Link>
-              <Link to="/contact" className="footer-top-item-title">
-                Contact Us
-              </Link>
-            </div>
+
             <div className="footer-top-item">
               <a className="footer-top-item-title">Talent</a>
               <Link to="/digital-experts" className="footer-top-item-option">
@@ -66,16 +59,25 @@ function Footer() {
                 Security and Compliance
               </Link>
             </div>
+            <div className="footer-top-item footer-top-item-about-contact">
+              <p className="footer-top-item-title">Company</p>
+              <Link to="/about" className="footer-top-item-option">
+                About
+              </Link>
+              <Link to="/contact" className="footer-top-item-option">
+                Contact Us
+              </Link>
+            </div>
           </div>
           <div className="footer-line"></div>
-          <div className="footer-bottom-content">
+          {/* <div className="footer-bottom-content">
             <div className="footer-copyright">
               Copyright © 2023 DigitalFuture.Me
             </div>
             <div className="footer-bottom-right-content">
               Privacy, Terms of Use, Cookies
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
