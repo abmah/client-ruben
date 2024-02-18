@@ -7,7 +7,7 @@ function ContactUs() {
         <div className="contact-us-text-section">
           <h1 className="contact-us-title">Contact Us</h1>
           <h1 className="contact-us-sub-title">
-            Lorem Ipsum is simply dummy text of the printing
+            Contact us for inquiries, feedback, or any assistance you may need.
           </h1>
         </div>
 
@@ -73,7 +73,7 @@ function ContactUs() {
             </div>
           </div>
           <button className="contact-us-button">
-            <p>BUTTON</p>
+            <p>Submit</p>
             <div className="contact-us-button-arrow">
               <img src={TopRightArrow} alt="top-right-arrow" />
             </div>

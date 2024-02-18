@@ -1,5 +1,6 @@
 .skills-academy-lets-talk-section-wrapper {
-  margin-top: 200px;
+  margin-top: 50px;
+
 }
 
 .skills-academy-lets-talk-section-container {
@@ -63,10 +64,14 @@
 
 }
 
-.skills-academy-contact-us-button-img img {
-  margin-top: 16px;
-}
 
+
+.skills-academy-contact-us-button-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 @media screen and (max-width:600px) {
 

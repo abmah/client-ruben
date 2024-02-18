@@ -5,61 +5,64 @@ import FaqImage from "../../../../../assets/faq.svg";
 import ExpandLogo from "../../../../../assets/expand.svg";
 import CollapseLogo from "../../../../../assets/collapse.svg";
 
-const data = {
+let data = {
   rows: [
     {
-      title: "Nunc maximus, magna at ultricies elementum",
+      title: "Are your trainings suitable for beginners?",
       content:
-        "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam.",
+        "Absolutely. Digital marketing training often starts with foundational concepts, making it accessible for beginners. The courses typically progress to advanced topics to cater to diverse skill levels. Our goal is to teach you how to run a digital marketing campaign from scratch.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Which specific certifications I can receive?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "After completing the training, you will take official tests from Google to get 4 certifications (Google Analytics, Google Search Ads, Google Display Ads, Google Tag Manager). Our training and guidance will guarantee you have all the knowledge to successfully pass these tests and get officially certified by Google.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Will I get access to training materials?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, in addition to the live workshop training, you will have access to all the training material material, so you can review and test your knowledge at home.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title: "Are the trainings theoretical or practical?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "The trainings mostly focused on practical skills. In addition to learning about all the tools and strategies of digital advertising, you will implement your training by running live accounts on various platforms.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can I apply the knowledge gained from digital marketing training to my business?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, the practical knowledge acquired can be directly applied to your business. You'll learn how to develop and implement digital strategies tailored to your specific industry and target audience.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
-      content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+      title: "What formats do digital marketing training programs offer?",
+      content: "Our trainings are onsite, in Dubai Internet City.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Will digital marketing training cover the latest industry trends?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, our trainers stay updated with industry trends. You'll learn about the latest tools, techniques, and best practices to keep your skills current.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "How can digital marketing training help me understand analytics and data?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Training programs cover analytics tools and methodologies, enabling you to interpret data, measure campaign performance, and make data-driven decisions to optimize marketing strategies.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Can I network with professionals during digital marketing training?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Yes, we facilitate networking opportunities. You can connect with instructors, industry experts, and fellow participants, fostering valuable relationships within the digital marketing community.",
     },
     {
-      title: "Curabitur laoreet, mauris vel blandit fringilla",
+      title:
+        "Is digital marketing training a worthwhile investment for businesses?",
       content:
-        "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc",
+        "Absolutely. Investing in digital marketing training for you or your team enhances their skills, improves marketing efficiency, and ensures your business stays competitive in the rapidly evolving digital landscape. Your return on investment will be immediate and measurable.",
     },
   ],
 };
-
 function ExpandingLogo() {
   return (
     <img

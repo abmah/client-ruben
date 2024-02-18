@@ -4,7 +4,7 @@
   width: 100%;
   min-height: 800px;
   color: #192430;
-  margin-top: 40px;
+
 }
 
 .skills-academy-images-container {
@@ -17,9 +17,9 @@
   flex-direction: column;
   align-items: center;
   min-height: 500px;
-  gap: 160px;
+  gap: 80px;
   color: #192430;
-  margin-top: 240px;
+  margin-top: 90px;
 }
 
 .skills-academy-image-parent {
@@ -31,7 +31,8 @@
 }
 
 .skills-academy-image {
-  max-width: 551px;
+  max-width: 500px;
+  max-height: 381px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,19 +66,26 @@
   line-height: 30px;
 }
 
-/* skills-academy image section */
+
+
+
+
 
 @media screen and (max-width:1300px) {
   .skills-academy-images-container {
-    max-width: 97%;
+    max-width: 90%;
+
   }
+
+
+
 
   .skills-academy-image {
     border-radius: 24px;
-    max-width: 100%;
-    height: 385px;
+    width: 400px;
+    max-height: 300px;
     order: -2;
-    object-fit: cover;
+    object-fit: contain;
     gap: 20px;
   }
 
@@ -104,61 +112,54 @@
 
   .skills-academy-image-text {
     max-width: 500px;
+  }
+
+
+
+  .skills-academy-image {
+    margin-bottom: 40px;
   }
 }
 
-/* Add other media queries if necessary */
 
-/* skills-academy image section */
 
-/* ... (previous styles) ... */
+@media screen and (max-width:1000px) {
 
-@media screen and (max-width:1300px) {
-  .skills-academy-images-container {
-    max-width: 97%;
+  .skills-academy-image-parent {
+    flex-direction: column;
+
+
   }
 
   .skills-academy-image {
-    border-radius: 24px;
-    max-width: 100%;
-    height: 385px;
-    order: -2;
-    object-fit: cover;
-    gap: 20px;
+
+    order: 4;
+
+
+
   }
 
-  .skills-academy-image-text-title {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .skills-academy-image-text-subtitle {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
-  }
-
-  .skills-academy-image-paragraph {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-  }
-
-  .skills-academy-image-text {
-    max-width: 500px;
+  .skills-academy-image-top {
+    margin-bottom: -30px;
+    margin-top: -30px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .skills-academy-above-the-fold-main-title {
-    font-size: 36px;
+
+
+  .skills-academy-image {
+    width: 100%;
+    max-height: 300px;
+
+
   }
 
-  /* ... (other relevant styles) ... */
-}
+  .skills-academy-images-container {
+    margin-top: 100px;
+    gap: 50px;
 
-/* Add other media queries if necessary */
+  }
+
+
+}

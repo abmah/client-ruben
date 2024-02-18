@@ -4,6 +4,7 @@ import lottie from "lottie-web";
 import { useRef, useEffect } from "react";
 
 import animationData from "./academy.json";
+import { Link } from "react-router-dom";
 function AboveTheFold() {
   const container = useRef(null);
 
@@ -21,22 +22,35 @@ function AboveTheFold() {
       animation.destroy();
     };
   }, []); // Empty dependency array to run the effect only once
+
+  const handleLearnMoreClick = () => {
+    window.scrollBy({
+      top: 400,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="skills-academy-above-the-fold-wrapper">
       <div className="skills-academy-above-the-fold-container">
         <div className="skills-academy-above-the-fold-left-section-wrapper">
           <div className="skills-academy-above-the-fold-left-section">
             <h1 className="skills-academy-above-the-fold-main-title">
-              Modernize You <strong>academy Experts</strong> to Scale and
-              Innovate
+              Onsite trainings <strong>helping you learn</strong> most
+              sought-after digital skills.
             </h1>
             <div className="skills-academy-above-the-fold-button-container">
-              <button className="skills-academy-learn-more-button">
+              <button
+                onClick={handleLearnMoreClick}
+                className="skills-academy-learn-more-button"
+              >
                 Learn More
               </button>
-              <button className="skills-academy-get-in-contact-button">
+              <Link
+                to="/contact"
+                className="skills-academy-get-in-contact-button"
+              >
                 Get in contact
-              </button>
+              </Link>
             </div>
           </div>
         </div>

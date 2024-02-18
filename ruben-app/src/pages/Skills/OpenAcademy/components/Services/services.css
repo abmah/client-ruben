@@ -3,16 +3,31 @@
 }
 
 .skills-academy-services-container {
-  display: flex;
+
   width: 80%;
   margin: 0 auto;
-  color: #192430;
 
+}
+
+.skills-academy-services-main-title {
+  color: #192430;
+  margin-bottom: -40px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  max-width: 1200px;
+}
+
+
+.skills-academy-services-content {
+  color: #192430;
+  display: flex;
   gap: 20px;
 }
 
 .skills-academy-services-right-section {
-  width: 70%;
+  width: 80%;
 }
 
 .skills-academy-services-nav-section {
@@ -43,7 +58,7 @@
 }
 
 .active-skills {
-  background: #F9B934;
+  background: #f9b934;
   color: #192430;
 }
 
@@ -52,11 +67,13 @@
 }
 
 .skills-academy-services-right-section-child {
-  height: 600px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 900px;
+  padding-top: 70px;
+
+
 }
 
 .skills-academy-services-right-section-child-title {
@@ -111,6 +128,9 @@
   color: #222b38;
   font-size: 18px;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   line-height: normal;
   border: none;
@@ -118,32 +138,68 @@
   margin-top: 32px;
 }
 
-.skills-academy-services-section-space {
-  height: 230px;
+.skills-academy-services-line {
+  width: 100%;
+  height: 1px;
+  background: #00000017;
+  margin-top: 80px;
+
 }
 
-.skills-academy-services-navigation-mobile {
-  display: none;
+
+
+
+
+
+.skills-academy-services-right-section-card-text-title {
+  font-weight: 700;
+  margin: 0;
 }
 
-@media screen and (max-width: 1300px) {
+.skills-academy-services-right-section-card-text * {
+  margin: 0;
+  font-size: 14px;
+}
 
+
+
+
+@media screen and (max-width: 1400px) {
   .skills-academy-services-container {
-    display: flex;
     width: 97%;
-
   }
 
+
 }
+
 
 
 @media screen and (max-width: 900px) {
-  .skills-academy-services-navigation-mobile {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 336px;
-    gap: 16px;
+
+
+  .skills-academy-services-main-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: -100px;
+    margin-top: 40px;
   }
+
+  .skills-academy-services-right-section-child {
+    padding-top: 0px;
+  }
+
+  .skills-academy-services-content {
+    padding-top: 150px;
+  }
+
+
+
+  .skills-academy-services-wrapper {
+    margin-top: 0px;
+  }
+
+
 
   .skills-academy-services-nav-item-long {
     padding-right: 12px;
@@ -173,13 +229,25 @@
   }
 
   .skills-academy-services-right-section-child {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+  }
+
+  .skills-academy-services-line {
+    margin-top: 40px;
   }
 }
 
 
 @media screen and (max-width: 630px) {
 
+  .skills-academy-services-right-section-card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+
+  }
 
 
 

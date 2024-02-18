@@ -52,7 +52,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  height: 70px;
+  height: 100px;
 
   line-height: 40px;
 }
@@ -82,6 +82,13 @@
 
 @media screen and (max-width:1300px) {
 
+  .talent-operations-card-title {
+
+
+    height: 70px;
+
+
+  }
 
   .talent-operations-cards-container {
     width: 90%;

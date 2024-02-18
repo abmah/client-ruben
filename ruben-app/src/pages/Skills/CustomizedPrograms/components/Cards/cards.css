@@ -52,7 +52,7 @@
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  height: 70px;
+  height: 100px;
 
   line-height: 40px;
 }
@@ -76,6 +76,13 @@
 
 @media screen and (max-width:1300px) {
 
+  .skills-programs-card-title {
+
+
+    height: 70px;
+
+
+  }
 
   .skills-programs-cards-container {
     width: 90%;

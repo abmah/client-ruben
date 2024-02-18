@@ -4,6 +4,7 @@ import FaqImage from "../../../../../assets/faq.svg";
 
 import ExpandLogo from "../../../../../assets/expand.svg";
 import CollapseLogo from "../../../../../assets/collapse.svg";
+
 let data = {
   rows: [
     {
@@ -74,6 +75,7 @@ let data = {
     },
   ],
 };
+
 function ExpandingLogo() {
   return (
     <img

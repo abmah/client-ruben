@@ -41,8 +41,8 @@ function Home() {
       {/* <BoostApp />
       <BoostAppTwo />
       <BoostAppThree /> */}
-      <Achievements />
-      <WhoWeAre />
+      {/* <Achievements />
+      <WhoWeAre /> */}
       {/* <UnReveal /> */}
       <ContactUs />
       <br />

@@ -421,6 +421,8 @@
   position: absolute;
   top: 17px;
   right: 16px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .language-change-button:focus {
@@ -443,6 +445,8 @@
   right: 0;
   text-align: left;
   padding-left: 8px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .language-change-button option {

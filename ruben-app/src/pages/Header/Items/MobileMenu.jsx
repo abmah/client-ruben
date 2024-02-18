@@ -113,9 +113,14 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
         </div>
       )}
       <div className="mobile-menu-bottom">
-        <div className="whatsapp-logo-button">
+        <a
+          href="https://api.whatsapp.com/send?phone=971581043475&text=Hello"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-logo-button"
+        >
           <img src={WhatsappLogo} alt="whatsapp-logo" />
-        </div>
+        </a>
         <Link to="contact" className="contact-button contact-button-mobile">
           Contact
         </Link>

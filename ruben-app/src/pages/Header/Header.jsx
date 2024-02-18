@@ -88,9 +88,14 @@ function Header() {
           </div>
         </div>
         <div className="header-rightside">
-          <button className="whatsapp-logo-button">
+          <a
+            href="https://api.whatsapp.com/send?phone=971581043475&text=Hello"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp-logo-button"
+          >
             <img src={WhatsappLogo} alt="whatsapp-logo" />
-          </button>
+          </a>
 
           <Link to="contact" className="contact-button">
             Contact
