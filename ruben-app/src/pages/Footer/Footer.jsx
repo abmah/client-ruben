@@ -61,9 +61,9 @@ function Footer() {
             </div>
             <div className="footer-top-item footer-top-item-about-contact">
               <p className="footer-top-item-title">Company</p>
-              <Link to="/about" className="footer-top-item-option">
+              {/* <Link to="/about" className="footer-top-item-option">
                 About
-              </Link>
+              </Link> */}
               <Link to="/contact" className="footer-top-item-option">
                 Contact Us
               </Link>
