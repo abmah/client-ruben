@@ -5,6 +5,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Clowd from "../../../../../assets/clowd.svg";
 import { Link } from "react-router-dom";
 
+import AreasOrSeniority from "../../../../../assets/talent_areas_OR_seniority.svg";
+
+import Industries from "../../../../../assets/talent_industries_squares.svg";
+
+import SkillsetsOrSpecialisiztion from "../../../../../assets/talent_skillsets_OR_specialisiztion_squares.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
@@ -112,51 +118,51 @@ function Services() {
                 </p>
                 <div className="talent-strategy-services-right-section-cards-container">
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Retail</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Ecommerce</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Fintech</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Energy</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Public Sector</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Transporation</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Sports</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Entertainment</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Culture</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Manufacturing</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Agriculture</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Consumer Goods</p>
                   </div>
                 </div>
@@ -179,39 +185,39 @@ function Services() {
                 </p>
                 <div className="talent-strategy-services-right-section-cards-container">
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Analyst</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Associate Consultant</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Senior Associate Consulant</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Consultant</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Senior Consultant</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Case Team Leader</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Project Manager</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Engagement Manager</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={AreasOrSeniority} alt="services-image" />
                     <p>Principal</p>
                   </div>
                 </div>
@@ -233,39 +239,66 @@ function Services() {
                 </p>
                 <div className="talent-strategy-services-right-section-cards-container">
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Opening a New Market</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Supply Chain</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Production</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Sourcing</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>New Business Line</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Organizational Design</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Organizational Efficiency</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Ecommerce & Digital</p>
                   </div>
                   <div className="talent-strategy-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img
+                      src={SkillsetsOrSpecialisiztion}
+                      alt="services-image"
+                    />
                     <p>Regulatory Transformation</p>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import "./services.css";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Clowd from "../../../../../assets/clowd.svg";
+import Clowd from "../../../../../assets/skills_education squares icon.svg";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);

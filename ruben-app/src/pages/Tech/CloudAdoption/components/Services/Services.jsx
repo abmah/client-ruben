@@ -133,6 +133,10 @@ function Services() {
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
+                    <p>Hybrid Cloud</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
                     <p>Serverless Adoption Planning</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
@@ -142,6 +146,14 @@ function Services() {
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
                     <p>Data Protection Analysis</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Cloud Security</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Fin Ops</p>
                   </div>
                 </div>
                 <Link
@@ -176,7 +188,11 @@ function Services() {
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>Data Location</p>
+                    <p>IaC</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>Data Lakes and Warehouse</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
@@ -185,6 +201,17 @@ function Services() {
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
                     <p>Lift & Shift</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>DevSecOps</p>
+                  </div>
+                  <div className="cloud-adoption-services-right-section-card">
+                    <img src={Clowd} alt="services-image" />
+                    <p>
+                      3rd Part Security IntegraFon (Cisco, F5, ForFnet, Pal
+                      Alto)
+                    </p>
                   </div>
                 </div>
                 <Link
@@ -249,15 +276,15 @@ function Services() {
                 <div className="cloud-adoption-services-right-section-cards-container">
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>Dev Ops</p>
+                    <p>Continued Cost Optimisation</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>Dev Sec Ops</p>
+                    <p>Continued Cloud Workload Modernization</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>Fin Ops</p>
+                    <p>Continued Security Optimisation</p>
                   </div>
                 </div>
                 <Link

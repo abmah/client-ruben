@@ -1,5 +1,5 @@
-import GoodCompany from "./good-company.svg";
-import TalentAug from "./talent-aug.svg";
+import CloudStrategy from "./cloud-strategy.svg";
+import CloudMigration from "./cloud-migration.svg";
 import "./images.css";
 
 function Images() {
@@ -23,14 +23,18 @@ function Images() {
             </div>
           </div>
           <img
-            src={GoodCompany}
+            src={CloudStrategy}
             alt="blank image"
             className="cloud-data-image cloud-data-image-top"
           />
         </div>{" "}
         <div className="cloud-data-image-parent">
           {" "}
-          <img src={TalentAug} alt="blank image" className="cloud-data-image" />
+          <img
+            src={CloudMigration}
+            alt="blank image"
+            className="cloud-data-image"
+          />
           <div className="cloud-data-image-text">
             <div className="cloud-data-image-text-title">
               Data Migration Support

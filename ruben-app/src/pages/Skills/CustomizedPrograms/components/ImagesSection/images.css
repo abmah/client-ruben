@@ -31,7 +31,7 @@
 }
 
 .skills-programs-image {
-  max-width: 500px;
+  max-width: 400px;
   max-height: 381px;
   display: flex;
   justify-content: center;
@@ -143,6 +143,16 @@
     margin-bottom: -30px;
     margin-top: -30px;
   }
+
+  .skills-programs-image {
+
+    max-height: 381px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
 }
 
 @media screen and (max-width: 700px) {
@@ -161,5 +171,13 @@
 
   }
 
+  .skills-programs-image {
+
+    margin: 20px 0;
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 }

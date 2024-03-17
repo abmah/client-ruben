@@ -1,5 +1,5 @@
-import GoodCompany from "./good-company.svg";
-import TalentAug from "./talent-aug.svg";
+import GoodCompany from "./cust-training.svg";
+import TalentAug from "./digital-biz.svg";
 import "./images.css";
 
 function Images() {

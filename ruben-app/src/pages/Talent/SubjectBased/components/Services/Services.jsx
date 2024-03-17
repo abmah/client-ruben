@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Clowd from "../../../../../assets/clowd.svg";
 import { Link } from "react-router-dom";
 
+import Industries from "../../../../../assets/talent_industries_squares.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
@@ -112,51 +114,51 @@ function Services() {
                 </p>
                 <div className="talent-subject-services-right-section-cards-container">
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Retail</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Ecommerce</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Fintech</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Energy</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Public Sector</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Transporation</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Sports</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Entertainment</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Culture</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Manufacturing</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Agriculture</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={Industries} alt="services-image" />
                     <p>Consumer Goods</p>
                   </div>
                 </div>
