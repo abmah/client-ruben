@@ -2,12 +2,13 @@ import "./services.css";
 import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Clowd from "../../../../../assets/clowd.svg";
+// import Clowd from "../../../../../assets/clowd.svg";
 import AreasOrSeniority from "../../../../../assets/talent_areas_OR_seniority.svg";
 
 import Industries from "../../../../../assets/talent_industries_squares.svg";
 
 import SkillsetsOrSpecialisiztion from "../../../../../assets/talent_skillsets_OR_specialisiztion_squares.svg";
+import JobPost from "../../../../../assets/job-post-icon.svg";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -365,51 +366,51 @@ function Services() {
                 </p>
                 <div className="talent-digital-services-right-section-cards-container">
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>SEM Specialist</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Digital Project Manager</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>PPC (Pay-Per-Click) Specialist</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Conversion Rate Optimization (CRO) Manager</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Marketing Automation Expert</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Digital Marketing Manager</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Predictive Analytics Specialist</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Big Data Engineer</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Business Intelligence Analyst</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Ecommerce Manager</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Machine Learning Engineer</p>
                   </div>
                   <div className="talent-digital-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Cloud Architect</p>
                   </div>
                 </div>

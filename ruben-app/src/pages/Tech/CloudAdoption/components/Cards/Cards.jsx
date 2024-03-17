@@ -4,7 +4,7 @@ function Cards() {
     <div className="cloud-adoption-cards-wrapper">
       <div className="cloud-adoption-cards-container">
         <div className="cloud-adoption-card">
-          <div className="cloud-adoption-card-header">Use Case</div>
+          <div className="cloud-adoption-card-header">Value</div>
           <div className="cloud-adoption-card-title">
             Future Proof Your IT Infrastructure
           </div>
@@ -16,7 +16,7 @@ function Cards() {
           </p>
         </div>
         <div className="cloud-adoption-card">
-          <div className="cloud-adoption-card-header">Use Case</div>
+          <div className="cloud-adoption-card-header">Value</div>
           <div className="cloud-adoption-card-title">
             Maximize IT Cost Efficiency
           </div>
@@ -28,7 +28,7 @@ function Cards() {
           </p>
         </div>
         <div className="cloud-adoption-card">
-          <div className="cloud-adoption-card-header">Use Case</div>
+          <div className="cloud-adoption-card-header">Value</div>
           <div className="cloud-adoption-card-title">
             Kick-off Your Serverless Journey
           </div>

@@ -36,8 +36,9 @@ function AboveTheFold() {
         <div className="cloud-adoption-above-the-fold-left-section-wrapper">
           <div className="cloud-adoption-above-the-fold-left-section">
             <h1 className="cloud-adoption-above-the-fold-main-title">
-              Modernize Your <br /> <strong> IT Infrastructure</strong> <br />{" "}
-              through Cloud Adoption and Migration
+              Modernize Your
+              <br /> <strong> IT Infrastructure</strong> <br />
+              with our Cloud Adoption and Managed
             </h1>
             <div className="cloud-adoption-above-the-fold-button-container">
               <button

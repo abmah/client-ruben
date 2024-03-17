@@ -141,7 +141,7 @@ function Services() {
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>VW workloads migration planning</p>
+                    <p>VM workloads migration planning</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
@@ -280,7 +280,7 @@ function Services() {
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
-                    <p>Continued Cloud Workload Modernization</p>
+                    <p>Post Migration Optimization</p>
                   </div>
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />

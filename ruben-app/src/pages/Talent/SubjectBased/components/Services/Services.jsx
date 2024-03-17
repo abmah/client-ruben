@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 import Industries from "../../../../../assets/talent_industries_squares.svg";
 
+import JobPost from "../../../../../assets/job-post-icon.svg";
+
 gsap.registerPlugin(ScrollTrigger);
 
 function Services() {
@@ -180,51 +182,51 @@ function Services() {
                 </p>
                 <div className="talent-subject-services-right-section-cards-container">
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Corporate Finance</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Cost Cutting</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Value Chain Improvements</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Production Efficiency</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Distribution Optimization</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Pricing Strategies</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Workforce Efficiency</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Performance Improvement</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Regulations</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Management Frameworks</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Risk Frameworks</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
-                    <img src={Clowd} alt="services-image" />
+                    <img src={JobPost} alt="services-image" />
                     <p>Public Policies</p>
                   </div>
                 </div>

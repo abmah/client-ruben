@@ -31,11 +31,11 @@ function BottomCards() {
           <div className="cloud-adoption-bottom-card cloud-adoption-bottom-card-blue">
             <div className="cloud-adoption-bottom-card-header-circle"></div>
             <div className="cloud-adoption-bottom-card-title">
-              Cloud Agnostic
+              Solution Agnostic
             </div>
             <div className="cloud-adoption-bottom-card-subtitle">
-              We are capable in extending full scope support with multi-cloud
-              environments including GCP, AWS and Azure
+              We are capable in extending full scope support with comprehensive
+              set of cloud product environments.
             </div>
           </div>
         </div>
