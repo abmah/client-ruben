@@ -101,7 +101,7 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
             className="mobile-menu-main-item mobile-menu-main-item-last"
             onClick={() => handleUpdateCurrentLevel("subTech")}
           >
-            <p>Tech Transformation</p>
+            <p>Cloud Transformation</p>
             <div className="right-facing-arrow">
               <img src={RightFacingArrow} alt="right-facing-arrow" />
             </div>

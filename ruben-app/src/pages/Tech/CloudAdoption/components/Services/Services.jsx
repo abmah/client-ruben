@@ -209,7 +209,7 @@ function Services() {
                   <div className="cloud-adoption-services-right-section-card">
                     <img src={Clowd} alt="services-image" />
                     <p>
-                      3rd Part Security IntegraFon (Cisco, F5, ForFnet, Pal
+                      3rd Party Security Integration (Cisco, F5, Fortinet, Palo
                       Alto)
                     </p>
                   </div>

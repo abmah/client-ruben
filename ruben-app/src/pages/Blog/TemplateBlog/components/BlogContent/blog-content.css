@@ -1,0 +1,129 @@
+.blog-content-wrapper {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.blog-content-container {
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  color: #192430;
+  width: 60%;
+}
+
+.blog-content-left-section {
+  min-width: 300px;
+}
+
+.blog-content-left-section-writer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #eff2f5;
+  padding-bottom: 25px;
+}
+
+.blog-content-left-section-writer {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.blog-content-left-section-category {
+  border-bottom: 2px solid #eff2f5;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.blog-content-left-section-category div {
+  background-color: #eff2f5;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  width: fit-content;
+  padding: 6px 15px;
+  margin-top: 25px;
+}
+
+.blog-content-left-section-social {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-content-right-section {
+  border-left: 2px solid #eff2f5;
+  padding-left: 40px;
+}
+
+.blog-content-image {
+  height: 454px;
+  border-radius: 24px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog-content-right-section p {
+  font-size: 18px;
+  line-height: 36px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+
+}
+
+
+.blog-content-right-section li {
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width:1300px) {
+  .blog-content-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .blog-content-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .blog-content-container {
+    flex-direction: column;
+  }
+
+  .blog-content-left-section {
+    min-width: unset;
+  }
+
+  .blog-content-right-section {
+    border-left: unset;
+    padding-left: 4px;
+  }
+
+  .blog-content-left-section {
+    max-width: 280px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .blog-content-left-section-category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}

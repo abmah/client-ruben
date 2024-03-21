@@ -47,7 +47,7 @@ function AboveTheFoldSectionTwo({ scrollToRef }) {
           </div>
           <div className="above-the-fold-section-navigation-child">
             <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue"></div>
-            <p>Tech Transformation</p>
+            <p>Cloud Transformation</p>
           </div>
         </div>
       </div>

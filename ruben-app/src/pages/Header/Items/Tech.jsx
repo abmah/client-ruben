@@ -36,7 +36,7 @@ function Tech() {
         className={`sub-menu sub-menu-tech ${isWrapperHidden ? "hidden" : ""}`}
       >
         <div className="sub-menu-first-item sub-menu-first-item-tech">
-          <p className="sub-menu-first-item-title">Tech Transformation</p>
+          <p className="sub-menu-first-item-title">Cloud Transformation</p>
           <div className="sub-menu-first-item-arrow">
             <img src={TopLeftArrow} alt="arrow" />
           </div>

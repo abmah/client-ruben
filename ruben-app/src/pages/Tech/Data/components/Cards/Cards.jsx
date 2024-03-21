@@ -4,7 +4,7 @@ function Cards() {
     <div className="cloud-data-cards-wrapper">
       <div className="cloud-data-cards-container">
         <div className="cloud-data-card">
-          <div className="cloud-data-card-header">Use Case</div>
+          <div className="cloud-data-card-header">Value</div>
           <div className="cloud-data-card-title">
             Future Proof Data Infrastructure
           </div>
@@ -16,7 +16,7 @@ function Cards() {
           </p>
         </div>
         <div className="cloud-data-card">
-          <div className="cloud-data-card-header">Use Case</div>
+          <div className="cloud-data-card-header">Value</div>
           <div className="cloud-data-card-title">
             Optimize Data Infrastructure Costs
           </div>
@@ -28,7 +28,7 @@ function Cards() {
           </p>
         </div>
         <div className="cloud-data-card">
-          <div className="cloud-data-card-header">Use Case</div>
+          <div className="cloud-data-card-header">Value</div>
           <div className="cloud-data-card-title">Kick-off Your AI Journey</div>
           <p className="cloud-data-card-paragraph">
             Data plays a foundational and critical role in supporting artificial

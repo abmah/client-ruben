@@ -1,0 +1,132 @@
+.blog-above-the-fold-wrapper {
+  margin-top: 120px;
+}
+
+.blog-above-the-fold-container {
+  width: 95%;
+  margin: 0 auto;
+
+  height: 516px;
+
+  display: flex;
+  overflow: hidden;
+}
+
+.blog-above-the-fold-left-section {
+  width: 70%;
+  border-radius: 24px;
+  display: flex;
+  background-color: #192430;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.blog-atf-left-section-main-text {
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 72px;
+
+
+}
+
+.blog-above-the-fold-left-section-container {
+
+  margin-left: 15%;
+}
+
+.blog-atf-left-section-main-text-highlight {
+  font-weight: 600;
+}
+
+.blog-above-the-fold-right-section {
+  overflow: hidden;
+  border-radius: 24px;
+
+}
+
+.blog-above-the-fold-right-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+
+}
+
+.blog-atf-left-section-header {
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .blog-above-the-fold-left-section-container {
+
+    margin-left: 10%;
+  }
+
+  .blog-atf-left-section-main-text {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+
+  .blog-above-the-fold-container {
+    height: 400px;
+  }
+
+  .blog-above-the-fold-left-section-container {
+
+    margin-left: 5%;
+  }
+
+  .blog-atf-left-section-main-text {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .blog-atf-left-section-header {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .blog-above-the-fold-wrapper {
+    margin-top: 100px;
+  }
+
+  .blog-above-the-fold-container {
+    flex-direction: column;
+    max-width: 500px;
+    height: unset;
+  }
+
+  .blog-above-the-fold-left-section {
+    width: 100%;
+    height: 469px;
+  }
+
+  .blog-atf-left-section-main-text {
+    font-size: 36px;
+    line-height: normal;
+
+  }
+
+  .blog-above-the-fold-left-section-container {
+    margin-left: 10px;
+  }
+
+  .blog-above-the-fold-right-section img {
+    height: 336px;
+    image-orientation: from-image;
+    object-position: 50% 50%;
+  }
+}

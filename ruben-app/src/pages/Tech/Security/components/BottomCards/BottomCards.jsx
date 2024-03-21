@@ -31,7 +31,7 @@ function BottomCards() {
           <div className="cloud-security-bottom-card cloud-security-bottom-card-blue">
             <div className="cloud-security-bottom-card-header-circle"></div>
             <div className="cloud-security-bottom-card-title">
-              Cloud Agnostic
+              Solution Agnostic
             </div>
             <div className="cloud-security-bottom-card-subtitle">
               We are capable in extending full scope support with multi-cloud

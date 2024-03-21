@@ -26,7 +26,9 @@ function BottomCards() {
           </div>
           <div className="cloud-data-bottom-card cloud-data-bottom-card-blue">
             <div className="cloud-data-bottom-card-header-circle"></div>
-            <div className="cloud-data-bottom-card-title">Cloud Agnostic</div>
+            <div className="cloud-data-bottom-card-title">
+              Solution Agnostic
+            </div>
             <div className="cloud-data-bottom-card-subtitle">
               We are capable in extending full scope support with multi-cloud
               environments including GCP, AWS and Azure

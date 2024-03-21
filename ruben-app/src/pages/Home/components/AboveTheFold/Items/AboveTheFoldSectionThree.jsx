@@ -44,7 +44,7 @@ function AboveTheFoldSectionThree({ scrollToRef }) {
           <div className="above-the-fold-section-navigation-child">
             <div className="above-the-fold-section-navigation-child-line section-three-tech"></div>
             <p className="above-the-fold-section-navigation-child-selected">
-              Tech Transformation
+              Cloud Transformation
             </p>
           </div>
         </div>
