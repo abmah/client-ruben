@@ -1,6 +1,7 @@
 import "./abovethefold.css";
 import BlogATFRightSectionImage from "./people-image.jpg";
 import RightFacingArrow from "./Arrow.svg";
+import { Link } from "react-router-dom";
 function AboveTheFold() {
   return (
     <div className="blog-above-the-fold-wrapper">
@@ -8,7 +9,11 @@ function AboveTheFold() {
         <div className="blog-above-the-fold-left-section">
           <div className="blog-above-the-fold-left-section-container">
             <div className="blog-atf-left-section-header">
-              Home <img src={RightFacingArrow} alt="arrow" /> Blog
+              <Link to="/">Home</Link>{" "}
+              <img src={RightFacingArrow} alt="arrow" />
+              <Link to="/infrastructure">Cloud Adoption and Migration</Link>
+              <img src={RightFacingArrow} alt="arrow" />
+              <p>Article name</p>
             </div>
             <div className="blog-atf-left-section-main-text">
               7 Reasons why Lorem ipsum dolor sit{" "}

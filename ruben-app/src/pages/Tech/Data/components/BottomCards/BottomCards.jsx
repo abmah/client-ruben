@@ -30,8 +30,8 @@ function BottomCards() {
               Solution Agnostic
             </div>
             <div className="cloud-data-bottom-card-subtitle">
-              We are capable in extending full scope support with multi-cloud
-              environments including GCP, AWS and Azure
+              We are capable in extending full scope support with comprehensive
+              set Of cloud product environments.
             </div>
           </div>
         </div>

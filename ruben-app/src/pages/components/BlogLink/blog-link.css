@@ -1,5 +1,6 @@
 .blog-link-wrapper {
-  height: 980px;
+  min-height: fit-content;
+  margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +84,7 @@
   height: 64px;
   flex-shrink: 0;
   border-radius: 32px;
-  background: #eff2f5;
+  background: #f9b934;
   border: none;
   color: #2d3748;
 
@@ -240,5 +241,13 @@
 
   .blog-link-title {
     margin-left: 27px;
+  }
+
+  .blog-link-nav-button-prev {
+    display: none;
+  }
+
+  .blog-link-nav-button-next {
+    display: none;
   }
 }

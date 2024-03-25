@@ -7,7 +7,7 @@ import "./blog-link.css";
 import Rectangle from "../../../assets/blank-rectangle.svg";
 import ThreeDotsNext from "../../../assets/three-dots-next.svg";
 import ThreeDotsPrev from "../../../assets/three-dots-prev.svg";
-
+import { Autoplay } from "swiper/modules";
 import DarkGreyDots from "./dark-grey.svg";
 import GreyDots from "./grey.svg";
 import OrangeDots from "./orange.svg";
@@ -86,7 +86,15 @@ export function BlogLink() {
           >
             <img src={ThreeDotsPrev} alt="rainbow-dots" />
           </button>
-          <Swiper ref={swiperRef} loop={true} className="blog-link-swiper">
+          <Swiper
+            autoplay={{
+              delay: 3000,
+            }}
+            ref={swiperRef}
+            loop={true}
+            modules={[Autoplay]}
+            className="blog-link-swiper"
+          >
             <SwiperSlide>
               <BlogLinkCard dotColor="grey" />
             </SwiperSlide>
