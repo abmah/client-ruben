@@ -1,7 +1,30 @@
+import emailjs from "@emailjs/browser";
 import "./above-the-fold.css";
 import ContactATF from "../../../../assets/contact-above-the-fold.svg";
 import TopRightArrow from "../../../../assets/top-right-arrow.svg";
+
 function AboveTheFold() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5rldu9p",
+        "template_u27cgbi",
+        e.target,
+        "fD6S5WlPAnIyVCaFS"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          e.target.reset(); // Optionally, reset the form after successful submission
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact-above-the-fold-wrapper">
       <div className="contact-above-the-fold-container">
@@ -11,8 +34,8 @@ function AboveTheFold() {
               <h1 className="contact-above-the-fold-main-title">Contact Us</h1>
               <p className="contact-above-the-fold-paragraph">
                 Contact us for{" "}
-                <strong> inquiries, feedback, or assistance.</strong> Our team
-                is ready to respond promptly, within 1 hour during working time.
+                <strong>inquiries, feedback, or assistance.</strong> Our team is
+                ready to respond promptly, within 1 hour during working time.
               </p>
             </div>
             <div className="contact-atf-img">
@@ -20,7 +43,7 @@ function AboveTheFold() {
             </div>
           </div>
 
-          <form className="contact-atf-form">
+          <form className="contact-atf-form" onSubmit={sendEmail}>
             <div className="contact-atf-input-elements">
               <div className="contact-atf-form-group">
                 <label htmlFor="name" className="form-label">
@@ -72,7 +95,7 @@ function AboveTheFold() {
 
               <div className="contact-atf-form-group form-textarea">
                 <label htmlFor="message" className="form-label">
-                  MESSEGE
+                  MESSAGE
                 </label>
                 <textarea
                   id="message"
