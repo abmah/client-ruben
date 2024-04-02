@@ -1,11 +1,22 @@
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 import "./above-the-fold.css";
 import ContactATF from "../../../../assets/contact-above-the-fold.svg";
 import TopRightArrow from "../../../../assets/top-right-arrow.svg";
 
 function AboveTheFold() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!name || !email || !phoneNumber || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -17,6 +28,11 @@ function AboveTheFold() {
       .then(
         (result) => {
           console.log("SUCCESS!", result.text);
+          alert("Message sent successfully.");
+          setName("");
+          setEmail("");
+          setPhoneNumber("");
+          setMessage("");
           e.target.reset(); // Optionally, reset the form after successful submission
         },
         (error) => {
@@ -54,20 +70,11 @@ function AboveTheFold() {
                   id="name"
                   className="contact-atf-form-input"
                   placeholder="Enter your name here"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                 />
               </div>
-
-              {/* <div className="contact-atf-form-group">
-                <label htmlFor="lastName" className="form-label">
-                  Last Name
-                </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  className="contact-atf-form-input"
-                  placeholder="Enter your last name"
-                />
-              </div> */}
 
               <div className="contact-atf-form-group">
                 <label htmlFor="email" className="form-label">
@@ -78,6 +85,9 @@ function AboveTheFold() {
                   id="email"
                   className="form-input"
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
 
@@ -90,6 +100,9 @@ function AboveTheFold() {
                   id="phoneNumber"
                   className="contact-atf-form-input"
                   placeholder="Enter your phone number"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  required
                 />
               </div>
 
@@ -101,10 +114,13 @@ function AboveTheFold() {
                   id="message"
                   className="contact-atf-form-input"
                   placeholder="Enter your message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
                 />
               </div>
             </div>
-            <button className="contact-atf-button">
+            <button type="submit" className="contact-atf-button">
               <p>SUBMIT</p>
               <div className="contact-atf-button-arrow">
                 <img src={TopRightArrow} alt="top-right-arrow" />

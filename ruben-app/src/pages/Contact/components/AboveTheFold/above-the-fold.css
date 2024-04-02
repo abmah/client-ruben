@@ -167,6 +167,13 @@
   margin-top: 16px;
 }
 
+.success-message {
+  color: white;
+  align-self: center;
+  justify-self: center;
+  margin-top: 5px;
+}
+
 
 @media screen and (max-width:1500px) {
 
