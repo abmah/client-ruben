@@ -70,6 +70,9 @@
 }
 
 .slide-blank-image {
+  object-fit: cover;
+  border-radius: 24px;
+  max-width: 437px;
   margin-top: 25px;
 }
 

@@ -18,11 +18,18 @@ function AboveTheFold() {
       return;
     }
 
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      from_phone: phoneNumber,
+      message: message,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         "service_5rldu9p",
         "template_u27cgbi",
-        e.target,
+        templateParams,
         "fD6S5WlPAnIyVCaFS"
       )
       .then(

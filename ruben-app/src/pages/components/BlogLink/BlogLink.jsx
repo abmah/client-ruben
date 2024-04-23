@@ -14,6 +14,8 @@ import OrangeDots from "./orange.svg";
 import RainbowDots from "../../../assets/rainbow-dots.svg";
 import { Link } from "react-router-dom";
 
+import Box from "./box.jpg";
+
 function BlogLinkCard({ dotColor }) {
   let dots;
   switch (dotColor) {
@@ -36,21 +38,18 @@ function BlogLinkCard({ dotColor }) {
         {dots}
         <div className="slide-text-image">
           <div className="slide-text-content">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            <h3>Containerized application workloads Security</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exerc.
+              Containerized workloads are often more complex and as a result,
+              system administrators need more time, effort and complex
+              procedures to apply security measures compared to traditional
+              workloads.
             </p>
             <Link className="blog-link-button" to="/blog">
               <p>Learn More</p>
             </Link>
           </div>
-          <img
-            className="slide-blank-image"
-            src={Rectangle}
-            alt="blank-image"
-          />
+          <img className="slide-blank-image" src={Box} alt="blank-image" />
         </div>
         {dots}
       </div>

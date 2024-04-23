@@ -1,4 +1,4 @@
-// import BlogLink from "../../components/BlogLink/BlogLink";
+import BlogLink from "../../components/BlogLink/BlogLink";
 import AboveTheFold from "./components/AboveTheFold/AboveTheFold";
 import BottomCards from "./components/BottomCards/BottomCards";
 import Cards from "./components/Cards/Cards";
@@ -14,7 +14,7 @@ function CloudAdoption() {
       <Cards />
       <Images />
       <Services />
-      {/* <BlogLink /> */}
+      <BlogLink />
       <BottomCards />
       <LetsTalk />
       <FAQ />
