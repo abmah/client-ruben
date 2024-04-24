@@ -45,7 +45,10 @@ function BlogLinkCard({ dotColor }) {
               procedures to apply security measures compared to traditional
               workloads.
             </p>
-            <Link className="blog-link-button" to="/blog">
+            <Link
+              className="blog-link-button"
+              to="/blog-Contenerizedapps-workloadsecurity"
+            >
               <p>Learn More</p>
             </Link>
           </div>

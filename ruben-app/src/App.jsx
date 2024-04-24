@@ -37,7 +37,10 @@ function App() {
         <Route path="/customized-programs" element={<CustomizedPrograms />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<TemplateBlog />} />
+        <Route
+          path="/blog-Contenerizedapps-workloadsecurity"
+          element={<TemplateBlog />}
+        />
       </Routes>
       <Footer />
     </>

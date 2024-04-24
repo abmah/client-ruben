@@ -13,15 +13,10 @@ function AboveTheFold() {
               <img src={RightFacingArrow} alt="arrow" />
               <Link to="/infrastructure">Cloud Adoption and Migration</Link>
               <img src={RightFacingArrow} alt="arrow" />
-              <p>Article name</p>
+              <p>Contenerized applications workload security</p>
             </div>
             <div className="blog-atf-left-section-main-text">
-              7 Reasons why Lorem ipsum dolor sit{" "}
-              <strong className="blog-atf-left-section-main-text-highlight">
-                {" "}
-                amet, consectetur adipiscing
-              </strong>
-              elit, sed do eiusmod tempo incid
+              Contenerized applications <strong> workload security</strong>
             </div>
           </div>
         </div>
