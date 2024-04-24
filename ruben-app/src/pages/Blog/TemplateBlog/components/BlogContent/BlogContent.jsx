@@ -18,7 +18,10 @@ function BlogContent() {
             <div>Business & Tech</div>
           </div>
           <div className="blog-content-left-section-social">
-            <a href="#">
+            <a
+              href="
+https://www.linkedin.com/company/digital-future-middle-east/"
+            >
               <img src={LinkedIn} alt="linked-in" />
             </a>
           </div>
