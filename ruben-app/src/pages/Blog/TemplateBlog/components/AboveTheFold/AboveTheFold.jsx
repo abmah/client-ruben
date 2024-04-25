@@ -11,7 +11,7 @@ function AboveTheFold() {
             <div className="blog-atf-left-section-header">
               <Link to="/">Home</Link>{" "}
               <img src={RightFacingArrow} alt="arrow" />
-              <Link to="/infrastructure">Security and Compliance</Link>
+              <Link to="/security">Security and Compliance</Link>
               <img src={RightFacingArrow} alt="arrow" />
               <p>Contenerized applications workload security</p>
             </div>
