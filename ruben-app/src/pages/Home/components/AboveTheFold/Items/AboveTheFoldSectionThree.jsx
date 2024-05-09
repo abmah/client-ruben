@@ -1,18 +1,28 @@
 import { Link } from "react-router-dom";
-import LandingBlue from "../../../../../assets/landing-blue.svg";
+import ChadImage from "../main-chad.jpg";
 import "../above-the-fold.css";
+import BlueSquares from "../blue-white-square.svg";
 function AboveTheFoldSectionThree({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-three">
       <img
         className="above-the-fold-gray-image"
-        src={LandingBlue}
+        src={ChadImage}
         alt="above-the-fold-gray-image"
+      />{" "}
+      <img
+        className="above-the-fold-mobile-squares"
+        src={BlueSquares}
+        alt="blue-squares"
       />
+      <div className="image-gradiant-effect"></div>
       <div className="above-the-fold-right-section">
         <h1 className="above-the-fold-main-text">
           Transform Your Company with Modern, Cloud-Based{" "}
-          <strong className="above-the-fold-main-text-bold">Tech</strong> Stack
+          <strong className="above-the-fold-main-text-bold above-the-fold-main-text-bold-three">
+            Tech
+          </strong>{" "}
+          Stack
         </h1>
         <p className="above-the-fold-sub-text">
           Improve efficiency and reduce costs with cutting-edge tech
@@ -32,8 +42,8 @@ function AboveTheFoldSectionThree({ scrollToRef }) {
             Let's Talk
           </Link>
         </div>
-        <div className="above-the-fold-section-navigation">
-          <div className="above-the-fold-section-navigation-child section-three-talent">
+        <div className="above-the-fold-section-navigation ">
+          <div className="above-the-fold-section-navigation-child section-three-talent ">
             <div className="above-the-fold-section-navigation-child-line-disabled "></div>
             <p>Talent Augmentation</p>
           </div>
@@ -42,7 +52,7 @@ function AboveTheFoldSectionThree({ scrollToRef }) {
             <p>Skills Uplifting</p>
           </div>
           <div className="above-the-fold-section-navigation-child">
-            <div className="above-the-fold-section-navigation-child-line section-three-tech"></div>
+            <div className="above-the-fold-section-navigation-child-line section-three-tech navigation-line-blue"></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Cloud Transformation
             </p>

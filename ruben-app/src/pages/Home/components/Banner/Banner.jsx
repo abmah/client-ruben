@@ -1,9 +1,8 @@
 import "./banner.css";
 
-import YellowArrows from "./yellow-arrows.svg";
-import GrayArrows from "./gray-arrows.svg";
-import WhiteArrows from "./white-arrows.svg";
-import Circles from "./circle.svg";
+import Star from "./star.svg";
+import Cloud from "./cloud.svg";
+import light from "./light.svg";
 function Banner() {
   return (
     <div className="banner-wrapper">
@@ -14,20 +13,33 @@ function Banner() {
         </div>
         <div className="banner-middle-section">
           <div className="middle-section-background"></div>
+          <div className="middle-section-background-one"></div>
+          <div className="middle-section-background-two"></div>
 
           <p>
             <span className="banner-middle-section-header">What we do</span>
             <br />
-            We offer one-stop-shop experience for enterprise transformation,
-            accelerating go-to-market in 3 critical areas for transformation
-            projects: <br /> Talent, Technology, Skills.
+            We are a one-stop-shop for enterprise agility, helping to accelerate
+            the go-to-market in 3 critical transformation areas:
+            <br /> Talent, Technology, Skills.
           </p>
-          <img className="banner-circles" src={Circles} alt="circles" />
         </div>
         <div className="banner-right-section">
-          <img src={YellowArrows} alt="arrow" />
-          <img src={GrayArrows} alt="arrow" />
-          <img src={WhiteArrows} alt="arrow" />
+          <img
+            src={Star}
+            alt="star"
+            className="banner-star banner-small-image"
+          />
+          <img
+            src={Cloud}
+            alt="cloud"
+            className="banner-cloud banner-small-image"
+          />
+          <img
+            src={light}
+            alt="light"
+            className="banner-light banner-small-image"
+          />
         </div>
       </div>
     </div>

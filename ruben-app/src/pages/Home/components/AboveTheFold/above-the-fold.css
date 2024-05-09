@@ -3,64 +3,43 @@
 }
 
 .above-the-fold-container {
-  border-radius: 16px;
+
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 97vw;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-y: hidden;
   gap: 0px;
   position: relative;
-  height: 890px;
-  margin-top: 5px;
+  height: 100vh;
+  min-height: 800px;
+  color: #192430;
 }
 
 .above-the-fold-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 134px;
+  gap: 5%;
+
   position: relative;
-  height: 780px;
-  border-radius: 16px;
-  padding-top: 10px;
-  padding-bottom: 100px;
+
+
+
+
   overflow: hidden;
+
 }
 
 .above-the-fold-right-section {
-  margin-top: 150px;
-  margin-right: 100px;
+  margin-top: -100px;
+
 }
 
-.above-the-fold-section-one {
-  background-color: #718096;
-}
 
-.above-the-fold-section-two {
-  background-color: #f9b934;
-}
 
-.above-the-fold-section-two * {
-  color: #192430 !important;
-}
-
-.above-the-fold-section-two img {
-  margin-top: 350px;
-}
-
-.above-the-fold-section-one img,
-.above-the-fold-section-three img {
-  margin-top: 150px;
-}
-
-.above-the-fold-section-three {
-  background-color: #2d3748;
-}
 
 .above-the-fold-main-text {
-  color: #fff;
+
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
@@ -69,9 +48,22 @@
   margin-bottom: 24px;
 }
 
+
+.above-the-fold-main-text-bold-one {
+  color: #A62551;
+}
+
+.above-the-fold-main-text-bold-two {
+  color: #5E1675;
+}
+
+.above-the-fold-main-text-bold-three {
+  color: #176B87;
+}
+
 .above-the-fold-sub-text {
   margin-top: 0;
-  color: #fff;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -95,10 +87,10 @@
   width: 184px;
   height: 56px;
   flex-shrink: 0;
-  background-color: white;
+  background-color: #111720;
   border: none;
   border-radius: 28px;
-  color: #222b38;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
 }
@@ -128,14 +120,16 @@
 .above-the-fold-section-navigation-child-line-disabled {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(25, 36, 48, 0.2);
+  ;
   border-radius: 5px;
 }
 
 .above-the-fold-section-navigation-child-line {
   position: relative;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(25, 36, 48, 0.2);
+  ;
   border-radius: 5px;
 
   &:before {
@@ -145,8 +139,16 @@
     left: 0;
     height: 100%;
     width: var(--progress);
-    background-color: #fff;
+    background-color: #A62551;
     border-radius: 5px;
+  }
+}
+
+.navigation-line-purple {
+  background-color: rgba(25, 36, 48, 0.2);
+
+  &:before {
+    background-color: #5E1675;
   }
 }
 
@@ -154,9 +156,10 @@
   background-color: rgba(25, 36, 48, 0.2);
 
   &:before {
-    background-color: #192430;
+    background-color: #176B87;
   }
 }
+
 
 .above-the-fold-section-navigation-child-line-active &:before {
   content: "";
@@ -167,9 +170,38 @@
   width: var(--progress);
   /* Use the global variable */
 
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
 
   border-radius: 5px;
+}
+
+.image-gradiant-effect {
+  display: none;
+}
+
+.above-the-fold-squares-one {
+  width: 300px;
+}
+
+.above-the-fold-squares {
+  position: absolute;
+
+}
+
+.above-the-fold-image-squares-container {
+  position: relative;
+}
+
+.above-the-fold-squares-two {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 0;
+}
+
+.above-the-fold-mobile-squares {
+  width: 127px !important;
+  display: none;
 }
 
 @media screen and (max-width: 1750px) {
@@ -177,15 +209,11 @@
     height: 700px;
   }
 
-  .above-the-fold-section img {
-    width: 550px;
-    margin-left: -30px;
-    margin-top: 110px;
+  .above-the-fold-gray-image {
+    width: 40%;
   }
 
-  .above-the-fold-section-two img {
-    margin-top: 300px;
-  }
+
 
   .above-the-fold-right-section {
     margin-top: 40px;
@@ -228,10 +256,8 @@
 
 @media screen and (min-width: 1450px) and (max-width: 1600px) {
   .above-the-fold-section {
-    gap: 160px;
-    /* padding-bottom: 0px; */
-    /* height: 700px; */
-    /* margin-top: 0px; */
+    gap: 60px;
+
   }
 
   .above-the-fold-main-text {
@@ -245,26 +271,21 @@
   }
 
   .above-the-fold-section img {
-    margin-top: 100px;
-    width: 600px;
-    margin-left: -30px;
+    width: 45%;
   }
 
-  .above-the-fold-section-two img {
-    margin-top: 290px;
-  }
+
 }
 
 @media screen and (max-width: 1450px) {
   .above-the-fold-section img {
-    width: 500px;
-    margin-left: -30px;
+    width: 50%;
   }
 
-  .above-the-fold-main-text {
-    font-size: 40px;
-    width: 500px;
+  .above-the-fold-section {
+    gap: 6%;
   }
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -275,14 +296,23 @@
   .above-the-fold-section img {
     display: none;
   }
+
+  .above-the-fold-squares {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
+
+  .above-the-fold-mobile-squares {}
+
   .above-the-fold-container {
+
     overflow: hidden;
-    width: 94vw;
-    height: 500px;
-    padding-top: 160px;
+    justify-content: unset;
+    align-items: unset;
+
+
     position: relative;
   }
 
@@ -293,12 +323,37 @@
   }
 
   .above-the-fold-right-section {
-    margin-top: 63px;
+    margin-top: 150px;
     margin-left: 4vw;
+    z-index: 1;
+    width: 100%;
   }
 
   .above-the-fold-section img {
-    display: none;
+
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 418px;
+    object-fit: cover;
+    object-position: 100% top;
+    top: 0;
+
+  }
+
+  .image-gradiant-effect {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 418px;
+    background: linear-gradient(180deg, #11172000 0%, #111720 100%);
+    opacity: .8;
+    z-index: 0;
+  }
+
+  .above-the-fold-section {
+    height: 100% !important;
   }
 
   .above-the-fold-section-navigation {
@@ -356,6 +411,12 @@
 
   .lets-talk-button {
     display: none;
+  }
+
+  .above-the-fold-buttons-container {
+    position: relative;
+    width: calc(100% - 3vw);
+
   }
 
   .above-the-fold-button {

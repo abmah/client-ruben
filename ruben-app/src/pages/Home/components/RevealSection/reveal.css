@@ -8,15 +8,22 @@
   position: relative;
   height: 100vh;
   clip-path: url(#myClipPath);
-  background-image: url(./bg2.svg);
+  /* background-image: url(./squares.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #222B38;
   overflow: visible;
-  border-radius: 26px;
+  /* border-radius: 26px; */
 
 }
 
+.reveal-section-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
 
 
 .reveal-section {
@@ -26,6 +33,7 @@
 .reveal-section-content {
   width: 68%;
   margin: 0 auto;
+  z-index: 10;
 }
 
 .reveal-section-big-text {
@@ -196,13 +204,15 @@
   .reveal-section {
     background-position: 70% center;
     clip-path: unset;
-    height: 700px;
+    /* height: 700px; */
     width: 98%;
     margin: 0 auto;
     margin-top: 30px;
     background-position: bottom;
 
   }
+
+
 
   .reveal-section-big-text {
     font-size: 10vw;

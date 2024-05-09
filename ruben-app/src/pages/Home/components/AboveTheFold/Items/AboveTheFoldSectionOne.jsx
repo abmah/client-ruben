@@ -1,18 +1,25 @@
 import { Link } from "react-router-dom";
-import LandingGray from "../../../../../assets/landing-gray.svg";
+import ManPhoto from "../main-man.jpg";
 import "../above-the-fold.css";
+import MainManSquares from "../main-man-sqaures.svg";
 function AboveTheFoldSectionOne({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-one">
       <img
         className="above-the-fold-gray-image"
-        src={LandingGray}
+        src={ManPhoto}
         alt="above-the-fold-gray-image"
+      />{" "}
+      <div className="image-gradiant-effect"></div>
+      <img
+        src={MainManSquares}
+        className="above-the-fold-squares above-the-fold-squares-one"
+        alt="squares"
       />
       <div className="above-the-fold-right-section">
         <h1 className="above-the-fold-main-text">
           Supercharge Your Transformation Projects with{" "}
-          <strong className="above-the-fold-main-text-bold">
+          <strong className="above-the-fold-main-text-bold above-the-fold-main-text-bold-one">
             Talent Augmentation
           </strong>
         </h1>

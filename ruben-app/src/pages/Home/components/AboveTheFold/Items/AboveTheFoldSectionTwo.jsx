@@ -1,18 +1,26 @@
 import { Link } from "react-router-dom";
 import LandingYellow from "../../../../../assets/landing-yellow.svg";
 import "../above-the-fold.css";
+import WomanImage from "../main-woman.jpg";
+import MainWomanSquares from "../main-woman-squares.svg";
 function AboveTheFoldSectionTwo({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-two">
       <img
         className="above-the-fold-gray-image"
-        src={LandingYellow}
+        src={WomanImage}
         alt="above-the-fold-gray-image"
+      />{" "}
+      <img
+        src={MainWomanSquares}
+        className="above-the-fold-squares above-the-fold-squares-two"
+        alt="squares"
       />
+      <div className="image-gradiant-effect"></div>
       <div className="above-the-fold-right-section">
         <h1 className="above-the-fold-main-text">
           Supercharge Your Transformation Projects with{" "}
-          <strong className="above-the-fold-main-text-bold">
+          <strong className="above-the-fold-main-text-bold above-the-fold-main-text-bold-two">
             Skills Uplifting
           </strong>
         </h1>
@@ -40,7 +48,7 @@ function AboveTheFoldSectionTwo({ scrollToRef }) {
             <p>Talent Augmentation</p>
           </div>
           <div className="above-the-fold-section-navigation-child">
-            <div className="above-the-fold-section-navigation-child-line navigation-line-blue"></div>
+            <div className="above-the-fold-section-navigation-child-line navigation-line-purple"></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Skills Uplifting
             </p>

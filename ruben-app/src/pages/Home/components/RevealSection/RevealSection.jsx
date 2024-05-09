@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
+import Squares from "./squares.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
@@ -142,6 +143,11 @@ function RevealSection() {
     <div className="reveal-section-top-wrapper">
       <div ref={wrapper} className="reveal-section-wrapper">
         <div className="reveal-section">
+          <img
+            src={Squares}
+            alt="squares"
+            className="reveal-section-background"
+          />
           <div id="text-content" className="reveal-section-content hide">
             <div className="reveal-section-big-text">
               <p className="reveal-section-big-text-first">
