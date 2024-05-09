@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TopRightArrow from "../../../../assets/top-right-arrow.svg";
@@ -8,6 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 import Flower from "../../../../assets/flower.svg";
 import { Link } from "react-router-dom";
+
+import TetrisMobileOne from "./tetris-mobile-one.svg";
+import TetrisMobileTwo from "./tetris-mobile-two.svg";
+import TetrisMobileThree from "./tetris-mobile-three.svg";
+
+import StageOne from "./tetris/stage-one.svg";
+import StageTwo from "./tetris/stage-two.svg";
+import StageThree from "./tetris/stage-three.svg";
+import StageFour from "./tetris/stage-four.svg";
 
 function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
   const flowerRef = useRef(null);
@@ -19,8 +28,6 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
 
     const mm = gsap.matchMedia();
     const breakPoint = 900;
-    const tlDown = gsap.timeline();
-    const tlUp = gsap.timeline();
 
     let ctx = gsap.context(() => {
       mm.add(
@@ -39,14 +46,9 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
               end: "bottom bottom",
               pin: ".rotating-flower-right-section",
               onUpdate: (self) => {
-                const rotationValue = (self.progress * 360) / 1.5 + -60;
-                flowerRef.current.style.transform = `rotate(${rotationValue}deg)`;
-
                 const newIndex = Math.floor(self.progress * 3);
-
                 const clampedIndex = Math.min(Math.max(newIndex, 0), 2);
-                console.log(newIndex, clampedIndex);
-                // Apply filter brightness and y-offset based on the active detail index
+
                 detailsElements.forEach((detail, index) => {
                   const filterBrightness = index === clampedIndex ? 1 : 0.5;
                   gsap.to(detail, {
@@ -56,21 +58,22 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
               },
             });
 
-            // Set initial filter brightness and y-offset for all details divs
-            detailsElements.forEach((detail, index) => {
-              const filterBrightness = index === 0 ? 1 : 0.5;
-              gsap.set(detail, {
-                filter: `brightness(${filterBrightness})`,
-              });
+            // Timeline for stage animations
+            const tl = gsap.timeline({
+              scrollTrigger: {
+                trigger: ".rotating-flower-wrapper",
+                start: "top top",
+                end: "bottom bottom",
+                scrub: true,
+              },
             });
 
-            // Create timelines for scrolling down and scrolling up (uncomment and customize as needed)
-            // const tlDown = gsap.timeline();
-            // const tlUp = gsap.timeline();
-            // detailsElements.forEach((detail, index) => {
-            //   tlDown.to(detail, { filter: "brightness(0.5)", duration: 0.5 }, index * 0.2);
-            //   tlUp.to(detail, { filter: "brightness(1)", duration: 0.5 }, index * 0.2);
-            // });
+            tl.to(".tetris-stage-two", { y: -16 })
+              .to(".tetris-stage-three", { y: 48 })
+              .to(".tetris-stage-four", { y: 177 });
+
+            // Set initial filter brightness for all details divs
+            gsap.set(detailsElements, { filter: "brightness(0.5)" });
           }
         }
       );
@@ -79,8 +82,6 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
     return () => {
       ctx.kill();
       mm.kill();
-      tlDown.kill();
-      tlUp.kill();
     };
   }, []);
 
@@ -93,7 +94,7 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
               <img
                 ref={flowerRef}
                 className="mobile-rotating-flower mobile-rotating-flower-first"
-                src={Flower}
+                src={TetrisMobileOne}
                 alt="flower"
               />
               <p className="rotating-flower-details-headline-header">
@@ -120,7 +121,7 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
               <img
                 ref={flowerRef}
                 className="mobile-rotating-flower mobile-rotating-flower-second"
-                src={Flower}
+                src={TetrisMobileTwo}
                 alt="flower"
               />
               <p className="rotating-flower-details-headline-header">
@@ -152,7 +153,7 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
               <img
                 ref={flowerRef}
                 className="mobile-rotating-flower   mobile-rotating-flower-third"
-                src={Flower}
+                src={TetrisMobileThree}
                 alt="flower"
               />
               <p className="rotating-flower-details-headline-header">
@@ -185,6 +186,26 @@ function RotatingFlower({ scrollRef, scrollRefTwo, scrollRefThree }) {
             ref={flowerRef}
             src={Flower}
             alt="flower"
+          />
+          <img
+            className="tetris-stage-four tetris-stages"
+            src={StageFour}
+            alt="stage-four"
+          />
+          <img
+            className="tetris-stage-three tetris-stages"
+            src={StageThree}
+            alt="stage-three"
+          />
+          <img
+            className="tetris-stage-two tetris-stages"
+            src={StageTwo}
+            alt="stage-two"
+          />
+          <img
+            className="tetris-stage-one tetris-stages"
+            src={StageOne}
+            alt="stage-one"
           />
         </div>
       </div>

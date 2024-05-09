@@ -5,12 +5,13 @@
 }
 
 .contact-us-container {
-  border-radius: 40px;
-  background: #222b38;
-  width: 98%;
+
+  background: #111720;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding-bottom: 138px;
+  margin-bottom: -22px;
 }
 
 .contact-us-text-section {

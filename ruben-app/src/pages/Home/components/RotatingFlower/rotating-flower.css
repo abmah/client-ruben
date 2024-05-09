@@ -1,7 +1,7 @@
 .rotating-flower-wrapper {
   overflow: hidden;
-  background-color: #222B38;
-  border-radius: 24px;
+  background-color: #111720;
+
   position: relative;
   margin-bottom: 50px;
 }
@@ -109,14 +109,49 @@
 
 
 .rotating-flower-img {
+  display: none;
   transform: rotate(-70deg);
   width: 60%;
   margin-top: 50px;
   z-index: 1000;
 }
 
+.tetris-stage-three {
+  transform: translateX(-65px);
+  margin-left: -130px;
+}
+
+.tetris-stage-four {
+  margin-left: 130px;
+  transform: translateX(65px);
+}
 
 
+
+.tetris-stages {
+  transform: translateY(-150px);
+}
+
+.tetris-stage-one {
+  transform: translateY(-145px);
+
+}
+
+/* 
+.tetris-stage-two {
+  transform: translateY(-16px);
+
+}
+
+.tetris-stage-three {
+  transform: translateY(48px);
+}
+
+.tetris-stage-four {
+  transform: translateY(177px);
+}
+
+*/
 .flower-button-container {
   min-width: 630px !important;
   display: flex;
@@ -262,9 +297,10 @@
 
 .mobile-rotating-flower {
   display: none;
+
 }
 
-.mobile-rotating-flower-first {
+/* .mobile-rotating-flower-first {
   transform: rotate(-45deg);
 }
 
@@ -274,7 +310,7 @@
 
 .mobile-rotating-flower-third {
   transform: rotate(175deg);
-}
+} */
 
 @media screen and (max-width: 900px) {
 
@@ -291,7 +327,7 @@
 
   .mobile-rotating-flower {
     display: block;
-    width: 250px;
+    width: 200px;
     align-self: center;
   }
 
