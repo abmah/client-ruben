@@ -25,6 +25,18 @@
   z-index: 0;
 }
 
+.reveal-section-background-squares-right {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.reveal-section-background-squares-left {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
 
 .reveal-section {
   background-position: 50% center;
@@ -176,8 +188,8 @@
   .reveal-section {
     position: relative;
     height: 100vh;
-    clip-path: url(#myClipPath);
-    background-image: url(./bg.svg);
+
+    clip-path: url(.);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -203,13 +215,21 @@
 @media screen and (max-width: 900px) {
   .reveal-section {
     background-position: 70% center;
-    clip-path: unset;
+
     /* height: 700px; */
     width: 98%;
     margin: 0 auto;
     margin-top: 30px;
-    background-position: bottom;
 
+
+  }
+
+  .reveal-section-background-squares-left {
+    width: 70vw;
+  }
+
+  .reveal-section-background-squares-right {
+    width: 17vw;
   }
 
 

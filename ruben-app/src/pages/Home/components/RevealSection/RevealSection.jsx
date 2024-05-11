@@ -2,8 +2,9 @@ import { useState, useMemo } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./reveal.css";
-import Squares from "./squares.svg";
 
+import RightSquares from "./right-squares.svg";
+import LeftSquares from "./left-squares.svg";
 gsap.registerPlugin(ScrollTrigger);
 gsap.ticker.lagSmoothing(0);
 
@@ -128,7 +129,7 @@ function RevealSection() {
 
             revealAnimation.add(textAnimation);
           } else if (isMobile) {
-            // no specific animations for mobile at
+            // make the clip path bigger
           }
         }
       );
@@ -143,10 +144,20 @@ function RevealSection() {
     <div className="reveal-section-top-wrapper">
       <div ref={wrapper} className="reveal-section-wrapper">
         <div className="reveal-section">
-          <img
+          {/* <img
             src={Squares}
             alt="squares"
             className="reveal-section-background"
+          /> */}
+          <img
+            src={RightSquares}
+            className="reveal-section-background-squares-left"
+            alt="squares"
+          />
+          <img
+            src={LeftSquares}
+            className="reveal-section-background-squares-right"
+            alt="squares"
           />
           <div id="text-content" className="reveal-section-content hide">
             <div className="reveal-section-big-text">

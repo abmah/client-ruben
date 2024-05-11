@@ -1,20 +1,35 @@
 import { Link } from "react-router-dom";
 import ChadImage from "../main-chad.jpg";
 import "../above-the-fold.css";
-import BlueSquares from "../blue-white-square.svg";
+
+import MainChadSquares from "../main-chad-squares.svg";
+
+import mobileSquares from "../chad-mobile-squares.svg";
 function AboveTheFoldSectionThree({ scrollToRef }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-three">
-      <img
-        className="above-the-fold-gray-image"
-        src={ChadImage}
-        alt="above-the-fold-gray-image"
-      />{" "}
-      <img
+      <div className="above-the-fold-gray-image">
+        <img
+          className="above-the-fold-main-image"
+          src={ChadImage}
+          alt="above-the-fold-gray-image"
+        />
+        <img
+          src={MainChadSquares}
+          className="above-the-fold-squares above-the-fold-squares-three"
+          alt="squares"
+        />
+        <img
+          className="above-the-fold-mobile-squares"
+          src={mobileSquares}
+          alt="mobile-squares"
+        />
+      </div>
+      {/* <img
         className="above-the-fold-mobile-squares"
         src={BlueSquares}
         alt="blue-squares"
-      />
+      /> */}
       <div className="image-gradiant-effect"></div>
       <div className="above-the-fold-right-section">
         <h1 className="above-the-fold-main-text">

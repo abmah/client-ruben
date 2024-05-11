@@ -4,8 +4,6 @@
   overflow: hidden;
 }
 
-
-
 .floating-cards-background {
   height: 100vh;
   width: 100vw;
@@ -31,38 +29,32 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  padding: 20px;
   box-sizing: border-box;
   overflow: hidden;
-
-
+  background-color: #EFEEEA;
 }
 
 .floating-card-one {
-  background-color: #718096;
+
   left: 5%;
 }
 
-
 .floating-card-two {
-  background-color: #F9B934;
+
   color: #192430;
   right: 10%;
   top: 460px;
-
 }
 
 .floating-card-three {
-  background-color: #2D3748;
+
   left: 25%;
   top: 980px;
 }
 
 .floating-cards-parent {
   position: relative;
-
 }
-
 
 .spacing {
   height: 100vh;
@@ -73,154 +65,175 @@
 }
 
 
-.floating-card-content {
-  transition: transform 0.5s ease-in-out .3s;
-  height: 300%;
-  position: relative;
-  pointer-events: fill;
-  top: 0;
-  left: 0;
 
-  z-index: 10;
+.floating-card-first-section-header {
+  height: 250px;
+  /* border: 1px solid #192430; */
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  display: flex;
+}
+
+.floating-card-first-section-header-left-section {
+  width: 30%;
+  height: 100%;
 
 }
 
+.floating-card-first-section-header-left-section div {
+  border-bottom: 1px solid rgba(17, 23, 32, 0.2);
+  box-sizing: border-box;
+  height: 50%;
+}
+
+.floating-card-first-section-header-left-section img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.floating-card-first-section-header-right-section {
+  background-image: linear-gradient(to bottom, #A62551 0%, #C86A8B 100%);
+  width: 70%;
+  height: 100%;
+}
+
+.floating-card-first-section-footer-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #192430;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.floating-card-first-section-footer {
+  display: flex;
+  height: 150px;
+  box-sizing: border-box;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom: 1px solid rgba(17, 23, 32, 0.2);
+}
+
+.floating-card-first-section-footer-right-section {
+  border-left: 1px solid rgba(17, 23, 32, 0.2);
+  width: 20%;
+
+}
+
+
+/* .floating-card-second-section {} */
+
+.floating-card-second-section-content {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.floating-card-content {
+  transition: .5s ease-in-out;
+}
 
 .floating-card:hover .floating-card-content {
-  transform: translateY(-68%);
+  transform: translateY(-400px);
 
 }
 
-.floating-card-title {
-  position: absolute;
-  left: 0;
-  top: 300px;
-
-}
-
-.floating-card-second-title {
-  position: absolute;
-  bottom: 300px;
-  left: 0;
-}
-
-.floating-card-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  left: 0;
-  top: 0;
-}
-
-.floating-cards-background-text {
-  font-size: 5vw;
-}
-
-.floating-card-second-title-first {
-
-
-
-  margin-top: -100px;
-  bottom: 160px;
-}
-
-.floating-card-content-one,
-.floating-card-content-two,
-.floating-card-content-three {
+.floating-card-second-section-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  margin-bottom: 30px;
 }
 
 
-
-.floating-card-content-first {
-  height: 33%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-
-.floating-card-content-first>p {
-  margin: 0;
-
-
-}
-
-.floating-card-content-title {
-  font-size: 32px;
-
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-
-.floating-card-content-second {
-  height: 34%;
-
-}
-
-.floating-card-content-third {
-  height: 33%;
-  display: flex;
-  flex-direction: column;
-
-
-}
-
-
-
-
-
-.floating-card-content-third-text {
+.floating-card-second-section-header {
   font-size: 20px;
   font-weight: 400;
   margin: 0;
-
+  color: #111720;
 }
 
-.floating-card-content-third-text-first {
-  margin-top: 50px;
-  margin-bottom: 20px;
-
-
-}
-
-
-
-.floating-card-content-third-text-second {
-  margin-bottom: 20px;
-}
-
-.floating-card-content-third-text-third {
-  margin-bottom: 40px;
-}
 
 .floating-card-link {
 
-  position: absolute;
+
   cursor: pointer;
   width: 120px;
   height: 40px;
-  bottom: 0;
-  right: 0;
+  color: #A62551;
 }
 
 .floating-card-link:hover .floating-card-link-line {
   width: 100%;
 }
 
+.floating-card-link-second {
+  color: #5E1675;
+}
+
+.floating-card-link-third {
+  color: #176B87;
+}
+
 .floating-card-link-line {
   transition: .5s cubic-bezier(0.19, .4, 0.5, 1);
   height: 2px;
-  background-color: #fff;
+  background-color: #A62551;
   width: 0%;
 }
 
+.floating-card-link-line-second {
+  background-color: #5E1675;
+}
+
+.floating-card-link-line-third {
+  background-color: #176B87;
+
+
+}
+
+
+
+.floating-card-first-section-header-right-section-two {
+  background-image: linear-gradient(to bottom, #5E1675 0%, #AC86B8 100%);
+}
+
+.floating-card-first-section-header-right-section-three {
+  background-image: linear-gradient(to bottom, #176B87 0%, #8FB7C5 100%);
+}
+
+
+.floating-card-first-section-header-left-section-right {
+  width: 20%;
+}
+
+
+
+
+.floating-card-first-section-header-left-section-third {
+  width: 20%;
+}
+
+.floating-card-first-section-header-left-section-right div:first-child {
+  height: 30%;
+
+}
+
+.floating-card-first-section-header-left-section-right div:last-child {
+  height: 70%;
+
+}
 
 @media screen and (max-width: 900px) {
+
 
   .floating-cards-background-text {
     font-size: 10vw;
@@ -228,28 +241,16 @@
 
 
 
-  .floating-card-link {
-
-
-    bottom: -30px;
-
-  }
-
   .floating-card-content-third-text-third {
     margin-bottom: 20px;
   }
 
-
   .floating-card-content-title {
-
-
     padding-left: 10px;
-
     padding-right: 10px;
   }
 
   .floating-card {
-
     width: 300px;
     height: 450px;
   }
@@ -257,7 +258,6 @@
   .floating-card-background-first,
   .floating-card-background-second,
   .floating-card-background-third {
-
     width: 250%;
     left: -50%;
   }
@@ -274,13 +274,34 @@
     left: 10%;
   }
 
+  .floating-card-first-section-footer-title {
+    font-size: 24px;
+  }
+
+  .floating-card-first-section {
+    height: 450px;
+  }
+
+  .floating-card-first-section-header {
+    height: 300px;
+
+  }
+
+  .floating-card:hover .floating-card-content {
+    transform: translateY(-450px);
+
+  }
+
+
+
+
+  .floating-card-second-section-header br {
+    display: none;
+  }
 
 }
 
-
-@media screen and (max-width:350px) {
-
-
+@media screen and (max-width: 350px) {
   .floating-card {
     width: 250px;
   }
@@ -288,5 +309,4 @@
   .floating-card p {
     font-size: 16px;
   }
-
 }

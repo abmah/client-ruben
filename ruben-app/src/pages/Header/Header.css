@@ -86,16 +86,16 @@
 }
 
 .menu-item-talent:hover {
-  background-color: #718096;
+  background-color: #A62551;
 }
 
 .menu-item-skills:hover {
-  background-color: #F9B934;
+  background-color: #5E1675;
 
 }
 
 .menu-item-tech:hover {
-  background-color: #2D3748;
+  background-color: #176B87;
 
 }
 
@@ -168,19 +168,21 @@
   height: 84px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #718096;
+  background: #A62551;
   margin-top: 7px;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 
 .sub-menu-first-item-skills {
-  background-color: #F9B934;
+  background-color: #5E1675;
+  color: white;
 }
 
 .sub-menu-first-item-tech {
-  background-color: #2D3748;
+  background-color: #176B87;
 }
 
 .sub-menu-first-item-title {
@@ -190,10 +192,7 @@
 
 }
 
-.sub-menu-first-item-title-skills {
-  color: #222B38;
 
-}
 
 .sub-menu-first-item-arrow,
 .right-facing-arrow {
@@ -357,16 +356,16 @@
 
 .mobile-menu-main-item-second {
 
-  background-color: #718096;
+  background-color: #A62551;
 }
 
 .mobile-menu-main-item-third {
-  background-color: #F9B934;
-  color: #222B38;
+  background-color: #5E1675;
+
 }
 
 .mobile-menu-main-item-last {
-  background-color: #2D3748;
+  background-color: #176B87;
 }
 
 

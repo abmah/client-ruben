@@ -486,8 +486,12 @@
 
 
     .middle-section-background {
-      width: 550px;
-      height: 550px;
+      width: 100%;
+
+    }
+
+    .banner-middle-section {
+      width: 100%;
     }
 
 
