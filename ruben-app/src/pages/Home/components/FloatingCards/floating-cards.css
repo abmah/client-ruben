@@ -43,7 +43,7 @@
 
   color: #192430;
   right: 10%;
-  top: 460px;
+  top: 490px;
 }
 
 .floating-card-three {
@@ -235,6 +235,20 @@
 @media screen and (max-width: 900px) {
 
 
+
+  /* disable animation */
+
+
+
+  .floating-card:hover .floating-card-content {
+    transform: none;
+
+  }
+
+  .active {
+    transform: translateY(-450px);
+  }
+
   .floating-cards-background-text {
     font-size: 10vw;
   }
@@ -287,10 +301,11 @@
 
   }
 
+  /* 
   .floating-card:hover .floating-card-content {
     transform: translateY(-450px);
 
-  }
+  } */
 
 
 
