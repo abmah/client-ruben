@@ -7,6 +7,8 @@
 
 
 .contact-above-the-fold-container {
+
+  background-image: url('./squares.svg');
   color: #222b38;
   width: 98vw;
   height: 90%;
@@ -42,6 +44,8 @@
 }
 
 .contact-atf-img {
+  opacity: 0;
+  pointer-events: none;
   position: absolute;
   z-index: 1;
   pointer-events: none;
@@ -234,6 +238,14 @@
 }
 
 @media screen and (max-width:800px) {
+
+  .contact-above-the-fold-container {
+
+    background-image: url('./squares-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 
   .contact-above-the-fold-wrapper {
     margin-bottom: 1000px;

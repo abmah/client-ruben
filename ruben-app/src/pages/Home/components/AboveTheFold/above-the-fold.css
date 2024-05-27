@@ -9,11 +9,13 @@
   /* justify-content: end; */
   margin: 0 auto;
   overflow-y: hidden;
+
   box-sizing: border-box;
   gap: 0px;
   position: relative;
   height: 100vh;
-  min-height: 800px;
+
+  /* min-height: 800px; */
   color: #192430;
 }
 
@@ -385,6 +387,14 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .above-the-fold-container {
+
+
+    min-height: 800px;
+
+  }
+
   .above-the-fold-mobile-squares {
     display: block;
   }
@@ -485,7 +495,7 @@
 
   .above-the-fold-main-text {
     color: #fff;
-    font-size: 36px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -493,22 +503,37 @@
   }
 
   .section-one-talent {
-    order: 1;
-  }
-
-  .section-one-skill {
     order: 2;
   }
 
-  .section-one-tech {
+  .section-one-skills {
     order: 3;
+  }
+
+  .section-one-tech {
+    order: 1;
   }
 
   .section-three-talent {
     order: 1;
+
   }
 
   .section-three-tech {
+    order: 2;
+
+  }
+
+  .section-two-tech {
+    order: 1;
+  }
+
+  .section-three-tech {
+    order: 1;
+
+  }
+
+  .section-three-talent {
     order: 2;
   }
 
@@ -516,7 +541,8 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    max-width: 336px;
+    max-width: 270px;
+    margin-top: 40px;
   }
 
   .lets-talk-button {

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import ChadImage from "../main-chad.jpg";
 import "../above-the-fold.css";
-
+import PropTypes from "prop-types";
 import MainChadSquares from "../main-chad-squares.svg";
 
 import mobileSquares from "../chad-mobile-squares.svg";
-function AboveTheFoldSectionThree({ scrollToRef }) {
+function AboveTheFoldSectionThree({ scrollToRef, slideTo }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-three">
       <div className="above-the-fold-gray-image">
@@ -58,24 +58,34 @@ function AboveTheFoldSectionThree({ scrollToRef }) {
           </Link>
         </div>
         <div className="above-the-fold-section-navigation ">
-          <div className="above-the-fold-section-navigation-child section-three-talent ">
-            <div className="above-the-fold-section-navigation-child-line-disabled "></div>
-            <p>Talent Augmentation</p>
-          </div>
-          <div className="above-the-fold-section-navigation-child section-three-skills">
-            <div className="above-the-fold-section-navigation-child-line-disabled"></div>
-            <p>Skills Uplifting</p>
-          </div>
-          <div className="above-the-fold-section-navigation-child">
+          <div className="above-the-fold-section-navigation-child section-three-tech">
             <div className="above-the-fold-section-navigation-child-line section-three-tech navigation-line-blue"></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Cloud Transformation
             </p>
+          </div>
+          <div
+            onClick={() => slideTo(2)}
+            className="above-the-fold-section-navigation-child section-three-talent "
+          >
+            <div className="above-the-fold-section-navigation-child-line-disabled "></div>
+            <p>Talent Augmentation</p>
+          </div>
+          <div
+            onClick={() => slideTo(0)}
+            className="above-the-fold-section-navigation-child section-three-skills"
+          >
+            <div className="above-the-fold-section-navigation-child-line-disabled"></div>
+            <p>Skills Uplifting</p>
           </div>
         </div>
       </div>
     </div>
   );
 }
+AboveTheFoldSectionThree.propTypes = {
+  scrollToRef: PropTypes.func.isRequired,
+  slideTo: PropTypes.func.isRequired,
+};
 
 export default AboveTheFoldSectionThree;

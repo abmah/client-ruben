@@ -57,6 +57,12 @@ function LandingPage({ scrollRef, scrollRefTwo, scrollRefThree }) {
     }
   };
 
+  const slideTo = (slideIndex) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(slideIndex);
+    }
+  };
+
   return (
     <div className="above-the-fold-container">
       <Swiper
@@ -71,14 +77,18 @@ function LandingPage({ scrollRef, scrollRefTwo, scrollRefThree }) {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="above-the-fold-swiper"
       >
+        {" "}
         <SwiperSlide>
-          <AboveTheFoldSectionOne scrollToRef={scrollToRef} />
+          <AboveTheFoldSectionThree
+            scrollToRef={scrollToRef}
+            slideTo={slideTo}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <AboveTheFoldSectionTwo scrollToRef={scrollToRef} />
+          <AboveTheFoldSectionOne scrollToRef={scrollToRef} slideTo={slideTo} />
         </SwiperSlide>
         <SwiperSlide>
-          <AboveTheFoldSectionThree scrollToRef={scrollToRef} />
+          <AboveTheFoldSectionTwo scrollToRef={scrollToRef} slideTo={slideTo} />
         </SwiperSlide>
       </Swiper>
     </div>

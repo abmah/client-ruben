@@ -151,15 +151,15 @@
 }
 
 .sub-menu-talent {
-  left: -92px;
-}
-
-.sub-menu-skills {
   left: -185px;
 }
 
-.sub-menu-tech {
+.sub-menu-skills {
   left: -277px;
+}
+
+.sub-menu-tech {
+  left: -94px;
 }
 
 

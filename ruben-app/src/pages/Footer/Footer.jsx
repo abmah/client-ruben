@@ -10,7 +10,21 @@ function Footer() {
             <Link to="/" className="footer-top-item footer-logo-container">
               <img src={DigitalFuture} alt="DigitalFuture" />
             </Link>
-
+            <div className="footer-top-item footer-top-item-tech">
+              <p className="footer-top-item-title">Cloud</p>
+              <Link to="infrastructure" className="footer-top-item-option">
+                Cloud Adoption and Migration
+              </Link>
+              <Link to="data" className="footer-top-item-option">
+                Data, Analytics, AI
+              </Link>
+              <Link to="collaboration" className="footer-top-item-option">
+                Productivity and Collaboration
+              </Link>
+              <Link to="security" className="footer-top-item-option">
+                Security and Compliance
+              </Link>
+            </div>
             <div className="footer-top-item">
               <a className="footer-top-item-title">Talent</a>
               <Link to="/digital-experts" className="footer-top-item-option">
@@ -44,21 +58,7 @@ function Footer() {
                 Customized Programs
               </Link>
             </div>
-            <div className="footer-top-item footer-top-item-tech">
-              <p className="footer-top-item-title">Cloud</p>
-              <Link to="infrastructure" className="footer-top-item-option">
-                Cloud Adoption and Migration
-              </Link>
-              <Link to="data" className="footer-top-item-option">
-                Data, Analytics, AI
-              </Link>
-              <Link to="collaboration" className="footer-top-item-option">
-                Productivity and Collaboration
-              </Link>
-              <Link to="security" className="footer-top-item-option">
-                Security and Compliance
-              </Link>
-            </div>
+
             <div className="footer-top-item footer-top-item-about-contact">
               <p className="footer-top-item-title">Company</p>
               {/* <Link to="/about" className="footer-top-item-option">

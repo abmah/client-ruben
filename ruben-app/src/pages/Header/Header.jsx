@@ -73,6 +73,10 @@ function Header() {
             <Link to="/" className="menu-item menu-item-about">
               <p>Home</p>
             </Link>
+            <div className="menu-item menu-item-tech">
+              <p>Cloud</p>
+              <Tech />
+            </div>
             <div className="menu-item menu-item-talent">
               <p>Talent</p>
               <Talent />
@@ -80,10 +84,6 @@ function Header() {
             <div className="menu-item menu-item-skills">
               <p>Skills</p>
               <Skills />
-            </div>
-            <div className="menu-item menu-item-tech">
-              <p>Cloud</p>
-              <Tech />
             </div>
           </div>
         </div>

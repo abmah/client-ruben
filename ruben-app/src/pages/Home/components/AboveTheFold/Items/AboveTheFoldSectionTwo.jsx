@@ -4,7 +4,9 @@ import "../above-the-fold.css";
 import WomanImage from "../main-woman.jpg";
 import MainWomanSquares from "../main-woman-squares.svg";
 import mobileSquares from "../woman-mobile-squares.svg";
-function AboveTheFoldSectionTwo({ scrollToRef }) {
+import PropTypes from "prop-types";
+
+function AboveTheFoldSectionTwo({ scrollToRef, slideTo }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-two">
       <div className="above-the-fold-gray-image">
@@ -51,7 +53,18 @@ function AboveTheFoldSectionTwo({ scrollToRef }) {
           </Link>
         </div>
         <div className="above-the-fold-section-navigation">
-          <div className="above-the-fold-section-navigation-child">
+          {" "}
+          <div
+            onClick={() => slideTo(2)}
+            className="above-the-fold-section-navigation-child section-two-tech"
+          >
+            <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue"></div>
+            <p>Cloud Transformation</p>
+          </div>
+          <div
+            onClick={() => slideTo(0)}
+            className="above-the-fold-section-navigation-child"
+          >
             <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue "></div>
             <p>Talent Augmentation</p>
           </div>
@@ -61,14 +74,14 @@ function AboveTheFoldSectionTwo({ scrollToRef }) {
               Skills Uplifting
             </p>
           </div>
-          <div className="above-the-fold-section-navigation-child">
-            <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue"></div>
-            <p>Cloud Transformation</p>
-          </div>
         </div>
       </div>
     </div>
   );
 }
+AboveTheFoldSectionTwo.propTypes = {
+  scrollToRef: PropTypes.func.isRequired,
+  slideTo: PropTypes.func.isRequired,
+};
 
 export default AboveTheFoldSectionTwo;

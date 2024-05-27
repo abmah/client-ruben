@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import ManPhoto from "../main-man.jpg";
 import "../above-the-fold.css";
 import MainManSquares from "../main-man-sqaures.svg";
-
 import mobileSquares from "../man-mobile-squares.svg";
-function AboveTheFoldSectionOne({ scrollToRef }) {
+import PropTypes from "prop-types";
+
+function AboveTheFoldSectionOne({ scrollToRef, slideTo }) {
   return (
     <div className="above-the-fold-section above-the-fold-section-one">
       <div className="above-the-fold-gray-image">
@@ -12,12 +13,12 @@ function AboveTheFoldSectionOne({ scrollToRef }) {
           className="above-the-fold-main-image"
           src={ManPhoto}
           alt="above-the-fold-gray-image"
-        />{" "}
+        />
         <img
           src={MainManSquares}
           className="above-the-fold-squares above-the-fold-squares-one"
           alt="squares"
-        />{" "}
+        />
         <img
           className="above-the-fold-mobile-squares"
           src={mobileSquares}
@@ -51,24 +52,35 @@ function AboveTheFoldSectionOne({ scrollToRef }) {
           </Link>
         </div>
         <div className="above-the-fold-section-navigation">
+          <div
+            className="above-the-fold-section-navigation-child section-one-tech"
+            onClick={() => slideTo(0)} // Slide to the first section
+          >
+            <div className="above-the-fold-section-navigation-child-line-disabled"></div>
+            <p>Cloud Transformation</p>
+          </div>
           <div className="above-the-fold-section-navigation-child section-one-talent">
             <div className="above-the-fold-section-navigation-child-line "></div>
             <p className="above-the-fold-section-navigation-child-selected">
               Talent Augmentation
             </p>
           </div>
-          <div className="above-the-fold-section-navigation-child section-one-skills">
+          <div
+            className="above-the-fold-section-navigation-child section-one-skills"
+            onClick={() => slideTo(2)} // Slide to the third section
+          >
             <div className="above-the-fold-section-navigation-child-line-disabled"></div>
             <p>Skills Uplifting</p>
-          </div>
-          <div className="above-the-fold-section-navigation-child section-one-tech">
-            <div className="above-the-fold-section-navigation-child-line-disabled"></div>
-            <p>Cloud Transformation</p>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+AboveTheFoldSectionOne.propTypes = {
+  scrollToRef: PropTypes.func.isRequired,
+  slideTo: PropTypes.func.isRequired,
+};
 
 export default AboveTheFoldSectionOne;

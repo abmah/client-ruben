@@ -78,7 +78,16 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
             <div className="right-facing-arrow about-mobile-menu-arrow">
               <img src={RightFacingArrowBlue} alt="right-facing-arrow" />
             </div>
-          </Link> */}
+          </Link> */}{" "}
+          <div
+            className="mobile-menu-main-item mobile-menu-main-item-last"
+            onClick={() => handleUpdateCurrentLevel("subTech")}
+          >
+            <p>Cloud Transformation</p>
+            <div className="right-facing-arrow">
+              <img src={RightFacingArrow} alt="right-facing-arrow" />
+            </div>
+          </div>
           <div
             className="mobile-menu-main-item mobile-menu-main-item-second"
             onClick={() => handleUpdateCurrentLevel("subTalent")}
@@ -93,15 +102,6 @@ export default function MobileMenu({ selectedLanguage, onLanguageChange }) {
             onClick={() => handleUpdateCurrentLevel("subSkills")}
           >
             <p>Skills Uplifting</p>
-            <div className="right-facing-arrow">
-              <img src={RightFacingArrow} alt="right-facing-arrow" />
-            </div>
-          </div>
-          <div
-            className="mobile-menu-main-item mobile-menu-main-item-last"
-            onClick={() => handleUpdateCurrentLevel("subTech")}
-          >
-            <p>Cloud Transformation</p>
             <div className="right-facing-arrow">
               <img src={RightFacingArrow} alt="right-facing-arrow" />
             </div>
