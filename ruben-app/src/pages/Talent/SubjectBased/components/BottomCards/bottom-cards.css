@@ -1,4 +1,4 @@
-.talent-strategy-bottom-cards-container {
+.talent-subject-bottom-cards-container {
   color: #192430;
   width: 80%;
   display: flex;
@@ -9,7 +9,7 @@
 }
 
 
-.talent-strategy-bottom-cards-title {
+.talent-subject-bottom-cards-title {
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -17,7 +17,7 @@
   max-width: 700px
 }
 
-.talent-strategy-bottom-cards-parent {
+.talent-subject-bottom-cards-parent {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
@@ -25,29 +25,29 @@
 
 }
 
-.talent-strategy-bottom-card {
+.talent-subject-bottom-card {
   max-width: 416px;
   min-height: 306px;
   padding: 36px;
   border-radius: 24px;
-  border: 2px solid #B2B9C8;
+  border: 2px solid #A62551;
   display: flex;
   flex-direction: column;
   gap: 40px;
 
 }
 
-.talent-strategy-bottom-card-header-circle {
+.talent-subject-bottom-card-header-circle {
   margin-top: 20px;
   width: 56px;
   height: 56px;
   flex-shrink: 0;
-  background: #B2B9C8;
+  background: #A62551;
   border-radius: 56px;
 
 }
 
-.talent-strategy-bottom-card-title {
+.talent-subject-bottom-card-title {
 
   max-width: 344px;
   font-size: 32px;
@@ -57,7 +57,7 @@
 
 }
 
-.talent-strategy-bottom-card-subtitle {
+.talent-subject-bottom-card-subtitle {
 
   font-size: 18px;
   font-style: normal;
@@ -66,39 +66,39 @@
   max-width: 344px;
 }
 
-.talent-strategy-bottom-card-orange {
+.talent-subject-bottom-card-orange {
 
-  border: 2px solid #F9B934;
+  border: 2px solid #A62551;
 }
 
-.talent-strategy-bottom-card-orange div:nth-child(1) {
-  background-color: #F9B934;
+.talent-subject-bottom-card-orange div:nth-child(1) {
+  background-color: #A62551;
 }
 
-.talent-strategy-bottom-card-blue {
-  border: 2px solid #222B38;
+.talent-subject-bottom-card-blue {
+  border: 2px solid #A62551;
 }
 
-.talent-strategy-bottom-card-blue div:nth-child(1) {
-  background-color: #222B38;
+.talent-subject-bottom-card-blue div:nth-child(1) {
+  background-color: #A62551;
 }
 
 
 @media screen and (max-width:1300px) {
 
 
-  .talent-strategy-bottom-cards-container {
+  .talent-subject-bottom-cards-container {
     width: 90%;
   }
 
 
-  .talent-strategy-bottom-card {
+  .talent-subject-bottom-card {
     max-width: 362px;
     min-height: 252px;
     gap: 24px;
   }
 
-  .talent-strategy-bottom-card-title {
+  .talent-subject-bottom-card-title {
 
     font-size: 18px;
     font-style: normal;
@@ -107,7 +107,7 @@
 
   }
 
-  .talent-strategy-bottom-card-subtitle {
+  .talent-subject-bottom-card-subtitle {
 
     font-size: 16px;
     font-style: normal;
@@ -123,13 +123,13 @@
 @media screen and (max-width:1000px) {
 
 
-  .talent-strategy-bottom-cards-parent {
+  .talent-subject-bottom-cards-parent {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .talent-strategy-bottom-cards-title {
+  .talent-subject-bottom-cards-title {
     font-size: 24px;
     font-style: normal;
     font-weight: 600;

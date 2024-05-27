@@ -58,9 +58,10 @@
 }
 
 .active-cloud {
-  background: #2d3748;
+  background: #176B87;
   color: white;
 }
+
 
 .cloud-security-services-nav-item-long {
   padding-right: 28px;
@@ -124,8 +125,8 @@
   width: 184px;
   height: 56px;
   flex-shrink: 0;
-  background: #f9b934;
-  color: #222b38;
+  background: #192430;
+  color: #ffffff;
   font-size: 18px;
   font-style: normal;
   display: flex;

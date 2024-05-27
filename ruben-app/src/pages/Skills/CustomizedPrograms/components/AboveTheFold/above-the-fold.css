@@ -1,5 +1,5 @@
 .skills-programs-above-the-fold-wrapper {
-  height: 650px;
+  height: 750px;
   overflow: hidden;
   margin-top: 10px;
 }
@@ -7,11 +7,9 @@
 .skills-programs-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #F9B934;
+  background-color: #EFF2F5;
   display: flex;
   align-items: center;
-  border-radius: 24px;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -21,6 +19,7 @@
   width: 60%;
   overflow: hidden;
   margin: 0 auto;
+  margin-left: 5%;
 }
 
 .skills-programs-above-the-fold-left-section {
@@ -63,8 +62,8 @@
 }
 
 .skills-programs-learn-more-button {
-  background-color: white;
-  color: #222b38;
+  background-color: #111720;
+  color: #ffffff;
   border: none;
 }
 
@@ -72,16 +71,28 @@
   background-color: transparent;
   border: 2px solid #192430;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.skills-programs-above-the-fold-img {
+.skills-programs-above-the-fold-img-container {
+  position: relative;
+}
+
+.skills-programs-above-the-fold-main-image {
+
+  object-position: 20% -100%;
+}
+
+.skills-programs-shape {
   position: absolute;
-  right: 0;
-  z-index: 1;
-  bottom: 2%;
-  pointer-events: none;
+  top: 0;
+  left: -100px;
+}
+
+.skills-programs-shape-mobile {
+  position: absolute;
+  display: none;
 }
 
 @media screen and (max-width: 1700px) {
@@ -92,16 +103,17 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .skills-programs-above-the-fold-left-section-wrapper {
-    width: 95%;
-    margin: 0 auto;
+  .skills-programs-above-the-fold-img-container {
+    width: 50%;
+    height: 100%;
   }
 
-  .skills-programs-above-the-fold-img {
-    right: -170px;
+  .skills-programs-above-the-fold-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
-
 
 @media screen and (max-width: 1200px) {
   .skills-programs-above-the-fold-left-section {
@@ -113,66 +125,75 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-  /* .skills-programs-cards-container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .skills-programs-image-parent {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 362px;
-  } */
-
-  .skills-programs-above-the-fold-img {
-    right: -120px;
-    height: 40%;
-
+@media screen and (max-width: 900px) {
+  .skills-programs-shape {
+    top: unset;
+    bottom: 0;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .skills-programs-above-the-fold-main-title {
-    font-size: 36px;
-  }
 
-
-
-  .skills-programs-above-the-fold-left-section {
-    width: 100%;
-  }
-
-  .skills-programs-above-the-fold-button-container {
+  .skills-programs-shape {
     display: none;
   }
 
-  .skills-programs-above-the-fold-img {
+  .skills-programs-above-the-fold-main-image {
+    object-position: unset;
+  }
+
+  .skills-programs-shape-mobile {
     display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(-1);
+    bottom: -73px;
+  }
+
+  .skills-programs-above-the-fold-container {
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
   }
 
   .skills-programs-above-the-fold-wrapper {
     height: auto;
   }
 
-  .skills-programs-above-the-fold-container {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
+  .skills-programs-above-the-fold-main-title {
+    font-size: 36px;
+    line-height: normal;
   }
 
-  .skills-programs-above-the-fold-img {
-    position: static;
-    order: -1;
-    width: 230%;
-    margin-left: -120%;
-
+  .skills-programs-above-the-fold-left-section-wrapper {
+    width: 95%;
+    margin: 0;
+    overflow: unset;
   }
 
   .skills-programs-above-the-fold-left-section {
+    margin: 0;
+    margin-top: 85px;
+    width: 100%;
     order: 2;
+  }
+
+  .skills-programs-above-the-fold-button-container {
+    /* display: none; */
+  }
+
+  .skills-programs-get-in-contact-button {
+    display: none;
+  }
+
+  .skills-programs-learn-more-button {
+    width: 100%;
+  }
+
+  .skills-programs-above-the-fold-img-container {
+    display: block;
+    height: 345px;
+    width: 100%;
+    order: -1;
   }
 }

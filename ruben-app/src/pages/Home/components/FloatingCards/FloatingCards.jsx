@@ -1,13 +1,17 @@
 import "./floating-cards.css";
-import { useState } from "react";
 import { useEffect } from "react";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// import animationData from "./Accenture_CardIllu_Anim_001_Timed_Alpha_violet.json";
+// import animationDataTwo from "./Accenture_CardIllu_Anim_002_Timed_Alpha_red.json";
+// import animationDataThree from "./Accenture_CardIllu_Anim_003_Timed_Alpha_blue.json";
+// import lottie from "lottie-web";
 import PropTypes from "prop-types";
 import Star from "./star.svg";
 import Light from "./light.svg";
 import Cloud from "./cloud.svg";
-
 FloatingCards.propTypes = {
   scrollRef: PropTypes.object.isRequired,
   scrollRefTwo: PropTypes.object.isRequired,
@@ -15,23 +19,13 @@ FloatingCards.propTypes = {
 };
 
 function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
-  const [activeCard, setActiveCard] = useState(null);
-
-  const toggleActiveCard = (card) => {
-    setActiveCard(activeCard === card ? null : card);
-  };
-
-  useEffect(() => {
-    console.log(activeCard);
-  }, [activeCard]);
-
   const scrollToRef = (num) => {
     if (scrollRef.current) {
-      if (num === 1) {
+      if (num == 1) {
         scrollRef.current.scrollIntoView({
           behavior: "smooth",
         });
-      } else if (num === 2) {
+      } else if (num == 2) {
         scrollRefTwo.current.scrollIntoView({
           behavior: "smooth",
           alignToTop: false,
@@ -47,9 +41,101 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
     }
   };
 
+  // useEffect(() => {
+  //   const playAnimation = (animation, direction) => {
+  //     animation.setDirection(direction);
+  //     animation.play();
+  //   };
+
+  //   const containerOne = document.querySelector(
+  //     ".floating-card-background-first"
+  //   );
+  //   const containerTwo = document.querySelector(
+  //     ".floating-card-background-second"
+  //   );
+  //   const containerThree = document.querySelector(
+  //     ".floating-card-background-third"
+  //   );
+
+  //   const firstCard = document.querySelector(".floating-card-one");
+  //   const secondCard = document.querySelector(".floating-card-two");
+  //   const thirdCard = document.querySelector(".floating-card-three");
+
+  //   const animationOne = lottie.loadAnimation({
+  //     container: containerOne,
+  //     renderer: "svg",
+  //     loop: false,
+  //     autoplay: false,
+  //     animationData: animationData,
+  //   });
+
+  //   const animationTwo = lottie.loadAnimation({
+  //     container: containerTwo,
+  //     renderer: "svg",
+  //     loop: false,
+  //     autoplay: false,
+  //     animationData: animationDataTwo,
+  //   });
+
+  //   const animationThree = lottie.loadAnimation({
+  //     container: containerThree,
+  //     renderer: "svg",
+  //     loop: false,
+  //     autoplay: false,
+  //     animationData: animationDataThree,
+  //   });
+
+  //   firstCard.addEventListener("mouseenter", () =>
+  //     playAnimation(animationOne, 1)
+  //   );
+  //   firstCard.addEventListener("mouseleave", () =>
+  //     playAnimation(animationOne, -1)
+  //   );
+
+  //   secondCard.addEventListener("mouseenter", () =>
+  //     playAnimation(animationTwo, 1)
+  //   );
+  //   secondCard.addEventListener("mouseleave", () =>
+  //     playAnimation(animationTwo, -1)
+  //   );
+
+  //   thirdCard.addEventListener("mouseenter", () =>
+  //     playAnimation(animationThree, 1)
+  //   );
+  //   thirdCard.addEventListener("mouseleave", () =>
+  //     playAnimation(animationThree, -1)
+  //   );
+
+  //   return () => {
+  //     firstCard.removeEventListener("mouseenter", () =>
+  //       playAnimation(animationOne, 1)
+  //     );
+  //     firstCard.removeEventListener("mouseleave", () =>
+  //       playAnimation(animationOne, -1)
+  //     );
+
+  //     secondCard.removeEventListener("mouseenter", () =>
+  //       playAnimation(animationTwo, 1)
+  //     );
+  //     secondCard.removeEventListener("mouseleave", () =>
+  //       playAnimation(animationTwo, -1)
+  //     );
+
+  //     thirdCard.removeEventListener("mouseenter", () =>
+  //       playAnimation(animationThree, 1)
+  //     );
+  //     thirdCard.removeEventListener("mouseleave", () =>
+  //       playAnimation(animationThree, -1)
+  //     );
+
+  //     animationOne.destroy();
+  //     animationTwo.destroy();
+  //     animationThree.destroy();
+  //   };
+  // }, []);
   useEffect(() => {
     const mm = gsap.matchMedia();
-    const breakPoint = 900;
+    const breakPoint = 0;
 
     let ctx = gsap.context(() => {
       mm.add(
@@ -60,7 +146,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
           }px) and (prefers-reduced-motion: no-preference)`,
         },
         (context) => {
-          let { isDesktop, isMobile } = context.conditions;
+          let { isDesktop } = context.conditions;
           if (isDesktop) {
             ScrollTrigger.create({
               trigger: ".floating-cards-wrapper",
@@ -68,8 +154,6 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
               end: "bottom bottom",
               pin: ".floating-cards-background",
             });
-          } else if (isMobile) {
-            // Mobile-specific logic here
           }
         }
       );
@@ -80,7 +164,6 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
       mm.kill();
     };
   }, []);
-
   return (
     <div className="floating-cards-wrapper">
       <div className="floating-cards-container">
@@ -91,15 +174,8 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
         </div>
         <div className="spacing"></div>
         <div className="floating-cards-parent">
-          <div
-            className="floating-card floating-card-one"
-            onClick={() => toggleActiveCard(1)}
-          >
-            <div
-              className={`floating-card-content ${
-                activeCard === 1 ? "active" : ""
-              }`}
-            >
+          <div className="floating-card floating-card-one">
+            <div className="floating-card-content">
               <div className="floating-card-first-section">
                 <div className="floating-card-first-section-header">
                   <div className="floating-card-first-section-header-left-section">
@@ -117,6 +193,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                   <div className="floating-card-first-section-footer-right-section"></div>
                 </div>
               </div>
+
               <div className="floating-card-second-section">
                 <div className="floating-card-second-section-content">
                   <div className="floating-card-second-section-header">
@@ -141,16 +218,11 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                 </div>
               </div>
             </div>
+            <div className="floating-card floating-card-two"></div>
+            <div className="floating-card floating-card-three"></div>
           </div>
-          <div
-            className="floating-card floating-card-two"
-            onClick={() => toggleActiveCard(2)}
-          >
-            <div
-              className={`floating-card-content ${
-                activeCard === 2 ? "" : "active"
-              }`}
-            >
+          <div className="floating-card floating-card-two">
+            <div className="floating-card-content">
               <div className="floating-card-first-section">
                 <div className="floating-card-first-section-header">
                   <div className="floating-card-first-section-header-left-section">
@@ -168,6 +240,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                   </div>
                 </div>
               </div>
+
               <div className="floating-card-second-section">
                 <div className="floating-card-second-section-content">
                   <div className="floating-card-second-section-header">
@@ -193,16 +266,11 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                 </div>
               </div>
             </div>
+            <div className="floating-card floating-card-two"></div>
+            <div className="floating-card floating-card-three"></div>
           </div>
-          <div
-            className="floating-card floating-card-three"
-            onClick={() => toggleActiveCard(3)}
-          >
-            <div
-              className={`floating-card-content ${
-                activeCard === 3 ? "active" : ""
-              }`}
-            >
+          <div className="floating-card floating-card-three">
+            <div className="floating-card-content">
               <div className="floating-card-first-section">
                 <div className="floating-card-first-section-header">
                   <div className="floating-card-first-section-header-left-section floating-card-first-section-header-left-section-third">
@@ -223,19 +291,20 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                   </div>
                 </div>
               </div>
+
               <div className="floating-card-second-section">
                 <div className="floating-card-second-section-content">
                   <div className="floating-card-second-section-header">
                     <p>
                       What if you could instantly move to scalable, modern IT
-                      environments without upfront costs?
+                      invironments without upfront costs?
                     </p>
                     <p>
                       if the mess in data and its security would not be a
                       concern anymore?
                     </p>
                     <p>
-                      Check how our Technology implementation can <br />{" "}
+                      Check how our Technology imeplementation can <br />{" "}
                       optimize your operations.
                     </p>
                   </div>
@@ -249,6 +318,8 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                 </div>
               </div>
             </div>
+            <div className="floating-card floating-card-two"></div>
+            <div className="floating-card floating-card-three"></div>
           </div>
           <div className="spacing-two"></div>
         </div>

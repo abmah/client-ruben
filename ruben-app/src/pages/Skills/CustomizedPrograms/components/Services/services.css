@@ -58,8 +58,8 @@
 }
 
 .active-skills {
-  background: #f9b934;
-  color: #192430;
+  background: #5E1675;
+  color: #EFEEEA;
 }
 
 .skills-programs-services-nav-item-long {
@@ -124,8 +124,8 @@
   width: 184px;
   height: 56px;
   flex-shrink: 0;
-  background: #f9b934;
-  color: #222b38;
+  background: #192430;
+  color: #EFEEEA;
   font-size: 18px;
   font-style: normal;
   display: flex;

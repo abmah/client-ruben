@@ -1,66 +1,52 @@
 import "./above-the-fold.css";
+import OpenAcademy from "./young-man-listening-music-study-session.jpg";
+import SquareShape from "./shape.svg";
+import ShapeMobile from "./shape-mobile.svg";
 
-import lottie from "lottie-web";
-import { useRef, useEffect } from "react";
-
-import animationData from "./cloud-adoption.json";
 import { Link } from "react-router-dom";
-
 function AboveTheFold() {
-  const container = useRef(null);
-
-  useEffect(() => {
-    const animation = lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      animationData: animationData,
-    });
-
-    return () => {
-      animation.destroy();
-    };
-  }, []);
-
   const handleLearnMoreClick = () => {
     window.scrollBy({
       top: 400,
       behavior: "smooth",
     });
   };
-
   return (
-    <div className="cloud-adoption-above-the-fold-wrapper">
-      <div className="cloud-adoption-above-the-fold-container">
-        <div className="cloud-adoption-above-the-fold-left-section-wrapper">
-          <div className="cloud-adoption-above-the-fold-left-section">
-            <h1 className="cloud-adoption-above-the-fold-main-title">
-              Modernize Your
-              <br /> <strong> IT Infrastructure</strong> <br />
-              with our Cloud Adoption and Managed Services
+    <div className="tech-cloud-above-the-fold-wrapper">
+      <div className="tech-cloud-above-the-fold-container">
+        <div className="tech-cloud-above-the-fold-left-section-wrapper">
+          <div className="tech-cloud-above-the-fold-left-section">
+            <h1 className="tech-cloud-above-the-fold-main-title">
+              Modernize Your <strong> IT Infrastructure</strong> with our Cloud
+              Adoption and Managed Services
             </h1>
-            <div className="cloud-adoption-above-the-fold-button-container">
+            <div className="tech-cloud-above-the-fold-button-container">
               <button
                 onClick={handleLearnMoreClick}
-                className="cloud-adoption-learn-more-button"
+                className="tech-cloud-learn-more-button"
               >
                 Learn More
               </button>
-              <Link
-                to="/contact"
-                className="cloud-adoption-get-in-contact-button"
-              >
+              <Link to="/contact" className="tech-cloud-get-in-contact-button">
                 Get in contact
               </Link>
             </div>
           </div>
         </div>
-        <div
-          ref={container}
-          className="cloud-adoption-above-the-fold-img"
-          alt="adoptionstructure"
-        ></div>
+        <div className="tech-cloud-above-the-fold-img-container">
+          <img
+            className="tech-cloud-above-the-fold-main-image"
+            src={OpenAcademy}
+            alt="open-cloud"
+          />
+          <img className="tech-cloud-shape" src={SquareShape} alt="shape" />
+          <img
+            className="tech-cloud-shape-mobile"
+            src={ShapeMobile}
+            alt="shape"
+          />
+          {/* <img className="tech-cloud-shape-two" src={ShapeTwo} alt="shape" /> */}
+        </div>
       </div>
     </div>
   );

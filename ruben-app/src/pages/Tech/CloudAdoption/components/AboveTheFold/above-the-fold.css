@@ -1,55 +1,54 @@
-.cloud-adoption-above-the-fold-wrapper {
-  height: 650px;
+.tech-cloud-above-the-fold-wrapper {
+  height: 750px;
   overflow: hidden;
   margin-top: 10px;
 }
 
-.cloud-adoption-above-the-fold-container {
+.tech-cloud-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #2d3748;
+  background-color: #EFF2F5;
   display: flex;
   align-items: center;
-  border-radius: 24px;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
 }
 
-.cloud-adoption-above-the-fold-left-section-wrapper {
+.tech-cloud-above-the-fold-left-section-wrapper {
   width: 60%;
   overflow: hidden;
   margin: 0 auto;
+  margin-left: 5%;
 }
 
-.cloud-adoption-above-the-fold-left-section {
+.tech-cloud-above-the-fold-left-section {
   width: 640px;
   z-index: 3;
 }
 
-.cloud-adoption-above-the-fold-main-title {
-  color: #fff;
+.tech-cloud-above-the-fold-main-title {
+  color: #111720;
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 
-.cloud-adoption-above-the-fold-main-title strong {
-  color: #fff;
+.tech-cloud-above-the-fold-main-title strong {
+  color: #176B87 !important;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.cloud-adoption-above-the-fold-button-container {
+.tech-cloud-above-the-fold-button-container {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.cloud-adoption-above-the-fold-button-container * {
+.tech-cloud-above-the-fold-button-container * {
   width: 184px;
   height: 56px;
   flex-shrink: 0;
@@ -57,99 +56,147 @@
   border-radius: 56px;
   font-size: 18px;
   font-style: normal;
+  color: #192430;
   font-weight: 500;
   line-height: normal;
 }
 
-.cloud-adoption-learn-more-button {
-  background-color: white;
-  color: #222b38;
+.tech-cloud-learn-more-button {
+  background-color: #111720;
+  color: #ffffff;
   border: none;
 }
 
-.cloud-adoption-get-in-contact-button {
+.tech-cloud-get-in-contact-button {
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #192430;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cloud-adoption-above-the-fold-img {
+.tech-cloud-above-the-fold-img-container {
+  position: relative;
+}
+
+.tech-cloud-shape {
   position: absolute;
-  right: 0;
-  z-index: 1;
+  top: 0%;
+  left: -100px;
+}
+
+.tech-cloud-shape-mobile {
+  position: absolute;
+  display: none;
+}
+
+.tech-cloud-shape-two {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media screen and (max-width: 1700px) {
-  .cloud-adoption-above-the-fold-left-section-wrapper {
+  .tech-cloud-above-the-fold-left-section-wrapper {
     width: 80%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 1500px) {
-  .cloud-adoption-above-the-fold-left-section-wrapper {
-    width: 95%;
-    margin: 0 auto;
+  .tech-cloud-above-the-fold-img-container {
+    width: 50%;
+    height: 100%;
   }
 
-  .cloud-adoption-above-the-fold-img {
-    width: 50%;
-    bottom: 0;
+  .tech-cloud-above-the-fold-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .cloud-adoption-above-the-fold-left-section {
+  .tech-cloud-above-the-fold-left-section {
     width: 386px;
   }
 
-  .cloud-adoption-above-the-fold-main-title {
+  .tech-cloud-above-the-fold-main-title {
     font-size: 44px;
   }
 }
 
-
+@media screen and (max-width: 900px) {
+  .tech-cloud-shape {
+    top: unset;
+    bottom: 0;
+  }
+}
 
 @media screen and (max-width: 700px) {
-  .cloud-adoption-above-the-fold-main-title {
-    font-size: 36px;
-  }
 
 
-
-  .cloud-adoption-above-the-fold-left-section {
-    width: 100%;
-  }
-
-  .cloud-adoption-above-the-fold-button-container {
+  .tech-cloud-shape-two {
     display: none;
   }
 
-  .cloud-adoption-above-the-fold-img {
+  .tech-cloud-shape {
+    display: none;
+  }
+
+  .tech-cloud-shape-mobile {
     display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -73px;
+
   }
 
-  .cloud-adoption-above-the-fold-wrapper {
-    height: auto;
-  }
-
-  .cloud-adoption-above-the-fold-container {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    width: 95vw;
+  .tech-cloud-above-the-fold-container {
     display: flex;
+    padding-bottom: 30px;
     flex-direction: column;
   }
 
-  .cloud-adoption-above-the-fold-img {
-    position: static;
-    order: -1;
+  .tech-cloud-above-the-fold-wrapper {
+    height: auto;
+  }
+
+  .tech-cloud-above-the-fold-main-title {
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .tech-cloud-above-the-fold-left-section-wrapper {
+    width: 95%;
+    margin: 0;
+    overflow: unset;
+  }
+
+  .tech-cloud-above-the-fold-left-section {
+    margin: 0;
+    margin-top: 85px;
+    width: 100%;
+    order: 2;
+  }
+
+  .tech-cloud-above-the-fold-button-container {
+    /* display: none; */
+  }
+
+  .tech-cloud-get-in-contact-button {
+    display: none;
+  }
+
+  .tech-cloud-learn-more-button {
     width: 100%;
   }
 
-  .cloud-adoption-above-the-fold-left-section {
-    order: 2;
+  .tech-cloud-above-the-fold-img-container {
+    display: block;
+    height: 345px;
+    width: 100%;
+    order: -1;
   }
 }

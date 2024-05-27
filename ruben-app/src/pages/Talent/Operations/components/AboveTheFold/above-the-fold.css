@@ -1,5 +1,5 @@
 .talent-operations-above-the-fold-wrapper {
-  height: 650px;
+  height: 750px;
   overflow: hidden;
   margin-top: 10px;
 }
@@ -7,11 +7,9 @@
 .talent-operations-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #718096;
+  background-color: #EFF2F5;
   display: flex;
   align-items: center;
-  border-radius: 24px;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -21,6 +19,7 @@
   width: 60%;
   overflow: hidden;
   margin: 0 auto;
+  margin-left: 5%;
 }
 
 .talent-operations-above-the-fold-left-section {
@@ -29,7 +28,7 @@
 }
 
 .talent-operations-above-the-fold-main-title {
-  color: #fff;
+  color: #111720;
   font-size: 56px;
   font-style: normal;
   font-weight: 300;
@@ -37,7 +36,7 @@
 }
 
 .talent-operations-above-the-fold-main-title strong {
-  color: #fff;
+  color: #A62551 !important;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -57,29 +56,38 @@
   border-radius: 56px;
   font-size: 18px;
   font-style: normal;
+  color: #192430;
   font-weight: 500;
   line-height: normal;
 }
 
 .talent-operations-learn-more-button {
-  background-color: white;
-  color: #222b38;
+  background-color: #111720;
+  color: #ffffff;
   border: none;
 }
 
 .talent-operations-get-in-contact-button {
   background-color: transparent;
+  border: 2px solid #192430;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
 }
 
-.talent-operations-above-the-fold-img {
+.talent-operations-above-the-fold-img-container {
+  position: relative;
+}
+
+.talent-operations-shape {
   position: absolute;
-  right: 10%;
-  z-index: 1;
-  pointer-events: none;
+  top: 0%;
+  left: -100px;
+}
+
+.talent-operations-shape-mobile {
+  position: absolute;
+  display: none;
 }
 
 @media screen and (max-width: 1700px) {
@@ -90,14 +98,17 @@
 }
 
 @media screen and (max-width: 1500px) {
-  .talent-operations-above-the-fold-left-section-wrapper {
-    width: 95%;
-    margin: 0 auto;
+  .talent-operations-above-the-fold-img-container {
+    width: 50%;
+    height: 100%;
   }
 
-
+  .talent-operations-above-the-fold-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
-
 
 @media screen and (max-width: 1200px) {
   .talent-operations-above-the-fold-left-section {
@@ -109,53 +120,72 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
-
-  .talent-operations-above-the-fold-img {
-    right: -20%;
+@media screen and (max-width: 900px) {
+  .talent-operations-shape {
+    top: unset;
+    bottom: 0;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .talent-operations-above-the-fold-main-title {
-    font-size: 36px;
-  }
 
-
-
-  .talent-operations-above-the-fold-left-section {
-    width: 100%;
-  }
-
-  .talent-operations-above-the-fold-button-container {
+  .talent-operations-shape {
     display: none;
   }
 
-  .talent-operations-above-the-fold-img {
+  .talent-operations-shape-mobile {
     display: block;
+    position: absolute;
+    right: 0%;
+    /* transform: translateX(-50%); */
+    bottom: -73px;
+
+  }
+
+  .talent-operations-above-the-fold-container {
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
   }
 
   .talent-operations-above-the-fold-wrapper {
     height: auto;
   }
 
-  .talent-operations-above-the-fold-container {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    width: 95vw;
-    display: flex;
-    flex-direction: column;
+  .talent-operations-above-the-fold-main-title {
+    font-size: 36px;
+    line-height: normal;
   }
 
-  .talent-operations-above-the-fold-img {
-    position: static;
-    order: -1;
-    width: 70%;
-    /* transform: rotate(90deg); */
-
+  .talent-operations-above-the-fold-left-section-wrapper {
+    width: 95%;
+    margin: 0;
+    overflow: unset;
   }
 
   .talent-operations-above-the-fold-left-section {
+    margin: 0;
+    margin-top: 85px;
+    width: 100%;
     order: 2;
+  }
+
+  .talent-operations-above-the-fold-button-container {
+    /* display: none; */
+  }
+
+  .talent-operations-get-in-contact-button {
+    display: none;
+  }
+
+  .talent-operations-learn-more-button {
+    width: 100%;
+  }
+
+  .talent-operations-above-the-fold-img-container {
+    display: block;
+    height: 345px;
+    width: 100%;
+    order: -1;
   }
 }
