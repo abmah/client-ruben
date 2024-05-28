@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./above-the-fold.css";
 import ContactATF from "../../../../assets/contact-above-the-fold.svg";
 import TopRightArrow from "../../../../assets/top-right-arrow.svg";
+import SquaresBackground from "./squares.svg";
 
 function AboveTheFold() {
   const [name, setName] = useState("");
@@ -51,6 +52,11 @@ function AboveTheFold() {
   return (
     <div className="contact-above-the-fold-wrapper">
       <div className="contact-above-the-fold-container">
+        <img
+          className="contact-above-the-fold-container-squares"
+          src={SquaresBackground}
+          alt="squares"
+        />
         <div className="contact-above-the-fold-content">
           <div className="contact-above-the-fold-left-section">
             <div>

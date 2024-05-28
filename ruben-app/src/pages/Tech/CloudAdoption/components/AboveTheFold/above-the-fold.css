@@ -7,7 +7,7 @@
 .tech-cloud-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #EFF2F5;
+  background-color: #EFEEEA;
   display: flex;
   align-items: center;
   position: relative;
@@ -101,9 +101,14 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .tech-cloud-above-the-fold-left-section {
+    /* border: 1px solid red; */
+    margin-left: 10%;
+  }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
   .tech-cloud-above-the-fold-img-container {
     width: 50%;
     height: 100%;
@@ -114,9 +119,11 @@
     height: 100%;
     object-fit: cover;
   }
+
+
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   .tech-cloud-above-the-fold-left-section {
     width: 386px;
   }

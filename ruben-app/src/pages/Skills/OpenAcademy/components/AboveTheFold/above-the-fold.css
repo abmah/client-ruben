@@ -7,7 +7,7 @@
 .skills-academy-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #EFF2F5;
+  background-color: #EFEEEA;
   display: flex;
   align-items: center;
   position: relative;
@@ -95,9 +95,14 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .skills-academy-above-the-fold-left-section {
+    /* border: 1px solid red; */
+    margin-left: 10%;
+  }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
   .skills-academy-above-the-fold-img-container {
     width: 50%;
     height: 100%;

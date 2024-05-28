@@ -35,21 +35,23 @@
 }
 
 .floating-card-one {
+  top: 490px;
+  right: 10%;
 
-  left: 5%;
 }
 
 .floating-card-two {
 
   color: #192430;
-  right: 10%;
-  top: 490px;
+  left: 5%;
+  top: 980px;
+
 }
 
 .floating-card-three {
 
   left: 25%;
-  top: 980px;
+
 }
 
 .floating-cards-parent {

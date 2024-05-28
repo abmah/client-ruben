@@ -101,9 +101,14 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .talent-operations-above-the-fold-left-section {
+    /* border: 1px solid red; */
+    margin-left: 10%;
+  }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
   .talent-operations-above-the-fold-img-container {
     width: 50%;
     height: 100%;

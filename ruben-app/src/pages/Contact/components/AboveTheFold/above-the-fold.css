@@ -8,7 +8,7 @@
 
 .contact-above-the-fold-container {
 
-  background-image: url('./squares.svg');
+  /* background-image: url('./squares.svg'); */
   color: #222b38;
   width: 98vw;
   height: 90%;
@@ -17,13 +17,21 @@
   position: relative;
   margin: 0 auto;
   display: flex;
-
+  position: relative;
   align-items: center;
+}
+
+.contact-above-the-fold-container-squares {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
 }
 
 .contact-above-the-fold-content {
   width: 80%;
   margin: 0 auto;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   margin-top: -100px;
@@ -181,6 +189,10 @@
 
 @media screen and (max-width:1500px) {
 
+  .contact-atf-form {
+    transform: scale(0.8);
+  }
+
   .contact-above-the-fold-content {
     width: 85%;
     margin: 0 auto;
@@ -204,15 +216,15 @@
 
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1500px) {
   .contact-atf-form {
-    width: 419px;
-    right: 3%;
-    height: 670px;
+    /* width: 419px; */
+    right: -1%;
+    /* height: 670px; */
   }
 
 
-  .contact-atf-input-elements {
+  /* .contact-atf-input-elements {
     gap: 16px;
   }
 
@@ -223,6 +235,11 @@
   .contact-atf-img {
     width: 60%;
     top: 30%;
+  } */
+
+  .contact-above-the-fold-left-section {
+    /* margin-left: 130px; */
+    transform: scale(0.8);
   }
 
 }
@@ -238,6 +255,20 @@
 }
 
 @media screen and (max-width:800px) {
+  .contact-above-the-fold-left-section {
+    /* margin-left: 130px; */
+
+    transform: unset;
+    height: 250px;
+  }
+
+  .contact-atf-form {
+    transform: unset;
+  }
+
+  .contact-above-the-fold-container-squares {
+    display: none;
+  }
 
   .contact-above-the-fold-container {
 
@@ -285,13 +316,13 @@
   .contact-atf-img {
     position: unset;
     width: 100%;
-    margin-top: -180px;
+    /* margin-top: -180px; */
 
   }
 
   .contact-atf-form {
     position: unset;
-    margin-top: -250px;
+    /* margin-top: -250px; */
 
   }
 

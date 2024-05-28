@@ -7,7 +7,7 @@
 .tech-data-above-the-fold-container {
   width: 98vw;
   height: 90%;
-  background-color: #EFF2F5;
+  background-color: #EFEEEA;
   display: flex;
   align-items: center;
   position: relative;
@@ -101,9 +101,14 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  .tech-data-above-the-fold-left-section {
+    /* border: 1px solid red; */
+    margin-left: 10%;
+  }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
   .tech-data-above-the-fold-img-container {
     width: 50%;
     height: 100%;
@@ -126,10 +131,17 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+
+  .tech-data-shape {
+    top: 0%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .tech-data-shape {
-    top: unset;
-    bottom: 0;
+    /* top: unset; */
+    /* bottom: 0; */
   }
 }
 

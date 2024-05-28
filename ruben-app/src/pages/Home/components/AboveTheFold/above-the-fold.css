@@ -305,7 +305,9 @@
 
   .above-the-fold-squares-three {
     margin: unset;
+
     rotate: 180deg;
+    margin-right: -5px;
   }
 
   .above-the-fold-section {
