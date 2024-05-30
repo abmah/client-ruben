@@ -55,15 +55,15 @@ function AboveTheFoldSectionTwo({ scrollToRef, slideTo }) {
         <div className="above-the-fold-section-navigation">
           {" "}
           <div
-            onClick={() => slideTo(2)}
+            onClick={() => slideTo(0)}
             className="above-the-fold-section-navigation-child section-two-tech"
           >
             <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue"></div>
             <p>Cloud Transformation</p>
           </div>
           <div
-            onClick={() => slideTo(0)}
-            className="above-the-fold-section-navigation-child"
+            onClick={() => slideTo(1)}
+            className="above-the-fold-section-navigation-child "
           >
             <div className="above-the-fold-section-navigation-child-line-disabled navigation-line-blue "></div>
             <p>Talent Augmentation</p>

@@ -19,6 +19,10 @@
   color: #192430;
 }
 
+/* .above-the-fold-section-navigation-child {
+  border: 10px solid red;
+} */
+
 .above-the-fold-section {
   display: flex;
   align-items: center;

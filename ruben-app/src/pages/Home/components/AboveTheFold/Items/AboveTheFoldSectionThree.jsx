@@ -33,9 +33,9 @@ function AboveTheFoldSectionThree({ scrollToRef, slideTo }) {
       <div className="image-gradiant-effect"></div>
       <div className="above-the-fold-right-section">
         <h1 className="above-the-fold-main-text">
-          Transform Your Company with Modern, Cloud-Based{" "}
+          Transform Your Company with Modern,{" "}
           <strong className="above-the-fold-main-text-bold above-the-fold-main-text-bold-three">
-            Tech
+            Cloud-Based Tech
           </strong>{" "}
           Stack
         </h1>
@@ -65,14 +65,14 @@ function AboveTheFoldSectionThree({ scrollToRef, slideTo }) {
             </p>
           </div>
           <div
-            onClick={() => slideTo(2)}
+            onClick={() => slideTo(1)}
             className="above-the-fold-section-navigation-child section-three-talent "
           >
             <div className="above-the-fold-section-navigation-child-line-disabled "></div>
             <p>Talent Augmentation</p>
           </div>
           <div
-            onClick={() => slideTo(0)}
+            onClick={() => slideTo(2)}
             className="above-the-fold-section-navigation-child section-three-skills"
           >
             <div className="above-the-fold-section-navigation-child-line-disabled"></div>

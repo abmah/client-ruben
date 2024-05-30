@@ -17,8 +17,8 @@ function AboveTheFold() {
         <div className="talent-operations-above-the-fold-left-section-wrapper">
           <div className="talent-operations-above-the-fold-left-section">
             <h1 className="talent-operations-above-the-fold-main-title">
-              Pre-vetted <strong> Strategy Consultant</strong> Contractors in
-              start-stop model
+              Pre-vetted <strong>Operations Consultants </strong> in start-stop
+              model
             </h1>
             <div className="talent-operations-above-the-fold-button-container">
               <button

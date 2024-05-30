@@ -59,7 +59,9 @@ function LandingPage({ scrollRef, scrollRefTwo, scrollRefThree }) {
 
   const slideTo = (slideIndex) => {
     if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(slideIndex);
+      // console.log(swiperRef.current.swiper);
+      // console.log("slide to", slideIndex);
+      swiperRef.current.swiper.slideToLoop(slideIndex);
     }
   };
 
