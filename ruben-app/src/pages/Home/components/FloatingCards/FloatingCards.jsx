@@ -201,8 +201,8 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                       What if you could reshuffle your team's <br /> expertise
                       and resources whenever needed?
                     </p>
-                    <p>if you could flexibly add and reduce members?</p>
-                    <p>if the and time-to-hire would be close to zero?</p>
+                    <p>If you could flexibly add and reduce members?</p>
+                    <p>If the and time-to-hire would be close to zero?</p>
                     <p>
                       Check how our Talent Augmentation service <br /> helps
                       solve Talent related problems.
@@ -297,10 +297,10 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                   <div className="floating-card-second-section-header">
                     <p>
                       What if you could instantly move to scalable, modern IT
-                      invironments without upfront costs?
+                      Environments without upfront costs?
                     </p>
                     <p>
-                      if the mess in data and its security would not be a
+                      If the mess in data and its security would not be a
                       concern anymore?
                     </p>
                     <p>

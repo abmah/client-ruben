@@ -12,7 +12,7 @@ function BottomCards() {
             <div className="talent-operations-bottom-card-header-circle"></div>
             <div className="talent-operations-bottom-card-title">Save time</div>
             <div className="talent-operations-bottom-card-subtitle">
-              start the project almost immediately after sharing the
+              Start the project almost immediately after sharing the
               requirements
             </div>
           </div>
@@ -22,7 +22,7 @@ function BottomCards() {
               No commitment
             </div>
             <div className="talent-operations-bottom-card-subtitle">
-              incur costs only if you accept the final candidate from us
+              Incur costs only if you accept the final candidate from us
             </div>
           </div>
           <div className="talent-operations-bottom-card talent-operations-bottom-card-blue">
@@ -31,7 +31,7 @@ function BottomCards() {
               Safe and secure
             </div>
             <div className="talent-operations-bottom-card-subtitle">
-              we diligently check background and references of our candidates
+              We diligently check background and references of our candidates
             </div>
           </div>
         </div>

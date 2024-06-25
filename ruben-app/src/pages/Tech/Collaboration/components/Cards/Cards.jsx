@@ -31,7 +31,7 @@ function Cards() {
           <div className="cloud-collaboration-card-header">Use Case</div>
           <div className="cloud-collaboration-card-title">Generative AI</div>
           <p className="cloud-collaboration-card-paragraph">
-            Use tools like Dueat AI, Gemini to optimize workforce productivity
+            Use tools like Duet AI, Gemini to optimize workforce productivity
             and embrace generative AI technologies to support their daily work
             tasks, like: language translation, information research, creating
             content, reports and marketing materials.

@@ -18,7 +18,7 @@ function Cards() {
         <div className="talent-operations-card">
           <div className="talent-operations-card-header">Use Case</div>
           <div className="talent-operations-card-title">
-            Strenghten Consultancy Teams
+            Strengthen Consultancy Teams
           </div>
           <p className="talent-operations-card-paragraph">
             Contractors provide flexibility in team composition, allowing
@@ -30,12 +30,12 @@ function Cards() {
         <div className="talent-operations-card">
           <div className="talent-operations-card-header">Use Case</div>
           <div className="talent-operations-card-title">
-            Strenghten Transformation Teams
+            Strengthen Transformation Teams
           </div>
           <p className="talent-operations-card-paragraph">
             In-house operations consultant can offer a flexible, cost-effective
-            approach in adressing specific organizational challenge. Typically
-            this kind of engagmeent comes with lower overhead costs compared to
+            approach in addressing specific organizational challenge. Typically
+            this kind of engagement comes with lower overhead costs compared to
             employment or hiring a strategy consultancy agencies.
           </p>
         </div>

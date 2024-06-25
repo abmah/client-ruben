@@ -271,7 +271,7 @@ function Services() {
                 </h1>
                 <p className="cloud-adoption-services-right-section-subtitle">
                   Stay ahead of the curve by leveraging the latest in cloud:
-                  speed of delivery, service relability and security
+                  speed of delivery, service reliability and security
                 </p>
                 <div className="cloud-adoption-services-right-section-cards-container">
                   <div className="cloud-adoption-services-right-section-card">

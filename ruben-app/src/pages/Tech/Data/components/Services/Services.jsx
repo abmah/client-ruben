@@ -244,7 +244,7 @@ function Services() {
                 </h1>
                 <p className="cloud-data-services-right-section-subtitle">
                   Stay ahead of the curve by leveraging the Cloud for Data:
-                  speed of delivery, service relability and security
+                  speed of delivery, service reliability and security
                 </p>
                 <div className="cloud-data-services-right-section-cards-container">
                   <div className="cloud-data-services-right-section-card">

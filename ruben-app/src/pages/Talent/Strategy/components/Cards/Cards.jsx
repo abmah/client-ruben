@@ -18,7 +18,7 @@ function Cards() {
         <div className="talent-strategy-card">
           <div className="talent-strategy-card-header">Use Case</div>
           <div className="talent-strategy-card-title">
-            Strenghten Strategy Teams
+            Strengthen Strategy Teams
           </div>
           <p className="talent-strategy-card-paragraph">
             Contractors provide flexibility in team composition, allowing
@@ -32,9 +32,9 @@ function Cards() {
           <div className="talent-strategy-card-title">Inhouse Strategy</div>
           <p className="talent-strategy-card-paragraph">
             In-house strategy contractor can offer a flexible, cost-effective
-            approach in adressing a specific organizational challenge. Typically
-            this kind of engagmeent comes with lower overhead costs compared to
-            employment or hiring a strategy consultancy agencies.
+            approach in addressing a specific organizational challenge.
+            Typically this kind of engagement comes with lower overhead costs
+            compared to employment or hiring a strategy consultancy agencies.
           </p>
         </div>
       </div>

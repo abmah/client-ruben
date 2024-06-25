@@ -137,7 +137,7 @@ function Services() {
                   </div>
                   <div className="talent-subject-services-right-section-card">
                     <img src={Industries} alt="services-image" />
-                    <p>Transporation</p>
+                    <p>Transportation</p>
                   </div>
                   <div className="talent-subject-services-right-section-card">
                     <img src={Industries} alt="services-image" />
