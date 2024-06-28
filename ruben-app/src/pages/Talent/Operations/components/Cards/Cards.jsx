@@ -10,9 +10,7 @@ function Cards() {
             Experienced Consultants with years of specialisation in the field
             can engage as interim stream leaders or CXOs, providing
             organizations with immediate leadership and specialized expertise in
-            optimization and cost cutting projects. The flexibility and
-            objective perspective they bring can contribute significantly to
-            success.
+            optimization and cost cutting projects.
           </p>
         </div>
         <div className="talent-operations-card">

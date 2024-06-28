@@ -28,7 +28,7 @@ function Cards() {
         <div className="skills-academy-card">
           <div className="skills-academy-card-header">Use Case</div>
           <div className="skills-academy-card-title">
-            Get officialy certified
+            Get officially certified
           </div>
           <p className="skills-academy-card-paragraph">
             You will have an opportunity to acquire up to 3-level

@@ -21,10 +21,10 @@ function BottomCards() {
           <div className="cloud-collaboration-bottom-card cloud-collaboration-bottom-card-orange">
             <div className="cloud-collaboration-bottom-card-header-circle"></div>
             <div className="cloud-collaboration-bottom-card-title">
-              Certified Administrators
+              Certified Admins
             </div>
             <div className="cloud-collaboration-bottom-card-subtitle">
-              Our engineers are among few in MENA to be officialy certifiedby
+              Our engineers are among few in MENA to be officially certified by
               Google as GWS Administrators.
             </div>
           </div>
