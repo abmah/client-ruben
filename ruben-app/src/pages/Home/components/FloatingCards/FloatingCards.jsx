@@ -202,7 +202,7 @@ function FloatingCards({ scrollRef, scrollRefTwo, scrollRefThree }) {
                       and resources whenever needed?
                     </p>
                     <p>If you could flexibly add and reduce members?</p>
-                    <p>If and time-to-hire would be close to zero?</p>
+                    <p>If the time-to-hire were close to zero</p>
                     <p>
                       Check how our Talent Augmentation service <br /> helps
                       solve Talent related problems.
